@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## JD-Design '17 - 1'18 Style Guide
 
 You can use the [editor on GitHub](https://github.com/joeldom/style-guide/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
