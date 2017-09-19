@@ -79,7 +79,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
 
 
 /*STYLE GUIDE STYLES*/
-.style-guide a{ color: #00483a;}
+/*.style-guide a{ color: #00483a;}*/
 .modal a{ color: #00483a;border:1px solid #00483a !important}
 .brand-colors {padding:12px; margin: 0 0 0px 0; position: relative; height: 210px;border-radius: 0px;font-size: 14px;}
 .swatch-footer{position: absolute; bottom: 10%;line-height: 1.5em;z-index: 4;}
@@ -93,8 +93,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
 /*.container{max-width: 69rem !important}*/
 .container{max-width: 900px !important}
 .navbar-toggler{float: right;}
-p,.style-guide p, .style-guide ol, .style-guide ul, .style-guide li, .style-guide em, .style-guide strong{line-height: 1.75em;font-family: 'Roboto Mono', monospace;color: #7b7b7b;}
-p a:hover{text-decoration: underline;}
+/*p,
+.style-guide p,
+.style-guide ol,
+.style-guide ul,
+.style-guide li,
+.style-guide em,
+.style-guide strong{
+  line-height: 1.75em;
+  font-family: 'Roboto Mono', monospace;
+  color: #7b7b7b;
+}
+p a:hover{text-decoration: underline;}*/
 
 /*a[href^="http://"] {
   content: 'THIS';

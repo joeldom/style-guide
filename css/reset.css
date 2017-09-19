@@ -37,3 +37,8 @@
 .color-swatch .col-sm-4.col-xs-12{padding:0;}
 .color-swatch .col-md-5.col-xs-12{padding:0;}
 .color-swatch .col-sm-5.col-xs-12{padding:0;}
+
+
+.table th{
+  border-top: none;
+}
