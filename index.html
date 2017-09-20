@@ -324,11 +324,14 @@
         <a class="anchor" id="typography"></a>
         <h2>Typography</h2>
         <p>Words can say a lot. How they are presented is important. The typeface chosen to carry those words can mean the difference between one brands message and another. Messages require distinct fonts to be paired with them to match the various campaigns and channels it will be carried through.</p>
-        <button class="theme-choice refluxblu" data-toggle="collapse" data-parent="#accord" href="#accord1" aria-expanded="true" aria-controls="accord1"><span class="theme-color">A</span></button>
-        <button class="theme-choice cuulblu" data-toggle="collapse" data-parent="#accord" href="#accord2" aria-expanded="false" aria-controls="accord2"><span class="theme-color">A</span></button>
-        <button class="theme-choice wurmgrey" data-toggle="collapse" data-parent="#accord" href="#accord3" aria-expanded="false" aria-controls="accord3"><span class="theme-color">A</span></button>
-        <button class="theme-choice drkgable" data-toggle="collapse" data-parent="#accord" href="#accord4" aria-expanded="false" aria-controls="accord4"><span class="theme-color">A</span></button>
-        <br /><br /><br />
+        <div class="swatch-holder">
+          <span style="float:left;vertical-align:middle;line-height:5em;">Select a palette &rarr;&nbsp;</span>
+          <button class="theme-choice refluxblu" data-toggle="collapse" data-parent="#accord" href="#accord1" aria-expanded="true" aria-controls="accord1"><span class="theme-color">A</span></button>
+          <button class="theme-choice cuulblu" data-toggle="collapse" data-parent="#accord" href="#accord2" aria-expanded="false" aria-controls="accord2"><span class="theme-color">A</span></button>
+          <button class="theme-choice wurmgrey" data-toggle="collapse" data-parent="#accord" href="#accord3" aria-expanded="false" aria-controls="accord3"><span class="theme-color">A</span></button>
+          <button class="theme-choice drkgable" data-toggle="collapse" data-parent="#accord" href="#accord4" aria-expanded="false" aria-controls="accord4"><span class="theme-color">A</span></button>
+          <br /><br /><br />
+        </div>
       </div>
       <!-- <span id="picker" class="color-picker" data-children=".hint">
 				<a data-toggle="collapse" data-parent="#picker" href="#colors" aria-expanded="true" aria-controls="accord1" class="see-more">
@@ -348,7 +351,6 @@
         <button class="theme-choice drkgable"><span class="theme-color">A</span></button>
       </span> -->
       <div id="typography-1" class="col-md-12 col-xs-12">
-        <!-- <img class="img-responsive" src="img/email_button_guidlines_04.png"> -->
 
 
         <!-- FIX THIS -->
@@ -356,14 +358,64 @@
 
         <div id="accord" data-children=".item">
           <div class="item">
-            <div id="accord1" class="palette-brandblue palette-inverse collapse" role="tabpanel">
-              <table class="table">
+            <div id="accord1" class="container-fluid palette-brandblue palette-inverse" role="tabpanel">
+              <!-- FONT SAMPLE -->
+              <h1 style="font-family:'Roboto' !important;text-align:center;">Roboto</h1>
+              <table class="table" style="font-family:'Roboto' !important;color:white;">
                 <thead>
                   <tr>
-                    <th>#</th>
-                    <th>Element</th>
-                    <th>Output</th>
-                    <th>Usage</th>
+                    <th width="20%">Glyph</th>
+                    <th width="50%">Characters <small>24px</small></th>
+                    <th width="30%">About</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-size:100px">Rr</td>
+                    <td style="font-size:24px;letter-spacing:4px;">
+                      A​B​C​Ć​Č​D​Đ​E​FGH​I​J​K​L​M​N​O​P​Q​R​S​Š​T​U​V​W​X​Y​Z​Ž​a​b​c​č​ć​d​đ​e​f​g​h​i​j​k​l​m​n​o​p​q​r​s​š​t​u​v​w​x​y​z​ž​А​Б​В​Г​Ґ​Д​Ђ​Е​Ё​Є​Ж​З​Ѕ​И​І​Ї​Й​Ј​К​Л​Љ​М​Н​Њ​О​П​Р​С​Т​Ћ​У​Ў​Ф​Х​Ц​Ч​Џ​Ш​Щ​Ъ​Ы​Ь​Э​Ю​Я​а​б​в​г​ґ​д​ђ​е​ё​є​ж​з​ѕ​и​і​ї​й​ј​к​л​љ​м​н​њ​о​п​р​с​т​ћ​у​ў​ф​х​ц​ч​џ​ш​щ​ъ​ы​ь​э​ю​я​Α​Β​Γ​Δ​Ε​Ζ​Η​Θ​Ι​Κ​Λ​Μ​Ν​Ξ​Ο​Π​Ρ​Σ​Τ​Υ​Φ​Χ​Ψ​Ω​α​β​γ​δ​ε​ζ​η​θ​ι​κ​λ​μ​ν​ξ​ο​π​ρ​σ​τ​υ​φ​χ​ψ​ω​ά​Ά​έ​Έ​έ​Ή​ί​ϊ​ΐ​Ί​ό​Ό​ύ​ΰ​ϋ​Ύ​Ϋ​Ώ​Ă​Â​Ê​Ô​Ơ​Ư​ă​â​ê​ô​ơ​ư​1​2​3​4​5​6​7​8​9​0​‘​?​’​“​!​”​(​%​)​[​#​]​{​@​}​/​&​<​-​+​÷​×​=​>​®​©​$​€​£​¥​¢​:​;​,​.​*
+                    </td>
+                    <td style="font-size:12px">
+                      Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+                      <br/><br/>
+                      <a href="https://fonts.google.com/specimen/Roboto" target="_blank" title="Google Fonts : Roboto">Google Fonts Specimen</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- /FONT SAMPLE -->
+              <!-- FONT SAMPLE -->
+              <hr />
+              <h1 style="font-family:Helvetica !important;text-align:center;">Helvetica</h1>
+              <table class="table" style="font-family:Helvetica !important;color:white;">
+                <thead>
+                  <tr>
+                    <th width="20%">Glyph</th>
+                    <th width="50%">Characters <small>24px</small></th>
+                    <th width="30%">About</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-size:100px">Hh</td>
+                    <td style="font-size:24px;letter-spacing:4px;">
+                      A​B​C​Ć​Č​D​Đ​E​FGH​I​J​K​L​M​N​O​P​Q​R​S​Š​T​U​V​W​X​Y​Z​Ž​a​b​c​č​ć​d​đ​e​f​g​h​i​j​k​l​m​n​o​p​q​r​s​š​t​u​v​w​x​y​z​ž​А​Б​В​Г​Ґ​Д​Ђ​Е​Ё​Є​Ж​З​Ѕ​И​І​Ї​Й​Ј​К​Л​Љ​М​Н​Њ​О​П​Р​С​Т​Ћ​У​Ў​Ф​Х​Ц​Ч​Џ​Ш​Щ​Ъ​Ы​Ь​Э​Ю​Я​а​б​в​г​ґ​д​ђ​е​ё​є​ж​з​ѕ​и​і​ї​й​ј​к​л​љ​м​н​њ​о​п​р​с​т​ћ​у​ў​ф​х​ц​ч​џ​ш​щ​ъ​ы​ь​э​ю​я​Α​Β​Γ​Δ​Ε​Ζ​Η​Θ​Ι​Κ​Λ​Μ​Ν​Ξ​Ο​Π​Ρ​Σ​Τ​Υ​Φ​Χ​Ψ​Ω​α​β​γ​δ​ε​ζ​η​θ​ι​κ​λ​μ​ν​ξ​ο​π​ρ​σ​τ​υ​φ​χ​ψ​ω​ά​Ά​έ​Έ​έ​Ή​ί​ϊ​ΐ​Ί​ό​Ό​ύ​ΰ​ϋ​Ύ​Ϋ​Ώ​Ă​Â​Ê​Ô​Ơ​Ư​ă​â​ê​ô​ơ​ư​1​2​3​4​5​6​7​8​9​0​‘​?​’​“​!​”​(​%​)​[​#​]​{​@​}​/​&​<​-​+​÷​×​=​>​®​©​$​€​£​¥​¢​:​;​,​.​*
+                    </td>
+                    <td style="font-size:12px">
+                      Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+              <!-- /FONT SAMPLE -->
+              <table class="table" style="color:white;">
+                <thead>
+                  <tr>
+                    <th width="5%">#</th>
+                    <th width="15%">Element</th>
+                    <th width="50%">Output</th>
+                    <th width="30%">Usage</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -371,55 +423,55 @@
                     <th scope="row">1</th>
                     <td>H1</td>
                     <td><h1>Heading 1</h1></td>
-                    <td>top most heading styling.</td>
+                    <td style="font-size:12px">top most heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td>H2</td>
                     <td><h2>Heading 2</h2></td>
-                    <td>second tier of heading styling.</td>
+                    <td style="font-size:12px">second tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td>H3</td>
                     <td><h3>Heading 3</h3></td>
-                    <td>3rd tier of heading styling.</td>
+                    <td style="font-size:12px">3rd tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td>H4</td>
                     <td><h4>Heading 4</h4></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
                     <td>H5</td>
                     <td><h5>Heading 5</h5></td>
-                    <td>5th tier of heading styling.</td>
+                    <td style="font-size:12px">5th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">6</th>
                     <td>H6</td>
                     <td><h6>Heading 6</h6></td>
-                    <td>6th tier of heading styling.</td>
+                    <td style="font-size:12px">6th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">7</th>
                     <td>strong</td>
                     <td><strong>strong line of text</strong></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">8</th>
                     <td>italic</td>
                     <td><i>italic line of text</i></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">9</th>
                     <td>link</td>
                     <td>here an <a href="#">inline link</a></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                 </tbody>
               </table>
@@ -427,13 +479,63 @@
           </div><!-- item -->
           <div class="item">
             <div id="accord2" class="palette-brandblue cool collapse" role="tabpanel">
-              <table class="table">
+              <!-- FONT SAMPLE -->
+              <h1 style="font-family:'Roboto' !important;text-align:center;">Roboto</h1>
+              <table class="table" style="font-family:'Roboto' !important;">
                 <thead>
                   <tr>
-                    <th>#</th>
-                    <th>Element</th>
-                    <th>Output</th>
-                    <th>Usage</th>
+                    <th width="20%">Glyph</th>
+                    <th width="50%">Characters <small>24px</small></th>
+                    <th width="30%">About</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-size:100px">Rr</td>
+                    <td style="font-size:24px;letter-spacing:4px;">
+                      A​B​C​Ć​Č​D​Đ​E​FGH​I​J​K​L​M​N​O​P​Q​R​S​Š​T​U​V​W​X​Y​Z​Ž​a​b​c​č​ć​d​đ​e​f​g​h​i​j​k​l​m​n​o​p​q​r​s​š​t​u​v​w​x​y​z​ž​А​Б​В​Г​Ґ​Д​Ђ​Е​Ё​Є​Ж​З​Ѕ​И​І​Ї​Й​Ј​К​Л​Љ​М​Н​Њ​О​П​Р​С​Т​Ћ​У​Ў​Ф​Х​Ц​Ч​Џ​Ш​Щ​Ъ​Ы​Ь​Э​Ю​Я​а​б​в​г​ґ​д​ђ​е​ё​є​ж​з​ѕ​и​і​ї​й​ј​к​л​љ​м​н​њ​о​п​р​с​т​ћ​у​ў​ф​х​ц​ч​џ​ш​щ​ъ​ы​ь​э​ю​я​Α​Β​Γ​Δ​Ε​Ζ​Η​Θ​Ι​Κ​Λ​Μ​Ν​Ξ​Ο​Π​Ρ​Σ​Τ​Υ​Φ​Χ​Ψ​Ω​α​β​γ​δ​ε​ζ​η​θ​ι​κ​λ​μ​ν​ξ​ο​π​ρ​σ​τ​υ​φ​χ​ψ​ω​ά​Ά​έ​Έ​έ​Ή​ί​ϊ​ΐ​Ί​ό​Ό​ύ​ΰ​ϋ​Ύ​Ϋ​Ώ​Ă​Â​Ê​Ô​Ơ​Ư​ă​â​ê​ô​ơ​ư​1​2​3​4​5​6​7​8​9​0​‘​?​’​“​!​”​(​%​)​[​#​]​{​@​}​/​&​<​-​+​÷​×​=​>​®​©​$​€​£​¥​¢​:​;​,​.​*
+                    </td>
+                    <td style="font-size:12px">
+                      Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+                      <br/><br/>
+                      <a href="https://fonts.google.com/specimen/Roboto" target="_blank" title="Google Fonts : Roboto">Google Fonts Specimen</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- /FONT SAMPLE -->
+              <!-- FONT SAMPLE -->
+              <hr />
+              <h1 style="font-family:Helvetica !important;text-align:center;">Helvetica</h1>
+              <table class="table" style="font-family:Helvetica !important;">
+                <thead>
+                  <tr>
+                    <th width="20%">Glyph</th>
+                    <th width="50%">Characters <small>24px</small></th>
+                    <th width="30%">About</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-size:100px">Hh</td>
+                    <td style="font-size:24px;letter-spacing:4px;">
+                      A​B​C​Ć​Č​D​Đ​E​FGH​I​J​K​L​M​N​O​P​Q​R​S​Š​T​U​V​W​X​Y​Z​Ž​a​b​c​č​ć​d​đ​e​f​g​h​i​j​k​l​m​n​o​p​q​r​s​š​t​u​v​w​x​y​z​ž​А​Б​В​Г​Ґ​Д​Ђ​Е​Ё​Є​Ж​З​Ѕ​И​І​Ї​Й​Ј​К​Л​Љ​М​Н​Њ​О​П​Р​С​Т​Ћ​У​Ў​Ф​Х​Ц​Ч​Џ​Ш​Щ​Ъ​Ы​Ь​Э​Ю​Я​а​б​в​г​ґ​д​ђ​е​ё​є​ж​з​ѕ​и​і​ї​й​ј​к​л​љ​м​н​њ​о​п​р​с​т​ћ​у​ў​ф​х​ц​ч​џ​ш​щ​ъ​ы​ь​э​ю​я​Α​Β​Γ​Δ​Ε​Ζ​Η​Θ​Ι​Κ​Λ​Μ​Ν​Ξ​Ο​Π​Ρ​Σ​Τ​Υ​Φ​Χ​Ψ​Ω​α​β​γ​δ​ε​ζ​η​θ​ι​κ​λ​μ​ν​ξ​ο​π​ρ​σ​τ​υ​φ​χ​ψ​ω​ά​Ά​έ​Έ​έ​Ή​ί​ϊ​ΐ​Ί​ό​Ό​ύ​ΰ​ϋ​Ύ​Ϋ​Ώ​Ă​Â​Ê​Ô​Ơ​Ư​ă​â​ê​ô​ơ​ư​1​2​3​4​5​6​7​8​9​0​‘​?​’​“​!​”​(​%​)​[​#​]​{​@​}​/​&​<​-​+​÷​×​=​>​®​©​$​€​£​¥​¢​:​;​,​.​*
+                    </td>
+                    <td style="font-size:12px">
+                      Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+              <!-- /FONT SAMPLE -->
+              <table class="table" style="color:white;">
+                <thead>
+                  <tr>
+                    <th width="5%">#</th>
+                    <th width="15%">Element</th>
+                    <th width="50%">Output</th>
+                    <th width="30%">Usage</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -441,55 +543,55 @@
                     <th scope="row">1</th>
                     <td>H1</td>
                     <td><h1>Heading 1</h1></td>
-                    <td>top most heading styling.</td>
+                    <td style="font-size:12px">top most heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td>H2</td>
                     <td><h2>Heading 2</h2></td>
-                    <td>second tier of heading styling.</td>
+                    <td style="font-size:12px">second tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td>H3</td>
                     <td><h3>Heading 3</h3></td>
-                    <td>3rd tier of heading styling.</td>
+                    <td style="font-size:12px">3rd tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td>H4</td>
                     <td><h4>Heading 4</h4></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
                     <td>H5</td>
                     <td><h5>Heading 5</h5></td>
-                    <td>5th tier of heading styling.</td>
+                    <td style="font-size:12px">5th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">6</th>
                     <td>H6</td>
                     <td><h6>Heading 6</h6></td>
-                    <td>6th tier of heading styling.</td>
+                    <td style="font-size:12px">6th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">7</th>
                     <td>strong</td>
                     <td><strong>strong line of text</strong></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">8</th>
                     <td>italic</td>
                     <td><i>italic line of text</i></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">9</th>
                     <td>link</td>
                     <td>here an <a href="#">inline link</a></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                 </tbody>
               </table>
@@ -497,13 +599,64 @@
           </div><!-- item2 -->
           <div class="item">
             <div id="accord3" class="palette-brandblue palette-brandblue warm collapse" role="tabpanel">
-              <table class="table">
+              <!-- FONT SAMPLE -->
+              <br/>
+              <h1 style="font-family:'Roboto' !important;text-align:center;">Roboto</h1>
+              <table class="table" style="font-family:'Roboto' !important;">
                 <thead>
                   <tr>
-                    <th>#</th>
-                    <th>Element</th>
-                    <th>Output</th>
-                    <th>Usage</th>
+                    <th width="20%">Glyph</th>
+                    <th width="50%">Characters <small>24px</small></th>
+                    <th width="30%">About</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-size:100px">Rr</td>
+                    <td style="font-size:24px;letter-spacing:4px;">
+                      A​B​C​Ć​Č​D​Đ​E​FGH​I​J​K​L​M​N​O​P​Q​R​S​Š​T​U​V​W​X​Y​Z​Ž​a​b​c​č​ć​d​đ​e​f​g​h​i​j​k​l​m​n​o​p​q​r​s​š​t​u​v​w​x​y​z​ž​А​Б​В​Г​Ґ​Д​Ђ​Е​Ё​Є​Ж​З​Ѕ​И​І​Ї​Й​Ј​К​Л​Љ​М​Н​Њ​О​П​Р​С​Т​Ћ​У​Ў​Ф​Х​Ц​Ч​Џ​Ш​Щ​Ъ​Ы​Ь​Э​Ю​Я​а​б​в​г​ґ​д​ђ​е​ё​є​ж​з​ѕ​и​і​ї​й​ј​к​л​љ​м​н​њ​о​п​р​с​т​ћ​у​ў​ф​х​ц​ч​џ​ш​щ​ъ​ы​ь​э​ю​я​Α​Β​Γ​Δ​Ε​Ζ​Η​Θ​Ι​Κ​Λ​Μ​Ν​Ξ​Ο​Π​Ρ​Σ​Τ​Υ​Φ​Χ​Ψ​Ω​α​β​γ​δ​ε​ζ​η​θ​ι​κ​λ​μ​ν​ξ​ο​π​ρ​σ​τ​υ​φ​χ​ψ​ω​ά​Ά​έ​Έ​έ​Ή​ί​ϊ​ΐ​Ί​ό​Ό​ύ​ΰ​ϋ​Ύ​Ϋ​Ώ​Ă​Â​Ê​Ô​Ơ​Ư​ă​â​ê​ô​ơ​ư​1​2​3​4​5​6​7​8​9​0​‘​?​’​“​!​”​(​%​)​[​#​]​{​@​}​/​&​<​-​+​÷​×​=​>​®​©​$​€​£​¥​¢​:​;​,​.​*
+                    </td>
+                    <td style="font-size:12px">
+                      Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+                      <br/><br/>
+                      <a href="https://fonts.google.com/specimen/Roboto" target="_blank" title="Google Fonts : Roboto">Google Fonts Specimen</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- /FONT SAMPLE -->
+              <!-- FONT SAMPLE -->
+              <hr />
+              <h1 style="font-family:Helvetica !important;text-align:center;">Helvetica</h1>
+              <table class="table" style="font-family:Helvetica !important;">
+                <thead>
+                  <tr>
+                    <th width="20%">Glyph</th>
+                    <th width="50%">Characters</th>
+                    <th width="30%">About</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-size:100px">Hh</td>
+                    <td style="font-size:24px;letter-spacing:4px;">
+                      A​B​C​Ć​Č​D​Đ​E​FGH​I​J​K​L​M​N​O​P​Q​R​S​Š​T​U​V​W​X​Y​Z​Ž​a​b​c​č​ć​d​đ​e​f​g​h​i​j​k​l​m​n​o​p​q​r​s​š​t​u​v​w​x​y​z​ž​А​Б​В​Г​Ґ​Д​Ђ​Е​Ё​Є​Ж​З​Ѕ​И​І​Ї​Й​Ј​К​Л​Љ​М​Н​Њ​О​П​Р​С​Т​Ћ​У​Ў​Ф​Х​Ц​Ч​Џ​Ш​Щ​Ъ​Ы​Ь​Э​Ю​Я​а​б​в​г​ґ​д​ђ​е​ё​є​ж​з​ѕ​и​і​ї​й​ј​к​л​љ​м​н​њ​о​п​р​с​т​ћ​у​ў​ф​х​ц​ч​џ​ш​щ​ъ​ы​ь​э​ю​я​Α​Β​Γ​Δ​Ε​Ζ​Η​Θ​Ι​Κ​Λ​Μ​Ν​Ξ​Ο​Π​Ρ​Σ​Τ​Υ​Φ​Χ​Ψ​Ω​α​β​γ​δ​ε​ζ​η​θ​ι​κ​λ​μ​ν​ξ​ο​π​ρ​σ​τ​υ​φ​χ​ψ​ω​ά​Ά​έ​Έ​έ​Ή​ί​ϊ​ΐ​Ί​ό​Ό​ύ​ΰ​ϋ​Ύ​Ϋ​Ώ​Ă​Â​Ê​Ô​Ơ​Ư​ă​â​ê​ô​ơ​ư​1​2​3​4​5​6​7​8​9​0​‘​?​’​“​!​”​(​%​)​[​#​]​{​@​}​/​&​<​-​+​÷​×​=​>​®​©​$​€​£​¥​¢​:​;​,​.​*
+                    </td>
+                    <td style="font-size:12px">
+                      Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+              <!-- /FONT SAMPLE -->
+              <table class="table" style="">
+                <thead>
+                  <tr>
+                    <th width="5%">#</th>
+                    <th width="15%">Element</th>
+                    <th width="50%">Output</th>
+                    <th width="30%">Usage</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -511,55 +664,55 @@
                     <th scope="row">1</th>
                     <td>H1</td>
                     <td><h1>Heading 1</h1></td>
-                    <td>top most heading styling.</td>
+                    <td style="font-size:12px">top most heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td>H2</td>
                     <td><h2>Heading 2</h2></td>
-                    <td>second tier of heading styling.</td>
+                    <td style="font-size:12px">second tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td>H3</td>
                     <td><h3>Heading 3</h3></td>
-                    <td>3rd tier of heading styling.</td>
+                    <td style="font-size:12px">3rd tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td>H4</td>
                     <td><h4>Heading 4</h4></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
                     <td>H5</td>
                     <td><h5>Heading 5</h5></td>
-                    <td>5th tier of heading styling.</td>
+                    <td style="font-size:12px">5th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">6</th>
                     <td>H6</td>
                     <td><h6>Heading 6</h6></td>
-                    <td>6th tier of heading styling.</td>
+                    <td style="font-size:12px">6th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">7</th>
                     <td>strong</td>
                     <td><strong>strong line of text</strong></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">8</th>
                     <td>italic</td>
                     <td><i>italic line of text</i></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">9</th>
                     <td>link</td>
                     <td>here an <a href="#">inline link</a></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                 </tbody>
               </table>
@@ -567,13 +720,63 @@
           </div><!-- item3 -->
           <div class="item">
             <div id="accord4" class="palette-brandblue palette-inverse warm collapse" role="tabpanel">
-              <table class="table">
+              <!-- FONT SAMPLE -->
+              <h1 style="font-family:'Roboto' !important;text-align:center;">Roboto</h1>
+              <table class="table" style="font-family:'Roboto' !important;color:white;">
                 <thead>
                   <tr>
-                    <th>#</th>
-                    <th>Element</th>
-                    <th>Output</th>
-                    <th>Usage</th>
+                    <th width="20%">Glyph</th>
+                    <th width="50%">Characters</th>
+                    <th width="30%">About</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-size:100px">Rr</td>
+                    <td style="font-size:24px;letter-spacing:4px;">
+                      A​B​C​Ć​Č​D​Đ​E​FGH​I​J​K​L​M​N​O​P​Q​R​S​Š​T​U​V​W​X​Y​Z​Ž​a​b​c​č​ć​d​đ​e​f​g​h​i​j​k​l​m​n​o​p​q​r​s​š​t​u​v​w​x​y​z​ž​А​Б​В​Г​Ґ​Д​Ђ​Е​Ё​Є​Ж​З​Ѕ​И​І​Ї​Й​Ј​К​Л​Љ​М​Н​Њ​О​П​Р​С​Т​Ћ​У​Ў​Ф​Х​Ц​Ч​Џ​Ш​Щ​Ъ​Ы​Ь​Э​Ю​Я​а​б​в​г​ґ​д​ђ​е​ё​є​ж​з​ѕ​и​і​ї​й​ј​к​л​љ​м​н​њ​о​п​р​с​т​ћ​у​ў​ф​х​ц​ч​џ​ш​щ​ъ​ы​ь​э​ю​я​Α​Β​Γ​Δ​Ε​Ζ​Η​Θ​Ι​Κ​Λ​Μ​Ν​Ξ​Ο​Π​Ρ​Σ​Τ​Υ​Φ​Χ​Ψ​Ω​α​β​γ​δ​ε​ζ​η​θ​ι​κ​λ​μ​ν​ξ​ο​π​ρ​σ​τ​υ​φ​χ​ψ​ω​ά​Ά​έ​Έ​έ​Ή​ί​ϊ​ΐ​Ί​ό​Ό​ύ​ΰ​ϋ​Ύ​Ϋ​Ώ​Ă​Â​Ê​Ô​Ơ​Ư​ă​â​ê​ô​ơ​ư​1​2​3​4​5​6​7​8​9​0​‘​?​’​“​!​”​(​%​)​[​#​]​{​@​}​/​&​<​-​+​÷​×​=​>​®​©​$​€​£​¥​¢​:​;​,​.​*
+                    </td>
+                    <td style="font-size:12px">
+                      Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+                      <br/><br/>
+                      <a href="https://fonts.google.com/specimen/Roboto" target="_blank" title="Google Fonts : Roboto">Google Fonts Specimen</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- /FONT SAMPLE -->
+              <!-- FONT SAMPLE -->
+              <hr />
+              <h1 style="font-family:Helvetica !important;text-align:center;">Helvetica</h1>
+              <table class="table" style="font-family:Helvetica !important;color:white;">
+                <thead>
+                  <tr>
+                    <th width="20%">Glyph</th>
+                    <th width="50%">Characters</th>
+                    <th width="30%">About</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-size:100px">Hh</td>
+                    <td style="font-size:24px;letter-spacing:4px;">
+                      A​B​C​Ć​Č​D​Đ​E​FGH​I​J​K​L​M​N​O​P​Q​R​S​Š​T​U​V​W​X​Y​Z​Ž​a​b​c​č​ć​d​đ​e​f​g​h​i​j​k​l​m​n​o​p​q​r​s​š​t​u​v​w​x​y​z​ž​А​Б​В​Г​Ґ​Д​Ђ​Е​Ё​Є​Ж​З​Ѕ​И​І​Ї​Й​Ј​К​Л​Љ​М​Н​Њ​О​П​Р​С​Т​Ћ​У​Ў​Ф​Х​Ц​Ч​Џ​Ш​Щ​Ъ​Ы​Ь​Э​Ю​Я​а​б​в​г​ґ​д​ђ​е​ё​є​ж​з​ѕ​и​і​ї​й​ј​к​л​љ​м​н​њ​о​п​р​с​т​ћ​у​ў​ф​х​ц​ч​џ​ш​щ​ъ​ы​ь​э​ю​я​Α​Β​Γ​Δ​Ε​Ζ​Η​Θ​Ι​Κ​Λ​Μ​Ν​Ξ​Ο​Π​Ρ​Σ​Τ​Υ​Φ​Χ​Ψ​Ω​α​β​γ​δ​ε​ζ​η​θ​ι​κ​λ​μ​ν​ξ​ο​π​ρ​σ​τ​υ​φ​χ​ψ​ω​ά​Ά​έ​Έ​έ​Ή​ί​ϊ​ΐ​Ί​ό​Ό​ύ​ΰ​ϋ​Ύ​Ϋ​Ώ​Ă​Â​Ê​Ô​Ơ​Ư​ă​â​ê​ô​ơ​ư​1​2​3​4​5​6​7​8​9​0​‘​?​’​“​!​”​(​%​)​[​#​]​{​@​}​/​&​<​-​+​÷​×​=​>​®​©​$​€​£​¥​¢​:​;​,​.​*
+                    </td>
+                    <td style="font-size:12px">
+                      Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+              <!-- /FONT SAMPLE -->
+              <table class="table" style="color:white;">
+                <thead>
+                  <tr>
+                    <th width="5%">#</th>
+                    <th width="15%">Element</th>
+                    <th width="50%">Output</th>
+                    <th width="30%">Usage</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -581,89 +784,86 @@
                     <th scope="row">1</th>
                     <td>H1</td>
                     <td><h1>Heading 1</h1></td>
-                    <td>top most heading styling.</td>
+                    <td style="font-size:12px">top most heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td>H2</td>
                     <td><h2>Heading 2</h2></td>
-                    <td>second tier of heading styling.</td>
+                    <td style="font-size:12px">second tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td>H3</td>
                     <td><h3>Heading 3</h3></td>
-                    <td>3rd tier of heading styling.</td>
+                    <td style="font-size:12px">3rd tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td>H4</td>
                     <td><h4>Heading 4</h4></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
                     <td>H5</td>
                     <td><h5>Heading 5</h5></td>
-                    <td>5th tier of heading styling.</td>
+                    <td style="font-size:12px">5th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">6</th>
                     <td>H6</td>
                     <td><h6>Heading 6</h6></td>
-                    <td>6th tier of heading styling.</td>
+                    <td style="font-size:12px">6th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">7</th>
                     <td>strong</td>
                     <td><strong>strong line of text</strong></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">8</th>
                     <td>italic</td>
                     <td><i>italic line of text</i></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                   <tr>
                     <th scope="row">9</th>
                     <td>link</td>
                     <td>here an <a href="#">inline link</a></td>
-                    <td>4th tier of heading styling.</td>
+                    <td style="font-size:12px">4th tier of heading styling.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div><!-- item4 -->
         </div><!-- accord -->
+      </div>
 
-        <ol class="list-unstyled">
-          <li>1. Headlines and visually large messaging but short in character length.</li>
-          <li>2. Headlines and cohesive omnichannel brand messaging.</li>
-          <li>3. Secondary category callouts. Limited use.</li>
-          <li>4. Smaller secondary pairing with main messaging. Limited use.</li>
-          <li>5. Limited use.</li>
-        </ol>
-      </div>
-      <div id="typography-2" class="col-md-12 col-xs-12">
-        <!-- <img class="img-responsive" src="img/email_button_guidlines_06.png"> -->
-        <ol class="list-unstyled">
-          <li>1. ScoreCard branded messages.</li>
-          <li>2. Secondary messaging.</li>
-          <li>3. CTAs and secondary messaging.</li>
-          <li>4. Women's messaging and primary Messages.</li>
-        </ol>
-      </div>
-      <div id="typogrpahy-3" class="col-md-12 col-xs-12">
-        <!-- <img class="img-responsive" src="img/email_button_guidlines_26.png"> -->
-        <ol class="list-unstyled">
-          <li>1. Disclaimers, TAB product pricing, and live text.</li>
-          <li>2. Limited use. reg., was, sale pricing.</li>
-          <li>3. Disclaimer emphasis, reg., was, and sale price points.</li>
-          <li>4. Disclaimer emphasis, reg., was, and sale price points.</li>
-        </ol>
-      </div>
-    </div>
+      <div id="typogrpahy-2" class="col-md-12 col-xs-12">
+        <h4>Quotes Example</h4>
+        <div id="quotes" class="module-hero">
+          <div id="carousel-quotes" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="stats-hero brandblue"><!-- stripe -->
+                  <div class="container">
+                    <div class="quote-outer">
+                      <div class="quote-inner">
+                        <ul id="cyclelist">
+                          <li class="quote" style="opacity: 1;"><div class="num">Design Quotes N<sup>o</sup> 202</div>Your almost always wrong about your users.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- id=typography-2 -->
+    </div><!-- row -->
     <hr>
     <!-- BUTTONS -->
     <div class="row style-guide">
@@ -702,9 +902,7 @@
           “Ghost” text and border should match color.<br>
         </p>
       </div>
-      <div class="col-md-6 col-xs-12">
-        <img class="img-responsive" src="img/button-box-model.png">
-      </div>
+
     </div>
     <div class="container-fluid palette-brandblue warm">
 			<div class="row twoUp">
@@ -731,7 +929,7 @@
 				</div>
 			</div>
 			<div class="row twoUp">
-				<div class="col-xs-12 col-sm-4">.col-xs-12 .col-sm-4</div>
+				<div class="col-xs-12 col-sm-4" style="text-align:middle;">.col-xs-12 .col-sm-4</div>
 				<div class="col-xs-12 col-sm-4">
 					<figure class="quote">
 						<blockquote class="h2">Write content while you are designing.</blockquote>
@@ -746,45 +944,230 @@
         <h2>Button Usage</h2><a class="anchor" id="usage"></a>
         <p>Buttons can be used in a variety of ways and have unique verbaige depending on where they link to. Here are some examples of proper and improper use.</p>
         <h3>Solid Button</h3><a class="anchor" id="solid-buttons"></a>
-        <img class="img-responsive" src="img/email_button_guidlines_08.png">
-        <img class="img-responsive" src="img/email_button_guidlines_11.jpg">
         <br>
         <h3>Ghost Button</h3><a class="anchor" id="ghost-buttons"></a>
-        <img class="img-responsive" src="img/email_button_guidlines_10.png">
         <br><hr><br>
         <h3>2-UP ALIGNMENT &amp; ALTERNATE VERBIAGE</h3><a class="anchor" id="2up-verbiage"></a>
-        <img class="img-responsive" src="img/email_button_guidlines_12.png">
         <p>These are the approved verbaige for CTAs across all email categories.</p>
         <br><hr><br>
-        <h3>A-Spot &amp; Lockup Example</h3><a class="anchor" id="aspot-example"></a>
-        <img class="img-responsive" src="img/email_button_guidlines_15.png">
+        <h3>Pagination</h3><a class="anchor" id="pagination"></a>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <br><hr><br>
+        <h3>Popover</h3><a class="anchor" id="popover"></a>
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+        <br><hr><br>
+        <h3>Progress Bar</h3><a class="anchor" id="progress-bar"></a>
+        <p>Something is missing with styles for this? Not sure what though.</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
         <br><hr><br>
         <h3>Improper CTA Usage:</h3><a class="anchor" id="improper-cta"></a>
-        <img class="img-responsive" src="img/email_button_guidlines_17.png">
-        <img class="img-responsive" src="img/email_button_guidlines_19.jpg">
         <br>
         <em>*There are limited-use cases where aligning to the left works, although it may seem off balance if it's seen at the same time as other designs.</em>
       </div>
     </div><!--/BUTTONS -->
     <br><hr><br>
     <div class="row style-guide">
-      <div id="output" class="col-xs-12">
-        <h2>Output</h2>
-        <a class="anchor" id="output-intro"></a>
-        <p>Once your design has undergone the rigors of editing and revisions, it’s time to save out your design into a format that email clients and web browsers will understand. To do this, the email needs to be “cut” into smaller chunks. These chunks or slices are necessary for two reasons:</p>
-        <ul>
-          <li>Email clients often flag emails containing one big image as spam. To avoid the spam filters, an email should be comprised of multiple images.</li>
-          <li>Cutting the email into smaller images will allow the email to load much faster than one image with a hefty file size. This provides the customer with a much better experience.</li>
+      <div id="input" class="col-xs-12">
+        <h2>Inputs</h2>
+        <a class="anchor" id="input-intro"></a>
+        <p>Inputs for forms and other fileds used for user interaction</p>
+        <hr>
+        <h4 id="input-form-1">Form Elements</h4>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Example file input</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="">
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="" disabled>
+              Option two is disabled
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              Option two can be something else and selecting it will deselect option one
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+              Option three is disabled
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> 1
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> 2
+            </label>
+          </div>
+          <div class="form-check form-check-inline disabled">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> 3
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="staticEmail2" class="sr-only">Email</label>
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+          </div>
+          <div class="form-group mx-sm-3">
+            <label for="inputPassword2" class="sr-only">Password</label>
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary">Confirm identity</button>
+        </form>
+        <hr>
+        <h2 id="lists-org">Lists &amp; Organizational Elements</h2>
+        <p>
+          Lists help organize things, using different types of lists for different heirarchy helps grant importance of content not deemed important enough for headlines, buttons or navigation but more important than a paragraph of text explaining in common speach.
+        </p>
+        <h4>Un-ordered List(s)</h4>
+        <ul id="markdown-toc">
+          <li><a href="#authenticating-with-graphql" id="markdown-toc-authenticating-with-graphql">Authenticating with GraphQL</a></li>
+          <li><a href="#the-graphql-endpoint" id="markdown-toc-the-graphql-endpoint">The GraphQL endpoint</a></li>
+          <li><a href="#communicating-with-graphql" id="markdown-toc-communicating-with-graphql">Communicating with GraphQL</a></li>
+          <li><a href="#about-query-and-mutation-operations" id="markdown-toc-about-query-and-mutation-operations">About query and mutation operations</a></li>
+          <li><a href="#working-with-variables" id="markdown-toc-working-with-variables">Working with variables</a></li>
+          <li><a href="#example-query" id="markdown-toc-example-query">Example query</a></li>
+          <li><a href="#example-mutation" id="markdown-toc-example-mutation">Example mutation</a></li>
+          <li><a href="#further-reading" id="markdown-toc-further-reading">Further reading</a></li>
         </ul>
-        <hr>
-        <h4 id="output-slice-tool">Slice Tool</h4>
-        <p>Using the slice tool we are blocking out the areas of the design that will have sperate links &amp; seperate image requirments. Doing so will allow you to set each regions image type as well as make them seperate links.</p>
-        <img class="center-block" src="img/slice-tool.png"><br>
-        <hr>
+        <h4>Ordered List(s)</h4>
+        <ol>
+        <li>
+        <em>Mutation name</em>. The type of modification you want to perform.</li>
+        <li>
+        <em>Input object</em>. The data you want to send to the server, composed of <em>input fields</em>. Pass it as an argument to the mutation name.</li>
+        <li>
+        <em>Payload object</em>. The data you want to return from the server, composed of <em>return fields</em>. Pass it as the body of the mutation name.</li>
+        </ol>
+        <hr />
+        <ol>
+          <li>
+          <p>Define the variable outside the operation in a <code>variables</code> object:</p>
+
+          <pre class="highlight highlight-graphql"><code><span class="err">variables</span><span class="w"> </span><span class="p">{</span><span class="w">
+             </span><span class="err">"</span><span class="n">number_of_repos</span><span class="err">":</span><span class="w"> </span><span class="err">3</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+          </span></code></pre>
+
+
+          <p>The object must be valid JSON. This example shows a simple <code>Int</code> variable type, but it's possible to define more complex variable types, such as input objects. You can also define multiple variables here.</p>
+          </li>
+          <li>
+          <p>Pass the variable to the operation as an argument:</p>
+
+          <pre class="highlight highlight-graphql"><code><span class="k">query</span><span class="p">(</span><span class="nv">$number_of_repos</span><span class="p">:</span><span class="nb">Int</span><span class="p">!){</span><span class="w">
+          </span></code></pre>
+
+
+          <p>The argument is a key-value pair, where the key is the <em>name</em> starting with <code>$</code> (e.g., <code>$number_of_repos</code>), and the value is the <em>type</em> (e.g., <code>Int</code>). Add a <code>!</code> to indicate whether the type is required. If you've defined multiple variables, include them here as multiple arguments.</p>
+          </li>
+          <li>
+          <p>Use the variable within the operation:</p>
+
+          <pre class="highlight highlight-graphql"><code><span class="err">repositories(last:</span><span class="w"> </span><span class="err">$number_of_repos)</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span></code></pre>
+
+
+          <p>In this example, we substitute the variable for the number of repositories to retrieve. We specify a type in step 2 because GraphQL enforces strong typing.</p>
+          </li>
+        </ol>
+        <hr />
+        <h4>Code &amp; Pre</h4>
+        <p>
+          Code and pre elements alow you to distinguish between content that is meant to be read in a specific code language or syntax not typically used in font facing content.
+        </p>
+        <code>subject</code> (<code>Reactable!</code>)<br />
+        <code>THUMBS_UP</code> (<img class="emoji" title=":thumbsup:" alt=":thumbsup:" style="width:20px;height:20px;" src="https://a248.e.akamai.net/assets.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20" align="absmiddle">)
+        <hr />
         <h4 id="output-save-for-web">Save For Web</h4>
         <p>Use the Save For Web option from the File menu <kbd>Shift+Command+Option+S</kbd> after you have used the Slice Tool to cut your design. Within this dialog, you will see your design and the web slices you created.</p>
         <h4>PS Save For Web Dialog</h4>
-        <img class="img-responsive" src="img/save-for-web-dialog.png"><br>
         <p>At this point you need to compress each of your web slices so the final file size of your slices are nice and small. For this, adjust the compression settings that are found along the right side of the Save For Web dialog. Choosing how to output and compress each of the slices is deteminded by what the image is showing.</p>
       </div>
       <div class="col-xs-12">
@@ -803,9 +1186,7 @@
         <p>.GIFs are used predominantly for animation, however they can be used for sections of completly flat color, and also support transparency. They can be one of the smallest formats to export, but may also be one of the largest depending on animation and color-depth. Making sure you have the proper color and file size to achieve the design in the output settings is crucial.</p>
       </div>
       <div class="col-xs-12 col-md-6">
-        <img class="img-responsive" src="img/GIF-colors.png">
         <br>
-        <img class="img-responsive" src="img/GIF-lossy.png">
       </div>
     </div>
     <hr>
@@ -815,7 +1196,6 @@
         <p>.PNGs are similar to .GIFs in that they have relativly small file sizes, are used for flat-color, support transparency, and are losseless; however, their transparency is preferable as they can have more color-depth and not suffer from the pixel interpilation, artifacts, and pixel grids of .GIFs.</p>
       </div>
       <div class="col-xs-12 col-md-6">
-        <img class="img-responsive" src="img/PNG-colors.png" alt="">
         <br>
       </div>
     </div>
@@ -826,12 +1206,11 @@
         <p>.JPGs offer the widest usage for designs and photos alike. Their small file size is susceptiple to "lossy" compression and every save reduces the qualtiy by adding artifacts.</p>
         <p>The photographic uses .JPGs have for photography can't be understated. 80% of designs have flat-color and full-color elements so .JPGs are usually the most well-rounded option to be exported. Keeping in mind that lossy compression can give some undesirable results so it is key to adjust the output settings. <strong>When possible, go with a .JPG.</strong></p>
         <br>
-        <p>Examples of the artifacts at various quality settings. <img class="img-responsive" src="img/JPEG-lossy.png" alt=""></p>
+        <p>Examples of the artifacts at various quality settings.</p>
 
         <br>
       </div>
       <div class="col-xs-12 col-md-6">
-        <img class="img-responsive" src="img/JPEG-settings.png" alt="">
       </div>
     </div>
     <!-- OUTPUT -->

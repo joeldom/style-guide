@@ -149,6 +149,9 @@ p a:hover{text-decoration: underline;}*/
     border-radius: 15px;
 
 }
+@media (max-width: 1379px) {
+  .viewport{width: 60%;margin:auto;top:90px; left:0; right:0; display: block;text-align: center;}
+}
 @media (max-width: 768px) {
   .modal-body .col-md-6{padding: 48px;}
   .viewport{width: 92%;margin:auto;top:70px; left:0; right:0; display: block;text-align: center;}
@@ -574,11 +577,20 @@ a span.hint, span a span.hint, .read-time a span.hint, .hint{
 }
 .color-picker button, button.theme-choice, a.theme-choice{
   border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 70px;
+  font-size: 1.5em;
+  font-weight: 500;
   background: black;
   border: 3px solid white;
-
+  box-sizing: border-box;
+}
+.color-picker button:hover, button.theme-choice:hover, a.theme-choice:hover{
+  border: 3px solid #999;
+  font-size: 2.125em;
+  width: 70px;
+	height: 70px;
+  overflow: hidden;
 }
 .color-picker button:hover, a.theme-choice:hover{
   border: 3px solid #999;
@@ -588,4 +600,8 @@ a span.hint, span a span.hint, .read-time a span.hint, .hint{
 }
 .color-picker li:nth-child(even){
   float: right;
+}
+#markdown-toc{}
+#markdown-toc li{
+  list-style-type:lower-roman;margin:.25em 0;
 }
