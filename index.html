@@ -45,6 +45,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="http://joeldom.github.io/redesign/greybox/css/void.css">
     <link rel="stylesheet" href="css/reset.css">
   </head>
@@ -61,7 +62,7 @@
 
   <nav class="navbar navbar-fixed-top navbar-light bg-faded">
     <div class="container">
-      <a class="navbar-brand" href="#">Style Guide</a>
+      <a class="navbar-brand" href="#">Style<strong>Guide</strong></a>
 
       <!-- <button class="navbar-toggler hidden-sm-up navbar-right navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button> -->
 
@@ -227,7 +228,7 @@
   <div class="container">
     <a class="anchor vspace" id="header"></a>
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12" style="background-color:#1a3acc;padding:4.5em 0 2em 0;">
         <img class="img-responsive" src="img/sguide-header.png">
       </div>
     </div>
@@ -323,28 +324,39 @@
         <a class="anchor" id="typography"></a>
         <h2>Typography</h2>
         <p>Words can say a lot. How they are presented is important. The typeface chosen to carry those words can mean the difference between one brands message and another. Messages require distinct fonts to be paired with them to match the various campaigns and channels it will be carried through.</p>
+        <button class="theme-choice refluxblu" data-toggle="collapse" data-parent="#accord" href="#accord1" aria-expanded="true" aria-controls="accord1"><span class="theme-color">A</span></button>
+        <button class="theme-choice cuulblu" data-toggle="collapse" data-parent="#accord" href="#accord2" aria-expanded="false" aria-controls="accord2"><span class="theme-color">A</span></button>
+        <button class="theme-choice wurmgrey" data-toggle="collapse" data-parent="#accord" href="#accord3" aria-expanded="false" aria-controls="accord3"><span class="theme-color">A</span></button>
+        <button class="theme-choice drkgable" data-toggle="collapse" data-parent="#accord" href="#accord4" aria-expanded="false" aria-controls="accord4"><span class="theme-color">A</span></button>
+        <br /><br /><br />
       </div>
+      <!-- <span id="picker" class="color-picker" data-children=".hint">
+				<a data-toggle="collapse" data-parent="#picker" href="#colors" aria-expanded="true" aria-controls="accord1" class="see-more">
+					Choose a theme
+					<span id="colors" dir="" class="hint" role="picker">
+            <button class="theme-choice refluxblu"><span class="theme-color">A</span></button>
+            <button class="theme-choice cuulblu"><span class="theme-color">A</span></button>
+            <button class="theme-choice wurmgrey"><span class="theme-color">A</span></button>
+            <button class="theme-choice drkgable"><span class="theme-color">A</span></button>
+          </span>
+				</a>
+			</span>
+      <span id="colors" dir="" class="hint" role="picker">
+        <button class="theme-choice refluxblu"><span class="theme-color">A</span></button>
+        <button class="theme-choice cuulblu"><span class="theme-color">A</span></button>
+        <button class="theme-choice wurmgrey"><span class="theme-color">A</span></button>
+        <button class="theme-choice drkgable"><span class="theme-color">A</span></button>
+      </span> -->
       <div id="typography-1" class="col-md-12 col-xs-12">
         <!-- <img class="img-responsive" src="img/email_button_guidlines_04.png"> -->
 
 
         <!-- FIX THIS -->
         <!-- USE THIS EXAMPLE: https://getbootstrap.com/docs/4.0/components/collapse/ -->
+
         <div id="accord" data-children=".item">
           <div class="item">
-            <a data-toggle="collapse" data-parent="#accord" href="#accord1" aria-expanded="true" aria-controls="accord1">
-              Toggle accord 1
-            </a>
-            <a data-toggle="collapse" data-parent="#accord" href="#accord2" aria-expanded="false" aria-controls="accord2">
-              Toggle accord 2
-            </a>
-            <a data-toggle="collapse" data-parent="#accord" href="#accord3" aria-expanded="false" aria-controls="accord3">
-              Toggle accord 3
-            </a>
-            <a data-toggle="collapse" data-parent="#accord" href="#accord4" aria-expanded="false" aria-controls="accord4">
-              Toggle accord 4
-            </a>
-            <div id="accord1" class="container-fluid palette-brandblue palette-inverse collapse" role="tabpanel">
+            <div id="accord1" class="palette-brandblue palette-inverse collapse" role="tabpanel">
               <table class="table">
                 <thead>
                   <tr>
@@ -414,10 +426,7 @@
             </div>
           </div><!-- item -->
           <div class="item">
-            <a data-toggle="collapse" data-parent="#accord" href="#accord2" aria-expanded="false" aria-controls="accord2">
-              Toggle accord 2
-            </a>
-            <div id="accord2" class="container-fluid palette-brandblue palette-inverse cool collapse" role="tabpanel">
+            <div id="accord2" class="palette-brandblue cool collapse" role="tabpanel">
               <table class="table">
                 <thead>
                   <tr>
@@ -487,10 +496,7 @@
             </div>
           </div><!-- item2 -->
           <div class="item">
-            <a data-toggle="collapse" data-parent="#accord" href="#accord3" aria-expanded="false" aria-controls="accord3">
-              Toggle accord 3
-            </a>
-            <div id="accord3" class="container-fluid palette-brandblue palette-inverse collapse" role="tabpanel">
+            <div id="accord3" class="palette-brandblue palette-brandblue warm collapse" role="tabpanel">
               <table class="table">
                 <thead>
                   <tr>
@@ -560,10 +566,7 @@
             </div>
           </div><!-- item3 -->
           <div class="item">
-            <a data-toggle="collapse" data-parent="#accord" href="#accord4" aria-expanded="false" aria-controls="accord4">
-              Toggle accord 4
-            </a>
-            <div id="accord4" class="container-fluid palette-brandblue palette-inverse collapse" role="tabpanel">
+            <div id="accord4" class="palette-brandblue palette-inverse warm collapse" role="tabpanel">
               <table class="table">
                 <thead>
                   <tr>

@@ -38,7 +38,30 @@
 .color-swatch .col-md-5.col-xs-12{padding:0;}
 .color-swatch .col-sm-5.col-xs-12{padding:0;}
 
-
+.table{margin-bottom: 0;}
 .table th{
   border-top: none;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  /*text-align: center;*/
+  /*color: #000;*/
+}
+.navbar-brand{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: .025em;
+}
+.navbar-brand strong{
+  font-weight: 900;
+
+}
+.see-more{
+  border: 3px solid #1a3acc;
+  color: #1a3acc;
+}
+.see-more:hover{
+  background-color: #1a3acc;
+  color: white;
 }
