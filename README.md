@@ -1,37 +1,31 @@
-## JD-Design '17 - 1'18 Style Guide
+## JD-Design ~ Style Guide
 
-You can use the [editor on GitHub](https://github.com/joeldom/style-guide/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+#About
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This style-guide is meant to be a testing platform for elements in the development cycle to be possibly be implemented pending how functionaly relevant and robust they are. This pulls styles from the `/resume` repo as well as styles from the `/redesign` repo.
 
-### Markdown
+##todo
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* 404 page
+* IE browser bar
+* bootstrap element styling
+* style-guide styles added as seperate sass file
+* rewrite of sass inclusions to remove redundancy
 
-```markdown
-Syntax highlighted code block
+##ref
+1. color palette gen: [ColorPedia](http://veli.ee/colorpedia/?c=1ACCAB)
+2. bootstrap docs: [Bootstrap Docs](https://getbootstrap.com/docs/3.3/css/#type)
+3. google span design: [Google Span](https://design.google/library/span/)
+4. reactjs : [medium article ref](https://medium.com/appdafuer/how-to-create-a-simple-swipeable-list-in-react-native-81b894ea5c4c)
+4. reactjs swipe list: [github SwipeFlatList](https://github.com/fabfre/SwipeFlatList/tree/master)
+5. reactjs controled forms: [byte-sized-react/controlled-forms-in-react](https://medium.com/byte-sized-react/controlled-forms-in-react-68e59362a119)
+6. react & redux : [medium article](https://medium.com/@KondovAlexander/a-react-redux-introduction-e3fbcf209896)
+7. form inspiration: [form example](https://effectiveinc.com/designing-for-the-emotions-of-healthcare/?utm_source=designing-for-the-emotions-twitter.mm.09.13.17&utm_medium=social&utm_campaign=Designing%20for%20the%20Emotions%20of%20Healthcare)
+8. [another form example](http://focuslabllc.com/contact)
+9. [STYLE GUIDE EXAMPLE](https://dribbble.com/shots/3284589-Frame-Style-Guide)
+10. [icon example of sections of focus](https://polaris.shopify.com/)
+11. [uber brand guide](https://dribbble.com/shots/2094092-Uber-Brand-Guide) also [Uber Brand](https://www.uber.design/)
+12. [404 example](https://www.market-me.fr/product/barni-startup/)
+13. [ui & style guide pins](https://www.pinterest.com/pin/168673948527182954/)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/joeldom/style-guide/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+---
