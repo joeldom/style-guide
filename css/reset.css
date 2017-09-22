@@ -74,3 +74,77 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
 /*.quote-outer{
   padding: 0 90px;
 }*/
+
+
+/*ADDING IN COLOR PALETTE FROM VOID*/
+
+.palette-brandblue {
+  color: #1a3acc;
+  background-color: #f5f5f5; }
+  .palette-brandblue .read-more, .palette-brandblue .see-more {
+    border: 3px solid #1a3acc;
+    color: #1a3acc; }
+    .palette-brandblue .read-more:hover, .palette-brandblue .see-more:hover {
+      background-color: #1a3acc;
+      color: white; }
+  .palette-brandblue.cool {
+    background-color: #e0e9fe;
+    color: #1a3acc; }
+    .palette-brandblue.cool h1, .palette-brandblue.cool .h1, .palette-brandblue.cool h2, .palette-brandblue.cool .h2, .palette-brandblue.cool h3, .palette-brandblue.cool .h3, .palette-brandblue.cool h4, .palette-brandblue.cool .h4, .palette-brandblue.cool h5, .palette-brandblue.cool .h5, .palette-brandblue.cool h6, .palette-brandblue.cool .h6, .palette-brandblue.cool a, .palette-brandblue.cool strong {
+      color: #1a3acc; }
+    .palette-brandblue.cool hr {
+      border: 1px solid #1a3acc; }
+  .palette-brandblue.warm {
+    background-color: #e4dfd9;
+    color: #5f5f5f; }
+  .palette-brandblue.palette-inverse {
+    background-color: #1a3acc;
+    color: white; }
+    .palette-brandblue.palette-inverse .read-more, .palette-brandblue.palette-inverse .see-more {
+      border: 3px solid white;
+      color: white; }
+      .palette-brandblue.palette-inverse .read-more:hover, .palette-brandblue.palette-inverse .see-more:hover {
+        background-color: white;
+        color: #1a3acc; }
+    .palette-brandblue.palette-inverse h1, .palette-brandblue.palette-inverse .h1, .palette-brandblue.palette-inverse h2, .palette-brandblue.palette-inverse .h2, .palette-brandblue.palette-inverse h3, .palette-brandblue.palette-inverse .h3, .palette-brandblue.palette-inverse h4, .palette-brandblue.palette-inverse .h4, .palette-brandblue.palette-inverse h5, .palette-brandblue.palette-inverse .h5, .palette-brandblue.palette-inverse h6, .palette-brandblue.palette-inverse .h6, .palette-brandblue.palette-inverse a, .palette-brandblue.palette-inverse strong {
+      color: white;
+      font-weight: 700; }
+    .palette-brandblue.palette-inverse.cool {
+      background-color: #a3a3a3;
+      color: #142a2d; }
+      .palette-brandblue.palette-inverse.cool .read-more, .palette-brandblue.palette-inverse.cool .see-more {
+        border: 3px solid #142a2d;
+        color: #142a2d; }
+        .palette-brandblue.palette-inverse.cool .read-more:hover, .palette-brandblue.palette-inverse.cool .see-more:hover {
+          background-color: #142a2d;
+          color: #a3a3a3; }
+      .palette-brandblue.palette-inverse.cool h1, .palette-brandblue.palette-inverse.cool .h1, .palette-brandblue.palette-inverse.cool h2, .palette-brandblue.palette-inverse.cool .h2, .palette-brandblue.palette-inverse.cool h3, .palette-brandblue.palette-inverse.cool .h3, .palette-brandblue.palette-inverse.cool h4, .palette-brandblue.palette-inverse.cool .h4, .palette-brandblue.palette-inverse.cool h5, .palette-brandblue.palette-inverse.cool .h5, .palette-brandblue.palette-inverse.cool h6, .palette-brandblue.palette-inverse.cool .h6, .palette-brandblue.palette-inverse.cool a, .palette-brandblue.palette-inverse.cool strong {
+        color: #142a2d; }
+        .palette-brandblue.palette-inverse.cool h1:hover, .palette-brandblue.palette-inverse.cool .h1:hover, .palette-brandblue.palette-inverse.cool h2:hover, .palette-brandblue.palette-inverse.cool .h2:hover, .palette-brandblue.palette-inverse.cool h3:hover, .palette-brandblue.palette-inverse.cool .h3:hover, .palette-brandblue.palette-inverse.cool h4:hover, .palette-brandblue.palette-inverse.cool .h4:hover, .palette-brandblue.palette-inverse.cool h5:hover, .palette-brandblue.palette-inverse.cool .h5:hover, .palette-brandblue.palette-inverse.cool h6:hover, .palette-brandblue.palette-inverse.cool .h6:hover, .palette-brandblue.palette-inverse.cool a:hover, .palette-brandblue.palette-inverse.cool strong:hover {
+          color: #1a3acc;
+          transition: color 400ms, background-color 400ms; }
+    .palette-brandblue.palette-inverse.warm {
+      background-color: #142a2d;
+      color: #e4dfd9; }
+      .palette-brandblue.palette-inverse.warm .read-more:hover, .palette-brandblue.palette-inverse.warm .see-more:hover {
+        background-color: white;
+        color: #142a2d; }
+
+.read-more {
+  border: 3px solid #545454;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  -webkit-text-size-adjust: none;
+  mso-hide: all; }
+
+.read-more:hover {
+  border: 1px solid white;
+  /*e6e6e8*/
+  background: white;
+  color: #545454; }
