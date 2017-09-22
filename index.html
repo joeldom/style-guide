@@ -943,13 +943,19 @@
       <div class="col-xs-12">
         <h2>Button Usage</h2><a class="anchor" id="usage"></a>
         <p>Buttons can be used in a variety of ways and have unique verbaige depending on where they link to. Here are some examples of proper and improper use.</p>
-        <h3>Solid Button</h3><a class="anchor" id="solid-buttons"></a>
+      </div>
+      <div class="col-xs-6">
+        <h3>Ghost Button</h3><a class="anchor" id="solid-buttons"></a>
+        <a href="#" class="see-more">See more</a>
         <br>
-        <h3>Ghost Button</h3><a class="anchor" id="ghost-buttons"></a>
-        <br><hr><br>
-        <h3>2-UP ALIGNMENT &amp; ALTERNATE VERBIAGE</h3><a class="anchor" id="2up-verbiage"></a>
-        <p>These are the approved verbaige for CTAs across all email categories.</p>
-        <br><hr><br>
+      </div>
+      <div class="col-xs-6 palette-brandblue palette-inverse">
+        <h3>Inverse Button</h3><a class="anchor" id="ghost-buttons"></a>
+        <a href="#" class="see-more">See more</a>
+        <br><br>
+      </div>
+      <hr>
+      <div class="col-xs-12">
         <h3>Pagination</h3><a class="anchor" id="pagination"></a>
         <nav aria-label="Page navigation example">
           <ul class="pagination">
@@ -985,7 +991,7 @@
         </nav>
         <br><hr><br>
         <h3>Popover</h3><a class="anchor" id="popover"></a>
-        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+        <button type="button" class="see-more" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
         <br><hr><br>
         <h3>Progress Bar</h3><a class="anchor" id="progress-bar"></a>
         <p>Something is missing with styles for this? Not sure what though.</p>
@@ -1018,6 +1024,8 @@
         <p>Inputs for forms and other fileds used for user interaction</p>
         <hr>
         <h4 id="input-form-1">Form Elements</h4>
+      </div>
+      <div id="input" class="col-xs-6">
         <form>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
@@ -1087,7 +1095,7 @@
               <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> 3
             </label>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="see-more">Submit</button>
         </form>
         <form class="form-inline">
           <div class="form-group">
@@ -1098,9 +1106,98 @@
             <label for="inputPassword2" class="sr-only">Password</label>
             <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
           </div>
-          <button type="submit" class="btn btn-primary">Confirm identity</button>
+          <button type="submit" class="see-more">Confirm identity</button>
         </form>
-        <hr>
+      </div>
+      <div id="input" class="col-xs-6 palette-brandblue palette-inverse">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Example file input</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="">
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="" disabled>
+              Option two is disabled
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              Option two can be something else and selecting it will deselect option one
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+              Option three is disabled
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> 1
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> 2
+            </label>
+          </div>
+          <div class="form-check form-check-inline disabled">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> 3
+            </label>
+          </div>
+          <button type="submit" class="see-more">Submit</button>
+        </form>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="staticEmail2" class="sr-only">Email</label>
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+          </div>
+          <div class="form-group mx-sm-3">
+            <label for="inputPassword2" class="sr-only">Password</label>
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+          </div>
+          <button type="submit" class="see-more">Confirm identity</button>
+        </form>
+
+      </div>
+    </div>
+    <hr>
+    <div class="row style-guide">
+      <div id="lists" class="col-xs-12">
         <h2 id="lists-org">Lists &amp; Organizational Elements</h2>
         <p>
           Lists help organize things, using different types of lists for different heirarchy helps grant importance of content not deemed important enough for headlines, buttons or navigation but more important than a paragraph of text explaining in common speach.
@@ -1164,11 +1261,7 @@
         </p>
         <code>subject</code> (<code>Reactable!</code>)<br />
         <code>THUMBS_UP</code> (<img class="emoji" title=":thumbsup:" alt=":thumbsup:" style="width:20px;height:20px;" src="https://a248.e.akamai.net/assets.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20" align="absmiddle">)
-        <hr />
-        <h4 id="output-save-for-web">Save For Web</h4>
-        <p>Use the Save For Web option from the File menu <kbd>Shift+Command+Option+S</kbd> after you have used the Slice Tool to cut your design. Within this dialog, you will see your design and the web slices you created.</p>
-        <h4>PS Save For Web Dialog</h4>
-        <p>At this point you need to compress each of your web slices so the final file size of your slices are nice and small. For this, adjust the compression settings that are found along the right side of the Save For Web dialog. Choosing how to output and compress each of the slices is deteminded by what the image is showing.</p>
+
       </div>
       <div class="col-xs-12">
         <h4 id="output-file-types">File Types</h4>
