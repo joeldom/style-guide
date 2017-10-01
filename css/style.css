@@ -605,3 +605,19 @@ a span.hint, span a span.hint, .read-time a span.hint, .hint{
 #markdown-toc li{
   list-style-type:lower-roman;margin:.25em 0;
 }
+input
+
+
+.article .article--body a.wired,.article .article--body p a.wired{
+  color: inherit;
+  text-decoration: none;
+  -webkit-trasition: background .15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background .15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  border-bottom: 2px solid #1a3acc;
+  -webkit-box-shadow: inset 0 -3px 0 #1a3acc;
+  box-shadow: inset 0 -3px 0 #1a3acc;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.article .article--body a.wired:hover,.article .article--body p a.wired:hover{color: #fff; background: #1a3acc;}

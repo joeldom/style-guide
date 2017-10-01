@@ -148,6 +148,121 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
   /*e6e6e8*/
   background: white;
   color: #545454; }
+.see-more{margin-bottom: 1em;}
 
-#pagination .page-item{}
-#pagination .page-link{}
+
+  #pagination, #pagination a{
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  #pagination .page-link{
+
+  }
+  .pagination>li:first-child>a, .pagination>li:first-child>span{
+
+  }
+  .pagination>li>a, .pagination>li>span{
+    border: 3px solid #1a3acc;
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #1a3acc;
+    padding: .4125em 2.5em;
+    border-radius: 0 !important;
+  }
+  .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    border: 3px solid #1a3acc;
+    background: #1a3acc;
+    color: white;
+  }
+  .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover{
+    color:white;
+    background-color: #1a3acc;
+  }
+  .progress{
+    border-radius: 0px;
+    height: 50px;
+    border: 3px solid #1a3acc;
+  }
+  .progress-bar{
+    background-color: #1a3acc;
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  #input{
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  input[type="search"], input[type="text"], input[type="submit"], input[type="email"], input textarea, input select{
+    border-radius: 0px;
+  }
+  .form-control{
+    height: 50px;
+    padding: .4125em 0;
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #1a3acc;
+    box-shadow: none;
+    background: none;
+    background-color: none;
+    color: inherit;
+    line-height: 2em;
+  }
+.palette-inverse .form-control{
+  height: 50px;
+  padding: .4125em 0;
+  border-radius: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #fff;
+  box-shadow: none;
+  background: none;
+  background-color: none;
+  color: white;
+}
+input[type="file"]{
+   -webkit-appearance: none;
+   text-align: left;
+   -webkit-rtl-ordering:  left;
+
+}
+
+input[type="file"]::-webkit-file-upload-button{
+   -webkit-appearance: none;
+   float: left;
+   margin: 0 0 0 10px;
+   padding: .4125em 2.5em;
+   border: 3px solid #1a3acc;
+   color: #1a3acc;
+   border-radius: 0px;
+   background: none;
+}
+.palette-inverse input[type="file"]::-webkit-file-upload-button{
+  border: 3px solid #fff;
+  color: white;
+}
+#foo:checked::before,
+/*input[type="checkbox"] {
+    position:absolute;
+    clip: rect(0,0,0,0);
+    clip: rect(0 0 0 0);
+}*/
+input[type="checkbox"] {
+    /*-webkit-appearance: none;*/
+    border: 3px solid #1a3acc;
+    height: 20px;
+    width: 20px;
+}
+
+#foo:checked,
+input[type="checkbox"] + label::before {
+    content: url('checkbox.png');
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: url('checkbox-checked.png');
+}
