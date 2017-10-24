@@ -169,6 +169,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
     color: #1a3acc;
     padding: .4125em 2.5em;
     border-radius: 0 !important;
+    background: none;
   }
   .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
     border: 3px solid #1a3acc;
@@ -191,6 +192,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
     font-weight: bold;
     line-height: 40px;
   }
+  #main > div:nth-child(14) > div:nth-child(5) > div:nth-child(17) > div
   #input{
     font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
@@ -230,7 +232,6 @@ input[type="file"]{
    -webkit-rtl-ordering:  left;
 
 }
-
 input[type="file"]::-webkit-file-upload-button{
    -webkit-appearance: none;
    float: left;
@@ -265,4 +266,8 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:checked + label::before {
     content: url('checkbox-checked.png');
+}
+.row{
+  margin-left: 0;
+  margin-right: 0;
 }

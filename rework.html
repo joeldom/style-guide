@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Joel Dombek ~ STYLE GUIDE</title>
+    <title>Joel Dombek ~ Resume</title>
     <meta name="description"               content="The resume of Joel Dombek, a multi-diciplinary designer : developer and brand specialist with a focus on user interaction and design.">
     <meta name="viewport"                  content="width=device-width, initial-scale=1">
     <meta name="twitter:card"              content="summary" />
@@ -44,7 +44,6 @@
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/timeline.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/void.css">
@@ -61,9 +60,11 @@
 <body data-spy="scroll" data-target="#side-nav" data-offset="50" bgcolor="#ffffff" style="-webkit-text-size-adjust:none;" bottommargin="0" leftmargin="0" topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
 <style type="text/css">div.preheader {display:none!important;} .ii a[href]{color:#999999!important;}</style>
 
-  <!-- <nav id="sg-logo" class="navbar navbar-fixed-top navbar-light bg-faded">
+  <nav class="navbar navbar-fixed-top navbar-light bg-faded">
     <div class="container">
       <a class="navbar-brand" href="#">Style<strong>Guide</strong></a>
+
+      <!-- <button class="navbar-toggler hidden-sm-up navbar-right navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button> -->
 
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-header">
 			<span class="sr-only">Toggle navigation</span>
@@ -76,124 +77,18 @@
         <button class="btn btn-outline-success pull-right col-md-3 col-xs-12" data-toggle="modal" data-target="#myModal">Download</button>
       </div>
     </div>
-  </nav> -->
-
+  </nav>
+</nav>
   <!-- /navbar -->
-  <div id="panel">
-    <div id="sg-logo"><a class="navbar-brand" href="#">Style<strong>Guide</strong></a></div>
-    <div class="col-md-12">
-      <div class="viewport">Viewport: <span id="monitor"></span>px</div>
-      <div data-spy="affix" data-offset-top="365" data-offset-bottom="200">
-        <nav class="bs-docs-sidebar">
-          <ul id="sidebar" class="nav nav-stacked fixed">
-            <li><a href="#getting-started" contenteditable="false">Getting Started</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#big-idea">Big Idea</a></li>
-              </ul>
-            </li>
-            <li><a href="#color" contenteditable="false">Color</a>
-              <ul class="nav nav-stacked">
-                  <li><a href="#color">Brand Colors</a></li>
-                  <li><a href="#color-campaign">Campaign Colors</a></li>
-              </ul>
-            </li>
-            <li><a href="#typography" contenteditable="false">Typography</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#typography-1">DSG Sans</a></li>
-                <li><a href="#typography-2">DIN</a></li>
-                <li><a href="#typogrpahy-3">Arial</a></li>
-              </ul>
-            </li>
-            <li><a href="#buttons" contenteditable="false">Buttons</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#button-text">Button Text</a></li>
-                <li><a href="#button-dimensions">Button Dimensions</a></li>
-                <li><a href="#button-position">Button Postion</a></li>
-                <li><a href="#button-styling">Button Styling</a></li>
-              </ul>
-            </li>
-            <li><a href="#usage" contenteditable="false">Usage</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#solid-buttons">Solid Buttons</a></li>
-                <li><a href="#ghost-buttons">Ghost Buttons</a></li>
-                <li><a href="#2up-verbiage">2-Up &amp; Verbiage</a></li>
-                <li><a href="#aspot-example">A-Spot Example</a></li>
-                <li><a href="#improper-cta">CTA Usage</a></li>
-              </ul>
-            </li>
-            <li><a href="#output" contenteditable="false">Output</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#output-intro">Intro</a></li>
-                <li><a href="#output-slice-tool">Slice Tool</a></li>
-                <li><a href="#output-save-for-web">Save For Web</a></li>
-                <li><a href="#output-file-types">File Types</a></li>
-                <li><a href="#output-gif">.GIF</a></li>
-                <li><a href="#output-png">.PNG</a></li>
-                <li><a href="#output-jpg">.JPG</a></li>
-              </ul>
-            </li>
-            <li><a href="#grid" contenteditable="false">Grid</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#grid-scalable">Scalable Design</a></li>
-                <li><a href="#grid-fluid">Fluid Design</a></li>
-                <li><a href="#grid-responsive">Responsive Design</a></li>
-                <li><a href="#grid-wrapup">Which is best?</a></li>
-              </ul>
-            </li>
-            <li><a href="#code" contenteditable="false">Code</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#code-code-counts">Code Counts!</a></li>
-                <li><a href="#code-colsplit">Col-Split</a></li>
-                <li><a href="#code-spacer">Spacer</a></li>
-                <li><a href="#code-alttext">ALT Text</a></li>
-              </ul>
-            </li>
-            <li><a href="#build" contenteditable="false">Build</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#build-preheader">Pre-Header</a></li>
-                <li><a href="#build-header">Header</a></li>
-                <li><a href="#build-aspot">A-Spot</a></li>
-                <li><a href="#build-panel">Panel</a></li>
-                <li><a href="#build-tile">Tiles</a></li>
-                <li><a href="#build-banner">Banner</a></li>
-                <li><a href="#build-3col">3-Column</a></li>
-                <li><a href="#build-colsplit">Col-Split</a></li>
-                <li><a href="#build-scorecard">ScoreCard</a></li>
-                <li><a href="#build-social">Social Links</a></li>
-                <li><a href="#build-disclaimer">Disclaimer</a></li>
-              </ul>
-            </li>
-            <li><a href="#examples" contenteditable="false">Examples</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#example-cooking">Outdoor Category</a></li>
-                <li><a href="#example-golf">Golf</a></li>
-                <li><a href="#example-flash">Flash Sale</a></li>
-                <li><a href="#example-footwear-1">Footwear</a></li>
-                <li><a href="#example-footwear-2">Footwear</a></li>
-                <li><a href="#example-tabsupport">Tab Support</a></li>
-                <li><a href="#example-taxfree">Tax Free</a></li>
-                <li><a href="#example-fitness">M/W Fitness</a></li>
-              </ul>
-            </li>
-            <li>&nbsp;</li>
-            <li><a class="back-to-top" href="#header">
-              Back to top</a></li>
-            <li>&nbsp;</li>
-            <li><small>ver 1.1.9 : 12.1.16</small></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-  <!-- PANEL -->
 
-  <!-- <div class="col-md-2 hidden-md" id="body-right">
+  <div class="col-md-2 hidden-md" id="body-right">
     <div data-spy="affix" data-offset-top="365" data-offset-bottom="200">
       <nav class="bs-docs-sidebar">
         <ul id="sidebar" class="nav nav-stacked fixed">
           <li><a href="#getting-started" contenteditable="false">Getting Started</a>
             <ul class="nav nav-stacked">
               <li><a href="#big-idea">Big Idea</a></li>
+              <!-- <li><a href="#why">Why?</a></li> -->
             </ul>
           </li>
           <li><a href="#color" contenteditable="false">Color</a>
@@ -288,7 +183,7 @@
         </ul>
       </nav>
     </div>
-  </div> -->
+  </div>
 
 
 
@@ -328,9 +223,9 @@
   </div>
 </div>
 
+<div class="viewport">Viewport Width: <span id="monitor"></span>px</div>
 
-
-  <div id="main" class="container">
+  <div class="container">
     <a class="anchor vspace" id="header"></a>
     <div class="row">
       <div class="col-xs-12" style="background-color:#1a3acc;padding:4.5em 0 2em 0;">
@@ -352,9 +247,8 @@
       <div class="col-xs-12">
         <a class="anchor vspace" id="color"></a>
         <hr>
-        <h2>Pallette</h2>
-        <p>Color is what give a design it's first sense of style. What color is chosen speaks to where it can be used and what it's implied meaning is.</p>
-        <p>With the color choice of such a vibrant blue it is meant to speak to all of the areas I've focused on in my career. With in terms of print, it is a very important color and in this case is closely related to <strong>Reflex Blue</strong>. With repsects to screen design it is one of the most feared screens a user can come across on a Windows machine. It is also the most widely supported colors for accessability and is usally a placeholder color. It is most commonly seen as in blue prints for architecture. These are a few reasons anyone could associate with blue in the common era, it was seen as a sign of nobility in medevil times.</p>
+        <h2>Color</h2>
+        <p>Whether it's sports, teams, seasons, or shoes; they all have their own color. It brings people together, but also sets them apart and lets them be unique. Our campaigns and serivces are distinguished by color. Being consistent across all channels keeps the large breadth of messages and voices honest and organized.</p>
       </div>
     </div>
     <!-- COLOR PEDIA - http://veli.ee/colorpedia/?c=173F3A -->
@@ -431,8 +325,7 @@
         <h2>Typography</h2>
         <p>Words can say a lot. How they are presented is important. The typeface chosen to carry those words can mean the difference between one brands message and another. Messages require distinct fonts to be paired with them to match the various campaigns and channels it will be carried through.</p>
         <div class="swatch-holder">
-          <!-- <span style="float:left;vertical-align:middle;line-height:5em;">Select a palette</span><br class="clear" /> -->
-          <!-- <span style="display:block;text-align:center;width:100%;vertical-align:middle;line-height:5em;font-weight:900;">Select a palette</span><br class="clear" /> -->
+          <span style="float:left;vertical-align:middle;line-height:5em;">Select a palette &rarr;&nbsp;</span>
           <button class="theme-choice refluxblu" data-toggle="collapse" data-parent="#accord" href="#accord1" aria-expanded="true" aria-controls="accord1"><span class="theme-color">A</span></button>
           <button class="theme-choice cuulblu" data-toggle="collapse" data-parent="#accord" href="#accord2" aria-expanded="false" aria-controls="accord2"><span class="theme-color">A</span></button>
           <button class="theme-choice wurmgrey" data-toggle="collapse" data-parent="#accord" href="#accord3" aria-expanded="false" aria-controls="accord3"><span class="theme-color">A</span></button>
@@ -971,52 +864,6 @@
       </div><!-- id=typography-2 -->
     </div><!-- row -->
     <hr>
-    <div class="row style-guide">
-      <div class="article container-fluid palette-brandblue palette-inverse">
-        <br>
-        <div class="col-xs-6">
-          <h1>Article Title <span class="badge badge-secondary">New</span></h1>
-          <h4>Affiliation &amp; Organization</h4>
-        </div>
-        <div class="col-xs-6">
-          <h5>Author: Joel Dombek</h5>
-          <h6>Published: 24 October 2017</h6>
-          <a href="#">Link Citation: Effects of science on the religious mind.</a>
-        </div>
-        <div class="col-xs-12">
-          <hr />
-          <p>
-            The questions and hypotheses that initiate an investigation, the resultant data gathered, and the background information obtained by reading the literature will lead to conclusions. Your research paper presents these conclusions and the appropriate evidence (data and relevant literature). Before writing your report, construct an outline that logically presents the information to support your conclusions. Organize the data into tables and figures to present the evidence in a logical order. Many authors prefer to construct a draft by rapidly putting down ideas with little regard to sentence structure, and to make corrections later. Others prefer to make revisions as they proceed. Write the report with a target audience of other students with experience in biology equivalent to that of the class for which the report is written.
-          </p>
-          <p>
-            Proper use of English is considered paramount in grading. Your major responsibility is to make the reader understand exactly what you mean by using words with precision, clarity, and economy. Every sentence should be exact and say something of importance (no "padding"). Economy and accuracy require using straightforward English sentences (subject, verb, and object). Follow a consistent pattern of tenses. Although it is acceptable to write in either the active or passive voice, you should write in the active voice unless you have good reason to usethe passive voice. Different biological fields and faculty may have specific requirements for tense or voice and <em>students should consult specific course instructions or instructors for these assignment details</em>.
-          </p>
-        </div>
-        <div class="col-xs-6">
-          <p>The discovery of gravitational waves (GWs) from coalescing binary black holes by the Laser Interferometer Gravitational Wave Observatory (LIGO) has transformed the study of compact objects in the universe (<a href="#">1</a>, <a href="#">2</a>). Unlike black holes, merging neutron stars are expected to produce electromagnetic radiation. The electromagnetic signature of such an event can provide more information than the GW signal alone: constraining location of the source, reducing the degeneracies in GW parameter estimation (3), probing the expansion rate of the universe (4, 5), and producing a more complete picture of the merger process (6, 7).</p>
-          <p>Short gamma-ray bursts (GRBs) have long been expected to result from neutron star mergers (8, 9), and therefore would be a natural electromagnetic counterpart to GWs (10).</p>
-        </div>
-        <div class="col-xs-6">
-          <p>Unfortunately, their emission is beamed, so that it may not intersect our line of sight (11). The possibility that only a small fraction of GRBs may be detectable has motivated theoretical and observational searches for more-isotropic electromagnetic signatures, such as an astronomical transient powered by the radioactive decay of neutron-rich ejecta from the merger (12–17). Referred to as a macronova or kilonova, the detection of these events would provide information on the origin of many of the heaviest elements in the periodic table (18).</p>
-        </div>
-        <div class="col-xs-12">
-          <p>
-            It has long been realized that approximately half of the elements heavier than iron are created via r-process nucleosynthesis—the capture of neutrons onto lighter seed nuclei on a time scale more rapid than β-decay pathways (19, 20). However, it is less clear where the r-process predominantly occurs, namely whether the primary sources of these elements are core-collapse supernovae or compact binary mergers (black hole–neutron star or neutron star–neutron star) (21, 22). For supernovae, direct detection of the electromagnetic signatures from r-process nucleosynthesis is obscured by the much larger luminosity originating from hydrogen recombination (for hydrogen-rich supernovae) or nickel-56 and cobalt-56 decay (for hydrogen-poor supernovae). By contrast, it may be possible to measure the r-process nucleosynthesis after a compact object merger from the associated transient, based on its radioactive decay. Such a measurement would demonstrate directly that r-process elements are produced in compact mergers, and provide an estimate of the r-process yield. While there has been some tentative evidence for kilonovae following short gamma-ray bursts (23, 24), no conclusive event has yet been observed.
-          </p>
-          <p>
-            On 17 August 2017, LIGO and Virgo detected the gravitational wave source GW170817, which was identified as a binary neutron star merger based on the waveform (25–27). At 23:33 UTC on 17 August 2017 (10.86 hours post-merger), an optical transient, Swope Supernova Survey 2017a (SSS17a), was identified in the galaxy NGC 4993 by the 1M2H collaboration and was determined to be associated with this event (28, 29). Within an hour of the identification, we began observing the spectral energy distribution (SED) of SSS17a from the g- to K-bands with the Magellan telescopes (30). Early spectra of the source, also obtained within an hour of the optical discovery, were blue and smooth, indicating that the transient event was initially very hot (31, 32). Over the following weeks, we acquired optical and near-infrared (near-IR) imaging of SSS17a at Las Campanas Observatory and W. M. Keck Observatory with the Swope, du Pont, Magellan, and Keck-I telescopes, which are analyzed below (33). A companion paper presents optical spectroscopy of SSS17a for an overlapping time period (32). Figure 1A shows the discovery image, composed of g-, i-, and H-band Magellan/Swope imaging from the night of August 17. For comparison, Fig. 1B shows a color image from observations obtained 4 days later. The change in color of SSS17a between these images demonstrates the rapid evolution of this transient.
-          </p>
-        </div>
-        <div class="col-xs-4">
-          <img src="https://d2ufo47lrtsv5s.cloudfront.net/content/sci/early/2017/10/16/science.aaq0049/F3.medium.gif" alt="">
-        </div>
-        <div class="col-xs-8">
-          <h4>Evolution of the ultraviolet to near-infrared spectral energy distribution (SED) of SSS17a.</h4>
-          <p>(A) The vertical axis, log Fλ,o, is the logarithm of the observed flux. Fluxes have been corrected for foreground Milky Way extinction (33). Detections are plotted as filled symbols and upper limits for the third epoch (1.0 days post-merger) as downward pointing arrows. Less-constraining upper limits at other epochs are not plotted for clarity. Between 0.5 and 8.5 days after the merger, the peak of the SED shifts from the near-UV (<4500 Å) to the near-IR (>1 μm), and fades by a factor >70. The SED is broadly consistent with a thermal distribution and the colored curves represent best-fitting blackbody models at each epoch. In 24 hours after the discovery of SSS17a, the observed color temperature falls from Embedded Image10,000 K to ~5000 K. The epoch and best-fitting blackbody temperature (rounded to 100 K) are listed. SEDs for each epoch are also plotted individually in fig. S2 and described in (33). (B) Filter transmission functions for the observed photometric bands.</p>
-        </div>
-      </div>
-    </div>
-    <hr>
     <!-- BUTTONS -->
     <div class="row style-guide">
       <div class="col-xs-12">
@@ -1112,215 +959,6 @@
         </div>
       </div>
 		</div>
-    <hr />
-    <div class="row style-guide">
-      <div class="col-xs-12">
-        <a class="anchor" id="timeline"></a>
-        <h2>Timeline</h2>
-        <p>With any project even this Style Guide, there is a timeline for the project. Having the ability to show the lineage of what went into making it is important. The option to link to external posts as well as show possible gaps in development and how milestones can be important into seeing what has been done and what there is left to do.</p>
-        <br>
-      </div>
-    </div>
-    <div class="row style-guide">
-      <div class="container-fluid palette-brandblue palette-inverse">
-        <br>
-        <div class="timeline">
-          <div class="timeline__item timeline__item--left">
-            <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/951593">
-              <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-08-13T15:16:30-04:00">August 13, 2017</time>
-              </p>
-              <h2 class="grid-post__title">A new project: Coaster/Opener</h2>
-              <div class="grid-post__content">
-
-                <p>We just launched our latest project on Kickstarter, the stainless steel Coaster/Opener- heavy duty, american made coasters with some familiar details. Clearly we have spent more time drinking...</p>
-                <span class="see-more">Read more</span>
-              </div>
-              <div class="grid-post__metadata">
-              </div>
-            </a>
-          </div>
-
-          <div class="timeline__divider">
-            <div class="timeline__divider--month-range">
-              <div class="timeline__divider_content">
-                <time class="js-adjust-time" data-format="MMM YYYY" datetime="2017-07-31T23:59:59-04:00">Jul 2017</time>
-              </div>
-            </div>
-            <div class="month-range--long timeline__divider--month-range-break"></div>
-            <div class="timeline__divider--month-range">
-              <div class="timeline__divider_content">
-                <time class="js-adjust-time" data-format="MMM YYYY" datetime="2017-02-28T23:59:59-05:00">Feb 2017</time>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline__item timeline__item--right">
-            <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/736552">
-              <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-02-02T18:01:10-05:00">February 2, 2017</time>
-              </p>
-              <h2 class="grid-post__title">Multiple Line Title For Milestone H2</h2>
-              <div class="grid-post__content">
-                <p>Many have asked when our Bandboard aluminum clipboard would be available for sale. Now that all of the Kickstarter Rewards have shipped, we have the remainder of our...</p>
-                <span class="see-more">Read more</span>
-              </div>
-              <div class="grid-post__metadata"></div>
-            </a>
-          </div>
-
-          <div class="timeline__item timeline__item--left">
-            <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/736552">
-              <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-02-02T18:01:10-05:00">February 1, 2017</time>
-              </p>
-              <h2 class="grid-post__title">Multiple Line Title For Milestone H2</h2>
-              <div class="grid-post__content">
-                <p>This is a longer descrtion of the milestone. It would detail news, changes and improvements as well as on the horizon features to keep a look out for in some of the future updates. This wouldn't need a link for <strong>READ MORE</strong> but would contain inline-links to read or see the changes. This is a test to see how hyphenation and longform content flow in the timeline. It is important to deatil the changes and allow for awareness of the state of things as this is more than likely the only time the user will see the notes for such changes...</p>
-                <!-- <span class="see-more">Read more</span> -->
-              </div>
-              <div class="grid-post__metadata"></div>
-            </a>
-          </div>
-
-          <div class="timeline__item timeline__item--right">
-            <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/736552">
-              <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-02-02T18:01:10-05:00">February 2, 2017</time>
-              </p>
-              <h2 class="grid-post__title">Multiple Line Title For Milestone H2</h2>
-              <div class="grid-post__content">
-                <p>Many have asked when our Bandboard aluminum clipboard would be available for sale. Now that all of the Kickstarter Rewards have shipped, we have the remainder of our...</p>
-                <span class="see-more">Read more</span>
-              </div>
-              <div class="grid-post__metadata"></div>
-            </a>
-          </div>
-
-          <div class="timeline__divider timeline__divider--month">
-            <div class="timeline__divider_content">
-              <time class="js-adjust-time" data-format="MMM YYYY" datetime="2017-01-31T23:59:59-05:00">Jan 2017</time>
-            </div>
-          </div>
-
-          <div class="timeline__item timeline__item--left">
-            <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/715864">
-              <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-01-09T17:29:20-05:00">January 9, 2017</time>
-              </p>
-              <h2 class="grid-post__title">OOPS</h2>
-              <div class="grid-post__metadata">
-                <!-- <div class="social">
-                  <span class="post-views">
-        						<button>
-        							<i class="fa fa-eye"></i> 100
-        							<span class="hint">Views</span>
-        						</button>
-        					</span>
-        					<span class="post-time-ago">
-        						<button>
-        							1d
-        							<span class="hint">Posted</span>
-        						</button>
-        					</span>
-        					<span class="comment-tools">
-        						<button>
-        							<i class="fa fa-comment-o"></i> 5
-        							<span class="hint">Comments</span>
-        					  </button>
-        					</span>
-        					<span class="love-tools">
-        						<button>
-        							<i class="fa fa-heart-o"></i>
-        							<span class="hint">Love</span>
-        					  </button>
-        					</span>
-        					<span class="share-tools">
-        						<button>
-        							<i class="fa fa-share"></i>
-        							<span class="hint">Share</span>
-        					  </button>
-        					</span>
-        				</div> -->
-              </div>
-            </a>
-          </div>
-
-          <div class="timeline__item timeline__item--right">
-            <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/710670">
-              <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-01-03T13:59:06-05:00">January 3, 2017</time>
-              </p>
-              <h2 class="grid-post__title">new TITANIUM A3 wallet</h2>
-              <div class="grid-post__content">
-                <p>Hoping you had a fine holiday season.</p>
-                <p>During the campaign this time last year many of you asked about the wallets in titanium. We decided to do a...</p>
-                <span class="see-more">Read more</span>
-              </div>
-              <div class="grid-post__metadata">
-                <!-- <div class="social">
-                  <span class="post-views">
-                    <button>
-                      <i class="fa fa-eye"></i> 100
-                      <span class="hint">Views</span>
-                    </a>
-                  </span>
-                  <span class="post-time-ago">
-                    <button>
-                      1d
-                      <span class="hint">Posted</span>
-                    </button>
-                  </span>
-                  <span class="comment-tools">
-                    <button>
-                      <i class="fa fa-comment-o"></i> 5
-                      <span class="hint">Comments</span>
-                    </button>
-                  </span>
-                  <span class="love-tools">
-                    <button>
-                      <i class="fa fa-heart-o"></i>
-                      <span class="hint">Love</span>
-                    </button>
-                  </span>
-                  <span class="share-tools">
-                    <button>
-                      <i class="fa fa-share"></i>
-                      <span class="hint">Share</span>
-                    </button>
-                  </span>
-                </div> -->
-              </div>
-            </a>
-          </div>
-
-          <div class="timeline__divider">
-            <div class="timeline__divider--month-range">
-              <div class="timeline__divider_content">
-                <time class="js-adjust-time" data-format="MMM YYYY" datetime="2016-12-31T23:59:59-05:00">Dec 2016</time>
-              </div>
-            </div>
-            <div class="month-range--short timeline__divider--month-range-break"></div>
-            <div class="timeline__divider--month-range">
-              <div class="timeline__divider_content">
-                <time class="js-adjust-time" data-format="MMM YYYY" datetime="2016-09-30T23:59:59-04:00">Sep 2016</time>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline__divider timeline__divider--launched timeline__divider--launched--journalism">
-            <div class="timeline__divider_content">
-              <div class="f5 bold mb2">
-                <time datetime="2017-10-22T17:27:47-04:00" data-format="LL" class="js-adjust-time">October 22, 2017</time>
-              </div>
-              <h2>Project launched</h2>
-            </div>
-          </div>
-        </div>
-        <!--/TIMELINE -->
-      </div>
-      <!--/container-fluid -->
-    </div>
     <hr>
     <div class="row style-guide">
       <div class="col-xs-12">
@@ -1360,7 +998,7 @@
           <ul class="pagination">
             <li class="page-item">
               <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&larr;</span>
+                <span aria-hidden="true">&laquo;</span>
                 <span class="sr-only">Previous</span>
               </a>
             </li>
@@ -1377,14 +1015,14 @@
             </li>
           </ul>
         </nav>
-        <!-- <br><hr><br>
+        <br><hr><br>
         <h3>Popover</h3><a class="anchor" id="popover"></a>
         <button type="button" class="see-more" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
-        <br><hr><br> -->
+        <br><hr><br>
         <h3>Progress Bar</h3><a class="anchor" id="progress-bar"></a>
         <p>Something is missing with styles for this? Not sure what though.</p>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><span style="color: #1a3acc; padding:0 1.5em;">0%</span></div>
+          <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
         </div>
         <div class="progress">
           <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
@@ -1401,66 +1039,21 @@
         <div class="progress">
           <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
         </div>
-        <!-- <br><hr><br>
+        <br><hr><br>
         <h3>Improper CTA Usage:</h3><a class="anchor" id="improper-cta"></a>
         <br>
-        <em>*There are limited-use cases where aligning to the left works, although it may seem off balance if it's seen at the same time as other designs.</em> -->
+        <em>*There are limited-use cases where aligning to the left works, although it may seem off balance if it's seen at the same time as other designs.</em>
       </div>
     </div><!--/BUTTONS -->
-    <!-- <br><hr><br> -->
+    <br><hr><br>
     <div class="row style-guide">
-      <div id="forms-inputs" class="col-xs-12">
-        <h2>Forms &amp; Inputs</h2>
+      <div id="input" class="col-xs-12">
+        <h2>Inputs</h2>
         <a class="anchor" id="input-intro"></a>
         <p>Inputs for forms and other fileds used for user interaction</p>
+        <hr>
+
       </div>
-    </div>
-    <div class="row style-guide">
-      <div class="container-fluid palette-brandblue palette-inverse">
-        <div id="form-page" class="page">
-          <div class="page__demo">
-            <div class="main-container page__container">
-              <div class="page__section">
-                <label class="field field_type1">
-                  <input class="field__input" placeholder="e.g. Joel Dombek">
-                  <span class="field__label-wrap">
-                    <span class="field__label">Enter your name</span>
-                  </span>
-                </label>
-              </div>
-              <div class="page__section">
-                <label class="field field_type2">
-                  <input class="field__input" placeholder="e.g. UI developer">
-                  <span class="field__label-wrap">
-                    <span class="field__label">Enter your post</span>
-                  </span>
-                </label>
-              </div>
-              <div class="page__section">
-                <label class="field field_type3">
-                  <input class="field__input" placeholder="e.g. me@joeldombek.com">
-                  <span class="field__label-wrap">
-                    <span class="field__label">Enter your e-mail</span>
-                  </span>
-                </label>
-              </div>
-              <div class="page__section">
-                <label class="field field_type4">
-                  <input class="field__input" placeholder="e.g. Joel Dombek">
-                  <span class="field__label-wrap">
-                    <span class="field__label">Enter your name</span>
-                  </span>
-                </label>
-              </div>
-              <div class="page__section">
-                <button type="submit" class="see-more">Submit</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row style-guide">
       <div id="input" class="col-xs-6">
         <h4 id="input-form-1">Form Elements</h4>
         <form>
@@ -1634,6 +1227,57 @@
 
       </div>
     </div>
+    <div class="row style-guide">
+      <div class="container-fluid palette-brandblue palette-inverse">
+        <div id="form-page" class="page">
+          <div class="page__demo">
+            <div class="main-container page__container">
+              <div class="page__section">
+                <label class="field field_type1">
+                  <input class="field__input" placeholder="e.g. Joel Dombek">
+                  <span class="field__label-wrap">
+                    <span class="field__label">Enter your name</span>
+                  </span>
+                </label>
+              </div>
+              <div class="page__section">
+                <label class="field field_type2">
+                  <input class="field__input" placeholder="e.g. UI developer">
+                  <span class="field__label-wrap">
+                    <span class="field__label">Enter your post</span>
+                  </span>
+                </label>
+              </div>
+              <div class="page__section">
+                <label class="field field_type3">
+                  <input class="field__input" placeholder="e.g. me@joeldombek.com">
+                  <span class="field__label-wrap">
+                    <span class="field__label">Enter your e-mail</span>
+                  </span>
+                </label>
+              </div>
+              <div class="page__section">
+                <label class="field field_type4">
+                  <input class="field__input" placeholder="e.g. Joel Dombek">
+                  <span class="field__label-wrap">
+                    <span class="field__label">Enter your name</span>
+                  </span>
+                </label>
+              </div>
+              <div class="page__section">
+                <button type="submit" class="see-more">Submit</button>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="main-container footer__container">
+        <!--       <a href="http://stas-melnikov.ru/donate/" rel="noopener noreferrer" target="_blank">Liked? Please, look the page</a>
+              <a href="#" class="melnik909" rel="noopener noreferrer" target="_blank">Developed by Stas Melnikov</a> -->
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
     <hr>
     <div class="row style-guide">
       <div id="lists" class="col-xs-12">
@@ -1712,8 +1356,290 @@
         <hr>
       </div>
     </div>
+    <div class="row style-guide">
+      <div class="col-xs-12"><h5 id="output-gif">.GIF</h5></div>
+      <div class="col-xs-12 col-md-6">
+        <p>.GIFs are used predominantly for animation, however they can be used for sections of completly flat color, and also support transparency. They can be one of the smallest formats to export, but may also be one of the largest depending on animation and color-depth. Making sure you have the proper color and file size to achieve the design in the output settings is crucial.</p>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <br>
+      </div>
+    </div>
+    <hr>
+    <div class="row style-guide">
+      <div class="col-xs-12"><h5 id="output-png">.PNG</h5></div>
+      <div class="col-xs-12 col-md-6">
+        <p>.PNGs are similar to .GIFs in that they have relativly small file sizes, are used for flat-color, support transparency, and are losseless; however, their transparency is preferable as they can have more color-depth and not suffer from the pixel interpilation, artifacts, and pixel grids of .GIFs.</p>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <br>
+      </div>
+    </div>
+    <hr>
+    <div class="row style-guide">
+      <div class="col-xs-12"><h5 id="output-jpg">.JPG</h5></div>
+      <div class="col-xs-12 col-md-6">
+        <p>.JPGs offer the widest usage for designs and photos alike. Their small file size is susceptiple to "lossy" compression and every save reduces the qualtiy by adding artifacts.</p>
+        <p>The photographic uses .JPGs have for photography can't be understated. 80% of designs have flat-color and full-color elements so .JPGs are usually the most well-rounded option to be exported. Keeping in mind that lossy compression can give some undesirable results so it is key to adjust the output settings. <strong>When possible, go with a .JPG.</strong></p>
+        <br>
+        <p>Examples of the artifacts at various quality settings.</p>
 
+        <br>
+      </div>
+      <div class="col-xs-12 col-md-6">
+      </div>
+    </div>
+    <!-- OUTPUT -->
+    <br><hr><br>
+    <div class="row style-guide">
+      <div id="grid" class="col-xs-12">
+        <h2>Grid</h2>
+        <p>DSG email desgins are built on a <strong>5-Column grid system</strong> with the outermost columns reserved for breathing room and aligning to. There are 4 classes added to the <kbd>&lt;img&gt;</kbd> tags:</p>
+        <ul>
+          <li>resize320 = full-width</li>
+          <li>resize160 = half-width</li>
+          <li>resize106 = 3rd-width</li>
+          <li>resize107 = 3rd-width</li>
+        </ul>
+        <em>* 2x resize107 + 1x resize106 = 320px. The resize106 is needed because of how pixels are divided when scaled down and that <strong>320px</strong> cannot be divided evenly by <strong>3</strong></em>
+        <hr>
+      </div>
+      <div class="col-xs-12">
+        <!-- SOURCE ARTICLES =
+          https://litmus.com/blog/defining-and-understanding-mobile-email-approaches
+          https://litmus.com/blog/understanding-responsive-and-hybrid-email-design
+
+          https://litmus.com/scope/ghn3aboznxvu
+          https://litmus.com/scope/ls3x0mi0kvxl
+          https://litmus.com/scope/vo00fubxe43n
+        -->
+        <h4 id="grid-scalable">Scalable Design</h4>
+        <p>Scalable design can be defined as any design that works well across both desktop and mobile without using code to adjust table or image sizes, or display or hide content between the two platforms. While we’re using the term “scalable” to describe this approach, you may have also heard these concepts referred to as mobile aware, mobile friendly, device agnostic or <strong>mobile first</strong>.</p>
+        <p>Scalable designs are typically the easiest to implement. Since scalable emails don’t adjust the widths of tables or images between devices, and don’t use CSS media queries (we’ll get to those later) to swap content or change the size of text, it’s important to use a number of techniques to keep the content of scalable emails enjoyable not only on desktop, but when viewed on mobile devices.</p>
+        <ul>
+          <li>A simple (usually single-column) layout that scales down nicely.</li>
+          <li>Large text that is readable on screens of all sizes.</li>
+          <li>Large, touch-friendly calls-to-action.</li>
+        </ul>
+        <hr>
+        <h4 id="grid-fluid">Fluid Design</h4>
+        <p>In between scalable and responsive is what we term “fluid” design. Fluid emails use percentage-based sizing to make the width of tables and images adapt to the screen size on which they are viewed, similar to what is known as “liquid” layouts on the web. Fluid emails are similar to scalable ones, in that they don’t purposefully alter the layout or content of an email, but they have the added benefit of having content “flow” to fill space on the screen. For this reason, fluid designs typically work best for text-heavy layouts since there’s less control over how copy and images relate to each other.</p>
+        <pre>
+&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+  ...Content...
+&lt;/table&gt;</pre>
+        <hr>
+        <h4 id="grid-responsive">Responsive Design</h4>
+        <p>Responsive email takes everything from scalable and fluid emails and builds on it by adding more control via CSS media queries. While media queries are also used to help contain fluid layouts, it’s a simple implementation of media queries—nothing too advanced was happening. Responsive email, on the other hand, uses media queries to change the layout of emails, adjust the size of text, images, and buttons, and, in some cases, hide or even swap content between desktop and mobile devices.</p>
+        <pre>
+@media screen and (max-width: 320px) {
+  img[class="hide"]{
+    display:none !important;
+  }
+}</pre>
+<hr>
+        <h4 id="grid-wrapup">Which is best?</h4>
+        <p>Once you understand the differences between scalable, fluid, and responsive email design, you can determine which strategy works best for your team. If you lack the know-how or resources to implement a responsive campaign, both scalable and fluid strategies are a great way to keep your emails friendly for mobile subscribers. However, if you have the time to go fully responsive, the added control can be exactly the thing needed to set your campaigns apart from the competition.</p>
+        <div class="callout">
+          <h6>Scalable Design</h6>
+          <strong>Perfect for:</strong>
+          <ul>
+            <li>Testing the mobile waters.</li>
+            <li>Reliable rendering across clients and devices.</li>
+            <li>Teams with limited resources.</li>
+          </ul>
+          <h6>Fluid Design</h6>
+          <strong>Perfect for:</strong>
+          <ul>
+            <li>Simple layouts.</li>
+            <li>Emails with mostly text that can flow.</li>
+            <li>Teams with limited resources.</li>
+          </ul>
+          <h6>Responsive Design <span style="color: #f39518;font-size:.9em;background: #ffffff;padding: 3px 10px;border-radius: 5px;">This is what we use!</span></h6>
+          <strong>Perfect for:</strong>
+          <ul>
+            <li>Large mobile audiences</li>
+            <li>The most control over layout.</li>
+            <li>Teams with knowledge of media queries.</li>
+          </ul>
+        </div>
+        <br>
+      </div>
+    </div>
+    <hr>
+    <div class="row style-guide">
+      <div id="code" class="col-xs-12">
+        <h2 id="code-code-counts">Code</h2>
+        <p>The design of the email is only as good as the code for users. If the code being used isn't tested or formatted properly it doesn't matter what the design looks like. Having clean code is important for a number of reasons; from being easy to read for the next designer, to any would-be competitor, or even the most finicky of mail clients. <strong>Code counts!</strong></p>
+        <h3 id="code-export">Exporting Code</h3>
+        <p>When Photoshop exports your HTML code, it will add a <kbd>colspan=""</kbd> attribute to some of your table cell tags <kbd>&lt;td&gt;</kbd> if you have any half-width slices in your email. The biggest reason we don’t want to have any <kbd>colspan=""</kbd> attributes in the code is because our emails will break in Outlook if we have them in our code. To fix this, we need to place any slices that are not full-width in what’s called a nested table. Nested tables allow us to keep our emails from breaking, plus give us more control over how the email adapts to other screen sizes.</p>
+        <h3>Photoshop's Exported Code</h3>
+        <pre>
+&lt;tr&gt;
+  <span class="red">&lt;td colspan=&quot;2&quot;&gt;</span>
+    &lt;img src=&quot;img/slice01.jpg&quot; width=&quot;690&quot; height=&quot;378&quot; alt=&quot;&quot; /&gt;
+  <span class="red">&lt;/td&gt;</span>
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;
+    &lt;img src=&quot;img/slice02.gif&quot; width=&quot;345&quot; height=&quot;314&quot; alt=&quot;&quot; /&gt;
+  &lt;/td&gt;
+  &lt;td&gt;
+    &lt;img src=&quot;img/slice03.gif&quot; width=&quot;345&quot; height=&quot;314&quot; alt=&quot;&quot; /&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;</pre>
+        <h3>Nested Tables</h3>
+        <p>Properly nesting tables by removing the <kbd>colspan="2"</kbd> on table columns <kbd>&lt;td&gt;</kbd> and "nesting" or having another table inside of another allows for more responsive code and wider support.</p>
+        <pre>
+&lt;tr&gt;
+  &lt;td&gt;
+    &lt;img src=&quot;img/slice01.jpg&quot; width=&quot;690&quot; height=&quot;378&quot; alt=&quot;&quot; /&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;
+    <span class="green">&lt;table class=&quot;resize320&quot; width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;</span>
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;a href=&quot;LINK&quot; target=&quot;_BLANK&quot;&gt;
+            &lt;img src=&quot;img/slice02.gif&quot; width=&quot;345&quot; height=&quot;314&quot; alt=&quot;&quot; /&gt;
+          &lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;a href=&quot;LINK&quot; target=&quot;_BLANK&quot;&gt;
+            &lt;img src=&quot;img/slice03.gif&quot; width=&quot;345&quot; height=&quot;314&quot; alt=&quot;&quot; /&gt;
+          &lt;/a&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    <span class="green">&lt;/table&gt;</span>
+  &lt;/td&gt;
+&lt;/tr&gt;</pre>
+        <hr>
+        <h3 id="code-colsplit">Col-Split</h3>
+        <p>Below is an example of a 2-up grid that at the mobile breakpoint it will split the columns and stack them on top of one another. This is more effective for showing smaller images on small screens because it means they aren't sharing space with another small image.</p>
+        <pre>
+&lt;!-- COL-SPLIT--&gt;
+&lt;table align=&quot;center&quot; class=&quot;resize320&quot; width=&quot;690&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+  &lt;tr&gt;&lt;!--ROW--&gt;
+    <span class="yellow">&lt;td class=&quot;colsplit&quot;</span> align=&quot;center&quot; valign=&quot;top&quot;&gt;
+      &lt;a href=&quot;LINK&quot; target=&quot;_blank&quot;&gt;
+        &lt;img class=&quot;resize320&quot; style=&quot;display:block;border:0;&quot; src=&quot;http://img.ed4.net/dcsg/images/_temp/col-split.png&quot; width=&quot;345&quot; height=&quot;345&quot; alt=&quot;_ALT_TEXT_ | SHOP NOW&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/td&gt;
+    <span class="yellow">&lt;td class=&quot;colsplit&quot;</span> align=&quot;center&quot; valign=&quot;top&quot;&gt;
+      &lt;a href=&quot;LINK&quot; target=&quot;_blank&quot;&gt;
+        &lt;img class=&quot;resize320&quot; style=&quot;display:block;border:0;&quot; src=&quot;http://img.ed4.net/dcsg/images/_temp/col-split.png&quot; width=&quot;345&quot; height=&quot;345&quot; alt=&quot;_ALT_TEXT_ | SHOP NOW&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;&lt;!--/ROW--&gt;
+  &lt;tr&gt;&lt;!--ROW--&gt;
+    <span class="yellow">&lt;td class=&quot;colsplit&quot;</span> align=&quot;center&quot; valign=&quot;top&quot;&gt;
+      &lt;a href=&quot;LINK&quot; target=&quot;_blank&quot;&gt;
+        &lt;img class=&quot;resize320&quot; style=&quot;display:block;border:0;&quot; src=&quot;http://img.ed4.net/dcsg/images/_temp/col-split.png&quot; width=&quot;345&quot; height=&quot;345&quot; alt=&quot;_ALT_TEXT_ | SHOP NOW&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/td&gt;
+    <span class="yellow">&lt;td class=&quot;colsplit&quot;</span> align=&quot;center&quot; valign=&quot;top&quot;&gt;
+      &lt;a href=&quot;LINK&quot; target=&quot;_blank&quot;&gt;
+        &lt;img class=&quot;resize320&quot; style=&quot;display:block;border:0;&quot; src=&quot;http://img.ed4.net/dcsg/images/_temp/col-split.png&quot; width=&quot;345&quot; height=&quot;345&quot; alt=&quot;_ALT_TEXT_ | SHOP NOW&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;&lt;!--/ROW--&gt;
+  &lt;tr&gt;&lt;!--ROW--&gt;
+    <span class="yellow">&lt;td class=&quot;colsplit&quot;</span> align=&quot;center&quot; valign=&quot;top&quot;&gt;
+      &lt;a href=&quot;LINK&quot; target=&quot;_blank&quot;&gt;
+        &lt;img class=&quot;resize320&quot; style=&quot;display:block;border:0;&quot; src=&quot;http://img.ed4.net/dcsg/images/_temp/col-split.png&quot; width=&quot;345&quot; height=&quot;345&quot; alt=&quot;_ALT_TEXT_ | SHOP NOW&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/td&gt;
+    <span class="yellow">&lt;td class=&quot;colsplit&quot;</span> align=&quot;center&quot; valign=&quot;top&quot;&gt;
+      &lt;a href=&quot;LINK&quot; target=&quot;_blank&quot;&gt;
+        &lt;img class=&quot;resize320&quot; style=&quot;display:block;border:0;&quot; src=&quot;http://img.ed4.net/dcsg/images/_temp/col-split.png&quot; width=&quot;345&quot; height=&quot;345&quot; alt=&quot;_ALT_TEXT_ | SHOP NOW&quot;&gt;
+      &lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;&lt;!--/ROW--&gt;
+&lt;/table&gt;
+&lt;!-- COL-SPLIT--&gt;</pre>
+        <hr>
+        <h3 id="code-spacer">Spacer</h3>
+        <p>Spacer snippets are used if the design needs spots broken up to differentiate messaging and allow other elements to be added beneath. Adding a <kbd>spacer</kbd> after elements will add a <kbd>8px</kbd> buffer. This can be easily adjusted independently from the design in the code by simply adjusting the <kbd>height="8"</kbd>.</p>
+        <pre>
+&lt;!--SPACER--&gt;
+&lt;table align=&quot;center&quot; class=&quot;resize320&quot; width=&quot;690&quot; border=&quot;0&quot; bgcolor=&quot;#FFFFFF&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; style=&quot;font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;&quot;&gt;
+      &lt;img class=&quot;spacer&quot; src=&quot;http://img.ed4.net/spacer50.gif&quot; width=&quot;690&quot; <span class="yellow">height=&quot;8&quot;</span> alt=&quot;&quot; border=&quot;0&quot; style=&quot;display:block;border:0;&quot;/&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;!--/SPACER--&gt;</pre>
+        <hr>
+        <h3 id="code-alttext">ALT Text</h3>
+        <p>Alt Text is for improved accessability and for when images aren't being shown in the email app or client. This should include all pertinent information about what is being shown both in images and text.</p>
+        <p>Adding text in the <kbd>"alt"</kbd> attribute such as:<br><kbd>alt="PROMO MESSAGE | PRODUCT NAME | SALE $00.00 REG. 00.00 | SHOP NOW"/></kbd></p>
+        <p>All-caps is used in favor of mixed case for two reasons:</p>
+        <ol>
+          <li>It eliminates the need to worry about strange brand names, product deliniations or model specifics.</li>
+          <li>It keeps everything at the same weight in the heirarchy.</li>
+        </ol>
+      </div>
+    </div>
+    <hr>
   </div><!--/CONTAINER -->
+  <div class="container"
+    <div class="col-xs-12">
+      <h2 id="build">Build</h2>
+      <p>This is the current build code for all DSG emails. To download the design or development files please navigate to the Download dialog to choose.</p>
+    </div>
+
+
+  <style type="text/css">div.preheader {display:none!important;} .ii a[href]{color:#999999!important;}</style>
+  <!--WRAPPER-->
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="resize320">
+    <tr>
+      <td>
+
+        <!--[if (gte mso 9)|(IE)]><table width="690" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+        <!--SUBJECT-->
+        <a class="anchor" id="build-preheader"></a>
+        <table cellpadding="0" cellspacing="0" align="center" border="0" width="100%" bgcolor="#FFFFFF" style="max-width:690px;">
+          <tr class="hide">
+            <td align="left" style="color:#cccccc;font-size:11px;line-height:14px;font-family:Arial, sans-serif;padding:5px 12px 5px 12px;-webkit-text-size-adjust:none;"><b>
+
+
+
+              THIS SUPER SUBJECT IS FPO
+
+
+            </b></td>
+            <div class="preheader" style="font-size:1px;display:none;">Official Sporting Goods Retail Sponsor of Team USA</div>
+            <td align="right" style="color:#fff;font-size:11px;line-height:14px;font-family:Arial, sans-serif;padding:5px 12px 5px 12px;">
+              <a href="LINK" target="_blank" title="View this email in your default browser where it will look even better."><span style="text-decoration:underline;color:#cccccc;font-size:11px !important;"><u>Web Version</u></span></a>
+            </td>
+          </tr>
+        </table>
+        <!--/SUBJECT-->
+        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+        <!--[if (gte mso 9)|(IE)]><table width="690" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+        <!--DSG-HEADER-->
+        <a class="anchor" id="build-header"></a>
+        <div class="overlay">
+          <div class="inside">
+            <div>
+              <span>Get the most recent Navigation section design files.</span>
+              <a href="http://img.ed4.net/dcsg/images/_temp/style-guide/download/_wf_emailtemplate.psd" class="btn btn-outline-success float-md-right col-xs-12">Download</a>
+            </div>
+          </div>
+          <div style="width:100%;height200px;background:#CCAB1A;">
+            HERE
+          </div>
+
+
+        </div><!-- OVERLAY -->
+
+  </tr></td></table>
+  <!--/WRAPPER-->
+  </div>
+  <br>
 
   <!-- CONTAINER -->
   <!-- SCRIPTS -->

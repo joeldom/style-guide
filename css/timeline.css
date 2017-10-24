@@ -1,0 +1,400 @@
+.grid-post{display: block;}
+a.grid-post.link{
+  border: none;
+  border-bottom: none;
+}
+.timeline,.grid-post__content{
+  font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.grid-post__content p{
+  margin: 1em 0;
+  hyphens: auto;
+}
+.timeline__item:before {
+    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.335, 1);
+    -moz-transition: all 600ms cubic-bezier(0.175, 0.885, 0.335, 1);
+    -ms-transition: all 600ms cubic-bezier(0.175, 0.885, 0.335, 1);
+    -o-transition: all 600ms cubic-bezier(0.175, 0.885, 0.335, 1);
+    transition: all 600ms cubic-bezier(0.175, 0.885, 0.335, 1);
+}
+
+.transition-all {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.timeline {
+    position: relative;
+    text-align: center;
+}
+
+.timeline:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #fff;
+    left: 50%;
+    top: 0px;
+}
+
+.timeline__item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline__item .link {
+    z-index: 2;
+    color: #0f2105;
+}
+
+@media screen and (max-width: 640px) {
+    .timeline__item {
+        width: 90%;
+        left: 5%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 1em;
+        padding-right: 1em;
+        z-index: 1;
+        margin-top: 40px;
+    }
+    .palette-brandblue.palette-inverse .timeline__item{
+      background-color: #1a3acc;
+      border: 3px solid #fff;
+    }
+    .palette-brandblue.palette-inverse.warm .timeline__item{
+      background-color: #142a2d;
+      border: 3px solid #fff;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .timeline__item:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 60px;
+        background-color: #fff;
+        top: 10px;
+    }
+    .timeline__item:hover:before {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: -5px;
+    }
+    .timeline__item:before {
+        content: "";
+        position: absolute;
+        background-color: #1a3acc;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        top: -5px;
+        z-index: 9;
+        border: 3px solid #fff;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .timeline__item--right {
+        left: 50%;
+        text-align: left;
+    }
+    .timeline__item--right .link {
+        padding-left: 110px;
+        position: relative;
+        left: -30px;
+    }
+    .timeline__item--right:after {
+        left: 0px;
+    }
+    .timeline__item--right:before {
+        left: -15px;
+    }
+    .timeline__item--right:hover:before {
+        margin-left: -5px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .timeline__item--left {
+        text-align: right;
+    }
+    .timeline__item--left .link {
+        padding-right: 110px;
+        position: relative;
+        right: -30px;
+    }
+    .timeline__item--left:before {
+        right: -15px;
+    }
+    .timeline__item--left:after {
+        right: 0px;
+    }
+    .timeline__item--left:hover:before {
+        margin-right: -5px;
+    }
+}
+
+.timeline__divider {
+    position: relative;
+    z-index: 1;
+    margin: 40px auto 80px;
+    display: table;
+}
+
+.timeline__divider_content {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #828587;
+    padding: 10px 15px;
+}
+
+.timeline__divider--month .timeline__divider_content,
+.timeline__divider--month-range .timeline__divider_content {
+    border: 2px solid #fff;
+}
+.palette-brandblue.palette-inverse .timeline__divider--month .timeline__divider_content,
+.palette-brandblue.palette-inverse .timeline__divider--month-range .timeline__divider_content{
+  background-color: #1A3ACC;
+  color: #fff;
+}
+.palette-brandblue.palette-inverse.warm .timeline__divider--month .timeline__divider_content,
+.palette-brandblue.palette-inverse.warm .timeline__divider--month-range .timeline__divider_content{
+  background-color: #142a2d;
+  color: #e4dfd9;
+}
+
+.timeline__divider--month-range-break {
+    width: 1px;
+    margin: 0px auto;
+    position: relative;
+    left: 1px;
+    z-index: 1;
+}
+.palette-brandblue.palette-inverse .timeline__divider--month-range-break{
+  border-left: 2px dashed #1A3ACC;
+}
+.palette-brandblue.palette-inverse.warm .timeline__divider--month-range-break{
+  border-left: 2px dashed #142a2d;
+}
+
+.timeline__divider--month-range-break.month-range--long {
+    height: 120px;
+}
+
+.timeline__divider--month-range-break.month-range--short {
+    height: 55px;
+}
+
+.timeline__divider--successful {
+    border: 10px solid #ffffff;
+}
+
+.timeline__divider--successful .timeline__divider_content {
+    background-color: #2bde73;
+    padding: 30px 50px;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 640px) {
+    .timeline__divider--successful .timeline__divider_content {
+        padding: 20px 30px;
+    }
+}
+
+.timeline__divider--cancellation .timeline__divider_content {
+    background-color: #ffffff;
+    border: 1px solid #d9d9de;
+}
+
+.timeline__divider--potd {
+    border: 10px solid #ffffff;
+}
+
+.timeline__divider--potd .timeline__divider_content {
+    background-color: #def7e0;
+    border-radius: 6px;
+    padding: 20px 40px;
+    color: #0f2105;
+}
+
+.timeline__divider--launched {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position: center center;
+    background-size: 110%;
+    border-radius: 0px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    border: none;
+    width: 90%;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+    .timeline__divider--launched {
+        height: 200px;
+        padding: 50px 100px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .timeline__divider--launched {
+        padding: 20px 30px;
+        width: 90%;
+    }
+}
+
+.timeline__divider--launched--art {
+    background-color: #ffbdab;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-art-fece9445e8535944357d54f791e3b9eb0a3fef74d6b1749ad37746244445f06c.svg);
+}
+
+.timeline__divider--launched--art .timeline__divider_content {
+    color: #ffffff;
+}
+
+.timeline__divider--launched--comics {
+    background-color: #fffb78;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-comics-e8845e6498bc34b814ea6995ee17cafcd8d1c83f1f5c5f1880ccda6e83b884a7.svg);
+}
+
+.timeline__divider--launched--comics .timeline__divider_content {
+    color: #0f2105;
+}
+
+.timeline__divider--launched--crafts {
+    background-color: #ff81ac;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-crafts-55714c85085469a42ce3952b32260f8017b277645572f13f32da16a973bc412b.svg);
+}
+
+.timeline__divider--launched--crafts .timeline__divider_content {
+    color: #ffffff;
+}
+
+.timeline__divider--launched--dance {
+    background-color: #a695f9;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-dance-9c99a972957894ad54ae667252f1818cf5149304d76a4501975dbba50b76f7a9.svg);
+}
+
+.timeline__divider--launched--dance .timeline__divider_content {
+    color: #ffffff;
+}
+
+.timeline__divider--launched--design {
+    background-color: #2752ff;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-design-73d01673488f0de3debcfb38d8c8daaa60c906bc27199350e2a9bfc55aca9968.svg);
+}
+
+.timeline__divider--launched--design .timeline__divider_content {
+    background-color: #2752ff;
+    color: #ffffff;
+}
+
+.timeline__divider--launched--fashion {
+    background-color: #ff9fd6;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-fashion-01cc74b4bf47da71947a819e7c817d6105fd06d73180ca5b9e70d87a0bff313d.svg);
+}
+
+.timeline__divider--launched--fashion .timeline__divider_content {
+    color: #ffffff;
+}
+
+.timeline__divider--launched--film {
+    background-color: #ff596e;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-film-622913bccdf387921fb117b2a7e68edc4eb9a549b0bb3374dc58721d0a33ce66.svg);
+}
+
+.timeline__divider--launched--film .timeline__divider_content {
+    color: #ffffff;
+}
+
+.timeline__divider--launched--food {
+    background-color: #ff3642;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-food-3ec5459cfbe165172e5c75ca0565ba1b733f877f9b9f0003641de683846079a6.svg);
+}
+
+.timeline__divider--launched--food .timeline__divider_content {
+    color: #ffffff;
+}
+
+.timeline__divider--launched--games {
+    background-color: #00c9ab;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-games-c16593e7eff90fd033a5079e0c48a9e1437c6accbb33a52a409cbd7bd0fb6db3.svg);
+}
+
+.timeline__divider--launched--games .timeline__divider_content {
+    color: #ffffff;
+}
+
+.timeline__divider--launched--journalism {
+    background-color: #FFF;
+    /*AB1ACC*/
+    /*background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-journalism-dd37596dcc2b5f958d67b524ee6ade02959e042140f2a10d3b34d33967b1f2f4.svg);*/
+}
+
+.timeline__divider--launched--journalism .timeline__divider_content, .timeline__divider--launched--journalism .timeline__divider_content h2 {
+    color:#1a3acc !important;
+}
+
+.timeline__divider--launched--music {
+    background-color: #a5ffd3;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-music-5670cdf3fa5bb265a89513250b6696a6e6f0a17c0bafe72da522e8e4e316ac99.svg);
+}
+
+.timeline__divider--launched--music .timeline__divider_content {
+    color: #0f2105;
+}
+
+.timeline__divider--launched--photography {
+    background-color: #00e3e5;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-photography-d47ebed9c9aabdcae9ed4873edb11a99443ddaddf2f11c1ff061ac0537a920f7.svg);
+}
+
+.timeline__divider--launched--photography .timeline__divider_content {
+    color: #ffffff;
+}
+
+.timeline__divider--launched--publishing {
+    background-color: #e2dcd0;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-publishing-a6a9e856abc979fb1bd5559fc14420c66f773b413b77f0e27513f9a12a848787.svg);
+}
+
+.timeline__divider--launched--publishing .timeline__divider_content {
+    color: #2752ff;
+}
+
+.timeline__divider--launched--technology {
+    background-color: #6396fc;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-technology-91b9c7392350d31b492bf1814f4c9cc495acbd6038be9800cecb38d4012865ed.svg);
+}
+
+.timeline__divider--launched--technology .timeline__divider_content {
+    color: #ffffff;
+}
+
+.timeline__divider--launched--theater {
+    background-color: #ff7d5f;
+    background-image: url(https://static.kickstarter.com/assets/projects/updates/launch-theater-24e8a6fd1cfc58a7086290db13e4ecdd91083a002320631e2eec44e3d858667d.svg);
+}
+
+.timeline__divider--launched--theater .timeline__divider_content {
+    color: #ffffff;
+}
