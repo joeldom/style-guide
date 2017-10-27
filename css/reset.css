@@ -32,6 +32,7 @@
         float: left;
     }
 }
+.color-swatch .col-sm-3.col-xs-12{padding:0;}
 .color-swatch .col-md-3.col-xs-12{padding:0;}
 .color-swatch .col-md-4.col-xs-12{padding:0;}
 .color-swatch .col-sm-4.col-xs-12{padding:0;}
@@ -64,6 +65,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
 .see-more:hover{
   background-color: #1a3acc;
   color: white;
+}
+input:focus, button:focus, *:focus, input[type="file"]:focus{
+  outline: none !important;
 }
 #quotes{
   font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -179,7 +183,29 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
   .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover{
     color:white;
     background-color: #1a3acc;
+    border: 3px solid #1a3acc;
   }
+  .palette-inverse
+  .pagination>li>a:focus,
+  .palette-inverse
+  .pagination>li>a:hover,
+  .palette-inverse
+  .pagination>li>span:focus,
+  .palette-inverse
+  .pagination>li>span:hover{
+    color: #1a3acc;
+    background-color: #FFF;
+    border: 3px solid #FFF;
+  }
+  .palette-inverse .pagination>.active>a,
+  .palette-inverse .pagination>.active>a:focus, .palette-inverse .pagination>.active>a:hover,
+  .palette-inverse .pagination>.active>span, .palette-inverse .pagination>.active>span:focus,
+  .palette-inverse .pagination>.active>span:hover{
+    border: 3px solid #FFF;
+    background: #FFF;
+    color: #1a3acc;
+  }
+
   .progress{
     border-radius: 0px;
     height: 50px;
