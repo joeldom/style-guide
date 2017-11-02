@@ -610,6 +610,9 @@ a span.hint, span a span.hint, .read-time a span.hint, .hint{
   -webkit-transform: translateX(calc(-50% + 20px));
   -ms-transform: translateX(calc(-50% + 20px));
 }
+.tooltip{
+  border-radius: 0;
+}
 .color-picker button, button.theme-choice{
   display: inline-block;
   float: left;
