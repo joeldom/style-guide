@@ -1144,42 +1144,38 @@ a:hover, a:focus{
 
   100% {
     opacity: 1; } }
-.refluxblu-white, .refluxblu-white h1, .refluxblu-white table, .refluxblu-white tr, .refluxblu-white td{
+.refluxblu-white, .refluxblu-white *{
   background: #1a3acc;
   background-color: #1a3acc;
   color: white;
 }
-.refluxblu-white hr, .refluxblu-white td{
-  border-top: 1px solid white !important;
-}
-.cuulblu-refluxblu, .cuulblu-refluxblu h1, .cuulblu-refluxblu table, .cuulblu-refluxblu tr, .cuulblu-refluxblu td{
+  .refluxblu-white hr, .refluxblu-white td{
+    border-top: 1px solid white !important;
+  }
+
+.cuulblu-refluxblu, .cuulblu-refluxblu *{
   background: #e0e9fe;
   background-color: #e0e9fe;
   color: #1a3acc;
 }
-.cuulblu-refluxblu hr, .cuulblu-refluxblu td{
-  border-top: 1px solid #1a3acc !important;
-}
-.wurmgrey-refluxblu, .wurmgrey-refluxblu h1, .wurmgrey-refluxblu table, .wurmgrey-refluxblu tr, .wurmgrey-refluxblu td{
+  .cuulblu-refluxblu hr, .cuulblu-refluxblu td{
+    border-top: 1px solid #1a3acc !important;
+  }
+
+.wurmgrey-refluxblu, .wurmgrey-refluxblu *{
   background: #e4dfd9;
   background-color: #e4dfd9;
   color: #1a3acc;
 }
-.wurmgrey-refluxblu hr, .wurmgrey-refluxblu td{
-  border-top: 1px solid #1a3acc !important;
-}
-.drkgable-white, .drkgable-white h1, .drkgable-white table, .drkgable-white tr, .drkgable-white td{
+  .wurmgrey-refluxblu hr, .wurmgrey-refluxblu td{
+    border-top: 1px solid #1a3acc !important;
+  }
+
+.drkgable-white, .drkgable-white *{
   background: #142a2d;
   background-color: #142a2d;
   color: white;
 }
-.drkgable-white hr, .drkgable-white td{
-  border-top: 1px solid white !important;
-}
-/*
-REDUNDANT FOR TESTING
-.refluxblu-white, .refluxblu-white h1, .refluxblu-white table, .refluxblu-white tr, .refluxblu-white td{
-  background: #1a3acc;
-  background-color: #1a3acc;
-  color: white;
-}*/
+  .drkgable-white hr, .drkgable-white td{
+    border-top: 1px solid white !important;
+  }
