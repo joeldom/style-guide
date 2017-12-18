@@ -1191,6 +1191,7 @@ a:hover, a:focus{
   position: sticky;
   top: 0; // required as well.
 }
-.badge.badge-danger{
-  background: white;
+.badge-danger, .badge-secondary{
+  background-color: white !important;
+  color:#777;
 }

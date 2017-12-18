@@ -1,0 +1,122 @@
+//_variables.scss
+
+// TYPOGRAPHY
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+// ALT @FONT_FACE
+$ubuntu: 'Ubuntu', sans-serif;
+$cousine: 'Cousine', monospace;
+$oldstandard: 'Old Standard', serif;
+$menlo: 'menloregular', monospace;
+$proxima: 'Proxima Nova', sans-serif;
+$freight: 'freightbig_probold', Georgia, serif;
+$archivo: 'Archivo Black', sans-serif;
+$source: 'Source Sans Pro', sans-serif;
+$varela: 'Varela Round' sans-serif;
+
+$font-size-base:     14px !default;
+$font-size-small:    ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-med:      ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-large:    ceil(($font-size-base * 2.15)) !default; // ~30px
+
+$font-size-h1:       floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:       floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:       ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:       ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:       $font-size-base !default;
+$font-size-h6:       ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-weight-1:     400;
+$font-weight-2:     500;
+$font-weight-3:     900;
+
+$letter-spacing: .005em;
+
+$line-height-sm: 1.2857142857142858; // small
+$line-height-md: 1.4857142857142858; // alt
+$line-height-lg: 1.7857142857142858; // body
+
+// COLORS
+$bodycolor: #f6f6f6; //body background color
+$accentcolor: #eee; //added to navbar
+$textcolor: #545454; //body text color ~ was = #62645c
+$quotecolor: #aaa; //quote text color ~ was #bbb
+$brandblue: #1a3acc;
+$brandblue90: lighten($brandblue, 10%);
+$brandred: #fd483a;
+$brandgreen: #2ab80a;
+
+$linkcolor: #545454; // default link color ~ was = #62645c
+$link-hover-color: darken($linkcolor, 15%) !default;
+$linkhovercolor: black; // #7EA29A on hovercolor of link
+$brandlinkhovercolor: black; // blrand logo color of link on hover
+
+// MONO-GREY
+$lightgrey1: #f4f4f4;/* background color of body */
+$lightgrey2: #ededed;
+$medgrey: #ccc;
+$warmgrey1: #686258;
+$transgrey1: rgba(186,186,186,0.7);
+$grey80: #474747;
+$grey: #7c7c7c; //#b0aca8
+$grey80: darken($grey, 20%);
+$grey90: darken($grey, 30%);
+
+// COLOR PALETTE MAIN
+$navy: #37477D;
+$teal: #7ea29a;
+$purple: #8385c3;
+$lavender: #BFC3EC;
+$lavender-vib: #8385c3;
+$orange: #C75134;
+$olivegrey: #62645c;
+$teal2: #7DB9B3;
+$chartruese: #c1fa21;
+$blue: #2247c1;
+$lime: #6b8c4c;
+$blueblue:#092cb1;
+$spearmint:#2ff1c7;
+$tangerine:#FFC107;
+
+$cadmium:#ff5252;
+
+$brandblue: #1a3acc;
+$brandred: #fd483a;
+$brandgreen: #2ab80a;
+
+
+// RESPONSIVE BREAKS
+$break-small-max: 767px;
+$break-small-min: 768px;
+$break-medium: 992px;
+$break-large: 1380px;
+$break-xlarge: 1480px;
+$break-xxlarge: 1600px;
+
+$gutter: 8px;
+$gutter-neg: -8px;
+$overlap: -36px;
+$module-side: 22px;
+
+// COLUMN WIDTHS
+$col-1: 8.333333333333332%;
+$col-2: 16.666666666666664%;
+$col-3: 25%;
+$col-4: 33.33333333333333%;
+$col-5: 41.66666666666667%;
+$col-6: 50%;
+$col-7: 58.333333333333336%;
+$col-8: 66.66666666666666%;
+$col-9: 75%;
+$col-10: 83.33333333333334%;
+$col-11: 91.66666666666666%;
+
+
+// ELEMENTS
+$quotes-size: 520px;
+$full-3-height: 350px;
+$footer-height: 250px;
+$blog-heading: $proxima;
