@@ -1,0 +1,39 @@
+//_style-guide.scss
+$brandblue: #1a3acc;
+$drk-gable: #142a2d;
+
+body {
+  background: #f6f6f6;
+  color: #545454;
+}
+.start {
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: $brandblue;
+}
+
+.style-guide {
+  //color: $drk-gable;
+  font-size: 0em;
+  .start {
+    padding: 0;
+  }
+  .swatch-holder {
+    display: block;
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+}

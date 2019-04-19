@@ -1,0 +1,26 @@
+{
+  "name": "TolmarSync",
+  "version": "0.1.0",
+  "authors": [
+    "Amazing Rando <oest@amazingrando.com>"
+  ],
+  "description": "TolmarSync",
+  "main": "?",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "fontawesome": "~4.2.0",
+    "normalize.css": "~3.0.1",
+    "bootstrap-sass": "~3.3.4",
+    "kendo-ui-core": "~2015.1.403",
+    "jquery": "1.9.1"
+  }
+}

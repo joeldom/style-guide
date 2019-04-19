@@ -1,0 +1,16 @@
+{
+  "desktop" : {
+    "src" : [
+      "dev/desktop/js/**/*.js",
+      "!dev/desktop/js/vendor/**"
+    ],
+    "dest" : "build/desktop/js"
+  },
+  "mobile" : {
+    "src" : [
+      "dev/mobile/js/**/*.js",
+      "!dev/mobile/js/vendor/**"
+    ],
+    "dest" : "build/mobile/js"
+  }
+}
