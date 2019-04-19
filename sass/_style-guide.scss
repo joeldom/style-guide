@@ -1,10 +1,14 @@
 //_style-guide.scss
 $brandblue: #1a3acc;
 $drk-gable: #142a2d;
-
-body {
-  background: #f6f6f6;
-  color: #545454;
+//
+// body {
+//   background: #f6f6f6;
+//   color: #545454;
+// }
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .start {
   padding: 0;
@@ -25,8 +29,10 @@ h6,
 }
 
 .style-guide {
-  //color: $drk-gable;
-  font-size: 0em;
+  font-size: 0.9em;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   .start {
     padding: 0;
   }
@@ -35,5 +41,18 @@ h6,
     position: relative;
     width: 300px;
     margin: 0 auto;
+  }
+  .multi-step {
+    a {
+      &:hover {
+        border: none;
+        text-decoration: none;
+      }
+    }
+  }
+  pre {
+    background: rgba(75, 75, 75, 0.5);
+    background: #142a2d;
+    border: none;
   }
 }
