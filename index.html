@@ -1977,6 +1977,21 @@
   <!-- <script src="js/typed.js"></script> -->
   <script src="js/style-guide.js"></script>
   <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+  </script>
+  <script>
     $('body').scrollspy({
       target: '#sidebar',
       offset: 220

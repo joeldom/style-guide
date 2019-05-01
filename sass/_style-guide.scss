@@ -170,3 +170,11 @@ h6,
     bottom: 3px;
   }
 }
+.badge{
+  font-weight: 400 !important;
+  padding: 4px 10px !important;
+
+  &.badge-danger{
+    background-color: #ab1acc !important;
+  }
+}

@@ -110,3 +110,9 @@ h6,
     border-top-color: #444 !important;
     border-top-width: 3px;
     bottom: 3px; }
+
+.badge {
+  font-weight: 400 !important;
+  padding: 4px 10px !important; }
+  .badge.badge-danger {
+    background-color: #ab1acc !important; }
