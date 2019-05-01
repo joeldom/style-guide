@@ -34,6 +34,16 @@ h6,
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  .brand-colors{
+    .color-name{
+
+    }
+    .swatch-footer{
+      font-size: .8em;
+    }
+  }
+
   .start {
     padding: 0;
   }
@@ -93,9 +103,11 @@ h6,
       button {
         &.theme-choice {
           border: 3px solid #fff !important;
+          font-size: 24px !important;
           float: none;
           width: $radius;
           height: $radius;
+          padding: 0 0;
 
           .theme-color{
             font-size: 24px;
@@ -159,15 +171,22 @@ h6,
   .tooltip-inner{
     background-color: #444 !important;
     color: #efefef !important;
+    //inset
+    text-shadow: #222 0px -1px 0;
     border-radius: 0;
-    padding: 6px 12px;
+    padding: 5px 24px;
     border: none !important;
+    text-transform: lowercase;
+     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   &.top .tooltip-arrow{
     //background-color: #999 !important;
     border-top-color: #444 !important;
-    border-top-width: 3px;
-    bottom: 3px;
+    // border-top-width: 12px;
+    border-width: 8px 10px 0;
+    margin-left: -10px;
+    bottom: -3px;
   }
 }
 .badge{

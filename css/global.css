@@ -24,6 +24,8 @@ h6,
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+  .style-guide .brand-colors .swatch-footer {
+    font-size: .8em; }
   .style-guide .start {
     padding: 0; }
   .style-guide .multi-step a:hover {
@@ -61,9 +63,11 @@ h6,
       .frame .swatch-holder .swatch-center a.theme-choice,
       .frame .swatch-holder .swatch-center button.theme-choice {
         border: 3px solid #fff !important;
+        font-size: 24px !important;
         float: none;
         width: 50px;
-        height: 50px; }
+        height: 50px;
+        padding: 0 0; }
         .frame .swatch-holder .swatch-center a.theme-choice .theme-color,
         .frame .swatch-holder .swatch-center button.theme-choice .theme-color {
           font-size: 24px;
@@ -103,13 +107,18 @@ h6,
   .tooltip .tooltip-inner {
     background-color: #444 !important;
     color: #efefef !important;
+    text-shadow: #222 0px -1px 0;
     border-radius: 0;
-    padding: 6px 12px;
-    border: none !important; }
+    padding: 5px 24px;
+    border: none !important;
+    text-transform: lowercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
   .tooltip.top .tooltip-arrow {
     border-top-color: #444 !important;
-    border-top-width: 3px;
-    bottom: 3px; }
+    border-width: 8px 10px 0;
+    margin-left: -10px;
+    bottom: -3px; }
 
 .badge {
   font-weight: 400 !important;
