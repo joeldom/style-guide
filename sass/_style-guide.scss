@@ -1,6 +1,7 @@
 //_style-guide.scss
 $brandblue: #1a3acc;
 $drk-gable: #142a2d;
+$radius: 50px;
 //
 // body {
 //   background: #f6f6f6;
@@ -36,12 +37,6 @@ h6,
   .start {
     padding: 0;
   }
-  .swatch-holder {
-    display: block;
-    position: relative;
-    width: 300px;
-    margin: 0 auto;
-  }
   .multi-step {
     a {
       &:hover {
@@ -54,5 +49,124 @@ h6,
     background: rgba(75, 75, 75, 0.5);
     background: #142a2d;
     border: none;
+  }
+
+  .section__header{
+    position: relative;
+    &::before{
+      left: 0;
+    }
+    &:hover{
+      &::before{
+        left: -40px;
+        width: 130%;
+        right: 0;
+      }
+    }
+  }
+}
+.frame{
+  position: relative;
+  // display: flex;
+  // align-items: flex-start;
+  .swatch-holder {
+    display: table;
+    align-items: flex-start;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 300px;
+    // margin-left: -150px;
+    // top: 0%;
+    // left: 50%;
+    // margin-top: 0;
+    margin: 0 auto;
+    padding: 2em 0;
+
+    .swatch-center{
+      width: auto;
+      position: relative;
+      display: inherit;
+      margin: auto;
+
+      a,
+      button {
+        &.theme-choice {
+          border: 3px solid #fff !important;
+          float: none;
+          width: $radius;
+          height: $radius;
+
+          .theme-color{
+            font-size: 24px;
+            width: 12px;
+            height: 24px;
+            text-align: center;
+            vertical-align: bottom;
+            line-height: 1.75em;
+          }
+        }
+        &:hover{
+          font-size: 24px;
+          border: 3px solid #999 !important;
+        }
+        &.refluxblu *{
+          background-color: #1a3acc;
+          color: white;
+        }
+        &.cuulblu *{
+          background-color: #e0e9fe;
+          color: #1a3acc;
+        }
+        &.wurmgrey *{
+          background-color: #e4dfd9;
+          color: #1a3acc;
+        }
+        &.drkgable *{
+          background-color: #142a2d;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.col-xs-12{
+  &:hover{
+    .section__header{
+      position: relative;
+      &::before{
+        left: 0;
+      }
+      // &:hover{
+      //   &::before{
+      //     left: -40px;
+      //     width: 100%;
+      //     right: 0;
+      //   }
+      // }
+    }
+    // .section__header::before{
+    //   left: -40px;
+    //   width: 100%;
+    //   right: 0;
+    // }
+  }
+}
+
+.tooltip{
+  top: -5px;
+  .tooltip-inner{
+    background-color: #444 !important;
+    color: #efefef !important;
+    border-radius: 0;
+    padding: 6px 12px;
+    border: none !important;
+  }
+  &.top .tooltip-arrow{
+    //background-color: #999 !important;
+    border-top-color: #444 !important;
+    border-top-width: 3px;
+    bottom: 3px;
   }
 }

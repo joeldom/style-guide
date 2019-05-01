@@ -26,11 +26,6 @@ h6,
   -moz-osx-font-smoothing: grayscale; }
   .style-guide .start {
     padding: 0; }
-  .style-guide .swatch-holder {
-    display: block;
-    position: relative;
-    width: 300px;
-    margin: 0 auto; }
   .style-guide .multi-step a:hover {
     border: none;
     text-decoration: none; }
@@ -38,3 +33,80 @@ h6,
     background: rgba(75, 75, 75, 0.5);
     background: #142a2d;
     border: none; }
+  .style-guide .section__header {
+    position: relative; }
+    .style-guide .section__header::before {
+      left: 0; }
+    .style-guide .section__header:hover::before {
+      left: -40px;
+      width: 130%;
+      right: 0; }
+
+.frame {
+  position: relative; }
+  .frame .swatch-holder {
+    display: table;
+    align-items: flex-start;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 300px;
+    margin: 0 auto;
+    padding: 2em 0; }
+    .frame .swatch-holder .swatch-center {
+      width: auto;
+      position: relative;
+      display: inherit;
+      margin: auto; }
+      .frame .swatch-holder .swatch-center a.theme-choice,
+      .frame .swatch-holder .swatch-center button.theme-choice {
+        border: 3px solid #fff !important;
+        float: none;
+        width: 50px;
+        height: 50px; }
+        .frame .swatch-holder .swatch-center a.theme-choice .theme-color,
+        .frame .swatch-holder .swatch-center button.theme-choice .theme-color {
+          font-size: 24px;
+          width: 12px;
+          height: 24px;
+          text-align: center;
+          vertical-align: bottom;
+          line-height: 1.75em; }
+      .frame .swatch-holder .swatch-center a:hover,
+      .frame .swatch-holder .swatch-center button:hover {
+        font-size: 24px;
+        border: 3px solid #999 !important; }
+      .frame .swatch-holder .swatch-center a.refluxblu *,
+      .frame .swatch-holder .swatch-center button.refluxblu * {
+        background-color: #1a3acc;
+        color: white; }
+      .frame .swatch-holder .swatch-center a.cuulblu *,
+      .frame .swatch-holder .swatch-center button.cuulblu * {
+        background-color: #e0e9fe;
+        color: #1a3acc; }
+      .frame .swatch-holder .swatch-center a.wurmgrey *,
+      .frame .swatch-holder .swatch-center button.wurmgrey * {
+        background-color: #e4dfd9;
+        color: #1a3acc; }
+      .frame .swatch-holder .swatch-center a.drkgable *,
+      .frame .swatch-holder .swatch-center button.drkgable * {
+        background-color: #142a2d;
+        color: white; }
+
+.col-xs-12:hover .section__header {
+  position: relative; }
+  .col-xs-12:hover .section__header::before {
+    left: 0; }
+
+.tooltip {
+  top: -5px; }
+  .tooltip .tooltip-inner {
+    background-color: #444 !important;
+    color: #efefef !important;
+    border-radius: 0;
+    padding: 6px 12px;
+    border: none !important; }
+  .tooltip.top .tooltip-arrow {
+    border-top-color: #444 !important;
+    border-top-width: 3px;
+    bottom: 3px; }
