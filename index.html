@@ -7,18 +7,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Joel Dombek ~ STYLE GUIDE</title>
-    <meta name="description"               content="The resume of Joel Dombek, a multi-diciplinary designer : developer and brand specialist with a focus on user interaction and design.">
+    <meta name="description"               content="A style guide used to test HTML & JS interactions as well as be a sandbox for execution of features.">
     <meta name="viewport"                  content="width=device-width, initial-scale=1">
     <meta name="twitter:card"              content="summary" />
-    <meta name="twitter:description"       content="The resume of Joel Dombek, a multi-diciplinary designer : developer and brand specialist with a focus on user interaction and design." />
-    <meta name="twitter:title"             content="Joel Dombek ~ Resume" />
+    <meta name="twitter:description"       content="A style guide used to test HTML & JS interactions as well as be a sandbox for execution of features." />
+    <meta name="twitter:title"             content="Joel Dombek ~ STYLE GUIDE" />
     <meta name="twitter:site"              content="@joeldombek" />
     <meta name="twitter:creator"           content="@joeldombek" />
-    <meta property="og:url"                content="http://joeldom.github.io/resume/" />
+    <meta property="og:url"                content="http://joeldom.github.io/style-guide/" />
     <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="Joel Dombek ~ Resume" />
-    <meta property="og:description"        content="The resume of Joel Dombek, a multi-diciplinary designer : developer and brand specialist with a focus on user interaction and design." />
-    <meta property="og:image"              content="https://joeldom.github.io/resume/jd-logo-reflex.gif" />
+    <meta property="og:title"              content="Joel Dombek ~ STYLE GUIDE" />
+    <meta property="og:description"        content="A style guide used to test HTML & JS interactions as well as be a sandbox for execution of features." />
+    <meta property="og:image"              content="https://joeldom.github.io/style-guide/img/styleguide-grid2.png" />
     <!--==============================================================================================================================
 
 
@@ -59,7 +59,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <script type="text/javascript" src="js/typed.min.js"></script>
-
   </head>
 
 <!-- =========================================================
@@ -434,7 +433,7 @@
         <div class="swatch-holder">
           <h5 style="text-align: center;">Choose Color</h5>
           <div class="swatch-center">
-            <button id="refluxblu" class="theme-choice refluxblu"><span class="theme-color">A</span></button>
+            <button id="refluxblu" data-toggle="tooltip" title="HEX:#1ACCAB <br />COLOR: WHITE" class="theme-choice refluxblu"><span class="theme-color">A</span></button>
             <button id="cuulblu" class="theme-choice cuulblu"><span class="theme-color">A</span></button>
             <button id="wurmgrey" class="theme-choice wurmgrey"><span class="theme-color">A</span></button>
             <button id="drkgable" class="theme-choice drkgable"><span class="theme-color">A</span></button>
@@ -460,7 +459,7 @@
                 <td class="sample-col-2">
                   <table border="0" cellpadding="0" cellspacing="0">
                     <tr>
-                      <td style="line-height:2em;padding-bottom:1.5em;">Characters <small>24px</small></td>
+                      <td style="line-height:2em;padding-bottom:1.5em;">Characters: <small>24px</small></td>
                     </tr>
                     <tr>
                       <td style="font-size:24px;letter-spacing:4px;">
@@ -488,7 +487,6 @@
           </table>
           <!-- /FONT SAMPLE -->
           <!-- FONT SAMPLE -->
-          <hr />
           <h1 style="font-family:Helvetica !important;text-align:center;">Helvetica</h1>
           <table class="table font-sample-table" style="font-family:Helvetica !important;color:white;" border="0" cellpadding="0" cellspacing="0">
             <tbody>
@@ -496,7 +494,7 @@
                 <td class="sample-col-1">
                   <table style="padding:0;" border="0" cellpadding="0" cellspacing="0">
                     <tr>
-                      <td style="font-size:14px;">
+                      <td style="font-size:14px;font-weight:700;">
                         Glyph
                       </td>
                     </tr>
@@ -508,7 +506,7 @@
                 <td class="sample-col-2">
                   <table border="0" cellpadding="0" cellspacing="0">
                     <tr>
-                      <td style="line-height:2em;padding-bottom:1.5em;">Characters <small>24px</small></td>
+                      <td style="line-height:2em;padding-bottom:1.5em;font-weight:700;">Characters <small>24px</small></td>
                     </tr>
                     <tr>
                       <td style="font-size:24px;letter-spacing:4px;">
@@ -520,7 +518,7 @@
                 <td class="sample-col-3">
                   <table border="0" cellpadding="0" cellspacing="0">
                     <tr>
-                      <td style="line-height:2em;padding-bottom:1.5em;">
+                      <td style="line-height:2em;padding-bottom:1.5em;font-weight:700;">
                         About
                       </td>
                     </tr>
@@ -534,9 +532,9 @@
               </tr>
             </tbody>
           </table>
-          <hr />
-          <!-- /FONT SAMPLE -->
-          <table class="table" style="color:white;" border="0" cellpadding="0" cellspacing="0">
+
+          <!-- /FONT SAMPLE - Headings -->
+          <table class="table" style="color:white; font-family: 'Helvetica Nueue', Helvetica !important;" border="0" cellpadding="0" cellspacing="0">
             <thead>
               <tr>
                 <th width="5%">#</th>
@@ -777,7 +775,7 @@
       </div>
       <br><hr><br />
       <div class="row twoUp">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <h3>Give readers a peek behind the curtain</h3>
           <p>Experience design is based on using the concept behind the brand as a way to <a class="wired" href="#">identify and define value for</a> customers. And this becomes the purpose and intent of the business—to deliver products, services, and experiences that deliver the value that the brand represents, and reinforces the unique brand meaning. But it also means measuring that value from the customer’s perspective, and continually investigating new areas of value that are natural extensions for the brand.</p>
           <p>Experience design provides a way for the business and the designer to both discuss objectives and options. It creates a way for business to invite design to the table earlier, and understand how design can help solve problems. And it also helps businesses rethink how they engage design partners in ways that are more likely to produce success with less risk.</p>
@@ -786,6 +784,14 @@
         </div>
         <div class="col-md-8">
           <img src="http://placehold.it/600x500" />
+          <div class="row">
+            <div class="col-xs-6">
+              <img src="http://placehold.it/600x500" />
+            </div>
+            <div class="col-xs-6">
+              <img src="http://placehold.it/600x500" />
+            </div>
+          </div>
         </div>
       </div>
 		</div>
