@@ -47,8 +47,8 @@
     <link rel='shortlink' href='http://www.joeldombek.com/' />
     <!-- <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/breadcrumb.css">
@@ -93,8 +93,29 @@
 
   <!-- /navbar -->
   <div id="panel">
-    <div id="sg-logo"><a class="navbar-brand" href="#">Style<strong>Guide</strong></a></div>
+    <div id="sg-logo">
+      <a class="navbar-brand" href="#">Style<strong>Guide</strong></a>
+    </div>
     <div class="col-xs-12">
+
+      <!-- NEW BOOTSTRAP 4 scrollspy markup -->
+      <!-- <nav id="side-scroll" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="nav flex-column">
+          <a class="nav-link" href="#item-1">Item 1</a>
+          <nav class="nav flex-column">
+            <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+          </nav>
+          <a class="nav-link" href="#item-2">Item 2</a>
+          <a class="nav-link" href="#item-3">Item 3</a>
+          <nav class="nav flex-column">
+            <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+          </nav>
+        </nav>
+      </nav> -->
+
       <!-- col-md-12 -->
       <!-- <div class="viewport">Viewport: <span id="monitor"></span>px</div> -->
       <div data-spy="affix" data-offset-top="365" data-offset-bottom="200">
@@ -433,10 +454,10 @@
         <div class="swatch-holder">
           <h5 style="text-align: center;">Choose Color</h5>
           <div class="swatch-center">
-            <button id="refluxblu" data-toggle="tooltip" title="HEX:#1ACCAB <br />COLOR: WHITE" class="theme-choice refluxblu"><span class="theme-color">A</span></button>
-            <button id="cuulblu" class="theme-choice cuulblu"><span class="theme-color">A</span></button>
-            <button id="wurmgrey" class="theme-choice wurmgrey"><span class="theme-color">A</span></button>
-            <button id="drkgable" class="theme-choice drkgable"><span class="theme-color">A</span></button>
+            <button id="refluxblu" data-toggle="tooltip" title="BACKGROUND:#1a3acc <br />COLOR: WHITE" class="theme-choice refluxblu"><span class="theme-color">A</span></button>
+            <button id="cuulblu" data-toggle="tooltip" title="BACKGROUND:#1a3acc <br />COLOR: WHITE" class="theme-choice cuulblu"><span class="theme-color">A</span></button>
+            <button id="wurmgrey" data-toggle="tooltip" title="BACKGROUND:#1a3acc <br />COLOR: WHITE" class="theme-choice wurmgrey"><span class="theme-color">A</span></button>
+            <button id="drkgable" data-toggle="tooltip" title="BACKGROUND:#1a3acc <br />COLOR: WHITE" class="theme-choice drkgable"><span class="theme-color">A</span></button>
           </div>
         </div>
         <div class="container-fluid refluxblu-white" role="tabpanel">
@@ -1111,10 +1132,31 @@
         <span class="fa fa-star"></span>
         <span class="fa fa-star"></span> -->
         <hr>
-        <a href="https://www.w3schools.com/howto/howto_js_snackbar.asp">Snack bar notification onClick</a><br>
         <a href="https://www.w3schools.com/howto/howto_js_toggle_like.asp">Toggle like/Dislike</a><br>
         <a href="https://www.w3schools.com/howto/howto_js_add_class.asp">Add Class on click</a><br>
         <a href="https://www.w3schools.com/howto/howto_syntax_highlight.asp">Syntax Highliting</a><br>
+      </div>
+    </div>
+    <br><hr><br>
+    <div class="row style-guide">
+      <div class="col-xs-12">
+        <h3>Snack Bar</h3><a class="anchor" id="snack-bar"></a>
+        <a target="_blank" href="https://www.w3schools.com/howto/howto_js_snackbar.asp">Snack bar notification onClick</a><br>
+        <button id="showToast" class="btn btn-primary btn-lg w-25 mx-auto">Show Toast</button>
+        <input type="button" value="Add" id="add-toast" class="btn btn-primary"/>
+        <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded mr-2" alt="...">
+            <strong class="mr-auto">Bootstrap</strong>
+            <small class="text-muted">11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div> -->
       </div>
     </div>
     <br><hr><br>
@@ -1943,7 +1985,7 @@
         </ol>
         <hr />
         <h4 class="section__header">Code &amp; Pre</h4>
-        <p>
+        <p>tha
           Code and pre elements alow you to distinguish between content that is meant to be read in a specific code language or syntax not typically used in font facing content.
         </p>
         <pre id="myDiv">
@@ -1974,15 +2016,23 @@
     </div>
 
   </div><!--/CONTAINER -->
+  <div aria-live="polite" aria-atomic="true" class="position-relative">
+      <div class="position-absolute" id="toast-place" style="top:0px; right:20px;">
+      </div>
+    </div>
 
   <!-- CONTAINER -->
   <!-- SCRIPTS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--7.15.19 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+  <!--7.15.19 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/popper.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
   <!-- <script src="/js/syntax.js"></script> -->
   <!-- <script src="js/typed.js"></script> -->
   <script src="js/style-guide.js"></script>
-  <script>
+  <!-- <script>
     window.onscroll = function() {myFunction()};
 
     var header = document.getElementById("myHeader");
@@ -1995,7 +2045,39 @@
         header.classList.remove("sticky");
       }
     }
-  </script>
+  </script> -->
+  <script>
+    $(document).ready(() => {
+
+      $('#add-toast').on('click', () => {
+
+        $('#toast-place').append(`
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+            <div class="toast-header">
+              <strong class="mr-auto">Bootstrap</strong>
+              <small>Toast</small>
+              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="toast-body">
+              Olá, eu sou uma notificação.
+            </div>
+          </div>
+        `);
+
+        $('.toast').toast('show');
+
+        console.log('Show');
+
+        $('.toast').on('hidden.bs.toast', e => {
+          $(e.currentTarget).remove();
+          console.log('Hide');
+        });
+
+      });
+
+    });
   </script>
   <script>
     $('body').scrollspy({
