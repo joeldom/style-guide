@@ -32,6 +32,7 @@ h6,
   position: fixed;
   width: 220px;
   height: 100%;
+  overflow: auto;
   background: #fff;
 }
 @media (max-width: 768px) {
@@ -46,7 +47,7 @@ h6,
 #main {
   position: relative;
   width: calc(100% - 220px);
-  overflow: hidden;
+  overflow: auto;
   height: 100%;
   left: 220px;
   float: left;
@@ -350,7 +351,114 @@ p a:hover {
     text-align: center;
   }
 }
+/* sidebar */
+.bs-docs-sidebar {
+  position: fixed;
+  padding-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
 
+/* all links */
+.bs-docs-sidebar .nav > li:hover {
+  cursor: pointer;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+  cursor: pointer !important;
+}
+.bs-docs-sidebar .nav > li > a {
+  font-family: "Roboto", monospace;
+  color: #999;
+  border-left: 1px solid transparent;
+  /*padding: 4px 20px; Roboto Mono*/
+  padding: 4px 40px;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer !important;
+}
+.bs-docs-sidebar .nav > li > a:hover {
+  cursor: pointer;
+}
+.bs-docs-sidebar .nav > li > small {
+  color: #aaa;
+  border-left: 1px solid transparent;
+  padding: 12px 20px;
+  font-size: 9px;
+  font-weight: 400;
+  display: block;
+}
+/*#sidebar > li.active > ul > li.active > a{
+  border: 1px solid black;
+}*/
+
+/* nested links */
+.bs-docs-sidebar .nav .nav > li > a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 40px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: transparent;
+  border-left-color: #262626;
+}
+.bs-docs-sidebar .nav > li > a:hover {
+  color: #262626;
+  text-decoration: none;
+  background-color: transparent;
+  border-left-color: #262626;
+  cursor: default;
+}
+/* all active links */
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+  font-weight: 600;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+  font-weight: 400;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+  display: none;
+}
+/* show active nested list */
+.bs-docs-sidebar .nav > .active > ul.nav {
+  display: block;
+}
+/* special back to top styling */
+.back-to-top li small {
+  color: #000;
+}
+.back-to-top:hover,
+.back-to-top:focus {
+  border-left-color: transparent !important;
+}
+.back-to-top:hover::after {
+  content: "\2191";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 1.15em;
+  line-height: 1em;
+}
+@media all and (max-width: 1170px) {
+  .bs-docs-sidebar {
+    /*display: none;*/
+  }
+}
 
 @media all and (max-width: 970px) {
   #body-middle {
@@ -1223,6 +1331,45 @@ a:focus {
   padding: 0;
 }
 
+.refluxblu-white,
+.refluxblu-white * {
+  background: #1a3acc;
+  background-color: #1a3acc;
+  color: white;
+}
+/*.refluxblu-white hr, .refluxblu-white td{
+    border-top: 1px solid white !important;
+  }*/
+
+.cuulblu-refluxblu,
+.cuulblu-refluxblu * {
+  background: #e0e9fe;
+  background-color: #e0e9fe;
+  color: #1a3acc;
+}
+/*.cuulblu-refluxblu hr, .cuulblu-refluxblu td{
+    border-top: 1px solid #1a3acc !important;
+  }*/
+
+.wurmgrey-refluxblu,
+.wurmgrey-refluxblu * {
+  background: #e4dfd9;
+  background-color: #e4dfd9;
+  color: #1a3acc;
+}
+/*.wurmgrey-refluxblu hr, .wurmgrey-refluxblu td{
+    border-top: 1px solid #1a3acc !important;
+  }*/
+
+.drkgable-white,
+.drkgable-white * {
+  background: #142a2d;
+  background-color: #142a2d;
+  color: white;
+}
+/*.drkgable-white hr, .drkgable-white td{
+    border-top: 1px solid white !important;
+  }*/
 
 .swatch-holder {
   position: -webkit-sticky; // required for Safari
