@@ -198,7 +198,7 @@ h6,
   display: block;
   position: absolute;
   color: red;
-  background: rgba(0, 0, 0, 0.5); /* #4d0000 */
+  background: rgb(96, 0, 0); /* #4d0000 */
   top: 0;
   right: 0;
   padding: 0 0.5em;
