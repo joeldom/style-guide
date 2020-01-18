@@ -76,6 +76,7 @@ gulp.task("prettify", function() {
 gulp.task("watch", function() {
   gulp.watch("./sass/**/*.scss", ["sass"]);
   gulp.watch("./*.html", browserSync.reload);
+  gulp.watch("./*.css", browserSync.reload);
   gulp.watch("./pages/**/*.html", browserSync.reload);
   gulp.watch("./js/**/*.js", browserSync.reload);
 });
