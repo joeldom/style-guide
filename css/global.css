@@ -44,6 +44,36 @@ h6,
       width: 130%;
       right: 0; }
 
+.brand-colors {
+  padding: 12px;
+  margin: 0 0 0px 0;
+  position: relative;
+  height: 210px;
+  border-radius: 0px;
+  font-size: 14px;
+  line-height: 1em !important; }
+  .brand-colors-sml {
+    padding: 24px 12px;
+    margin: 0 0 0px 0;
+    position: relative;
+    height: 80px;
+    line-height: 1em !important;
+    border-radius: 0px;
+    font-size: 14px; }
+    .brand-colors-sml * {
+      line-height: 1em !important;
+      font-size: 12px; }
+  .brand-colors-med {
+    height: 140px;
+    padding: 12px;
+    line-height: 1em;
+    font-size: 12px; }
+  .brand-colors-lrg {
+    height: 300px;
+    padding: 12px;
+    line-height: 1em;
+    font-size: 14px; }
+
 #fonts-sample,
 .frame {
   position: relative; }
@@ -160,7 +190,7 @@ h6,
   top: 0;
   right: 0;
   padding: 0.25em 0.5em;
-  font-size: 0.8em;
+  font-size: 0.65em;
   color: red;
   background: #600000;
   /* #4d0000 */ }
@@ -171,7 +201,7 @@ h6,
   top: 0;
   right: 0;
   padding: 0.25em 0.5em;
-  font-size: 0.8em;
+  font-size: 0.65em;
   color: #0f0;
   background: #071e00; }
 
@@ -181,7 +211,7 @@ h6,
   top: 0;
   right: 0;
   padding: 0.25em 0.5em;
-  font-size: 0.8em;
+  font-size: 0.65em;
   color: #0f0;
   background: #071e00; }
 
@@ -189,6 +219,15 @@ h6,
   height: 83%; }
   .bs-docs-sidebar .nav {
     height: 100%; }
+    .bs-docs-sidebar .nav .nav-stacked li {
+      margin-top: 0; }
+
+.bs-docs-sidebar li.active li a {
+  border-bottom: 1px solid white;
+  border-left: 1px solid #262626; }
+
+.bs-docs-sidebar li.active li.active {
+  border-bottom: 1px solid #262626; }
 
 .refluxblu-white,
 .refluxblu-white * {
@@ -196,27 +235,18 @@ h6,
   background-color: #1a3acc;
   color: white; }
 
-/*.refluxblu-white hr, .refluxblu-white td{
-    border-top: 1px solid white !important;
-  }*/
 .cuulblu-refluxblu,
 .cuulblu-refluxblu * {
   background: #e0e9fe;
   background-color: #e0e9fe;
   color: #1a3acc; }
 
-/*.cuulblu-refluxblu hr, .cuulblu-refluxblu td{
-    border-top: 1px solid #1a3acc !important;
-  }*/
 .wurmgrey-refluxblu,
 .wurmgrey-refluxblu * {
   background: #e4dfd9;
   background-color: #e4dfd9;
   color: #1a3acc; }
 
-/*.wurmgrey-refluxblu hr, .wurmgrey-refluxblu td{
-    border-top: 1px solid #1a3acc !important;
-  }*/
 .drkgable-white,
 .drkgable-white * {
   background: #142a2d;

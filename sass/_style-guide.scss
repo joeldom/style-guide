@@ -74,6 +74,43 @@ h6,
     }
   }
 }
+.brand-colors {
+  padding: 12px;
+  margin: 0 0 0px 0;
+  position: relative;
+  height: 210px;
+  border-radius: 0px;
+  font-size: 14px;
+  line-height: 1em !important;
+
+  &-sml {
+    padding: 24px 12px;
+    margin: 0 0 0px 0;
+    position: relative;
+    height: 80px;
+    line-height: 1em !important;
+    border-radius: 0px;
+    font-size: 14px;
+
+    * {
+      line-height: 1em !important;
+      font-size: 12px;
+    }
+  }
+  &-med {
+    height: 140px;
+    padding: 12px;
+    line-height: 1em;
+    font-size: 12px;
+  }
+  &-lrg {
+    height: 300px;
+    padding: 12px;
+    line-height: 1em;
+    font-size: 14px;
+  }
+}
+
 #fonts-sample,
 .frame {
   position: relative;
@@ -215,7 +252,7 @@ h6,
   top: 0;
   right: 0;
   padding: 0.25em 0.5em;
-  font-size: 0.8em;
+  font-size: 0.65em;
 }
 .example-block {
   &-wrong {
@@ -239,5 +276,29 @@ h6,
   height: 83%;
   .nav {
     height: 100%;
+
+    .nav-stacked {
+      li {
+        margin-top: 0;
+      }
+      li.active {
+        li {
+          a {
+            //border-bottom: 1px red solid;
+          }
+        }
+      }
+      li {
+        &.active {
+        }
+      }
+    }
   }
+}
+.bs-docs-sidebar li.active li a {
+  border-bottom: 1px solid white;
+  border-left: 1px solid #262626;
+}
+.bs-docs-sidebar li.active li.active {
+  border-bottom: 1px solid #262626;
 }

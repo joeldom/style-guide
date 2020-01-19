@@ -137,27 +137,7 @@ h6,
   color: #00483a;
   border: 1px solid #00483a !important;
 }
-.brand-colors {
-  padding: 12px;
-  margin: 0 0 0px 0;
-  position: relative;
-  height: 210px;
-  border-radius: 0px;
-  font-size: 14px;
-}
-.brand-colors-sml {
-  padding: 24px 12px;
-  margin: 0 0 0px 0;
-  position: relative;
-  height: 80px;
-  line-height: 1em !important;
-  border-radius: 0px;
-  font-size: 14px;
-}
-.brand-colors-sml * {
-  line-height: 1em !important;
-  font-size: 12px;
-}
+
 .swatch-footer {
   position: absolute;
   bottom: 10%;
