@@ -47,15 +47,12 @@ gulp.task("browserSync", function() {
 
 //Run SASS preprocess
 gulp.task("sass", function() {
-  //return gulp.src('style-guide/sass/**/*.scss') // Gets all files ending with .scss in style-guide/scss and children dirs
   return (
-    gulp
-      //.src("style-guide/sass/global.scss") // Gets specific file
-      .src("./sass/global.scss") // Gets specific file
-      // .pipe(sourcemaps.init())
-      // .pipe(sourcemaps.write("."))
+    gulp.src("./sass/global.scss") // Gets specific file
+      .pipe(sourcemaps.init())
       .pipe(sass().on("error", sass.logError)) // Passes it through a gulp-sass, log errors to console
       .pipe(gulp.dest("./css")) // Outputs it in the css folder
+      .pipe(sourcemaps.write("./maps"))
       .pipe(
         browserSync.reload({
           // Reloading with Browser Sync
