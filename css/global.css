@@ -154,6 +154,37 @@ h6,
   z-index: 1029;
   color: #adadad; }
 
+.example-block-wrong {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.25em 0.5em;
+  font-size: 0.8em;
+  color: red;
+  background: #600000;
+  /* #4d0000 */ }
+
+.example-block-right {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.25em 0.5em;
+  font-size: 0.8em;
+  color: #0f0;
+  background: #071e00; }
+
+.example-block-alt {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.25em 0.5em;
+  font-size: 0.8em;
+  color: #0f0;
+  background: #071e00; }
+
 .bs-docs-sidebar {
   height: 83%; }
   .bs-docs-sidebar .nav {

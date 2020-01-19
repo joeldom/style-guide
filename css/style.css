@@ -149,7 +149,7 @@ h6,
   padding: 24px 12px;
   margin: 0 0 0px 0;
   position: relative;
-  height: 85px;
+  height: 80px;
   line-height: 1em !important;
   border-radius: 0px;
   font-size: 14px;
@@ -194,36 +194,7 @@ h6,
   text-transform: uppercase;
   display: inline;
 }
-.example-wrong {
-  display: block;
-  position: absolute;
-  color: red;
-  background: rgb(96, 0, 0); /* #4d0000 */
-  top: 0;
-  right: 0;
-  padding: 0 0.5em;
-  font-size: 0.8em;
-}
-.example-right {
-  display: block;
-  position: absolute;
-  color: #0f0;
-  background: #071e00;
-  top: 0;
-  right: 0;
-  padding: 0 0.5em;
-  font-size: 0.7em;
-}
-.example-alt {
-  display: block;
-  position: absolute;
-  color: #0f0;
-  background: #071e00;
-  top: 0;
-  right: 0;
-  padding: 0 0.5em;
-  font-size: 0.7em;
-}
+
 /*.container{max-width: 45rem !important}*/
 /*.container{max-width: 69rem !important}*/
 .container {

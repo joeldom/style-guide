@@ -209,6 +209,32 @@ h6,
   color: #adadad;
   //border: 3px solid #dcdcdc;
 }
+@mixin example-block {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.25em 0.5em;
+  font-size: 0.8em;
+}
+.example-block {
+  &-wrong {
+    @include example-block;
+    color: red;
+    background: rgb(96, 0, 0); /* #4d0000 */
+  }
+  &-right {
+    @include example-block;
+    color: #0f0;
+    background: #071e00;
+  }
+  &-alt {
+    @include example-block;
+    color: #0f0;
+    background: #071e00;
+  }
+}
+
 .bs-docs-sidebar {
   height: 83%;
   .nav {
