@@ -47,8 +47,8 @@
     <link rel='shortlink' href='http://www.joeldombek.com/' />
     <!-- <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"> -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/breadcrumb.css">
@@ -94,36 +94,15 @@
 
   <!-- /navbar -->
   <div id="panel">
-    <div id="sg-logo">
-      <a class="navbar-brand" href="#">Style<strong>Guide</strong></a>
-    </div>
+    <div id="sg-logo"><a class="navbar-brand" href="#">Style<strong>Guide</strong></a></div>
     <div class="col-xs-12">
-
-      <!-- NEW BOOTSTRAP 4 scrollspy markup -->
-      <!-- <nav id="side-scroll" class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <nav class="nav flex-column">
-          <a class="nav-link" href="#item-1">Item 1</a>
-          <nav class="nav flex-column">
-            <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
-            <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
-          </nav>
-          <a class="nav-link" href="#item-2">Item 2</a>
-          <a class="nav-link" href="#item-3">Item 3</a>
-          <nav class="nav flex-column">
-            <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
-            <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
-          </nav>
-        </nav>
-      </nav> -->
-
       <!-- col-md-12 -->
       <!-- <div class="viewport">Viewport: <span id="monitor"></span>px</div> -->
       <!-- TODO: FIX the layout and markup of this file, needs to be go back to being BOOTSTRAP 3 or be updated to the the 4 markup. -->
       <div data-spy="affix" data-offset-top="365" data-offset-bottom="200">
         <nav class="bs-docs-sidebar">
           <ul id="sidebar" class="nav nav-stacked fixed">
-            <li><a href="#getting-started" contenteditable="false">Alpha</a>
+            <li><a href="#getting-started">Alpha</a>
               <ul class="nav nav-stacked">
                 <li><a href="#the-begining">The Begining</a></li>
                 <li><a href="#into-the-void">Into the Void</a></li>
@@ -131,28 +110,34 @@
                 <li><a href="#the-begining">Big Idea</a></li>
               </ul>
             </li>
-            <li><a href="#color" contenteditable="false">Color</a>
+            <li><a href="#Color">Color</a>
               <ul class="nav nav-stacked">
-                  <li><a href="#color">Brand Colors</a></li>
-                  <li><a href="#color-campaign">Campaign Colors</a></li>
+                  <li><a href="#Primary-Colors">Primary Colors</a></li>
+                  <li><a href="#Secondary-Colors">Secondary Colors</a></li>
               </ul>
             </li>
-            <li><a href="#typography" contenteditable="false">Typography</a>
+            <li><a href="#Typography">Typography</a>
               <ul class="nav nav-stacked">
-                <li><a href="#typography-1">DSG Sans</a></li>
-                <li><a href="#typography-2">DIN</a></li>
-                <li><a href="#typogrpahy-3">Arial</a></li>
+                <li><a href="#typed1">Typed.js</span></a></li>
+                <li><a href="#typography-roboto">Roboto</a></li>
+                <li><a href="#typography-Helvetica">Helvetica</a></li>
+                <li><a href="#Quotes">Quotes</a></li>
+                <li><a href="#Article">Article</a>
+                  <ul class="nav nav-stacked">
+                    <li><a href="#Split">Split</span></a></li>
+                    <li><a href="#ArticleImages">Article Images</span></a></li>
+                    <li><a href="#ContentGrid">Content Grid</span></a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
-            <li><a href="#buttons" contenteditable="false">Buttons</a>
+            <li><a href="#buttons">Buttons</a>
               <ul class="nav nav-stacked">
-                <li><a href="#button-text">Button Text</a></li>
-                <li><a href="#button-dimensions">Button Dimensions</a></li>
-                <li><a href="#button-position">Button Postion</a></li>
-                <li><a href="#button-styling">Button Styling</a></li>
+                <li><a href="#Usage">Usage</a></li>
+                <li><a href="#Pagination">Pagination</a></li>
               </ul>
             </li>
-            <li><a href="#usage" contenteditable="false">Usage</a>
+            <li><a href="#Timeline">Timeline</a>
               <ul class="nav nav-stacked">
                 <li><a href="#solid-buttons">Solid Buttons</a></li>
                 <li><a href="#ghost-buttons">Ghost Buttons</a></li>
@@ -161,7 +146,7 @@
                 <li><a href="#improper-cta">CTA Usage</a></li>
               </ul>
             </li>
-            <li><a href="#output" contenteditable="false">Output</a>
+            <li><a href="#output">Output</a>
               <ul class="nav nav-stacked">
                 <li><a href="#output-intro">Intro</a></li>
                 <li><a href="#output-slice-tool">Slice Tool</a></li>
@@ -173,7 +158,7 @@
                 <li><a href="#output-svg">.SVG</a></li>
               </ul>
             </li>
-            <li><a href="#grid" contenteditable="false">Grid</a>
+            <li><a href="#grid">Grid</a>
               <ul class="nav nav-stacked">
                 <li><a href="#grid-scalable">Scalable Design</a></li>
                 <li><a href="#grid-fluid">Fluid Design</a></li>
@@ -181,7 +166,7 @@
                 <li><a href="#grid-wrapup">Which is best?</a></li>
               </ul>
             </li>
-            <li><a href="#code" contenteditable="false">Code</a>
+            <li><a href="#code">Code</a>
               <ul class="nav nav-stacked">
                 <li><a href="#code-code-counts">Code Counts!</a></li>
                 <li><a href="#code-colsplit">Col-Split</a></li>
@@ -189,7 +174,7 @@
                 <li><a href="#code-alttext">ALT Text</a></li>
               </ul>
             </li>
-            <li><a href="#build" contenteditable="false">Build</a>
+            <li><a href="#build">Build</a>
               <ul class="nav nav-stacked">
                 <li><a href="#build-preheader">Pre-Header</a></li>
                 <li><a href="#build-header">Header</a></li>
@@ -204,6 +189,18 @@
                 <li><a href="#build-disclaimer">Disclaimer</a></li>
               </ul>
             </li>
+            <li><a href="#examples">Examples</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#example-cooking">Outdoor Category</a></li>
+                <li><a href="#example-golf">Golf</a></li>
+                <li><a href="#example-flash">Flash Sale</a></li>
+                <li><a href="#example-footwear-1">Footwear</a></li>
+                <li><a href="#example-footwear-2">Footwear</a></li>
+                <li><a href="#example-tabsupport">Tab Support</a></li>
+                <li><a href="#example-taxfree">Tax Free</a></li>
+                <li><a href="#example-fitness">M/W Fitness</a></li>
+              </ul>
+            </li>
             <li>&nbsp;</li>
             <li><a class="back-to-top" href="#header">Back to top</a></li>
             <li><small>ver 2 : 4.21.19</small></li>
@@ -213,9 +210,6 @@
     </div>
   </div>
   <!-- PANEL -->
-
-
-
 
   <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -253,8 +247,6 @@
   </div>
 </div>
 
-
-
   <div id="main" class="container">
     <a class="anchor vspace" id="header"></a>
     <div class="row">
@@ -267,7 +259,10 @@
       <div class="col-xs-12">
         <h2>The Begining</h2>
         <a class="anchor" id="the-begining"></a>
-        <p>This style guide will help you manage the open-ended creative email development process while maintaining the look and feel of the DICK’S Sporting Goods brand and annual campaigns. But don’t look at it as a set of hard-and-fast rules that handcuff creativity because every campaign or project has its own set of requirements with their own unique solutions. Instead, look at this style guide as a roadmap that helps get you where you’re going. While there is one destination (an effective email that adheres to our brand standards), there are a lot of routes to get there.</p>
+        <p style="margin-bottom:24em;">This style guide is aimed to assist in mocking up and testing new layout and styles as well as keep a unified branding presence that is easily accessble wherever needed. It will show combinations of styles and content with</p>
+        <span class="example-wrong">wrong</span>
+        <span class="example-right">right</span>
+
         <a class="anchor" id="into-the-void"></a>
         <h3 class="section__header">Into the Void</h3>
         <p>When starting a project, it’s best not to reinvent the wheel. It’s most efficient to establish a templated approach that works best for you, meaning you should adapt formats and builds that have worked before and apply new solutions and custom options as necessary.</p>
@@ -277,9 +272,9 @@
     </div>
     <div class="row style-guide">
       <div class="col-xs-12">
-        <a class="anchor vspace" id="color"></a>
+        <a class="anchor vspace" id="Color"></a>
         <hr>
-        <h2>Pallette</h2>
+        <h2>Color</h2>
         <p>Color is what give a design it's first sense of style. What color is chosen speaks to where it can be used and what it's implied meaning is.</p>
         <p>With the color choice of such a vibrant blue it is meant to speak to all of the areas I've focused on in my career. With in terms of print, it is a very important color and in this case is closely related to <strong>Reflex Blue</strong>. With repsects to screen design it is one of the most feared screens a user can come across on a Windows machine. It is also the most widely supported colors for accessability and is usally a placeholder color. It is most commonly seen as in blue prints for architecture. These are a few reasons anyone could associate with blue in the common era, it was seen as a sign of nobility in medevil times.</p>
       </div>
@@ -287,7 +282,7 @@
     <!-- COLOR PEDIA - http://veli.ee/colorpedia/?c=173F3A -->
     <div class="row style-guide color-swatch">
       <div class="col-xs-12">
-        <a class="anchor" ></a>
+        <a class="anchor" id="Primary-Colors"></a>
         <h5 id="color-brand" style="text-align:center;">Primary Colors</h3></div>
       <div class="col-sm-5 col-xs-12">
         <a href="#" data-toggle="tooltip" title="HEX:#1a3acc">
@@ -329,16 +324,58 @@
           </div>
         </a>
       </div>
-    </div><!-- COLORS -->
+      <div class="col-sm-5 col-xs-12">
+        <a href="#" data-toggle="tooltip" title="HEX:#1a3acc">
+          <div class="brand-colors-sml" style="background-color:#1a3acc;color:#142a2d;">
+            <div class="swatch-footer" >DRK-Gable <small>&amp; refluxblu</small></div>
+          </div>
+        </a>
+        <span class="example-wrong">wrong</span>
+      </div>
+      <div class="col-sm-5 col-xs-12">
+        <a href="#" data-toggle="tooltip" title="HEX:#1a3acc">
+          <div class="brand-colors-sml" style="background-color:#e0e9fe;color:#142a2d;">
+            <div class="swatch-footer" style="color:#CCAB1A;">DRK-Gable <small>&amp; refluxblu</small></div>
+          </div>
+        </a>
+        <span class="example-wrong">wrong</span>
+      </div>
+      <div class="col-sm-5 col-xs-12">
+        <a href="#" data-toggle="tooltip" title="HEX:#1a3acc">
+          <div class="brand-colors-sml" style="background-color:#e4dfd9;color:#AB1ACC;">
+            <div class="swatch-footer">DRK-Gable <small>&amp; refluxblu</small></div>
+          </div>
+        </a>
+        <span class="example-wrong">wrong</span>
+      </div>
+      <div class="col-sm-5 col-xs-12">
+        <a href="#" data-toggle="tooltip" title="HEX:#1a3acc">
+          <div class="brand-colors-sml" style="background-color:#a3a3a3;color:#1ACCAB;">
+            <span class="swatch-footer">CUUL GREY &amp; <br>JAVA</span>
+          </div>
+        </a>
+        <span class="example-wrong">wrong</span>
+      </div>
+      <div class="col-sm-5 col-xs-12">
+        <a href="#" data-toggle="tooltip" title="HEX:#1a3acc">
+          <div class="brand-colors-sml" style="background-color:#142a2d;color:#1ACCAB;">
+            <span class="swatch-footer">DRK-Gable &amp;<br> JAVA</span>
+          </div>
+        </a>
+        <span class="example-alt">alt</span>
+      </div>
+    </div><!-- PRIMARY COLORS -->
+
+    <!-- SECONDARY COLORS -->
     <div class="row style-guide color-swatch">
       <div class="col-xs-12">
-        <a class="anchor"></a>
+        <a class="anchor" id="Secondary-Colors"></a>
         <h5 id="color-brand" style="text-align:center;">Secondary Colors</h3></div>
       <div class="col-sm-3 col-xs-12">
         <a href="#" data-toggle="tooltip" title="HEX:#CCAB1A">
-          <div class="brand-colors" style="background-color:#CCAB1A;color:white;">
-            <p class="color-name" style="color:#142a2d;">Golden Grass<br /><small>&amp; drk-gable</small></p><br>
-            <div class="swatch-footer" style="color:#142a2d;">HEX: #CCAB1A<br>RGB: 0, 89, 76<br></div>
+          <div class="brand-colors" style="background-color:#CCAB1A;color:#142a2d;">
+            <p class="color-name">Golden Grass<br /><small>&amp; drk-gable</small></p><br>
+            <div class="swatch-footer">HEX: #CCAB1A<br>RGB: 0, 89, 76</div>
           </div>
         </a>
       </div>
@@ -352,8 +389,8 @@
       </div>
       <div class="col-sm-3 col-xs-12">
         <a href="#" data-toggle="tooltip" title="HEX:#1ACCAB <br />COLOR: WHITE">
-          <div class="brand-colors" style="background-color:#1ACCAB;color:white;">
-            <p class="color-name" style="color:#1a3acc;">Java<br /><small>&amp; Reflux Blu</small></p><br>
+          <div class="brand-colors" style="background-color:#1ACCAB;color:#1a3acc;">
+            <p class="color-name">Java<br /><small>&amp; Reflux Blu</small></p><br>
             <div class="swatch-footer" style="color:#1a3acc;">HEX: #e0e9fe<br>RGB: 0, 89, 76<br></div>
           </div>
         </a>
@@ -366,27 +403,25 @@
           </div>
         </a>
       </div>
-      <!-- 008080 -->
-      <!-- <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
-  Tooltip with HTML
-</button> -->
-    </div><!-- COLORS -->
+      <div class="col-sm-3 col-xs-12">
+        <a href="#" data-toggle="tooltip" title="HEX: #008080 <br />COLOR: #e0e9fe">
+          <div class="brand-colors-sml" style="background-color:#CCAB1A;color:#e0e9fe;">
+            <div class="swatch-footer">HEX: #008080<br>RGB: 0, 89, 76</div>
+            <span class="example-wrong">wrong</span>
+          </div>
+        </a>
+      </div>
+    </div><!-- SECONDARY COLORS -->
+
     <hr>
+
     <div class="row style-guide">
       <div class="col-xs-12">
-        <a class="anchor" id="typography"></a>
+        <a class="anchor" id="Typography"></a>
         <h2>Typography</h2>
         <p>Words can say a lot. How they are presented is important. The typeface chosen to carry those words can mean the difference between one brands message and another. Messages require distinct fonts to be paired with them to match the various campaigns and channels it will be carried through.</p>
         <p>This shoudl swap conditionally between classes depending on which is on or not on and check or remove all then just re-add them. This would probably be the easiest way instead of having a dozen or so conditions to check for. The <a href="https://gist.github.com/egeorjon/6755681">Gist with add_remove_clas with Javascript</a></p>
         <p>This shouldn't be as difficult as I am making this out to be. Metalicas Unforgiven is on right now.</p>
-
-        <!-- TYPED.js -->
-        <!-- <div id="typed-strings">
-          <p>Typed.js is a <strong>JavaScript</strong> library.</p>
-          <p>It <em>types</em> out sentences.</p>
-        </div>
-        <div class="typing-text"></div>
-        <span id="typed"></span> -->
 
         <article style="min-height: 400px;">
           <h2><span id="typed1"></span></h2>
@@ -400,55 +435,15 @@
             <br />
           <button id="add" class="see-more">Add Content</button>
         </article>
-
-        <!-- TYPED.js -->
-<!--
-        <div class="swatch-holder">
-          <button class="theme-choice refluxblu" data-toggle="collapse" data-parent="#accord" href="#accord1" aria-expanded="true" aria-controls="accord1"><span class="theme-color">A</span></button>
-          <button class="theme-choice cuulblu" data-toggle="collapse" data-parent="#accord" href="#accord2" aria-expanded="false" aria-controls="accord2"><span class="theme-color">A</span></button>
-          <button class="theme-choice wurmgrey" data-toggle="collapse" data-parent="#accord" href="#accord3" aria-expanded="false" aria-controls="accord3"><span class="theme-color">A</span></button>
-          <button class="theme-choice drkgable" data-toggle="collapse" data-parent="#accord" href="#accord4" aria-expanded="false" aria-controls="accord4"><span class="theme-color">A</span></button>
-        </div> -->
-
-        <!-- <div class="swatch-holder">
-
-          <button id="refluxblu" class="theme-choice refluxblu"><span class="theme-color">A</span></button>
-          <button id="cuulblu" class="theme-choice cuulblu"><span class="theme-color">A</span></button>
-          <button id="wurmgrey" class="theme-choice wurmgrey"><span class="theme-color">A</span></button>
-          <button id="drkgable" class="theme-choice drkgable"><span class="theme-color">A</span></button>
-
-        </div> -->
       </div>
-      <!-- <span id="picker" class="color-picker" data-children=".hint">
-				<a data-toggle="collapse" data-parent="#picker" href="#colors" aria-expanded="true" aria-controls="accord1" class="see-more">
-					Choose a theme
-					<span id="colors" dir="" class="hint" role="picker">
-            <button class="theme-choice refluxblu"><span class="theme-color">A</span></button>
-            <button class="theme-choice cuulblu"><span class="theme-color">A</span></button>
-            <button class="theme-choice wurmgrey"><span class="theme-color">A</span></button>
-            <button class="theme-choice drkgable"><span class="theme-color">A</span></button>
-          </span>
-				</a>
-			</span>
-      <span id="colors" dir="" class="hint" role="picker">
-        <button class="theme-choice refluxblu"><span class="theme-color">A</span></button>
-        <button class="theme-choice cuulblu"><span class="theme-color">A</span></button>
-        <button class="theme-choice wurmgrey"><span class="theme-color">A</span></button>
-        <button class="theme-choice drkgable"><span class="theme-color">A</span></button>
-      </span> -->
-
     </div>
     <br>
     <div class="row">
       <a class="anchor" id="typography-roboto"></a>
       <div id="font-sample" class="frame">
         <div class="swatch-holder">
-          <h5 style="text-align: center;">Choose Color</h5>
+          <h5 style="text-align: center;">Choose a color</h5>
           <div class="swatch-center">
-            <button id="refluxblu" data-toggle="tooltip" title="BACKGROUND:#1a3acc <br />COLOR: WHITE" class="theme-choice refluxblu"><span class="theme-color">A</span></button>
-            <button id="cuulblu" data-toggle="tooltip" title="BACKGROUND:#1a3acc <br />COLOR: WHITE" class="theme-choice cuulblu"><span class="theme-color">A</span></button>
-            <button id="wurmgrey" data-toggle="tooltip" title="BACKGROUND:#1a3acc <br />COLOR: WHITE" class="theme-choice wurmgrey"><span class="theme-color">A</span></button>
-            <button id="drkgable" data-toggle="tooltip" title="BACKGROUND:#1a3acc <br />COLOR: WHITE" class="theme-choice drkgable"><span class="theme-color">A</span></button>
             <button id="refluxblu" class="theme-choice refluxblu"><span class="theme-color">A</span></button>
             <button id="cuulblu" class="theme-choice cuulblu"><span class="theme-color">A</span></button>
             <button id="wurmgrey" class="theme-choice wurmgrey"><span class="theme-color">A</span></button>
@@ -504,6 +499,7 @@
           <!-- /FONT SAMPLE -->
           <!-- FONT SAMPLE -->
           <hr />
+          <a class="anchor" id="typography-Helvetica"></a>
           <h1 style="font-family:Helvetica !important;text-align:center;">Helvetica</h1>
           <table class="table font-sample-table" style="font-family:Helvetica !important;color:white;" border="0" cellpadding="0" cellspacing="0">
             <tbody>
@@ -623,7 +619,8 @@
     <hr>
     <div class="row style-guide">
       <div id="typogrpahy-2" class="col-md-12 col-xs-12">
-        <h4 class="section__header">Quotes Example</h4>
+        <a class="anchor" id="Quotes"></a>
+        <h4 class="section__header">Quotes</h4>
       </div><!-- id=typography-2 -->
     </div><!-- row -->
     <div class="row">
@@ -636,7 +633,7 @@
                   <div class="quote-outer">
                     <div class="quote-inner">
                       <ul id="cyclelist">
-                        <li class="quote" style="opacity: 1;"><div class="num">Design Quotes N<sup>o</sup> 202</div>Your almost always wrong about your users.</li>
+                        <li class="quote" style="opacity: 1;"><div class="num">Design Quotes N<sup>o</sup> 202</div>You're almost always wrong about your users.</li>
                       </ul>
                     </div>
                   </div>
@@ -650,7 +647,8 @@
     <hr>
     <div class="row style-guide">
       <div id="typogrpahy-3" class="col-md-12 col-xs-12">
-        <h4 class="section__header">Article Example</h4>
+        <a class="anchor" id="Article"></a>
+        <h4 class="section__header">Article</h4>
       </div><!-- id=article-2 -->
     </div><!-- row -->
     <div class="row">
@@ -662,7 +660,7 @@
         </div>
         <div class="col-xs-6">
           <h5>Author: Joel Dombek</h5>
-          <h6>Published: 24 October 2017</h6>
+          <h6>Published: 24 October 2020</h6>
           <a href="#">Link Citation: Effects of science on the religious mind.</a>
         </div>
         <div class="col-xs-12">
@@ -670,11 +668,14 @@
           <p>
             The questions and hypotheses that initiate an investigation, the resultant data gathered, and the background information obtained by reading the literature will lead to conclusions. Your research paper presents these conclusions and the appropriate evidence (data and relevant literature). Before writing your report, construct an outline that logically presents the information to support your conclusions. Organize the data into tables and figures to present the evidence in a logical order. Many authors prefer to construct a draft by rapidly putting down ideas with little regard to sentence structure, and to make corrections later. Others prefer to make revisions as they proceed. Write the report with a target audience of other students with experience in biology equivalent to that of the class for which the report is written.
           </p>
+          <button type="button" class="see-more" data-toggle="tooltip" data-html="true" title="<em>Button</em> <u>with</u> <b>Tooltip</b>
+            <p>Here is a very long tooltip, this can show content ahead of a user clickign through to a page.</p>">Button w/ Tooltip</button>
           <p>
             Proper use of English is considered paramount in grading. Your major responsibility is to make the reader understand exactly what you mean by using words with precision, clarity, and economy. Every sentence should be exact and say something of importance (no "padding"). Economy and accuracy require using straightforward English sentences (subject, verb, and object). Follow a consistent pattern of tenses. Although it is acceptable to write in either the active or passive voice, you should write in the active voice unless you have good reason to usethe passive voice. Different biological fields and faculty may have specific requirements for tense or voice and <em>students should consult specific course instructions or instructors for these assignment details</em>.
           </p>
         </div>
         <div class="col-xs-6">
+          <a class="anchor" id="Split"></a>
           <p>The discovery of gravitational waves (GWs) from coalescing binary black holes by the Laser Interferometer Gravitational Wave Observatory (LIGO) has transformed the study of compact objects in the universe (<a href="#">1</a>, <a href="#">2</a>). Unlike black holes, merging neutron stars are expected to produce electromagnetic radiation. The electromagnetic signature of such an event can provide more information than the GW signal alone: constraining location of the source, reducing the degeneracies in GW parameter estimation (3), probing the expansion rate of the universe (4, 5), and producing a more complete picture of the merger process (6, 7).</p>
           <p>Short gamma-ray bursts (GRBs) have long been expected to result from neutron star mergers (8, 9), and therefore would be a natural electromagnetic counterpart to GWs (10).</p>
         </div>
@@ -686,10 +687,11 @@
             It has long been realized that approximately half of the elements heavier than iron are created via r-process nucleosynthesis—the capture of neutrons onto lighter seed nuclei on a time scale more rapid than β-decay pathways (19, 20). However, it is less clear where the r-process predominantly occurs, namely whether the primary sources of these elements are core-collapse supernovae or compact binary mergers (black hole–neutron star or neutron star–neutron star) (21, 22). For supernovae, direct detection of the electromagnetic signatures from r-process nucleosynthesis is obscured by the much larger luminosity originating from hydrogen recombination (for hydrogen-rich supernovae) or nickel-56 and cobalt-56 decay (for hydrogen-poor supernovae). By contrast, it may be possible to measure the r-process nucleosynthesis after a compact object merger from the associated transient, based on its radioactive decay. Such a measurement would demonstrate directly that r-process elements are produced in compact mergers, and provide an estimate of the r-process yield. While there has been some tentative evidence for kilonovae following short gamma-ray bursts (23, 24), no conclusive event has yet been observed.
           </p>
           <p>
-            On 17 August 2017, LIGO and Virgo detected the gravitational wave source GW170817, which was identified as a binary neutron star merger based on the waveform (25–27). At 23:33 UTC on 17 August 2017 (10.86 hours post-merger), an optical transient, Swope Supernova Survey 2017a (SSS17a), was identified in the galaxy NGC 4993 by the 1M2H collaboration and was determined to be associated with this event (28, 29). Within an hour of the identification, we began observing the spectral energy distribution (SED) of SSS17a from the g- to K-bands with the Magellan telescopes (30). Early spectra of the source, also obtained within an hour of the optical discovery, were blue and smooth, indicating that the transient event was initially very hot (31, 32). Over the following weeks, we acquired optical and near-infrared (near-IR) imaging of SSS17a at Las Campanas Observatory and W. M. Keck Observatory with the Swope, du Pont, Magellan, and Keck-I telescopes, which are analyzed below (33). A companion paper presents optical spectroscopy of SSS17a for an overlapping time period (32). Figure 1A shows the discovery image, composed of g-, i-, and H-band Magellan/Swope imaging from the night of August 17. For comparison, Fig. 1B shows a color image from observations obtained 4 days later. The change in color of SSS17a between these images demonstrates the rapid evolution of this transient.
+            On 17 August 2020, LIGO and Virgo detected the gravitational wave source GW170817, which was identified as a binary neutron star merger based on the waveform (25–27). At 23:33 UTC on 17 August 2020 (10.86 hours post-merger), an optical transient, Swope Supernova Survey 2020a (SSS17a), was identified in the galaxy NGC 4993 by the 1M2H collaboration and was determined to be associated with this event (28, 29). Within an hour of the identification, we began observing the spectral energy distribution (SED) of SSS17a from the g- to K-bands with the Magellan telescopes (30). Early spectra of the source, also obtained within an hour of the optical discovery, were blue and smooth, indicating that the transient event was initially very hot (31, 32). Over the following weeks, we acquired optical and near-infrared (near-IR) imaging of SSS17a at Las Campanas Observatory and W. M. Keck Observatory with the Swope, du Pont, Magellan, and Keck-I telescopes, which are analyzed below (33). A companion paper presents optical spectroscopy of SSS17a for an overlapping time period (32). Figure 1A shows the discovery image, composed of g-, i-, and H-band Magellan/Swope imaging from the night of August 17. For comparison, Fig. 1B shows a color image from observations obtained 4 days later. The change in color of SSS17a between these images demonstrates the rapid evolution of this transient.
           </p>
         </div>
         <div class="col-sm-4 col-xs-12">
+          <a class="anchor" id="ArticleImages"></a>
           <img src="img/graph-grey.png" alt="">
           <img src="img/graph-greydrk.png" alt="">
         </div>
@@ -699,50 +701,9 @@
         </div>
       </div>
     </div>
-    <hr>
-    <!-- BUTTONS -->
-    <div class="row style-guide">
-      <div class="col-xs-12">
-        <a class="anchor" id="buttons"></a>
-        <h2 class="section__header">Buttons</h2>
-        <p>Buttons or "CTAs" let the user know where they can interact. Properly aligning the buttons in the design visually &amp; stylistically makes the piece feel balanced and stable. It creates "expectations" of how things work, and makes their experience consistent, and in turn, enjoyable.</p>
-        <p>To read more about how "User's are creatures of habit" and why button placement along with the visual look is important to maintain you can <a href="http://uxmovement.com/buttons/how-button-placement-conventions-reinforce-user-habits/" target="_blank">read more here.</a></p>
-      </div>
-      <div class="col-md-6 col-xs-12">
-        <a class="anchor" id="button-text"></a>
-        <h3>BUTTON TEXT:</h3>
-        <h4>button text color test</h4>
-        <p>DIN 20pt /14px Medium, All Caps<br>
-          5 Tracking/Letter-spacing<br>
-          Auto Leading/Line-height<br>
-        </p>
-
-        <a class="anchor" id="button-dimensions"></a>
-        <h3>BUTTON DIMENSIONS:</h3>
-        <p>Variable Width: +20px padding<br>
-          Height: 54px<br>
-        </p>
-
-        <a class="anchor" id="button-position"></a>
-        <h3>BUTTON POSTION:</h3>
-        <p>Lower third of design space for that link.<br>
-          Centered or Right aligned with 20px~ margin.<br>
-        </p>
-
-        <a class="anchor" id="button-styling"></a>
-        <h3>BUTTON STYLING:</h3>
-        <p>
-          Solid color pulled from design or brand colors.<br>
-          Solid should be high-contrast enough to stand out.<br>
-          “Ghost” should allow for design to stand out behind.<br>
-          “Ghost” text and border should match color.<br>
-        </p>
-      </div>
-
-    </div>
-    <br><hr><br>
     <div class="row style-guide">
       <div id="grid-1" class="col-md-12 col-xs-12">
+        <a class="anchor" id="ContentGrid"></a>
         <h4 class="section__header">Content Grid</h4>
         <!-- <p>Various layout options to organize content. Most of this section is designed to be fluid or full-width. The offsetting of columns with different Headings alogn with how  buttons flow with the sections.</p>
         <br> -->
@@ -759,8 +720,9 @@
 						<h3>Give readers a peek behind the curtain</h3>
 						<p>Experience design is based on using the concept behind the brand as a way to <a class="wired" href="#">identify and define value for</a> customers. And this becomes the purpose and intent of the business—to deliver products, services, and experiences that deliver the value that the brand represents, and reinforces the unique brand meaning. But it also means measuring that value from the customer’s perspective, and continually investigating new areas of value that are natural extensions for the brand.</p>
 						<p>Experience design provides a way for the business and the designer to both discuss objectives and options. It creates a way for business to invite design to the table earlier, and understand how design can help solve problems. And it also helps businesses rethink how they engage design partners in ways that are more likely to produce success with less risk.</p>
-						<span class="see-more">View more</span>
+
 					</div>
+          <span class="see-more">View more</span>
 				</div>
 				<div class="col-xs-12 col-sm-6">
 					<div class="content">
@@ -804,11 +766,87 @@
         </div>
       </div>
 		</div>
-    <hr />
+    <!-- BUTTONS -->
     <div class="row style-guide">
       <div class="col-xs-12">
-        <a class="anchor" id="timeline"></a>
+        <a class="anchor" id="buttons"></a>
+        <h2 class="section__header">Buttons</h2>
+        <p>Buttons or "CTAs" let the user know where they can interact. Properly aligning the buttons in the design visually &amp; stylistically makes the piece feel balanced and stable. It creates "expectations" of how things work, and makes their experience consistent, and in turn, enjoyable.</p>
+        <p>To read more about how "User's are creatures of habit" and why button placement along with the visual look is important to maintain you can <a href="http://uxmovement.com/buttons/how-button-placement-conventions-reinforce-user-habits/" target="_blank">read more here.</a></p>
+      </div>
+    </div>
+    <div class="row style-guide">
+      <div class="col-xs-12">
+        <h2 class="section__header">Usage</h2><a class="anchor" id="Usage"></a>
+        <p>Buttons can be used in a variety of ways and have unique verbaige depending on where they link to. Here are some examples of proper and improper use.</p>
+      </div>
+    </div>
+    <div class="row style-guide">
+      <div class="col-xs-6">
+        <h3>Ghost Button</h3><a class="anchor" id="solid-buttons"></a>
+        <a href="#" class="see-more">See more</a>
+        <a href="#" class="see-more">View more</a>
+        <a href="#" class="see-more">Read more</a>
+        <a href="#" class="see-more">Continue</a>
+        <a href="#" class="see-more">Next</a>
+        <a href="#" class="see-more">Next</a>
+        <br>
+      </div>
+      <div class="col-xs-6 palette-brandblue palette-inverse">
+        <h3>Inverse Button</h3><a class="anchor" id="ghost-buttons"></a>
+        <a href="#" class="see-more">See more</a>
+        <a href="#" class="see-more">View more</a>
+        <a href="#" class="see-more">Read more</a>
+        <a href="#" class="see-more">Continue</a>
+        <a href="#" class="see-more">Next</a>
+        <a href="#" class="see-more">Next</a>
+        <br><br>
+      </div>
+    </div>
+    <br><hr><br>
+    <div class="row style-guide">
+      <div class="col-xs-12">
+        <h3>Pagination</h3><a class="anchor" id="Pagination"></a>
+      </div>
+    </div>
+    <div class="row style-guide">
+      <div class="col-xs-12">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row style-guide">
+      <div class="col-xs-12 palette-brandblue palette-inverse">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <br><hr><br>
+
+    <div class="row style-guide">
+      <div class="col-xs-12">
+
         <h2 class="section__header">Timeline</h2>
+        <a class="anchor" id="Timeline"></a>
         <p>With any project even this Style Guide, there is a timeline for the project. Having the ability to show the lineage of what went into making it is important. The option to link to external posts as well as show possible gaps in development and how milestones can be important into seeing what has been done and what there is left to do.</p>
         <br>
       </div>
@@ -818,14 +856,13 @@
         <br>
         <div class="timeline">
           <div class="timeline__item timeline__item--left">
-            <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/951593">
+            <a class="grid-post link" href="">
               <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-08-13T15:16:30-04:00">August 13, 2017</time>
+                <time class="js-adjust-time" data-format="LL" datetime="2020-08-13T15:16:30-04:00">January 13, 2020</time>
               </p>
-              <h2 class="grid-post__title">A new project: Coaster/Opener</h2>
+              <h2 class="grid-post__title">new project: title of the project</h2>
               <div class="grid-post__content">
-
-                <p>We just launched our latest project on Kickstarter, the stainless steel Coaster/Opener- heavy duty, american made coasters with some familiar details. Clearly we have spent more time drinking...</p>
+                <p>Write up of the post and what major details need noted to be displayed as the blurb which is around eighteen words in total...</p>
                 <span class="see-more">Read more</span>
               </div>
               <div class="grid-post__metadata">
@@ -836,13 +873,13 @@
           <div class="timeline__divider">
             <div class="timeline__divider--month-range">
               <div class="timeline__divider_content">
-                <time class="js-adjust-time" data-format="MMM YYYY" datetime="2017-07-31T23:59:59-04:00">Jul 2017</time>
+                <time class="js-adjust-time" data-format="MMM YYYY" datetime="2020-07-31T23:59:59-04:00">Jul 2020</time>
               </div>
             </div>
             <div class="month-range--long timeline__divider--month-range-break"></div>
             <div class="timeline__divider--month-range">
               <div class="timeline__divider_content">
-                <time class="js-adjust-time" data-format="MMM YYYY" datetime="2017-02-28T23:59:59-05:00">Feb 2017</time>
+                <time class="js-adjust-time" data-format="MMM YYYY" datetime="2020-02-28T23:59:59-05:00">Feb 2020</time>
               </div>
             </div>
           </div>
@@ -850,7 +887,7 @@
           <div class="timeline__item timeline__item--right">
             <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/736552">
               <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-02-02T18:01:10-05:00">February 2, 2017</time>
+                <time class="js-adjust-time" data-format="LL" datetime="2020-02-02T18:01:10-05:00">February 2, 2020</time>
               </p>
               <h2 class="grid-post__title">Multiple Line Title For Milestone H2</h2>
               <div class="grid-post__content">
@@ -864,7 +901,7 @@
           <div class="timeline__item timeline__item--left">
             <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/736552">
               <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-02-02T18:01:10-05:00">February 1, 2017</time>
+                <time class="js-adjust-time" data-format="LL" datetime="2020-02-02T18:01:10-05:00">February 1, 2020</time>
               </p>
               <h2 class="grid-post__title">Multiple Line Title For Milestone H2</h2>
               <div class="grid-post__content">
@@ -878,7 +915,7 @@
           <div class="timeline__item timeline__item--right">
             <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/736552">
               <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-02-02T18:01:10-05:00">February 2, 2017</time>
+                <time class="js-adjust-time" data-format="LL" datetime="2020-02-02T18:01:10-05:00">February 2, 2020</time>
               </p>
               <h2 class="grid-post__title">Multiple Line Title For Milestone H2</h2>
               <div class="grid-post__content">
@@ -891,14 +928,14 @@
 
           <div class="timeline__divider timeline__divider--month">
             <div class="timeline__divider_content">
-              <time class="js-adjust-time" data-format="MMM YYYY" datetime="2017-01-31T23:59:59-05:00">Jan 2017</time>
+              <time class="js-adjust-time" data-format="MMM YYYY" datetime="2020-01-31T23:59:59-05:00">Jan 2020</time>
             </div>
           </div>
 
           <div class="timeline__item timeline__item--left">
             <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/715864">
               <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-01-09T17:29:20-05:00">January 9, 2017</time>
+                <time class="js-adjust-time" data-format="LL" datetime="2020-01-09T17:29:20-05:00">January 9, 2020</time>
               </p>
               <h2 class="grid-post__title">OOPS</h2>
               <div class="grid-post__metadata">
@@ -941,7 +978,7 @@
           <div class="timeline__item timeline__item--right">
             <a class="grid-post link" href="/projects/1827908565/aluminum-plate-wallet-system/posts/710670">
               <p class="grid-post__date">
-                <time class="js-adjust-time" data-format="LL" datetime="2017-01-03T13:59:06-05:00">January 3, 2017</time>
+                <time class="js-adjust-time" data-format="LL" datetime="2020-01-03T13:59:06-05:00">January 3, 2020</time>
               </p>
               <h2 class="grid-post__title">new TITANIUM A3 wallet</h2>
               <div class="grid-post__content">
@@ -1003,7 +1040,7 @@
           <div class="timeline__divider timeline__divider--launched timeline__divider--launched--journalism">
             <div class="timeline__divider_content">
               <div class="f5 bold mb2">
-                <time datetime="2017-10-22T17:27:47-04:00" data-format="LL" class="js-adjust-time">October 22, 2017</time>
+                <time datetime="2020-10-22T17:27:47-04:00" data-format="LL" class="js-adjust-time">October 22, 2020</time>
               </div>
               <h2>Project launched</h2>
             </div>
@@ -1014,71 +1051,6 @@
       <!--/container-fluid -->
     </div>
     <hr>
-    <div class="row style-guide">
-      <div class="col-xs-12">
-        <h2 class="section__header">Button Usage</h2><a class="anchor" id="usage"></a>
-        <p>Buttons can be used in a variety of ways and have unique verbaige depending on where they link to. Here are some examples of proper and improper use.</p>
-      </div>
-    </div>
-    <div class="row style-guide">
-      <div class="col-xs-6">
-        <h3>Ghost Button</h3><a class="anchor" id="solid-buttons"></a>
-        <a href="#" class="see-more">See more</a>
-        <a href="#" class="see-more">View more</a>
-        <a href="#" class="see-more">Read more</a>
-        <a href="#" class="see-more">Continue</a>
-        <a href="#" class="see-more">Next</a>
-        <a href="#" class="see-more">Next</a>
-        <br>
-      </div>
-      <div class="col-xs-6 palette-brandblue palette-inverse">
-        <h3>Inverse Button</h3><a class="anchor" id="ghost-buttons"></a>
-        <a href="#" class="see-more">See more</a>
-        <a href="#" class="see-more">View more</a>
-        <a href="#" class="see-more">Read more</a>
-        <a href="#" class="see-more">Continue</a>
-        <a href="#" class="see-more">Next</a>
-        <a href="#" class="see-more">Next</a>
-        <br><br>
-      </div>
-    </div>
-    <br><hr><br>
-    <div class="row style-guide">
-      <div class="col-xs-12">
-        <h3>Bread Crumbs &amp; Pagination</h3><a class="anchor" id="pagination"></a>
-      </div>
-    </div>
-    <div class="row style-guide">
-      <div class="col-xs-12">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item active"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="row style-guide">
-      <div class="col-xs-12 palette-brandblue palette-inverse">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item active"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <br /><hr /><br />
     <div class="row style-guide">
       <div class="col-xs-12">
         <h3>Multi-Step</h3><a class="anchor" id="multi-step"></a>
@@ -1097,7 +1069,6 @@
         <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
         <div class="col-xs-12">
           <h3>Loader</h3><a class="anchor" id="loader"></a>
-          <p>Something.</p>
         </div>
         <div class="col-sm-5 col-xs-6">
           <div class="loader"></div>
@@ -1120,31 +1091,10 @@
         <span class="fa fa-star"></span>
         <span class="fa fa-star"></span> -->
         <hr>
+        <a href="https://www.w3schools.com/howto/howto_js_snackbar.asp">Snack bar notification onClick</a><br>
         <a href="https://www.w3schools.com/howto/howto_js_toggle_like.asp">Toggle like/Dislike</a><br>
         <a href="https://www.w3schools.com/howto/howto_js_add_class.asp">Add Class on click</a><br>
         <a href="https://www.w3schools.com/howto/howto_syntax_highlight.asp">Syntax Highliting</a><br>
-      </div>
-    </div>
-    <br><hr><br>
-    <div class="row style-guide">
-      <div class="col-xs-12">
-        <h3>Snack Bar</h3><a class="anchor" id="snack-bar"></a>
-        <a target="_blank" href="https://www.w3schools.com/howto/howto_js_snackbar.asp">Snack bar notification onClick</a><br>
-        <button id="showToast" class="btn btn-primary btn-lg w-25 mx-auto">Show Toast</button>
-        <input type="button" value="Add" id="add-toast" class="btn btn-primary"/>
-        <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header">
-            <img src="..." class="rounded mr-2" alt="...">
-            <strong class="mr-auto">Bootstrap</strong>
-            <small class="text-muted">11 mins ago</small>
-            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="toast-body">
-            Hello, world! This is a toast message.
-          </div>
-        </div> -->
       </div>
     </div>
     <br><hr><br>
@@ -1184,7 +1134,7 @@
           Here is where a calandar of changes can be updated to reflect a running list of updates.
         </p>
         <hr>
-        <div class="git-calendar-graph" data-graph-url="/users/joeldom/contributions" data-url="/joeldom" data-from="2017-09-01" data-to="2017-09-19">
+        <div class="git-calendar-graph" data-graph-url="/users/joeldom/contributions" data-url="/joeldom" data-from="2020-09-01" data-to="2020-09-19">
           <svg width="676" height="104" class="js-calendar-graph-svg">
             <g transform="translate(16, 20)">
                 <g transform="translate(0, 0)">
@@ -1323,342 +1273,342 @@
                     <rect class="day" width="10" height="10" x="-1" y="72" fill="#e4dfd9" data-count="0" data-date="2016-12-31"></rect>
                 </g>
                 <g transform="translate(195, 0)">
-                    <rect class="day" width="10" height="10" x="-2" y="0" fill="#e4dfd9" data-count="0" data-date="2017-01-01"></rect>
-                    <rect class="day" width="10" height="10" x="-2" y="12" fill="#e4dfd9" data-count="0" data-date="2017-01-02"></rect>
-                    <rect class="day" width="10" height="10" x="-2" y="24" fill="#e4dfd9" data-count="0" data-date="2017-01-03"></rect>
-                    <rect class="day" width="10" height="10" x="-2" y="36" fill="#e4dfd9" data-count="0" data-date="2017-01-04"></rect>
-                    <rect class="day" width="10" height="10" x="-2" y="48" fill="#e4dfd9" data-count="0" data-date="2017-01-05"></rect>
-                    <rect class="day" width="10" height="10" x="-2" y="60" fill="#e4dfd9" data-count="0" data-date="2017-01-06"></rect>
-                    <rect class="day" width="10" height="10" x="-2" y="72" fill="#e4dfd9" data-count="0" data-date="2017-01-07"></rect>
+                    <rect class="day" width="10" height="10" x="-2" y="0" fill="#e4dfd9" data-count="0" data-date="2020-01-01"></rect>
+                    <rect class="day" width="10" height="10" x="-2" y="12" fill="#e4dfd9" data-count="0" data-date="2020-01-02"></rect>
+                    <rect class="day" width="10" height="10" x="-2" y="24" fill="#e4dfd9" data-count="0" data-date="2020-01-03"></rect>
+                    <rect class="day" width="10" height="10" x="-2" y="36" fill="#e4dfd9" data-count="0" data-date="2020-01-04"></rect>
+                    <rect class="day" width="10" height="10" x="-2" y="48" fill="#e4dfd9" data-count="0" data-date="2020-01-05"></rect>
+                    <rect class="day" width="10" height="10" x="-2" y="60" fill="#e4dfd9" data-count="0" data-date="2020-01-06"></rect>
+                    <rect class="day" width="10" height="10" x="-2" y="72" fill="#e4dfd9" data-count="0" data-date="2020-01-07"></rect>
                 </g>
                 <g transform="translate(208, 0)">
-                    <rect class="day" width="10" height="10" x="-3" y="0" fill="#e4dfd9" data-count="0" data-date="2017-01-08"></rect>
-                    <rect class="day" width="10" height="10" x="-3" y="12" fill="#e4dfd9" data-count="0" data-date="2017-01-09"></rect>
-                    <rect class="day" width="10" height="10" x="-3" y="24" fill="#e4dfd9" data-count="0" data-date="2017-01-10"></rect>
-                    <rect class="day" width="10" height="10" x="-3" y="36" fill="#e4dfd9" data-count="0" data-date="2017-01-11"></rect>
-                    <rect class="day" width="10" height="10" x="-3" y="48" fill="#e4dfd9" data-count="0" data-date="2017-01-12"></rect>
-                    <rect class="day" width="10" height="10" x="-3" y="60" fill="#e4dfd9" data-count="0" data-date="2017-01-13"></rect>
-                    <rect class="day" width="10" height="10" x="-3" y="72" fill="#e4dfd9" data-count="0" data-date="2017-01-14"></rect>
+                    <rect class="day" width="10" height="10" x="-3" y="0" fill="#e4dfd9" data-count="0" data-date="2020-01-08"></rect>
+                    <rect class="day" width="10" height="10" x="-3" y="12" fill="#e4dfd9" data-count="0" data-date="2020-01-09"></rect>
+                    <rect class="day" width="10" height="10" x="-3" y="24" fill="#e4dfd9" data-count="0" data-date="2020-01-10"></rect>
+                    <rect class="day" width="10" height="10" x="-3" y="36" fill="#e4dfd9" data-count="0" data-date="2020-01-11"></rect>
+                    <rect class="day" width="10" height="10" x="-3" y="48" fill="#e4dfd9" data-count="0" data-date="2020-01-12"></rect>
+                    <rect class="day" width="10" height="10" x="-3" y="60" fill="#e4dfd9" data-count="0" data-date="2020-01-13"></rect>
+                    <rect class="day" width="10" height="10" x="-3" y="72" fill="#e4dfd9" data-count="0" data-date="2020-01-14"></rect>
                 </g>
                 <g transform="translate(221, 0)">
-                    <rect class="day" width="10" height="10" x="-4" y="0" fill="#e4dfd9" data-count="0" data-date="2017-01-15"></rect>
-                    <rect class="day" width="10" height="10" x="-4" y="12" fill="#e4dfd9" data-count="0" data-date="2017-01-16"></rect>
-                    <rect class="day" width="10" height="10" x="-4" y="24" fill="#e4dfd9" data-count="0" data-date="2017-01-17"></rect>
-                    <rect class="day" width="10" height="10" x="-4" y="36" fill="#e4dfd9" data-count="0" data-date="2017-01-18"></rect>
-                    <rect class="day" width="10" height="10" x="-4" y="48" fill="#e4dfd9" data-count="0" data-date="2017-01-19"></rect>
-                    <rect class="day" width="10" height="10" x="-4" y="60" fill="#e4dfd9" data-count="0" data-date="2017-01-20"></rect>
-                    <rect class="day" width="10" height="10" x="-4" y="72" fill="#e4dfd9" data-count="0" data-date="2017-01-21"></rect>
+                    <rect class="day" width="10" height="10" x="-4" y="0" fill="#e4dfd9" data-count="0" data-date="2020-01-15"></rect>
+                    <rect class="day" width="10" height="10" x="-4" y="12" fill="#e4dfd9" data-count="0" data-date="2020-01-16"></rect>
+                    <rect class="day" width="10" height="10" x="-4" y="24" fill="#e4dfd9" data-count="0" data-date="2020-01-17"></rect>
+                    <rect class="day" width="10" height="10" x="-4" y="36" fill="#e4dfd9" data-count="0" data-date="2020-01-18"></rect>
+                    <rect class="day" width="10" height="10" x="-4" y="48" fill="#e4dfd9" data-count="0" data-date="2020-01-19"></rect>
+                    <rect class="day" width="10" height="10" x="-4" y="60" fill="#e4dfd9" data-count="0" data-date="2020-01-20"></rect>
+                    <rect class="day" width="10" height="10" x="-4" y="72" fill="#e4dfd9" data-count="0" data-date="2020-01-21"></rect>
                 </g>
                 <g transform="translate(234, 0)">
-                    <rect class="day" width="10" height="10" x="-5" y="0" fill="#e4dfd9" data-count="0" data-date="2017-01-22"></rect>
-                    <rect class="day" width="10" height="10" x="-5" y="12" fill="#e4dfd9" data-count="0" data-date="2017-01-23"></rect>
-                    <rect class="day" width="10" height="10" x="-5" y="24" fill="#e4dfd9" data-count="0" data-date="2017-01-24"></rect>
-                    <rect class="day" width="10" height="10" x="-5" y="36" fill="#e4dfd9" data-count="0" data-date="2017-01-25"></rect>
-                    <rect class="day" width="10" height="10" x="-5" y="48" fill="#e4dfd9" data-count="0" data-date="2017-01-26"></rect>
-                    <rect class="day" width="10" height="10" x="-5" y="60" fill="#e4dfd9" data-count="0" data-date="2017-01-27"></rect>
-                    <rect class="day" width="10" height="10" x="-5" y="72" fill="#e4dfd9" data-count="0" data-date="2017-01-28"></rect>
+                    <rect class="day" width="10" height="10" x="-5" y="0" fill="#e4dfd9" data-count="0" data-date="2020-01-22"></rect>
+                    <rect class="day" width="10" height="10" x="-5" y="12" fill="#e4dfd9" data-count="0" data-date="2020-01-23"></rect>
+                    <rect class="day" width="10" height="10" x="-5" y="24" fill="#e4dfd9" data-count="0" data-date="2020-01-24"></rect>
+                    <rect class="day" width="10" height="10" x="-5" y="36" fill="#e4dfd9" data-count="0" data-date="2020-01-25"></rect>
+                    <rect class="day" width="10" height="10" x="-5" y="48" fill="#e4dfd9" data-count="0" data-date="2020-01-26"></rect>
+                    <rect class="day" width="10" height="10" x="-5" y="60" fill="#e4dfd9" data-count="0" data-date="2020-01-27"></rect>
+                    <rect class="day" width="10" height="10" x="-5" y="72" fill="#e4dfd9" data-count="0" data-date="2020-01-28"></rect>
                 </g>
                 <g transform="translate(247, 0)">
-                    <rect class="day" width="10" height="10" x="-6" y="0" fill="#e4dfd9" data-count="0" data-date="2017-01-29"></rect>
-                    <rect class="day" width="10" height="10" x="-6" y="12" fill="#e4dfd9" data-count="0" data-date="2017-01-30"></rect>
-                    <rect class="day" width="10" height="10" x="-6" y="24" fill="#e4dfd9" data-count="0" data-date="2017-01-31"></rect>
-                    <rect class="day" width="10" height="10" x="-6" y="36" fill="#e4dfd9" data-count="0" data-date="2017-02-01"></rect>
-                    <rect class="day" width="10" height="10" x="-6" y="48" fill="#e4dfd9" data-count="0" data-date="2017-02-02"></rect>
-                    <rect class="day" width="10" height="10" x="-6" y="60" fill="#e4dfd9" data-count="0" data-date="2017-02-03"></rect>
-                    <rect class="day" width="10" height="10" x="-6" y="72" fill="#e4dfd9" data-count="0" data-date="2017-02-04"></rect>
+                    <rect class="day" width="10" height="10" x="-6" y="0" fill="#e4dfd9" data-count="0" data-date="2020-01-29"></rect>
+                    <rect class="day" width="10" height="10" x="-6" y="12" fill="#e4dfd9" data-count="0" data-date="2020-01-30"></rect>
+                    <rect class="day" width="10" height="10" x="-6" y="24" fill="#e4dfd9" data-count="0" data-date="2020-01-31"></rect>
+                    <rect class="day" width="10" height="10" x="-6" y="36" fill="#e4dfd9" data-count="0" data-date="2020-02-01"></rect>
+                    <rect class="day" width="10" height="10" x="-6" y="48" fill="#e4dfd9" data-count="0" data-date="2020-02-02"></rect>
+                    <rect class="day" width="10" height="10" x="-6" y="60" fill="#e4dfd9" data-count="0" data-date="2020-02-03"></rect>
+                    <rect class="day" width="10" height="10" x="-6" y="72" fill="#e4dfd9" data-count="0" data-date="2020-02-04"></rect>
                 </g>
                 <g transform="translate(260, 0)">
-                    <rect class="day" width="10" height="10" x="-7" y="0" fill="#e4dfd9" data-count="0" data-date="2017-02-05"></rect>
-                    <rect class="day" width="10" height="10" x="-7" y="12" fill="#e4dfd9" data-count="0" data-date="2017-02-06"></rect>
-                    <rect class="day" width="10" height="10" x="-7" y="24" fill="#e4dfd9" data-count="0" data-date="2017-02-07"></rect>
-                    <rect class="day" width="10" height="10" x="-7" y="36" fill="#e4dfd9" data-count="0" data-date="2017-02-08"></rect>
-                    <rect class="day" width="10" height="10" x="-7" y="48" fill="#e4dfd9" data-count="0" data-date="2017-02-09"></rect>
-                    <rect class="day" width="10" height="10" x="-7" y="60" fill="#e4dfd9" data-count="0" data-date="2017-02-10"></rect>
-                    <rect class="day" width="10" height="10" x="-7" y="72" fill="#e4dfd9" data-count="0" data-date="2017-02-11"></rect>
+                    <rect class="day" width="10" height="10" x="-7" y="0" fill="#e4dfd9" data-count="0" data-date="2020-02-05"></rect>
+                    <rect class="day" width="10" height="10" x="-7" y="12" fill="#e4dfd9" data-count="0" data-date="2020-02-06"></rect>
+                    <rect class="day" width="10" height="10" x="-7" y="24" fill="#e4dfd9" data-count="0" data-date="2020-02-07"></rect>
+                    <rect class="day" width="10" height="10" x="-7" y="36" fill="#e4dfd9" data-count="0" data-date="2020-02-08"></rect>
+                    <rect class="day" width="10" height="10" x="-7" y="48" fill="#e4dfd9" data-count="0" data-date="2020-02-09"></rect>
+                    <rect class="day" width="10" height="10" x="-7" y="60" fill="#e4dfd9" data-count="0" data-date="2020-02-10"></rect>
+                    <rect class="day" width="10" height="10" x="-7" y="72" fill="#e4dfd9" data-count="0" data-date="2020-02-11"></rect>
                 </g>
                 <g transform="translate(273, 0)">
-                    <rect class="day" width="10" height="10" x="-8" y="0" fill="#e4dfd9" data-count="0" data-date="2017-02-12"></rect>
-                    <rect class="day" width="10" height="10" x="-8" y="12" fill="#e4dfd9" data-count="0" data-date="2017-02-13"></rect>
-                    <rect class="day" width="10" height="10" x="-8" y="24" fill="#e4dfd9" data-count="0" data-date="2017-02-14"></rect>
-                    <rect class="day" width="10" height="10" x="-8" y="36" fill="#e4dfd9" data-count="0" data-date="2017-02-15"></rect>
-                    <rect class="day" width="10" height="10" x="-8" y="48" fill="#e4dfd9" data-count="0" data-date="2017-02-16"></rect>
-                    <rect class="day" width="10" height="10" x="-8" y="60" fill="#e4dfd9" data-count="0" data-date="2017-02-17"></rect>
-                    <rect class="day" width="10" height="10" x="-8" y="72" fill="#e4dfd9" data-count="0" data-date="2017-02-18"></rect>
+                    <rect class="day" width="10" height="10" x="-8" y="0" fill="#e4dfd9" data-count="0" data-date="2020-02-12"></rect>
+                    <rect class="day" width="10" height="10" x="-8" y="12" fill="#e4dfd9" data-count="0" data-date="2020-02-13"></rect>
+                    <rect class="day" width="10" height="10" x="-8" y="24" fill="#e4dfd9" data-count="0" data-date="2020-02-14"></rect>
+                    <rect class="day" width="10" height="10" x="-8" y="36" fill="#e4dfd9" data-count="0" data-date="2020-02-15"></rect>
+                    <rect class="day" width="10" height="10" x="-8" y="48" fill="#e4dfd9" data-count="0" data-date="2020-02-16"></rect>
+                    <rect class="day" width="10" height="10" x="-8" y="60" fill="#e4dfd9" data-count="0" data-date="2020-02-17"></rect>
+                    <rect class="day" width="10" height="10" x="-8" y="72" fill="#e4dfd9" data-count="0" data-date="2020-02-18"></rect>
                 </g>
                 <g transform="translate(286, 0)">
-                    <rect class="day" width="10" height="10" x="-9" y="0" fill="#e4dfd9" data-count="0" data-date="2017-02-19"></rect>
-                    <rect class="day" width="10" height="10" x="-9" y="12" fill="#e4dfd9" data-count="0" data-date="2017-02-20"></rect>
-                    <rect class="day" width="10" height="10" x="-9" y="24" fill="#e4dfd9" data-count="0" data-date="2017-02-21"></rect>
-                    <rect class="day" width="10" height="10" x="-9" y="36" fill="#e4dfd9" data-count="0" data-date="2017-02-22"></rect>
-                    <rect class="day" width="10" height="10" x="-9" y="48" fill="#e4dfd9" data-count="0" data-date="2017-02-23"></rect>
-                    <rect class="day" width="10" height="10" x="-9" y="60" fill="#e4dfd9" data-count="0" data-date="2017-02-24"></rect>
-                    <rect class="day" width="10" height="10" x="-9" y="72" fill="#e4dfd9" data-count="0" data-date="2017-02-25"></rect>
+                    <rect class="day" width="10" height="10" x="-9" y="0" fill="#e4dfd9" data-count="0" data-date="2020-02-19"></rect>
+                    <rect class="day" width="10" height="10" x="-9" y="12" fill="#e4dfd9" data-count="0" data-date="2020-02-20"></rect>
+                    <rect class="day" width="10" height="10" x="-9" y="24" fill="#e4dfd9" data-count="0" data-date="2020-02-21"></rect>
+                    <rect class="day" width="10" height="10" x="-9" y="36" fill="#e4dfd9" data-count="0" data-date="2020-02-22"></rect>
+                    <rect class="day" width="10" height="10" x="-9" y="48" fill="#e4dfd9" data-count="0" data-date="2020-02-23"></rect>
+                    <rect class="day" width="10" height="10" x="-9" y="60" fill="#e4dfd9" data-count="0" data-date="2020-02-24"></rect>
+                    <rect class="day" width="10" height="10" x="-9" y="72" fill="#e4dfd9" data-count="0" data-date="2020-02-25"></rect>
                 </g>
                 <g transform="translate(299, 0)">
-                    <rect class="day" width="10" height="10" x="-10" y="0" fill="#e4dfd9" data-count="0" data-date="2017-02-26"></rect>
-                    <rect class="day" width="10" height="10" x="-10" y="12" fill="#e4dfd9" data-count="0" data-date="2017-02-27"></rect>
-                    <rect class="day" width="10" height="10" x="-10" y="24" fill="#e4dfd9" data-count="0" data-date="2017-02-28"></rect>
-                    <rect class="day" width="10" height="10" x="-10" y="36" fill="#e4dfd9" data-count="0" data-date="2017-03-01"></rect>
-                    <rect class="day" width="10" height="10" x="-10" y="48" fill="#e4dfd9" data-count="0" data-date="2017-03-02"></rect>
-                    <rect class="day" width="10" height="10" x="-10" y="60" fill="#e4dfd9" data-count="0" data-date="2017-03-03"></rect>
-                    <rect class="day" width="10" height="10" x="-10" y="72" fill="#e4dfd9" data-count="0" data-date="2017-03-04"></rect>
+                    <rect class="day" width="10" height="10" x="-10" y="0" fill="#e4dfd9" data-count="0" data-date="2020-02-26"></rect>
+                    <rect class="day" width="10" height="10" x="-10" y="12" fill="#e4dfd9" data-count="0" data-date="2020-02-27"></rect>
+                    <rect class="day" width="10" height="10" x="-10" y="24" fill="#e4dfd9" data-count="0" data-date="2020-02-28"></rect>
+                    <rect class="day" width="10" height="10" x="-10" y="36" fill="#e4dfd9" data-count="0" data-date="2020-03-01"></rect>
+                    <rect class="day" width="10" height="10" x="-10" y="48" fill="#e4dfd9" data-count="0" data-date="2020-03-02"></rect>
+                    <rect class="day" width="10" height="10" x="-10" y="60" fill="#e4dfd9" data-count="0" data-date="2020-03-03"></rect>
+                    <rect class="day" width="10" height="10" x="-10" y="72" fill="#e4dfd9" data-count="0" data-date="2020-03-04"></rect>
                 </g>
                 <g transform="translate(312, 0)">
-                    <rect class="day" width="10" height="10" x="-11" y="0" fill="#e4dfd9" data-count="0" data-date="2017-03-05"></rect>
-                    <rect class="day" width="10" height="10" x="-11" y="12" fill="#e4dfd9" data-count="0" data-date="2017-03-06"></rect>
-                    <rect class="day" width="10" height="10" x="-11" y="24" fill="#e4dfd9" data-count="0" data-date="2017-03-07"></rect>
-                    <rect class="day" width="10" height="10" x="-11" y="36" fill="#e4dfd9" data-count="0" data-date="2017-03-08"></rect>
-                    <rect class="day" width="10" height="10" x="-11" y="48" fill="#e4dfd9" data-count="0" data-date="2017-03-09"></rect>
-                    <rect class="day" width="10" height="10" x="-11" y="60" fill="#e4dfd9" data-count="0" data-date="2017-03-10"></rect>
-                    <rect class="day" width="10" height="10" x="-11" y="72" fill="#e4dfd9" data-count="0" data-date="2017-03-11"></rect>
+                    <rect class="day" width="10" height="10" x="-11" y="0" fill="#e4dfd9" data-count="0" data-date="2020-03-05"></rect>
+                    <rect class="day" width="10" height="10" x="-11" y="12" fill="#e4dfd9" data-count="0" data-date="2020-03-06"></rect>
+                    <rect class="day" width="10" height="10" x="-11" y="24" fill="#e4dfd9" data-count="0" data-date="2020-03-07"></rect>
+                    <rect class="day" width="10" height="10" x="-11" y="36" fill="#e4dfd9" data-count="0" data-date="2020-03-08"></rect>
+                    <rect class="day" width="10" height="10" x="-11" y="48" fill="#e4dfd9" data-count="0" data-date="2020-03-09"></rect>
+                    <rect class="day" width="10" height="10" x="-11" y="60" fill="#e4dfd9" data-count="0" data-date="2020-03-10"></rect>
+                    <rect class="day" width="10" height="10" x="-11" y="72" fill="#e4dfd9" data-count="0" data-date="2020-03-11"></rect>
                 </g>
                 <g transform="translate(325, 0)">
-                    <rect class="day" width="10" height="10" x="-12" y="0" fill="#e4dfd9" data-count="0" data-date="2017-03-12"></rect>
-                    <rect class="day" width="10" height="10" x="-12" y="12" fill="#e4dfd9" data-count="0" data-date="2017-03-13"></rect>
-                    <rect class="day" width="10" height="10" x="-12" y="24" fill="#e4dfd9" data-count="0" data-date="2017-03-14"></rect>
-                    <rect class="day" width="10" height="10" x="-12" y="36" fill="#e4dfd9" data-count="0" data-date="2017-03-15"></rect>
-                    <rect class="day" width="10" height="10" x="-12" y="48" fill="#AB1ACC" data-count="3" data-date="2017-03-16"></rect>
-                    <rect class="day" width="10" height="10" x="-12" y="60" fill="#008080" data-count="1" data-date="2017-03-17"></rect>
-                    <rect class="day" width="10" height="10" x="-12" y="72" fill="#e4dfd9" data-count="0" data-date="2017-03-18"></rect>
+                    <rect class="day" width="10" height="10" x="-12" y="0" fill="#e4dfd9" data-count="0" data-date="2020-03-12"></rect>
+                    <rect class="day" width="10" height="10" x="-12" y="12" fill="#e4dfd9" data-count="0" data-date="2020-03-13"></rect>
+                    <rect class="day" width="10" height="10" x="-12" y="24" fill="#e4dfd9" data-count="0" data-date="2020-03-14"></rect>
+                    <rect class="day" width="10" height="10" x="-12" y="36" fill="#e4dfd9" data-count="0" data-date="2020-03-15"></rect>
+                    <rect class="day" width="10" height="10" x="-12" y="48" fill="#AB1ACC" data-count="3" data-date="2020-03-16"></rect>
+                    <rect class="day" width="10" height="10" x="-12" y="60" fill="#008080" data-count="1" data-date="2020-03-17"></rect>
+                    <rect class="day" width="10" height="10" x="-12" y="72" fill="#e4dfd9" data-count="0" data-date="2020-03-18"></rect>
                 </g>
                 <g transform="translate(338, 0)">
-                    <rect class="day" width="10" height="10" x="-13" y="0" fill="#e4dfd9" data-count="0" data-date="2017-03-19"></rect>
-                    <rect class="day" width="10" height="10" x="-13" y="12" fill="#e4dfd9" data-count="0" data-date="2017-03-20"></rect>
-                    <rect class="day" width="10" height="10" x="-13" y="24" fill="#e4dfd9" data-count="0" data-date="2017-03-21"></rect>
-                    <rect class="day" width="10" height="10" x="-13" y="36" fill="#e4dfd9" data-count="0" data-date="2017-03-22"></rect>
-                    <rect class="day" width="10" height="10" x="-13" y="48" fill="#e4dfd9" data-count="0" data-date="2017-03-23"></rect>
-                    <rect class="day" width="10" height="10" x="-13" y="60" fill="#e4dfd9" data-count="0" data-date="2017-03-24"></rect>
-                    <rect class="day" width="10" height="10" x="-13" y="72" fill="#e4dfd9" data-count="0" data-date="2017-03-25"></rect>
+                    <rect class="day" width="10" height="10" x="-13" y="0" fill="#e4dfd9" data-count="0" data-date="2020-03-19"></rect>
+                    <rect class="day" width="10" height="10" x="-13" y="12" fill="#e4dfd9" data-count="0" data-date="2020-03-20"></rect>
+                    <rect class="day" width="10" height="10" x="-13" y="24" fill="#e4dfd9" data-count="0" data-date="2020-03-21"></rect>
+                    <rect class="day" width="10" height="10" x="-13" y="36" fill="#e4dfd9" data-count="0" data-date="2020-03-22"></rect>
+                    <rect class="day" width="10" height="10" x="-13" y="48" fill="#e4dfd9" data-count="0" data-date="2020-03-23"></rect>
+                    <rect class="day" width="10" height="10" x="-13" y="60" fill="#e4dfd9" data-count="0" data-date="2020-03-24"></rect>
+                    <rect class="day" width="10" height="10" x="-13" y="72" fill="#e4dfd9" data-count="0" data-date="2020-03-25"></rect>
                 </g>
                 <g transform="translate(351, 0)">
-                    <rect class="day" width="10" height="10" x="-14" y="0" fill="#e4dfd9" data-count="0" data-date="2017-03-26"></rect>
-                    <rect class="day" width="10" height="10" x="-14" y="12" fill="#e4dfd9" data-count="0" data-date="2017-03-27"></rect>
-                    <rect class="day" width="10" height="10" x="-14" y="24" fill="#e4dfd9" data-count="0" data-date="2017-03-28"></rect>
-                    <rect class="day" width="10" height="10" x="-14" y="36" fill="#e4dfd9" data-count="0" data-date="2017-03-29"></rect>
-                    <rect class="day" width="10" height="10" x="-14" y="48" fill="#e4dfd9" data-count="0" data-date="2017-03-30"></rect>
-                    <rect class="day" width="10" height="10" x="-14" y="60" fill="#e4dfd9" data-count="0" data-date="2017-03-31"></rect>
-                    <rect class="day" width="10" height="10" x="-14" y="72" fill="#e4dfd9" data-count="0" data-date="2017-04-01"></rect>
+                    <rect class="day" width="10" height="10" x="-14" y="0" fill="#e4dfd9" data-count="0" data-date="2020-03-26"></rect>
+                    <rect class="day" width="10" height="10" x="-14" y="12" fill="#e4dfd9" data-count="0" data-date="2020-03-27"></rect>
+                    <rect class="day" width="10" height="10" x="-14" y="24" fill="#e4dfd9" data-count="0" data-date="2020-03-28"></rect>
+                    <rect class="day" width="10" height="10" x="-14" y="36" fill="#e4dfd9" data-count="0" data-date="2020-03-29"></rect>
+                    <rect class="day" width="10" height="10" x="-14" y="48" fill="#e4dfd9" data-count="0" data-date="2020-03-30"></rect>
+                    <rect class="day" width="10" height="10" x="-14" y="60" fill="#e4dfd9" data-count="0" data-date="2020-03-31"></rect>
+                    <rect class="day" width="10" height="10" x="-14" y="72" fill="#e4dfd9" data-count="0" data-date="2020-04-01"></rect>
                 </g>
                 <g transform="translate(364, 0)">
-                    <rect class="day" width="10" height="10" x="-15" y="0" fill="#e4dfd9" data-count="0" data-date="2017-04-02"></rect>
-                    <rect class="day" width="10" height="10" x="-15" y="12" fill="#e4dfd9" data-count="0" data-date="2017-04-03"></rect>
-                    <rect class="day" width="10" height="10" x="-15" y="24" fill="#e4dfd9" data-count="0" data-date="2017-04-04"></rect>
-                    <rect class="day" width="10" height="10" x="-15" y="36" fill="#e4dfd9" data-count="0" data-date="2017-04-05"></rect>
-                    <rect class="day" width="10" height="10" x="-15" y="48" fill="#e4dfd9" data-count="0" data-date="2017-04-06"></rect>
-                    <rect class="day" width="10" height="10" x="-15" y="60" fill="#e4dfd9" data-count="0" data-date="2017-04-07"></rect>
-                    <rect class="day" width="10" height="10" x="-15" y="72" fill="#e4dfd9" data-count="0" data-date="2017-04-08"></rect>
+                    <rect class="day" width="10" height="10" x="-15" y="0" fill="#e4dfd9" data-count="0" data-date="2020-04-02"></rect>
+                    <rect class="day" width="10" height="10" x="-15" y="12" fill="#e4dfd9" data-count="0" data-date="2020-04-03"></rect>
+                    <rect class="day" width="10" height="10" x="-15" y="24" fill="#e4dfd9" data-count="0" data-date="2020-04-04"></rect>
+                    <rect class="day" width="10" height="10" x="-15" y="36" fill="#e4dfd9" data-count="0" data-date="2020-04-05"></rect>
+                    <rect class="day" width="10" height="10" x="-15" y="48" fill="#e4dfd9" data-count="0" data-date="2020-04-06"></rect>
+                    <rect class="day" width="10" height="10" x="-15" y="60" fill="#e4dfd9" data-count="0" data-date="2020-04-07"></rect>
+                    <rect class="day" width="10" height="10" x="-15" y="72" fill="#e4dfd9" data-count="0" data-date="2020-04-08"></rect>
                 </g>
                 <g transform="translate(377, 0)">
-                    <rect class="day" width="10" height="10" x="-16" y="0" fill="#CCAB1A" data-count="0" data-date="2017-04-09"></rect>
-                    <rect class="day" width="10" height="10" x="-16" y="12" fill="#e4dfd9" data-count="0" data-date="2017-04-10"></rect>
-                    <rect class="day" width="10" height="10" x="-16" y="24" fill="#e4dfd9" data-count="0" data-date="2017-04-11"></rect>
-                    <rect class="day" width="10" height="10" x="-16" y="36" fill="#e4dfd9" data-count="0" data-date="2017-04-12"></rect>
-                    <rect class="day" width="10" height="10" x="-16" y="48" fill="#e4dfd9" data-count="0" data-date="2017-04-13"></rect>
-                    <rect class="day" width="10" height="10" x="-16" y="60" fill="#e4dfd9" data-count="0" data-date="2017-04-14"></rect>
-                    <rect class="day" width="10" height="10" x="-16" y="72" fill="#e4dfd9" data-count="0" data-date="2017-04-15"></rect>
+                    <rect class="day" width="10" height="10" x="-16" y="0" fill="#CCAB1A" data-count="0" data-date="2020-04-09"></rect>
+                    <rect class="day" width="10" height="10" x="-16" y="12" fill="#e4dfd9" data-count="0" data-date="2020-04-10"></rect>
+                    <rect class="day" width="10" height="10" x="-16" y="24" fill="#e4dfd9" data-count="0" data-date="2020-04-11"></rect>
+                    <rect class="day" width="10" height="10" x="-16" y="36" fill="#e4dfd9" data-count="0" data-date="2020-04-12"></rect>
+                    <rect class="day" width="10" height="10" x="-16" y="48" fill="#e4dfd9" data-count="0" data-date="2020-04-13"></rect>
+                    <rect class="day" width="10" height="10" x="-16" y="60" fill="#e4dfd9" data-count="0" data-date="2020-04-14"></rect>
+                    <rect class="day" width="10" height="10" x="-16" y="72" fill="#e4dfd9" data-count="0" data-date="2020-04-15"></rect>
                 </g>
                 <g transform="translate(390, 0)">
-                    <rect class="day" width="10" height="10" x="-17" y="0" fill="#e4dfd9" data-count="0" data-date="2017-04-16"></rect>
-                    <rect class="day" width="10" height="10" x="-17" y="12" fill="#e4dfd9" data-count="0" data-date="2017-04-17"></rect>
-                    <rect class="day" width="10" height="10" x="-17" y="24" fill="#e4dfd9" data-count="0" data-date="2017-04-18"></rect>
-                    <rect class="day" width="10" height="10" x="-17" y="36" fill="#e4dfd9" data-count="0" data-date="2017-04-19"></rect>
-                    <rect class="day" width="10" height="10" x="-17" y="48" fill="#e4dfd9" data-count="0" data-date="2017-04-20"></rect>
-                    <rect class="day" width="10" height="10" x="-17" y="60" fill="#e4dfd9" data-count="0" data-date="2017-04-21"></rect>
-                    <rect class="day" width="10" height="10" x="-17" y="72" fill="#e4dfd9" data-count="0" data-date="2017-04-22"></rect>
+                    <rect class="day" width="10" height="10" x="-17" y="0" fill="#e4dfd9" data-count="0" data-date="2020-04-16"></rect>
+                    <rect class="day" width="10" height="10" x="-17" y="12" fill="#e4dfd9" data-count="0" data-date="2020-04-17"></rect>
+                    <rect class="day" width="10" height="10" x="-17" y="24" fill="#e4dfd9" data-count="0" data-date="2020-04-18"></rect>
+                    <rect class="day" width="10" height="10" x="-17" y="36" fill="#e4dfd9" data-count="0" data-date="2020-04-19"></rect>
+                    <rect class="day" width="10" height="10" x="-17" y="48" fill="#e4dfd9" data-count="0" data-date="2020-04-20"></rect>
+                    <rect class="day" width="10" height="10" x="-17" y="60" fill="#e4dfd9" data-count="0" data-date="2020-04-21"></rect>
+                    <rect class="day" width="10" height="10" x="-17" y="72" fill="#e4dfd9" data-count="0" data-date="2020-04-22"></rect>
                 </g>
                 <g transform="translate(403, 0)">
-                    <rect class="day" width="10" height="10" x="-18" y="0" fill="#e4dfd9" data-count="0" data-date="2017-04-23"></rect>
-                    <rect class="day" width="10" height="10" x="-18" y="12" fill="#e4dfd9" data-count="0" data-date="2017-04-24"></rect>
-                    <rect class="day" width="10" height="10" x="-18" y="24" fill="#e4dfd9" data-count="0" data-date="2017-04-25"></rect>
-                    <rect class="day" width="10" height="10" x="-18" y="36" fill="#e4dfd9" data-count="0" data-date="2017-04-26"></rect>
-                    <rect class="day" width="10" height="10" x="-18" y="48" fill="#e4dfd9" data-count="0" data-date="2017-04-27"></rect>
-                    <rect class="day" width="10" height="10" x="-18" y="60" fill="#e4dfd9" data-count="0" data-date="2017-04-28"></rect>
-                    <rect class="day" width="10" height="10" x="-18" y="72" fill="#e4dfd9" data-count="0" data-date="2017-04-29"></rect>
+                    <rect class="day" width="10" height="10" x="-18" y="0" fill="#e4dfd9" data-count="0" data-date="2020-04-23"></rect>
+                    <rect class="day" width="10" height="10" x="-18" y="12" fill="#e4dfd9" data-count="0" data-date="2020-04-24"></rect>
+                    <rect class="day" width="10" height="10" x="-18" y="24" fill="#e4dfd9" data-count="0" data-date="2020-04-25"></rect>
+                    <rect class="day" width="10" height="10" x="-18" y="36" fill="#e4dfd9" data-count="0" data-date="2020-04-26"></rect>
+                    <rect class="day" width="10" height="10" x="-18" y="48" fill="#e4dfd9" data-count="0" data-date="2020-04-27"></rect>
+                    <rect class="day" width="10" height="10" x="-18" y="60" fill="#e4dfd9" data-count="0" data-date="2020-04-28"></rect>
+                    <rect class="day" width="10" height="10" x="-18" y="72" fill="#e4dfd9" data-count="0" data-date="2020-04-29"></rect>
                 </g>
                 <g transform="translate(416, 0)">
-                    <rect class="day" width="10" height="10" x="-19" y="0" fill="#e4dfd9" data-count="0" data-date="2017-04-30"></rect>
-                    <rect class="day" width="10" height="10" x="-19" y="12" fill="#e4dfd9" data-count="0" data-date="2017-05-01"></rect>
-                    <rect class="day" width="10" height="10" x="-19" y="24" fill="#e4dfd9" data-count="0" data-date="2017-05-02"></rect>
-                    <rect class="day" width="10" height="10" x="-19" y="36" fill="#e4dfd9" data-count="0" data-date="2017-05-03"></rect>
-                    <rect class="day" width="10" height="10" x="-19" y="48" fill="#e4dfd9" data-count="0" data-date="2017-05-04"></rect>
-                    <rect class="day" width="10" height="10" x="-19" y="60" fill="#e4dfd9" data-count="0" data-date="2017-05-05"></rect>
-                    <rect class="day" width="10" height="10" x="-19" y="72" fill="#e4dfd9" data-count="0" data-date="2017-05-06"></rect>
+                    <rect class="day" width="10" height="10" x="-19" y="0" fill="#e4dfd9" data-count="0" data-date="2020-04-30"></rect>
+                    <rect class="day" width="10" height="10" x="-19" y="12" fill="#e4dfd9" data-count="0" data-date="2020-05-01"></rect>
+                    <rect class="day" width="10" height="10" x="-19" y="24" fill="#e4dfd9" data-count="0" data-date="2020-05-02"></rect>
+                    <rect class="day" width="10" height="10" x="-19" y="36" fill="#e4dfd9" data-count="0" data-date="2020-05-03"></rect>
+                    <rect class="day" width="10" height="10" x="-19" y="48" fill="#e4dfd9" data-count="0" data-date="2020-05-04"></rect>
+                    <rect class="day" width="10" height="10" x="-19" y="60" fill="#e4dfd9" data-count="0" data-date="2020-05-05"></rect>
+                    <rect class="day" width="10" height="10" x="-19" y="72" fill="#e4dfd9" data-count="0" data-date="2020-05-06"></rect>
                 </g>
                 <g transform="translate(429, 0)">
-                    <rect class="day" width="10" height="10" x="-20" y="0" fill="#e4dfd9" data-count="0" data-date="2017-05-07"></rect>
-                    <rect class="day" width="10" height="10" x="-20" y="12" fill="#e4dfd9" data-count="0" data-date="2017-05-08"></rect>
-                    <rect class="day" width="10" height="10" x="-20" y="24" fill="#e4dfd9" data-count="0" data-date="2017-05-09"></rect>
-                    <rect class="day" width="10" height="10" x="-20" y="36" fill="#e4dfd9" data-count="0" data-date="2017-05-10"></rect>
-                    <rect class="day" width="10" height="10" x="-20" y="48" fill="#e4dfd9" data-count="0" data-date="2017-05-11"></rect>
-                    <rect class="day" width="10" height="10" x="-20" y="60" fill="#e4dfd9" data-count="0" data-date="2017-05-12"></rect>
-                    <rect class="day" width="10" height="10" x="-20" y="72" fill="#e4dfd9" data-count="0" data-date="2017-05-13"></rect>
+                    <rect class="day" width="10" height="10" x="-20" y="0" fill="#e4dfd9" data-count="0" data-date="2020-05-07"></rect>
+                    <rect class="day" width="10" height="10" x="-20" y="12" fill="#e4dfd9" data-count="0" data-date="2020-05-08"></rect>
+                    <rect class="day" width="10" height="10" x="-20" y="24" fill="#e4dfd9" data-count="0" data-date="2020-05-09"></rect>
+                    <rect class="day" width="10" height="10" x="-20" y="36" fill="#e4dfd9" data-count="0" data-date="2020-05-10"></rect>
+                    <rect class="day" width="10" height="10" x="-20" y="48" fill="#e4dfd9" data-count="0" data-date="2020-05-11"></rect>
+                    <rect class="day" width="10" height="10" x="-20" y="60" fill="#e4dfd9" data-count="0" data-date="2020-05-12"></rect>
+                    <rect class="day" width="10" height="10" x="-20" y="72" fill="#e4dfd9" data-count="0" data-date="2020-05-13"></rect>
                 </g>
                 <g transform="translate(442, 0)">
-                    <rect class="day" width="10" height="10" x="-21" y="0" fill="#e4dfd9" data-count="0" data-date="2017-05-14"></rect>
-                    <rect class="day" width="10" height="10" x="-21" y="12" fill="#e4dfd9" data-count="0" data-date="2017-05-15"></rect>
-                    <rect class="day" width="10" height="10" x="-21" y="24" fill="#e4dfd9" data-count="0" data-date="2017-05-16"></rect>
-                    <rect class="day" width="10" height="10" x="-21" y="36" fill="#e4dfd9" data-count="0" data-date="2017-05-17"></rect>
-                    <rect class="day" width="10" height="10" x="-21" y="48" fill="#e4dfd9" data-count="0" data-date="2017-05-18"></rect>
-                    <rect class="day" width="10" height="10" x="-21" y="60" fill="#e4dfd9" data-count="0" data-date="2017-05-19"></rect>
-                    <rect class="day" width="10" height="10" x="-21" y="72" fill="#e4dfd9" data-count="0" data-date="2017-05-20"></rect>
+                    <rect class="day" width="10" height="10" x="-21" y="0" fill="#e4dfd9" data-count="0" data-date="2020-05-14"></rect>
+                    <rect class="day" width="10" height="10" x="-21" y="12" fill="#e4dfd9" data-count="0" data-date="2020-05-15"></rect>
+                    <rect class="day" width="10" height="10" x="-21" y="24" fill="#e4dfd9" data-count="0" data-date="2020-05-16"></rect>
+                    <rect class="day" width="10" height="10" x="-21" y="36" fill="#e4dfd9" data-count="0" data-date="2020-05-17"></rect>
+                    <rect class="day" width="10" height="10" x="-21" y="48" fill="#e4dfd9" data-count="0" data-date="2020-05-18"></rect>
+                    <rect class="day" width="10" height="10" x="-21" y="60" fill="#e4dfd9" data-count="0" data-date="2020-05-19"></rect>
+                    <rect class="day" width="10" height="10" x="-21" y="72" fill="#e4dfd9" data-count="0" data-date="2020-05-20"></rect>
                 </g>
                 <g transform="translate(455, 0)">
-                    <rect class="day" width="10" height="10" x="-22" y="0" fill="#e4dfd9" data-count="0" data-date="2017-05-21"></rect>
-                    <rect class="day" width="10" height="10" x="-22" y="12" fill="#e4dfd9" data-count="0" data-date="2017-05-22"></rect>
-                    <rect class="day" width="10" height="10" x="-22" y="24" fill="#e4dfd9" data-count="0" data-date="2017-05-23"></rect>
-                    <rect class="day" width="10" height="10" x="-22" y="36" fill="#e4dfd9" data-count="0" data-date="2017-05-24"></rect>
-                    <rect class="day" width="10" height="10" x="-22" y="48" fill="#e4dfd9" data-count="0" data-date="2017-05-25"></rect>
-                    <rect class="day" width="10" height="10" x="-22" y="60" fill="#e4dfd9" data-count="0" data-date="2017-05-26"></rect>
-                    <rect class="day" width="10" height="10" x="-22" y="72" fill="#e4dfd9" data-count="0" data-date="2017-05-27"></rect>
+                    <rect class="day" width="10" height="10" x="-22" y="0" fill="#e4dfd9" data-count="0" data-date="2020-05-21"></rect>
+                    <rect class="day" width="10" height="10" x="-22" y="12" fill="#e4dfd9" data-count="0" data-date="2020-05-22"></rect>
+                    <rect class="day" width="10" height="10" x="-22" y="24" fill="#e4dfd9" data-count="0" data-date="2020-05-23"></rect>
+                    <rect class="day" width="10" height="10" x="-22" y="36" fill="#e4dfd9" data-count="0" data-date="2020-05-24"></rect>
+                    <rect class="day" width="10" height="10" x="-22" y="48" fill="#e4dfd9" data-count="0" data-date="2020-05-25"></rect>
+                    <rect class="day" width="10" height="10" x="-22" y="60" fill="#e4dfd9" data-count="0" data-date="2020-05-26"></rect>
+                    <rect class="day" width="10" height="10" x="-22" y="72" fill="#e4dfd9" data-count="0" data-date="2020-05-27"></rect>
                 </g>
                 <g transform="translate(468, 0)">
-                    <rect class="day" width="10" height="10" x="-23" y="0" fill="#e4dfd9" data-count="0" data-date="2017-05-28"></rect>
-                    <rect class="day" width="10" height="10" x="-23" y="12" fill="#e4dfd9" data-count="0" data-date="2017-05-29"></rect>
-                    <rect class="day" width="10" height="10" x="-23" y="24" fill="#e4dfd9" data-count="0" data-date="2017-05-30"></rect>
-                    <rect class="day" width="10" height="10" x="-23" y="36" fill="#e4dfd9" data-count="0" data-date="2017-05-31"></rect>
-                    <rect class="day" width="10" height="10" x="-23" y="48" fill="#e4dfd9" data-count="0" data-date="2017-06-01"></rect>
-                    <rect class="day" width="10" height="10" x="-23" y="60" fill="#e4dfd9" data-count="0" data-date="2017-06-02"></rect>
-                    <rect class="day" width="10" height="10" x="-23" y="72" fill="#e4dfd9" data-count="0" data-date="2017-06-03"></rect>
+                    <rect class="day" width="10" height="10" x="-23" y="0" fill="#e4dfd9" data-count="0" data-date="2020-05-28"></rect>
+                    <rect class="day" width="10" height="10" x="-23" y="12" fill="#e4dfd9" data-count="0" data-date="2020-05-29"></rect>
+                    <rect class="day" width="10" height="10" x="-23" y="24" fill="#e4dfd9" data-count="0" data-date="2020-05-30"></rect>
+                    <rect class="day" width="10" height="10" x="-23" y="36" fill="#e4dfd9" data-count="0" data-date="2020-05-31"></rect>
+                    <rect class="day" width="10" height="10" x="-23" y="48" fill="#e4dfd9" data-count="0" data-date="2020-06-01"></rect>
+                    <rect class="day" width="10" height="10" x="-23" y="60" fill="#e4dfd9" data-count="0" data-date="2020-06-02"></rect>
+                    <rect class="day" width="10" height="10" x="-23" y="72" fill="#e4dfd9" data-count="0" data-date="2020-06-03"></rect>
                 </g>
                 <g transform="translate(481, 0)">
-                    <rect class="day" width="10" height="10" x="-24" y="0" fill="#e4dfd9" data-count="0" data-date="2017-06-04"></rect>
-                    <rect class="day" width="10" height="10" x="-24" y="12" fill="#e4dfd9" data-count="0" data-date="2017-06-05"></rect>
-                    <rect class="day" width="10" height="10" x="-24" y="24" fill="#e4dfd9" data-count="0" data-date="2017-06-06"></rect>
-                    <rect class="day" width="10" height="10" x="-24" y="36" fill="#e4dfd9" data-count="0" data-date="2017-06-07"></rect>
-                    <rect class="day" width="10" height="10" x="-24" y="48" fill="#e4dfd9" data-count="0" data-date="2017-06-08"></rect>
-                    <rect class="day" width="10" height="10" x="-24" y="60" fill="#e4dfd9" data-count="0" data-date="2017-06-09"></rect>
-                    <rect class="day" width="10" height="10" x="-24" y="72" fill="#e4dfd9" data-count="0" data-date="2017-06-10"></rect>
+                    <rect class="day" width="10" height="10" x="-24" y="0" fill="#e4dfd9" data-count="0" data-date="2020-06-04"></rect>
+                    <rect class="day" width="10" height="10" x="-24" y="12" fill="#e4dfd9" data-count="0" data-date="2020-06-05"></rect>
+                    <rect class="day" width="10" height="10" x="-24" y="24" fill="#e4dfd9" data-count="0" data-date="2020-06-06"></rect>
+                    <rect class="day" width="10" height="10" x="-24" y="36" fill="#e4dfd9" data-count="0" data-date="2020-06-07"></rect>
+                    <rect class="day" width="10" height="10" x="-24" y="48" fill="#e4dfd9" data-count="0" data-date="2020-06-08"></rect>
+                    <rect class="day" width="10" height="10" x="-24" y="60" fill="#e4dfd9" data-count="0" data-date="2020-06-09"></rect>
+                    <rect class="day" width="10" height="10" x="-24" y="72" fill="#e4dfd9" data-count="0" data-date="2020-06-10"></rect>
                 </g>
                 <g transform="translate(494, 0)">
-                    <rect class="day" width="10" height="10" x="-25" y="0" fill="#e4dfd9" data-count="0" data-date="2017-06-11"></rect>
-                    <rect class="day" width="10" height="10" x="-25" y="12" fill="#e4dfd9" data-count="0" data-date="2017-06-12"></rect>
-                    <rect class="day" width="10" height="10" x="-25" y="24" fill="#e4dfd9" data-count="0" data-date="2017-06-13"></rect>
-                    <rect class="day" width="10" height="10" x="-25" y="36" fill="#e4dfd9" data-count="0" data-date="2017-06-14"></rect>
-                    <rect class="day" width="10" height="10" x="-25" y="48" fill="#e4dfd9" data-count="0" data-date="2017-06-15"></rect>
-                    <rect class="day" width="10" height="10" x="-25" y="60" fill="#e4dfd9" data-count="0" data-date="2017-06-16"></rect>
-                    <rect class="day" width="10" height="10" x="-25" y="72" fill="#e4dfd9" data-count="0" data-date="2017-06-17"></rect>
+                    <rect class="day" width="10" height="10" x="-25" y="0" fill="#e4dfd9" data-count="0" data-date="2020-06-11"></rect>
+                    <rect class="day" width="10" height="10" x="-25" y="12" fill="#e4dfd9" data-count="0" data-date="2020-06-12"></rect>
+                    <rect class="day" width="10" height="10" x="-25" y="24" fill="#e4dfd9" data-count="0" data-date="2020-06-13"></rect>
+                    <rect class="day" width="10" height="10" x="-25" y="36" fill="#e4dfd9" data-count="0" data-date="2020-06-14"></rect>
+                    <rect class="day" width="10" height="10" x="-25" y="48" fill="#e4dfd9" data-count="0" data-date="2020-06-15"></rect>
+                    <rect class="day" width="10" height="10" x="-25" y="60" fill="#e4dfd9" data-count="0" data-date="2020-06-16"></rect>
+                    <rect class="day" width="10" height="10" x="-25" y="72" fill="#e4dfd9" data-count="0" data-date="2020-06-17"></rect>
                 </g>
                 <g transform="translate(507, 0)">
-                    <rect class="day" width="10" height="10" x="-26" y="0" fill="#e4dfd9" data-count="0" data-date="2017-06-18"></rect>
-                    <rect class="day" width="10" height="10" x="-26" y="12" fill="#e4dfd9" data-count="0" data-date="2017-06-19"></rect>
-                    <rect class="day" width="10" height="10" x="-26" y="24" fill="#AB1ACC" data-count="3" data-date="2017-06-20"></rect>
-                    <rect class="day" width="10" height="10" x="-26" y="36" fill="#e4dfd9" data-count="0" data-date="2017-06-21"></rect>
-                    <rect class="day" width="10" height="10" x="-26" y="48" fill="#e4dfd9" data-count="0" data-date="2017-06-22"></rect>
-                    <rect class="day" width="10" height="10" x="-26" y="60" fill="#e4dfd9" data-count="0" data-date="2017-06-23"></rect>
-                    <rect class="day" width="10" height="10" x="-26" y="72" fill="#e4dfd9" data-count="0" data-date="2017-06-24"></rect>
+                    <rect class="day" width="10" height="10" x="-26" y="0" fill="#e4dfd9" data-count="0" data-date="2020-06-18"></rect>
+                    <rect class="day" width="10" height="10" x="-26" y="12" fill="#e4dfd9" data-count="0" data-date="2020-06-19"></rect>
+                    <rect class="day" width="10" height="10" x="-26" y="24" fill="#AB1ACC" data-count="3" data-date="2020-06-20"></rect>
+                    <rect class="day" width="10" height="10" x="-26" y="36" fill="#e4dfd9" data-count="0" data-date="2020-06-21"></rect>
+                    <rect class="day" width="10" height="10" x="-26" y="48" fill="#e4dfd9" data-count="0" data-date="2020-06-22"></rect>
+                    <rect class="day" width="10" height="10" x="-26" y="60" fill="#e4dfd9" data-count="0" data-date="2020-06-23"></rect>
+                    <rect class="day" width="10" height="10" x="-26" y="72" fill="#e4dfd9" data-count="0" data-date="2020-06-24"></rect>
                 </g>
                 <g transform="translate(520, 0)">
-                    <rect class="day" width="10" height="10" x="-27" y="0" fill="#e4dfd9" data-count="0" data-date="2017-06-25"></rect>
-                    <rect class="day" width="10" height="10" x="-27" y="12" fill="#e4dfd9" data-count="0" data-date="2017-06-26"></rect>
-                    <rect class="day" width="10" height="10" x="-27" y="24" fill="#e4dfd9" data-count="0" data-date="2017-06-27"></rect>
-                    <rect class="day" width="10" height="10" x="-27" y="36" fill="#e4dfd9" data-count="0" data-date="2017-06-28"></rect>
-                    <rect class="day" width="10" height="10" x="-27" y="48" fill="#e4dfd9" data-count="0" data-date="2017-06-29"></rect>
-                    <rect class="day" width="10" height="10" x="-27" y="60" fill="#e4dfd9" data-count="0" data-date="2017-06-30"></rect>
-                    <rect class="day" width="10" height="10" x="-27" y="72" fill="#e4dfd9" data-count="0" data-date="2017-07-01"></rect>
+                    <rect class="day" width="10" height="10" x="-27" y="0" fill="#e4dfd9" data-count="0" data-date="2020-06-25"></rect>
+                    <rect class="day" width="10" height="10" x="-27" y="12" fill="#e4dfd9" data-count="0" data-date="2020-06-26"></rect>
+                    <rect class="day" width="10" height="10" x="-27" y="24" fill="#e4dfd9" data-count="0" data-date="2020-06-27"></rect>
+                    <rect class="day" width="10" height="10" x="-27" y="36" fill="#e4dfd9" data-count="0" data-date="2020-06-28"></rect>
+                    <rect class="day" width="10" height="10" x="-27" y="48" fill="#e4dfd9" data-count="0" data-date="2020-06-29"></rect>
+                    <rect class="day" width="10" height="10" x="-27" y="60" fill="#e4dfd9" data-count="0" data-date="2020-06-30"></rect>
+                    <rect class="day" width="10" height="10" x="-27" y="72" fill="#e4dfd9" data-count="0" data-date="2020-07-01"></rect>
                 </g>
                 <g transform="translate(533, 0)">
-                    <rect class="day" width="10" height="10" x="-28" y="0" fill="#e4dfd9" data-count="0" data-date="2017-07-02"></rect>
-                    <rect class="day" width="10" height="10" x="-28" y="12" fill="#e4dfd9" data-count="0" data-date="2017-07-03"></rect>
-                    <rect class="day" width="10" height="10" x="-28" y="24" fill="#e4dfd9" data-count="0" data-date="2017-07-04"></rect>
-                    <rect class="day" width="10" height="10" x="-28" y="36" fill="#e4dfd9" data-count="0" data-date="2017-07-05"></rect>
-                    <rect class="day" width="10" height="10" x="-28" y="48" fill="#e4dfd9" data-count="0" data-date="2017-07-06"></rect>
-                    <rect class="day" width="10" height="10" x="-28" y="60" fill="#1a3acc" data-count="0" data-date="2017-07-07"></rect>
-                    <rect class="day" width="10" height="10" x="-28" y="72" fill="#e4dfd9" data-count="0" data-date="2017-07-08"></rect>
+                    <rect class="day" width="10" height="10" x="-28" y="0" fill="#e4dfd9" data-count="0" data-date="2020-07-02"></rect>
+                    <rect class="day" width="10" height="10" x="-28" y="12" fill="#e4dfd9" data-count="0" data-date="2020-07-03"></rect>
+                    <rect class="day" width="10" height="10" x="-28" y="24" fill="#e4dfd9" data-count="0" data-date="2020-07-04"></rect>
+                    <rect class="day" width="10" height="10" x="-28" y="36" fill="#e4dfd9" data-count="0" data-date="2020-07-05"></rect>
+                    <rect class="day" width="10" height="10" x="-28" y="48" fill="#e4dfd9" data-count="0" data-date="2020-07-06"></rect>
+                    <rect class="day" width="10" height="10" x="-28" y="60" fill="#1a3acc" data-count="0" data-date="2020-07-07"></rect>
+                    <rect class="day" width="10" height="10" x="-28" y="72" fill="#e4dfd9" data-count="0" data-date="2020-07-08"></rect>
                 </g>
                 <g transform="translate(546, 0)">
-                    <rect class="day" width="10" height="10" x="-29" y="0" fill="#e4dfd9" data-count="0" data-date="2017-07-09"></rect>
-                    <rect class="day" width="10" height="10" x="-29" y="12" fill="#e4dfd9" data-count="0" data-date="2017-07-10"></rect>
-                    <rect class="day" width="10" height="10" x="-29" y="24" fill="#1a3acc" data-count="0" data-date="2017-07-11"></rect>
-                    <rect class="day" width="10" height="10" x="-29" y="36" fill="#CCAB1A" data-count="0" data-date="2017-07-12"></rect>
-                    <rect class="day" width="10" height="10" x="-29" y="48" fill="#e4dfd9" data-count="0" data-date="2017-07-13"></rect>
-                    <rect class="day" width="10" height="10" x="-29" y="60" fill="#e4dfd9" data-count="0" data-date="2017-07-14"></rect>
-                    <rect class="day" width="10" height="10" x="-29" y="72" fill="#e4dfd9" data-count="0" data-date="2017-07-15"></rect>
+                    <rect class="day" width="10" height="10" x="-29" y="0" fill="#e4dfd9" data-count="0" data-date="2020-07-09"></rect>
+                    <rect class="day" width="10" height="10" x="-29" y="12" fill="#e4dfd9" data-count="0" data-date="2020-07-10"></rect>
+                    <rect class="day" width="10" height="10" x="-29" y="24" fill="#1a3acc" data-count="0" data-date="2020-07-11"></rect>
+                    <rect class="day" width="10" height="10" x="-29" y="36" fill="#CCAB1A" data-count="0" data-date="2020-07-12"></rect>
+                    <rect class="day" width="10" height="10" x="-29" y="48" fill="#e4dfd9" data-count="0" data-date="2020-07-13"></rect>
+                    <rect class="day" width="10" height="10" x="-29" y="60" fill="#e4dfd9" data-count="0" data-date="2020-07-14"></rect>
+                    <rect class="day" width="10" height="10" x="-29" y="72" fill="#e4dfd9" data-count="0" data-date="2020-07-15"></rect>
                 </g>
                 <g transform="translate(559, 0)">
-                    <rect class="day" width="10" height="10" x="-30" y="0" fill="#e4dfd9" data-count="0" data-date="2017-07-16"></rect>
-                    <rect class="day" width="10" height="10" x="-30" y="12" fill="#e4dfd9" data-count="0" data-date="2017-07-17"></rect>
-                    <rect class="day" width="10" height="10" x="-30" y="24" fill="#e4dfd9" data-count="0" data-date="2017-07-18"></rect>
-                    <rect class="day" width="10" height="10" x="-30" y="36" fill="#1a3acc" data-count="0" data-date="2017-07-19"></rect>
-                    <rect class="day" width="10" height="10" x="-30" y="48" fill="#e4dfd9" data-count="0" data-date="2017-07-20"></rect>
-                    <rect class="day" width="10" height="10" x="-30" y="60" fill="#e4dfd9" data-count="0" data-date="2017-07-21"></rect>
-                    <rect class="day" width="10" height="10" x="-30" y="72" fill="#e4dfd9" data-count="0" data-date="2017-07-22"></rect>
+                    <rect class="day" width="10" height="10" x="-30" y="0" fill="#e4dfd9" data-count="0" data-date="2020-07-16"></rect>
+                    <rect class="day" width="10" height="10" x="-30" y="12" fill="#e4dfd9" data-count="0" data-date="2020-07-17"></rect>
+                    <rect class="day" width="10" height="10" x="-30" y="24" fill="#e4dfd9" data-count="0" data-date="2020-07-18"></rect>
+                    <rect class="day" width="10" height="10" x="-30" y="36" fill="#1a3acc" data-count="0" data-date="2020-07-19"></rect>
+                    <rect class="day" width="10" height="10" x="-30" y="48" fill="#e4dfd9" data-count="0" data-date="2020-07-20"></rect>
+                    <rect class="day" width="10" height="10" x="-30" y="60" fill="#e4dfd9" data-count="0" data-date="2020-07-21"></rect>
+                    <rect class="day" width="10" height="10" x="-30" y="72" fill="#e4dfd9" data-count="0" data-date="2020-07-22"></rect>
                 </g>
                 <g transform="translate(572, 0)">
-                    <rect class="day" width="10" height="10" x="-31" y="0" fill="#e4dfd9" data-count="0" data-date="2017-07-23"></rect>
-                    <rect class="day" width="10" height="10" x="-31" y="12" fill="#e4dfd9" data-count="0" data-date="2017-07-24"></rect>
-                    <rect class="day" width="10" height="10" x="-31" y="24" fill="#1a3acc" data-count="0" data-date="2017-07-25"></rect>
-                    <rect class="day" width="10" height="10" x="-31" y="36" fill="#e4dfd9" data-count="0" data-date="2017-07-26"></rect>
-                    <rect class="day" width="10" height="10" x="-31" y="48" fill="#e4dfd9" data-count="0" data-date="2017-07-27"></rect>
-                    <rect class="day" width="10" height="10" x="-31" y="60" fill="#e4dfd9" data-count="0" data-date="2017-07-28"></rect>
-                    <rect class="day" width="10" height="10" x="-31" y="72" fill="#CCAB1A" data-count="0" data-date="2017-07-29"></rect>
+                    <rect class="day" width="10" height="10" x="-31" y="0" fill="#e4dfd9" data-count="0" data-date="2020-07-23"></rect>
+                    <rect class="day" width="10" height="10" x="-31" y="12" fill="#e4dfd9" data-count="0" data-date="2020-07-24"></rect>
+                    <rect class="day" width="10" height="10" x="-31" y="24" fill="#1a3acc" data-count="0" data-date="2020-07-25"></rect>
+                    <rect class="day" width="10" height="10" x="-31" y="36" fill="#e4dfd9" data-count="0" data-date="2020-07-26"></rect>
+                    <rect class="day" width="10" height="10" x="-31" y="48" fill="#e4dfd9" data-count="0" data-date="2020-07-27"></rect>
+                    <rect class="day" width="10" height="10" x="-31" y="60" fill="#e4dfd9" data-count="0" data-date="2020-07-28"></rect>
+                    <rect class="day" width="10" height="10" x="-31" y="72" fill="#CCAB1A" data-count="0" data-date="2020-07-29"></rect>
                 </g>
                 <g transform="translate(585, 0)">
-                    <rect class="day" width="10" height="10" x="-32" y="0" fill="#e4dfd9" data-count="0" data-date="2017-07-30"></rect>
-                    <rect class="day" width="10" height="10" x="-32" y="12" fill="#1a3acc" data-count="0" data-date="2017-07-31"></rect>
-                    <rect class="day" width="10" height="10" x="-32" y="24" fill="#e4dfd9" data-count="0" data-date="2017-08-01"></rect>
-                    <rect class="day" width="10" height="10" x="-32" y="36" fill="#e4dfd9" data-count="0" data-date="2017-08-02"></rect>
-                    <rect class="day" width="10" height="10" x="-32" y="48" fill="#AB1ACC" data-count="0" data-date="2017-08-03"></rect>
-                    <rect class="day" width="10" height="10" x="-32" y="60" fill="#e4dfd9" data-count="0" data-date="2017-08-04"></rect>
-                    <rect class="day" width="10" height="10" x="-32" y="72" fill="#e4dfd9" data-count="0" data-date="2017-08-05"></rect>
+                    <rect class="day" width="10" height="10" x="-32" y="0" fill="#e4dfd9" data-count="0" data-date="2020-07-30"></rect>
+                    <rect class="day" width="10" height="10" x="-32" y="12" fill="#1a3acc" data-count="0" data-date="2020-07-31"></rect>
+                    <rect class="day" width="10" height="10" x="-32" y="24" fill="#e4dfd9" data-count="0" data-date="2020-08-01"></rect>
+                    <rect class="day" width="10" height="10" x="-32" y="36" fill="#e4dfd9" data-count="0" data-date="2020-08-02"></rect>
+                    <rect class="day" width="10" height="10" x="-32" y="48" fill="#AB1ACC" data-count="0" data-date="2020-08-03"></rect>
+                    <rect class="day" width="10" height="10" x="-32" y="60" fill="#e4dfd9" data-count="0" data-date="2020-08-04"></rect>
+                    <rect class="day" width="10" height="10" x="-32" y="72" fill="#e4dfd9" data-count="0" data-date="2020-08-05"></rect>
                 </g>
                 <g transform="translate(598, 0)">
-                    <rect class="day" width="10" height="10" x="-33" y="0" fill="#e4dfd9" data-count="0" data-date="2017-08-06"></rect>
-                    <rect class="day" width="10" height="10" x="-33" y="12" fill="#e4dfd9" data-count="0" data-date="2017-08-07"></rect>
-                    <rect class="day" width="10" height="10" x="-33" y="24" fill="#e4dfd9" data-count="0" data-date="2017-08-08"></rect>
-                    <rect class="day" width="10" height="10" x="-33" y="36" fill="#e4dfd9" data-count="0" data-date="2017-08-09"></rect>
-                    <rect class="day" width="10" height="10" x="-33" y="48" fill="#e4dfd9" data-count="0" data-date="2017-08-10"></rect>
-                    <rect class="day" width="10" height="10" x="-33" y="60" fill="#CCAB1A" data-count="0" data-date="2017-08-11"></rect>
-                    <rect class="day" width="10" height="10" x="-33" y="72" fill="#e4dfd9" data-count="0" data-date="2017-08-12"></rect>
+                    <rect class="day" width="10" height="10" x="-33" y="0" fill="#e4dfd9" data-count="0" data-date="2020-08-06"></rect>
+                    <rect class="day" width="10" height="10" x="-33" y="12" fill="#e4dfd9" data-count="0" data-date="2020-08-07"></rect>
+                    <rect class="day" width="10" height="10" x="-33" y="24" fill="#e4dfd9" data-count="0" data-date="2020-08-08"></rect>
+                    <rect class="day" width="10" height="10" x="-33" y="36" fill="#e4dfd9" data-count="0" data-date="2020-08-09"></rect>
+                    <rect class="day" width="10" height="10" x="-33" y="48" fill="#e4dfd9" data-count="0" data-date="2020-08-10"></rect>
+                    <rect class="day" width="10" height="10" x="-33" y="60" fill="#CCAB1A" data-count="0" data-date="2020-08-11"></rect>
+                    <rect class="day" width="10" height="10" x="-33" y="72" fill="#e4dfd9" data-count="0" data-date="2020-08-12"></rect>
                 </g>
                 <g transform="translate(611, 0)">
-                    <rect class="day" width="10" height="10" x="-34" y="0" fill="#e4dfd9" data-count="0" data-date="2017-08-13"></rect>
-                    <rect class="day" width="10" height="10" x="-34" y="12" fill="#e4dfd9" data-count="0" data-date="2017-08-14"></rect>
-                    <rect class="day" width="10" height="10" x="-34" y="24" fill="#e4dfd9" data-count="0" data-date="2017-08-15"></rect>
-                    <rect class="day" width="10" height="10" x="-34" y="36" fill="#e4dfd9" data-count="0" data-date="2017-08-16"></rect>
-                    <rect class="day" width="10" height="10" x="-34" y="48" fill="#e4dfd9" data-count="0" data-date="2017-08-17"></rect>
-                    <rect class="day" width="10" height="10" x="-34" y="60" fill="#CCAB1A" data-count="0" data-date="2017-08-18"></rect>
-                    <rect class="day" width="10" height="10" x="-34" y="72" fill="#e4dfd9" data-count="0" data-date="2017-08-19"></rect>
+                    <rect class="day" width="10" height="10" x="-34" y="0" fill="#e4dfd9" data-count="0" data-date="2020-08-13"></rect>
+                    <rect class="day" width="10" height="10" x="-34" y="12" fill="#e4dfd9" data-count="0" data-date="2020-08-14"></rect>
+                    <rect class="day" width="10" height="10" x="-34" y="24" fill="#e4dfd9" data-count="0" data-date="2020-08-15"></rect>
+                    <rect class="day" width="10" height="10" x="-34" y="36" fill="#e4dfd9" data-count="0" data-date="2020-08-16"></rect>
+                    <rect class="day" width="10" height="10" x="-34" y="48" fill="#e4dfd9" data-count="0" data-date="2020-08-17"></rect>
+                    <rect class="day" width="10" height="10" x="-34" y="60" fill="#CCAB1A" data-count="0" data-date="2020-08-18"></rect>
+                    <rect class="day" width="10" height="10" x="-34" y="72" fill="#e4dfd9" data-count="0" data-date="2020-08-19"></rect>
                 </g>
                 <g transform="translate(624, 0)">
-                    <rect class="day" width="10" height="10" x="-35" y="0" fill="#e4dfd9" data-count="0" data-date="2017-08-20"></rect>
-                    <rect class="day" width="10" height="10" x="-35" y="12" fill="#AB1ACC" data-count="0" data-date="2017-08-21"></rect>
-                    <rect class="day" width="10" height="10" x="-35" y="24" fill="#e4dfd9" data-count="0" data-date="2017-08-22"></rect>
-                    <rect class="day" width="10" height="10" x="-35" y="36" fill="#008080" data-count="1" data-date="2017-08-23"></rect>
-                    <rect class="day" width="10" height="10" x="-35" y="48" fill="#e4dfd9" data-count="0" data-date="2017-08-24"></rect>
-                    <rect class="day" width="10" height="10" x="-35" y="60" fill="#e4dfd9" data-count="0" data-date="2017-08-25"></rect>
-                    <rect class="day" width="10" height="10" x="-35" y="72" fill="#e4dfd9" data-count="0" data-date="2017-08-26"></rect>
+                    <rect class="day" width="10" height="10" x="-35" y="0" fill="#e4dfd9" data-count="0" data-date="2020-08-20"></rect>
+                    <rect class="day" width="10" height="10" x="-35" y="12" fill="#AB1ACC" data-count="0" data-date="2020-08-21"></rect>
+                    <rect class="day" width="10" height="10" x="-35" y="24" fill="#e4dfd9" data-count="0" data-date="2020-08-22"></rect>
+                    <rect class="day" width="10" height="10" x="-35" y="36" fill="#008080" data-count="1" data-date="2020-08-23"></rect>
+                    <rect class="day" width="10" height="10" x="-35" y="48" fill="#e4dfd9" data-count="0" data-date="2020-08-24"></rect>
+                    <rect class="day" width="10" height="10" x="-35" y="60" fill="#e4dfd9" data-count="0" data-date="2020-08-25"></rect>
+                    <rect class="day" width="10" height="10" x="-35" y="72" fill="#e4dfd9" data-count="0" data-date="2020-08-26"></rect>
                 </g>
                 <g transform="translate(637, 0)">
-                    <rect class="day" width="10" height="10" x="-36" y="0" fill="#e4dfd9" data-count="0" data-date="2017-08-27"></rect>
-                    <rect class="day" width="10" height="10" x="-36" y="12" fill="#1ACCAB" data-count="5" data-date="2017-08-28"></rect>
-                    <rect class="day" width="10" height="10" x="-36" y="24" fill="#008080" data-count="1" data-date="2017-08-29"></rect>
-                    <rect class="day" width="10" height="10" x="-36" y="36" fill="#CCAB1A" data-count="0" data-date="2017-08-30"></rect>
-                    <rect class="day" width="10" height="10" x="-36" y="48" fill="#e4dfd9" data-count="0" data-date="2017-08-31"></rect>
-                    <rect class="day" width="10" height="10" x="-36" y="60" fill="#e4dfd9" data-count="0" data-date="2017-09-01"></rect>
-                    <rect class="day" width="10" height="10" x="-36" y="72" fill="#e4dfd9" data-count="0" data-date="2017-09-02"></rect>
+                    <rect class="day" width="10" height="10" x="-36" y="0" fill="#e4dfd9" data-count="0" data-date="2020-08-27"></rect>
+                    <rect class="day" width="10" height="10" x="-36" y="12" fill="#1ACCAB" data-count="5" data-date="2020-08-28"></rect>
+                    <rect class="day" width="10" height="10" x="-36" y="24" fill="#008080" data-count="1" data-date="2020-08-29"></rect>
+                    <rect class="day" width="10" height="10" x="-36" y="36" fill="#CCAB1A" data-count="0" data-date="2020-08-30"></rect>
+                    <rect class="day" width="10" height="10" x="-36" y="48" fill="#e4dfd9" data-count="0" data-date="2020-08-31"></rect>
+                    <rect class="day" width="10" height="10" x="-36" y="60" fill="#e4dfd9" data-count="0" data-date="2020-09-01"></rect>
+                    <rect class="day" width="10" height="10" x="-36" y="72" fill="#e4dfd9" data-count="0" data-date="2020-09-02"></rect>
                 </g>
                 <g transform="translate(650, 0)">
-                    <rect class="day" width="10" height="10" x="-37" y="0" fill="#e4dfd9" data-count="0" data-date="2017-09-03"></rect>
-                    <rect class="day" width="10" height="10" x="-37" y="12" fill="#e4dfd9" data-count="0" data-date="2017-09-04"></rect>
-                    <rect class="day" width="10" height="10" x="-37" y="24" fill="#e4dfd9" data-count="0" data-date="2017-09-05"></rect>
-                    <rect class="day" width="10" height="10" x="-37" y="36" fill="#008080" data-count="2" data-date="2017-09-06"></rect>
-                    <rect class="day" width="10" height="10" x="-37" y="48" fill="#008080" data-count="1" data-date="2017-09-07"></rect>
-                    <rect class="day" width="10" height="10" x="-37" y="60" fill="#e4dfd9" data-count="0" data-date="2017-09-08"></rect>
-                    <rect class="day" width="10" height="10" x="-37" y="72" fill="#e4dfd9" data-count="0" data-date="2017-09-09"></rect>
+                    <rect class="day" width="10" height="10" x="-37" y="0" fill="#e4dfd9" data-count="0" data-date="2020-09-03"></rect>
+                    <rect class="day" width="10" height="10" x="-37" y="12" fill="#e4dfd9" data-count="0" data-date="2020-09-04"></rect>
+                    <rect class="day" width="10" height="10" x="-37" y="24" fill="#e4dfd9" data-count="0" data-date="2020-09-05"></rect>
+                    <rect class="day" width="10" height="10" x="-37" y="36" fill="#008080" data-count="2" data-date="2020-09-06"></rect>
+                    <rect class="day" width="10" height="10" x="-37" y="48" fill="#008080" data-count="1" data-date="2020-09-07"></rect>
+                    <rect class="day" width="10" height="10" x="-37" y="60" fill="#e4dfd9" data-count="0" data-date="2020-09-08"></rect>
+                    <rect class="day" width="10" height="10" x="-37" y="72" fill="#e4dfd9" data-count="0" data-date="2020-09-09"></rect>
                 </g>
                 <g transform="translate(663, 0)">
-                    <rect class="day" width="10" height="10" x="-38" y="0" fill="#e4dfd9" data-count="0" data-date="2017-09-10"></rect>
-                    <rect class="day" width="10" height="10" x="-38" y="12" fill="#e4dfd9" data-count="0" data-date="2017-09-11"></rect>
-                    <rect class="day" width="10" height="10" x="-38" y="24" fill="#1ACCAB" data-count="5" data-date="2017-09-12"></rect>
-                    <rect class="day" width="10" height="10" x="-38" y="36" fill="#e4dfd9" data-count="0" data-date="2017-09-13"></rect>
-                    <rect class="day" width="10" height="10" x="-38" y="48" fill="#e4dfd9" data-count="0" data-date="2017-09-14"></rect>
-                    <rect class="day" width="10" height="10" x="-38" y="60" fill="#AB1ACC" data-count="0" data-date="2017-09-15"></rect>
-                    <rect class="day" width="10" height="10" x="-38" y="72" fill="#e4dfd9" data-count="0" data-date="2017-09-16"></rect>
+                    <rect class="day" width="10" height="10" x="-38" y="0" fill="#e4dfd9" data-count="0" data-date="2020-09-10"></rect>
+                    <rect class="day" width="10" height="10" x="-38" y="12" fill="#e4dfd9" data-count="0" data-date="2020-09-11"></rect>
+                    <rect class="day" width="10" height="10" x="-38" y="24" fill="#1ACCAB" data-count="5" data-date="2020-09-12"></rect>
+                    <rect class="day" width="10" height="10" x="-38" y="36" fill="#e4dfd9" data-count="0" data-date="2020-09-13"></rect>
+                    <rect class="day" width="10" height="10" x="-38" y="48" fill="#e4dfd9" data-count="0" data-date="2020-09-14"></rect>
+                    <rect class="day" width="10" height="10" x="-38" y="60" fill="#AB1ACC" data-count="0" data-date="2020-09-15"></rect>
+                    <rect class="day" width="10" height="10" x="-38" y="72" fill="#e4dfd9" data-count="0" data-date="2020-09-16"></rect>
                 </g>
                 <g transform="translate(676, 0)">
-                    <rect class="day" width="10" height="10" x="-39" y="0" fill="#e4dfd9" data-count="0" data-date="2017-09-17"></rect>
-                    <rect class="day" width="10" height="10" x="-39" y="12" fill="#e4dfd9" data-count="0" data-date="2017-09-18"></rect>
-                    <rect class="day" width="10" height="10" x="-39" y="24" fill="#1a3acc" data-count="8" data-date="2017-09-19"></rect>
+                    <rect class="day" width="10" height="10" x="-39" y="0" fill="#e4dfd9" data-count="0" data-date="2020-09-17"></rect>
+                    <rect class="day" width="10" height="10" x="-39" y="12" fill="#e4dfd9" data-count="0" data-date="2020-09-18"></rect>
+                    <rect class="day" width="10" height="10" x="-39" y="24" fill="#1a3acc" data-count="8" data-date="2020-09-19"></rect>
                 </g>
                 <text x="37" y="-10" class="month" style="font-size:.8em;" fill="#1a3acc">Oct</text>
                 <text x="97" y="-10" class="month" style="font-size:.8em;" fill="#1a3acc">Nov</text>
@@ -1920,6 +1870,9 @@
           Lists help organize things, using different types of lists for different heirarchy helps grant importance of content not deemed important enough for headlines, buttons or navigation but more important than a paragraph of text explaining in common speach.
         </p>
         <h4 class="section__header">Un-ordered List(s)</h4>
+        <p>
+          Lists help organize things, using different types of lists for different heirarchy helps grant importance of content not deemed important enough for headlines, buttons or navigation but more important than a paragraph of text explaining in common speach.
+        </p>
         <ul id="markdown-toc">
           <li><a href="#authenticating-with-graphql" id="markdown-toc-authenticating-with-graphql">Authenticating with GraphQL</a></li>
           <li><a href="#the-graphql-endpoint" id="markdown-toc-the-graphql-endpoint">The GraphQL endpoint</a></li>
@@ -1973,7 +1926,7 @@
         </ol>
         <hr />
         <h4 class="section__header">Code &amp; Pre</h4>
-        <p>tha
+        <p>
           Code and pre elements alow you to distinguish between content that is meant to be read in a specific code language or syntax not typically used in font facing content.
         </p>
         <pre id="myDiv">
@@ -2004,23 +1957,15 @@
     </div>
 
   </div><!--/CONTAINER -->
-  <div aria-live="polite" aria-atomic="true" class="position-relative">
-      <div class="position-absolute" id="toast-place" style="top:0px; right:20px;">
-      </div>
-    </div>
 
   <!-- CONTAINER -->
   <!-- SCRIPTS -->
-  <!--7.15.19 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
-  <!--7.15.19 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/popper.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- <script src="/js/syntax.js"></script> -->
   <!-- <script src="js/typed.js"></script> -->
   <script src="js/style-guide.js"></script>
-  <!-- <script>
+  <script>
     window.onscroll = function() {myFunction()};
 
     var header = document.getElementById("myHeader");
@@ -2033,39 +1978,7 @@
         header.classList.remove("sticky");
       }
     }
-  </script> -->
-  <script>
-    $(document).ready(() => {
-
-      $('#add-toast').on('click', () => {
-
-        $('#toast-place').append(`
-          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
-            <div class="toast-header">
-              <strong class="mr-auto">Bootstrap</strong>
-              <small>Toast</small>
-              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="toast-body">
-              Olá, eu sou uma notificação.
-            </div>
-          </div>
-        `);
-
-        $('.toast').toast('show');
-
-        console.log('Show');
-
-        $('.toast').on('hidden.bs.toast', e => {
-          $(e.currentTarget).remove();
-          console.log('Hide');
-        });
-
-      });
-
-    });
+  </script>
   </script>
   <script>
     $('body').scrollspy({
@@ -2100,6 +2013,13 @@
     });
     var typed1 = new Typed('#typed1', {
       strings: ['DYNAMIC HEADLINES!', 'TEXT THAT WRITES ITSELF!', 'DO MORE!' ],
+      typeSpeed: 60,
+      backSpeed: 10,
+      smartBackspace: true,
+      loop: true,
+    });
+    var typedHeadline = new Typed('#typedHeadline', {
+      strings: ['Typed Headline', 'Dynamic Headlinbe', 'XXXXXXXX' ],
       typeSpeed: 60,
       backSpeed: 10,
       smartBackspace: true,
