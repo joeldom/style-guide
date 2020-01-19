@@ -1,5 +1,13 @@
 .DS_Store
+.idea
+.log
 bower_components
 node_modules
 .sass-cache
 /node_modules
+node_modules/
+_assets/
+.sass-cache/
+npm-debug.log
+yarn-error.log
+config.codekit3
