@@ -235,6 +235,10 @@ h6,
 .style-guide {
   padding: 0 2.75em;
 }
+.cd-breadcrumb li,
+.cd-multi-steps li {
+  font-weight: 500;
+}
 /*.style-guide p,
 .style-guide ol,
 .style-guide ul,
@@ -317,18 +321,7 @@ p a:hover {
   white-space: pre-wrap;
   max-width: 150px;
 }
-.viewport {
-  font-family: "Roboto Mono", monospace;
-  font-size: 0.85em;
-  background: none;
-  padding: 7px;
-  /*position: fixed;*/
-  /*top:85px;
-  left:30px;*/
-  z-index: 1029;
-  color: #adadad;
-  border: 3px solid #dcdcdc;
-}
+
 .navbar-brand {
   text-transform: uppercase;
 }
@@ -1373,46 +1366,6 @@ a:focus {
 .font-sample-table {
   padding: 0;
 }
-
-.refluxblu-white,
-.refluxblu-white * {
-  background: #1a3acc;
-  background-color: #1a3acc;
-  color: white;
-}
-/*.refluxblu-white hr, .refluxblu-white td{
-    border-top: 1px solid white !important;
-  }*/
-
-.cuulblu-refluxblu,
-.cuulblu-refluxblu * {
-  background: #e0e9fe;
-  background-color: #e0e9fe;
-  color: #1a3acc;
-}
-/*.cuulblu-refluxblu hr, .cuulblu-refluxblu td{
-    border-top: 1px solid #1a3acc !important;
-  }*/
-
-.wurmgrey-refluxblu,
-.wurmgrey-refluxblu * {
-  background: #e4dfd9;
-  background-color: #e4dfd9;
-  color: #1a3acc;
-}
-/*.wurmgrey-refluxblu hr, .wurmgrey-refluxblu td{
-    border-top: 1px solid #1a3acc !important;
-  }*/
-
-.drkgable-white,
-.drkgable-white * {
-  background: #142a2d;
-  background-color: #142a2d;
-  color: white;
-}
-/*.drkgable-white hr, .drkgable-white td{
-    border-top: 1px solid white !important;
-  }*/
 
 .swatch-holder {
   position: -webkit-sticky; // required for Safari

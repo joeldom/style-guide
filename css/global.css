@@ -21,11 +21,11 @@ h6,
 
 .style-guide {
   font-size: 0.9em;
-  font-weight: 100;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   .style-guide .brand-colors .swatch-footer {
-    font-size: .8em; }
+    font-size: 0.8em; }
   .style-guide .start {
     padding: 0; }
   .style-guide .multi-step a:hover {
@@ -44,8 +44,10 @@ h6,
       width: 130%;
       right: 0; }
 
+#fonts-sample,
 .frame {
   position: relative; }
+  #fonts-sample .swatch-holder,
   .frame .swatch-holder {
     display: table;
     align-items: flex-start;
@@ -55,11 +57,14 @@ h6,
     width: 300px;
     margin: 0 auto;
     padding: 2em 0; }
+    #fonts-sample .swatch-holder .swatch-center,
     .frame .swatch-holder .swatch-center {
       width: auto;
       position: relative;
       display: inherit;
       margin: auto; }
+      #fonts-sample .swatch-holder .swatch-center a.theme-choice,
+      #fonts-sample .swatch-holder .swatch-center button.theme-choice,
       .frame .swatch-holder .swatch-center a.theme-choice,
       .frame .swatch-holder .swatch-center button.theme-choice {
         border: 3px solid #fff !important;
@@ -68,6 +73,8 @@ h6,
         width: 50px;
         height: 50px;
         padding: 0 0; }
+        #fonts-sample .swatch-holder .swatch-center a.theme-choice .theme-color,
+        #fonts-sample .swatch-holder .swatch-center button.theme-choice .theme-color,
         .frame .swatch-holder .swatch-center a.theme-choice .theme-color,
         .frame .swatch-holder .swatch-center button.theme-choice .theme-color {
           font-size: 24px;
@@ -76,22 +83,32 @@ h6,
           text-align: center;
           vertical-align: bottom;
           line-height: 1.75em; }
+      #fonts-sample .swatch-holder .swatch-center a:hover,
+      #fonts-sample .swatch-holder .swatch-center button:hover,
       .frame .swatch-holder .swatch-center a:hover,
       .frame .swatch-holder .swatch-center button:hover {
         font-size: 24px;
         border: 3px solid #999 !important; }
+      #fonts-sample .swatch-holder .swatch-center a.refluxblu *,
+      #fonts-sample .swatch-holder .swatch-center button.refluxblu *,
       .frame .swatch-holder .swatch-center a.refluxblu *,
       .frame .swatch-holder .swatch-center button.refluxblu * {
         background-color: #1a3acc;
         color: white; }
+      #fonts-sample .swatch-holder .swatch-center a.cuulblu *,
+      #fonts-sample .swatch-holder .swatch-center button.cuulblu *,
       .frame .swatch-holder .swatch-center a.cuulblu *,
       .frame .swatch-holder .swatch-center button.cuulblu * {
         background-color: #e0e9fe;
         color: #1a3acc; }
+      #fonts-sample .swatch-holder .swatch-center a.wurmgrey *,
+      #fonts-sample .swatch-holder .swatch-center button.wurmgrey *,
       .frame .swatch-holder .swatch-center a.wurmgrey *,
       .frame .swatch-holder .swatch-center button.wurmgrey * {
         background-color: #e4dfd9;
         color: #1a3acc; }
+      #fonts-sample .swatch-holder .swatch-center a.drkgable *,
+      #fonts-sample .swatch-holder .swatch-center button.drkgable *,
       .frame .swatch-holder .swatch-center a.drkgable *,
       .frame .swatch-holder .swatch-center button.drkgable * {
         background-color: #142a2d;
@@ -125,3 +142,56 @@ h6,
   padding: 4px 10px !important; }
   .badge.badge-danger {
     background-color: #ab1acc !important; }
+
+.viewport {
+  font-family: Roboto;
+  font-size: 0.85em;
+  background: none;
+  padding: 7px;
+  /*position: fixed;*/
+  /*top:85px;
+  left:30px;*/
+  z-index: 1029;
+  color: #adadad; }
+
+.bs-docs-sidebar {
+  height: 83%; }
+  .bs-docs-sidebar .nav {
+    height: 100%; }
+
+.refluxblu-white,
+.refluxblu-white * {
+  background: #1a3acc;
+  background-color: #1a3acc;
+  color: white; }
+
+/*.refluxblu-white hr, .refluxblu-white td{
+    border-top: 1px solid white !important;
+  }*/
+.cuulblu-refluxblu,
+.cuulblu-refluxblu * {
+  background: #e0e9fe;
+  background-color: #e0e9fe;
+  color: #1a3acc; }
+
+/*.cuulblu-refluxblu hr, .cuulblu-refluxblu td{
+    border-top: 1px solid #1a3acc !important;
+  }*/
+.wurmgrey-refluxblu,
+.wurmgrey-refluxblu * {
+  background: #e4dfd9;
+  background-color: #e4dfd9;
+  color: #1a3acc; }
+
+/*.wurmgrey-refluxblu hr, .wurmgrey-refluxblu td{
+    border-top: 1px solid #1a3acc !important;
+  }*/
+.drkgable-white,
+.drkgable-white * {
+  background: #142a2d;
+  background-color: #142a2d;
+  color: white; }
+
+.bludred-cuulblu * {
+  background-color: #600000;
+  color: #e0e9fe; }
