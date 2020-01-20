@@ -138,15 +138,6 @@ h6,
   border: 1px solid #00483a !important;
 }
 
-.swatch-footer {
-  position: absolute;
-  bottom: 10%;
-  line-height: 1.5em;
-  z-index: 4;
-}
-.brand-colors {
-  text-transform: uppercase;
-}
 .brand-colors a {
   position: absolute;
   display: block;

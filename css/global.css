@@ -24,8 +24,6 @@ h6,
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  .style-guide .brand-colors .swatch-footer {
-    font-size: 0.8em; }
   .style-guide .start {
     padding: 0; }
   .style-guide .multi-step a:hover {
@@ -45,13 +43,15 @@ h6,
       right: 0; }
 
 .brand-colors {
+  text-transform: uppercase !important;
   padding: 12px;
   margin: 0 0 0px 0;
   position: relative;
   height: 210px;
   border-radius: 0px;
-  font-size: 14px;
   line-height: 1em !important; }
+  .brand-colors .swatch-footer {
+    font-size: 10px; }
   .brand-colors-sml {
     padding: 24px 12px;
     margin: 0 0 0px 0;
@@ -59,20 +59,32 @@ h6,
     height: 80px;
     line-height: 1em !important;
     border-radius: 0px;
-    font-size: 14px; }
-    .brand-colors-sml * {
-      line-height: 1em !important;
-      font-size: 12px; }
+    font-size: 12px; }
   .brand-colors-med {
     height: 140px;
     padding: 12px;
     line-height: 1em;
     font-size: 12px; }
+    .brand-colors-med .swatch-footer {
+      font-size: 12px; }
   .brand-colors-lrg {
     height: 300px;
     padding: 12px;
     line-height: 1em;
-    font-size: 14px; }
+    font-size: 12px; }
+  .brand-colors-sml, .brand-colors-med, .brand-colors-lrg {
+    text-transform: uppercase !important; }
+    .brand-colors-sml .color-name, .brand-colors-med .color-name, .brand-colors-lrg .color-name {
+      text-transform: uppercase !important; }
+    .brand-colors-sml .swatch-footer, .brand-colors-med .swatch-footer, .brand-colors-lrg .swatch-footer {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      padding: 0 0 1em 1em;
+      line-height: 1em;
+      z-index: 4;
+      font-size: 10px; }
 
 #fonts-sample,
 .frame {
@@ -154,11 +166,12 @@ h6,
   .tooltip .tooltip-inner {
     background-color: #444 !important;
     color: #efefef !important;
+    font-family: Roboto, sans-serif;
     text-shadow: #222 0px -1px 0;
     border-radius: 0;
     padding: 5px 24px;
     border: none !important;
-    text-transform: lowercase;
+    text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
   .tooltip.top .tooltip-arrow {
@@ -215,6 +228,11 @@ h6,
   color: #0f0;
   background: #071e00; }
 
+.example-block-wrong, .example-block-right, .example-block-alt {
+  border: 1px solid #222;
+  border-right: none;
+  text-transform: lowercase !important; }
+
 .bs-docs-sidebar {
   height: 83%; }
   .bs-docs-sidebar .nav {
@@ -223,11 +241,18 @@ h6,
       margin-top: 0; }
 
 .bs-docs-sidebar li.active li a {
-  border-bottom: 1px solid white;
-  border-left: 1px solid #262626; }
+  border-bottom: 1px solid white; }
+
+.bs-docs-sidebar li.active a {
+  border-left: white !important; }
 
 .bs-docs-sidebar li.active li.active {
   border-bottom: 1px solid #262626; }
+  .bs-docs-sidebar li.active li.active a {
+    border-left: white !important; }
+
+.git-calendar-graph {
+  overflow-x: scroll; }
 
 .refluxblu-white,
 .refluxblu-white * {
