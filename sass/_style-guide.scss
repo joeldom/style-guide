@@ -316,10 +316,18 @@ h6,
 }
 .bs-docs-sidebar li.active li a {
   border-bottom: 1px solid white;
-  border-left: 1px solid #262626;
+  //border-left: 1px solid #262626;
 }
-.bs-docs-sidebar li.active li.active {
-  border-bottom: 1px solid #262626;
+.bs-docs-sidebar li.active {
+  a {
+    border-left: white !important;
+  }
+  li.active {
+    border-bottom: 1px solid #262626;
+    a {
+      border-left: white !important;
+    }
+  }
 }
 .git-calendar-graph {
   overflow-x: scroll;
