@@ -249,6 +249,9 @@ h6,
 .bs-docs-sidebar li.active li.active {
   border-bottom: 1px solid #262626; }
 
+.git-calendar-graph {
+  overflow-x: scroll; }
+
 .refluxblu-white,
 .refluxblu-white * {
   background: #1a3acc;
@@ -276,5 +279,3 @@ h6,
 .bludred-cuulblu * {
   background-color: #600000;
   color: #e0e9fe; }
-
-/*# sourceMappingURL=maps/global.css.map */
