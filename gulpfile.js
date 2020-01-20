@@ -29,6 +29,11 @@ gulp.task("bye", function() {
     "//////////////////////////////////////////////////////////   Finished"
   );
 });
+gulp.task("echo", function() {
+  console.log(
+    "//////////////////////////////////////////////////////////   Echo"
+  );
+});
 
 // Development Tasks
 // -----------------
@@ -38,7 +43,7 @@ gulp.task("browserSync", function() {
   browserSync({
     server: {
       //baseDir: "style-guide",
-      baseDir: "./",
+      baseDir: ".",
       directory: true,
       index: "index.html"
     }
@@ -50,9 +55,9 @@ gulp.task("sass", function() {
   return (
     gulp.src("./sass/global.scss") // Gets specific file
       .pipe(sourcemaps.init())
-      .pipe(sass().on("error", sass.logError)) // Passes it through a gulp-sass, log errors to console
+      .pipe(sass().on("error", sass.logError).on('end', function() { console.log('//////////////////////////////////////////////////////////   SASS'); })) // Passes it through a gulp-sass, log errors to console
       .pipe(gulp.dest("./css")) // Outputs it in the css folder
-      .pipe(sourcemaps.write("./maps"))
+      .pipe(sourcemaps.write("./maps")).on('end', function() { console.log('//////////////////////////////////////////////////////////   Maps'); })
       .pipe(
         browserSync.reload({
           // Reloading with Browser Sync
