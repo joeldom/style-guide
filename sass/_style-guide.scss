@@ -35,14 +35,6 @@ h6,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  .brand-colors {
-    .color-name {
-    }
-    .swatch-footer {
-      font-size: 0.8em;
-    }
-  }
-
   .start {
     padding: 0;
   }
@@ -75,13 +67,16 @@ h6,
   }
 }
 .brand-colors {
+  text-transform: uppercase !important;
   padding: 12px;
   margin: 0 0 0px 0;
   position: relative;
   height: 210px;
   border-radius: 0px;
-  font-size: 14px;
   line-height: 1em !important;
+  .swatch-footer {
+    font-size: 10px;
+  }
 
   &-sml {
     padding: 24px 12px;
@@ -90,7 +85,7 @@ h6,
     height: 80px;
     line-height: 1em !important;
     border-radius: 0px;
-    font-size: 14px;
+    font-size: 12px;
 
     * {
       line-height: 1em !important;
@@ -102,12 +97,33 @@ h6,
     padding: 12px;
     line-height: 1em;
     font-size: 12px;
+    .swatch-footer {
+      font-size: 12px;
+    }
   }
   &-lrg {
     height: 300px;
     padding: 12px;
     line-height: 1em;
-    font-size: 14px;
+    font-size: 12px;
+  }
+  &-sml,
+  &-med,
+  &-lrg {
+    text-transform: uppercase !important;
+    .color-name {
+      text-transform: uppercase !important;
+    }
+    .swatch-footer {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      padding: 0 0 1em 1em;
+      line-height: 1.5em;
+      z-index: 4;
+      font-size: 10px;
+    }
   }
 }
 
@@ -269,6 +285,13 @@ h6,
     @include example-block;
     color: #0f0;
     background: #071e00;
+  }
+  &-wrong,
+  &-right,
+  &-alt {
+    border: 1px solid #222;
+    border-right: none;
+    text-transform: lowercase !important;
   }
 }
 
