@@ -1,3 +1,4 @@
+@import "variables";
 //_style-guide.scss
 $brandblue: #1a3acc;
 $drk-gable: #142a2d;
@@ -331,4 +332,10 @@ h6,
 }
 .git-calendar-graph {
   overflow-x: scroll;
+}
+code {
+  background-color: $drk-gable;
+  color: $cadmium;
+  font-size: inherit;
+  border-radius: 2px;
 }

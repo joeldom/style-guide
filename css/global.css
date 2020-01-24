@@ -1,3 +1,4 @@
+/* background color of body */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -253,6 +254,12 @@ h6,
 
 .git-calendar-graph {
   overflow-x: scroll; }
+
+code {
+  background-color: #142a2d;
+  color: #ff5252;
+  font-size: inherit;
+  border-radius: 2px; }
 
 .refluxblu-white,
 .refluxblu-white * {
