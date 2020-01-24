@@ -1,10 +1,10 @@
 ## JD-Design ~ Style Guide
 
-#About
+# about
 
 This style-guide is meant to be a testing platform for elements in the development cycle to be possibly be implemented pending how functionaly relevant and robust they are. This pulls styles from the `/resume` repo as well as styles from the `/redesign` repo.
 
-##todo
+## todo
 
 * 404 page
 * IE browser bar
@@ -12,7 +12,7 @@ This style-guide is meant to be a testing platform for elements in the developme
 * style-guide styles added as seperate sass file
 * rewrite of sass inclusions to remove redundancy
 
-##ref
+## ref
 1. color palette gen: [ColorPedia](http://veli.ee/colorpedia/?c=1ACCAB)
 2. bootstrap docs: [Bootstrap Docs](https://getbootstrap.com/docs/3.3/css/#type)
 3. google span design: [Google Span](https://design.google/library/span/)
