@@ -335,7 +335,31 @@ h6,
 }
 code {
   background-color: $drk-gable;
-  color: $cadmium;
+  color: $brandjava;
   font-size: inherit;
-  border-radius: 2px;
+  border-radius: 0px;
+  padding: 2px 4px;
+}
+[hbox] {
+  display: flex;
+}
+.content {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 0 10px;
+  &.faq > li {
+    margin-bottom: 20px;
+    white-space: nowrap;
+    &:before {
+      margin-right: 10px;
+      padding: 0 8px;
+      content: counter(li-counter);
+      counter-increment: li-counter;
+      background-color: $brand;
+    }
+  }
+  &.faq {
+    list-style-type: none;
+    counter-reset: li-counter;
+  }
 }

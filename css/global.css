@@ -257,9 +257,29 @@ h6,
 
 code {
   background-color: #142a2d;
-  color: #ff5252;
+  color: #1accab;
   font-size: inherit;
-  border-radius: 2px; }
+  border-radius: 0px;
+  padding: 2px 4px; }
+
+[hbox] {
+  display: flex; }
+
+.content {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 0 10px; }
+  .content.faq > li {
+    margin-bottom: 20px;
+    white-space: nowrap; }
+    .content.faq > li:before {
+      margin-right: 10px;
+      padding: 0 8px;
+      content: counter(li-counter);
+      counter-increment: li-counter; }
+  .content.faq {
+    list-style-type: none;
+    counter-reset: li-counter; }
 
 .refluxblu-white,
 .refluxblu-white * {
