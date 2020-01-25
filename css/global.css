@@ -267,8 +267,8 @@ code {
 
 .content {
   max-width: var(--width);
-  margin: 0 auto;
-  padding: 10px; }
+  margin: 1.125em auto 0 auto;
+  padding: 0px; }
   .content.faq > li {
     margin-bottom: 20px; }
     .content.faq > li:before {
@@ -282,9 +282,9 @@ code {
       height: fit-content; }
     .content.faq > li > div {
       padding-left: 10px;
-      border-left: 2px solid #bababa; }
+      border-left: 3px solid rgba(84, 84, 84, 0.4); }
       .content.faq > li > div:hover {
-        border-left: 2px solid #1a3acc; }
+        border-left: 3px solid #1a3acc; }
   .content.faq {
     list-style-type: none;
     counter-reset: li-counter; }

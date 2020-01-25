@@ -345,8 +345,8 @@ code {
 }
 .content {
   max-width: var(--width);
-  margin: 0 auto;
-  padding: 10px;
+  margin: 1.125em auto 0 auto;
+  padding: 0px;
   //background-color: $brandgable;
   &.faq > li {
     margin-bottom: 20px;
@@ -363,9 +363,9 @@ code {
     }
     & > div {
       padding-left: 10px;
-      border-left: 2px solid lighten($textcolor, 40%);
+      border-left: 3px solid transparentize($textcolor, 0.6);
       &:hover {
-        border-left: 2px solid $brandblue;
+        border-left: 3px solid $brandblue;
       }
     }
   }
