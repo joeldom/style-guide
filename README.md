@@ -27,5 +27,6 @@ This style-guide is meant to be a testing platform for elements in the developme
 11. [uber brand guide](https://dribbble.com/shots/2094092-Uber-Brand-Guide) also [Uber Brand](https://www.uber.design/)
 12. [404 example](https://www.market-me.fr/product/barni-startup/)
 13. [ui & style guide pins](https://www.pinterest.com/pin/168673948527182954/)
+14. [content faq list example](https://add0n.com/audio-equalizer.html?version=0.1.0&type=install)
 
 ---
