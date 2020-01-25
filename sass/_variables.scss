@@ -39,7 +39,7 @@ $line-height-sm: 1.2857142857142858; // small
 $line-height-md: 1.4857142857142858; // alt
 $line-height-lg: 1.7857142857142858; // body
 
-// COLORS
+// GENERAL COLORS
 $bodycolor: #f6f6f6; //body background color
 $accentcolor: #eee; //added to navbar
 $textcolor: #545454; //body text color ~ was = #62645c
@@ -60,12 +60,11 @@ $lightgrey2: #ededed;
 $medgrey: #ccc;
 $warmgrey1: #686258;
 $transgrey1: rgba(186, 186, 186, 0.7);
-$grey80: #474747;
 $grey: #7c7c7c; //#b0aca8
 $grey80: darken($grey, 20%);
 $grey90: darken($grey, 30%);
 
-// COLOR PALETTE MAIN
+// BASE COLOR PALETTE MAIN
 $navy: #37477d;
 $teal: #7ea29a;
 $purple: #8385c3;
@@ -81,15 +80,24 @@ $blueblue: #092cb1;
 $spearmint: #2ff1c7;
 $tangerine: #ffc107;
 $cadmium: #ff5252;
-// refined colors
+
+// 2020 REFINED BRAND COLORS
 $brandjava: #1accab;
 $brandpuple: #ab1acc;
 $brandlegacy: #008080;
 $brandblue: #1a3acc;
 $brandred: #fd483a;
 $brandgreen: #2ab80a;
-
-$wheat: burlywood; //deb887
+$brandprimary: #1a3acc;
+$brandcuulblue: #e0e9fe;
+$brandoff-white: #e4dfd9;
+$brandcuulgrey: #a3a3a3;
+$brandwurm-grey: #e4dfd9;
+$brandmagenta: #ab1acc;
+$brandblud: #600000;
+$brandgable: #142a2d;
+$brandgold: #ccab1a;
+$brandwheat: burlywood; //deb887
 
 // RESPONSIVE BREAKS
 $break-small-max: 767px;

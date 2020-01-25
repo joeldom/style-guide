@@ -346,16 +346,27 @@ code {
 .content {
   max-width: var(--width);
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 10px;
+  //background-color: $brandgable;
   &.faq > li {
     margin-bottom: 20px;
-    white-space: nowrap;
+    //white-space: nowrap;
     &:before {
       margin-right: 10px;
       padding: 0 8px;
       content: counter(li-counter);
       counter-increment: li-counter;
-      background-color: $brand;
+      background-color: $brandblue;
+      color: white;
+      height: -moz-fit-content;
+      height: fit-content;
+    }
+    & > div {
+      padding-left: 10px;
+      border-left: 2px solid lighten($textcolor, 40%);
+      &:hover {
+        border-left: 2px solid $brandblue;
+      }
     }
   }
   &.faq {

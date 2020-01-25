@@ -268,15 +268,23 @@ code {
 .content {
   max-width: var(--width);
   margin: 0 auto;
-  padding: 0 10px; }
+  padding: 10px; }
   .content.faq > li {
-    margin-bottom: 20px;
-    white-space: nowrap; }
+    margin-bottom: 20px; }
     .content.faq > li:before {
       margin-right: 10px;
       padding: 0 8px;
       content: counter(li-counter);
-      counter-increment: li-counter; }
+      counter-increment: li-counter;
+      background-color: #1a3acc;
+      color: white;
+      height: -moz-fit-content;
+      height: fit-content; }
+    .content.faq > li > div {
+      padding-left: 10px;
+      border-left: 2px solid #bababa; }
+      .content.faq > li > div:hover {
+        border-left: 2px solid #1a3acc; }
   .content.faq {
     list-style-type: none;
     counter-reset: li-counter; }
