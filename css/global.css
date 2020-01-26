@@ -289,6 +289,9 @@ code {
     list-style-type: none;
     counter-reset: li-counter; }
 
+.form-group label {
+  display: block; }
+
 .refluxblu-white,
 .refluxblu-white * {
   background: #1a3acc;
