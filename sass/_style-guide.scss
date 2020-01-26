@@ -363,9 +363,9 @@ code {
     }
     & > div {
       padding-left: 10px;
-      border-left: 3px solid transparentize($textcolor, 0.6);
+      border-left: 2px solid transparentize($textcolor, 0.9);
       &:hover {
-        border-left: 3px solid $brandblue;
+        border-left: 2px solid $brandblue;
       }
     }
   }

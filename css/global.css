@@ -282,9 +282,9 @@ code {
       height: fit-content; }
     .content.faq > li > div {
       padding-left: 10px;
-      border-left: 3px solid rgba(84, 84, 84, 0.4); }
+      border-left: 2px solid rgba(84, 84, 84, 0.1); }
       .content.faq > li > div:hover {
-        border-left: 3px solid #1a3acc; }
+        border-left: 2px solid #1a3acc; }
   .content.faq {
     list-style-type: none;
     counter-reset: li-counter; }

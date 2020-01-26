@@ -61,6 +61,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <script type="text/javascript" src="js/typed.min.js"></script>
+    <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/freezeframe@3.0.10/build/css/freezeframe_styles.min.css">
 
   </head>
 
@@ -106,8 +108,20 @@
               <ul class="nav nav-stacked">
                 <li><a href="#the-begining">The Begining</a></li>
                 <li><a href="#into-the-void">Into the Void</a></li>
-                <li><a href="#the-begining">Big Idea</a></li>
-                <li><a href="#the-begining">Big Idea</a></li>
+                <li><a href="#Goals">Goals</a>
+                  <ul class="nav nav-stacked">
+                    <li><a href="#Goals1">01</span></a></li>
+                    <li><a href="#Goals2">02</span></a></li>
+                    <li><a href="#Goals3">03</span></a></li>
+                    <li><a href="#Goals4">04</span></a></li>
+                    <li><a href="#Goals5">05</span></a></li>
+                    <li><a href="#Goals6">06</span></a></li>
+                    <li><a href="#Goals7">07</span></a></li>
+                    <li><a href="#Goals8">08</span></a></li>
+                    <li><a href="#Goals9">09</span></a></li>
+                    <li><a href="#Goals10">10</span></a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li><a href="#Color">Color</a>
@@ -223,52 +237,65 @@
         <p>It is important to remember that <em>"DSG is a branded house, and not a house of brands"</em>. Our look and feel as well as our voice should feel like our own and not one that is merely and echo or repitition of our vendors.</p>
         <!-- TODO: add the correct figma project with clean preview -->
         <!-- <iframe style="border: none;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/V7PdbXTTVTx72gMZgbNV6BTq/p-Phoenix-Greybox-DSG" allowfullscreen></iframe> -->
+        <a class="anchor" id="Goals"></a>
+        <h3>Goals</h3>
         <ol class="content faq">
           <li hbox="">
-            <div class="target" id="faq1">
+            <a class="anchor" id="Goals1"></a>
+            <div>
               <p style="margin-bottom:5px">What is the "Audio Equalizer and Amplifier" extension and how does it work?</p>
               <p>This extension is used to have control over audio playing of your browser. It can control the volume level as well as per-frequency amplification levels. The extension offers presets for "Classical", "Club", "Custom", "Default", "Live", "Laptop Speakers/Headphone", "Rock", "Pop", "Full Bass and Treble", "Full Bass", "Full Treble", "Soft", "Party", "Ska", "Soft Rock", "Large Hall", "Reggae", "Techno" categories. The "Default" leveling can be used to only control volume since there is no amplification per frequency range. There is a "Custom" level that basically stores what levels the user adjust in the UI. These levels are persistent per user profile. If you need to have multiple custom levels use profiling section to create different profiles. Currently, the extension supports adjusting levels for 60, 170, 310, 600, 1K, 3K, 6K, 12K, 14K, 16K frequency ranges which is equal to what VLC media player offers.</p>
             </div>
           </li>
           <li hbox="">
-            <div class="target" id="faq2"><p style="margin-bottom:5px">I am a heavy YouTube user and I need to only control YouTube's player. Is it possible to limit the controller to YouTube?</p>
+            <a class="anchor" id="Goals2"></a>
+            <div>
+              <p style="margin-bottom:5px">I am a heavy YouTube user and I need to only control YouTube's player. Is it possible to limit the controller to YouTube?</p>
               <p>There is an exact same extension which is only limited to YouTube. Basically when the extension is enabled from the toolbar area, it only injects the controlling script into the YouTube and YouTube Music pages. This way only YouTube player is controllable. If you are only interested in YouTube player, use this extension instead. Note that these add-ons are conflicting with each other. You can only have one installed.</p>
               <ul><li>Audio Equalizer and Amplifier (<a href="https://addons.mozilla.org/firefox/addon/audio-equalizer-and-amplifier/" rel="noopener" target="_blank">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/audio-equalizer/fgjoaiofojbppcbaghehnpofkbhhclfl/" rel="noopener" target="_blank">Chrome</a>)</li>
                 <li>YouTube Audio Equalizer and Amplifier (<a href="https://addons.mozilla.org/firefox/addon/youtube-audio-equalizer/" rel="noopener" target="_blank">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/youtube-equalizer/gickoboopickicokhpehaeohkcoiiech/" rel="noopener" target="_blank">Chrome</a>)</li></ul><p></p>
             </div>
           </li>
           <li hbox="">
-            <div class="target" id="faq3"><p style="margin-bottom:5px">What's new in this version?</p>
+            <a class="anchor" id="Goals3"></a>
+            <div>
+              <p style="margin-bottom:5px">What's new in this version?</p>
               <p>Please check the <a href="#log-container" data-scroll="">Logs</a> section.</p>
             </div>
           </li>
           <li hbox="">
-            <div class="target" id="faq4"><p style="margin-bottom:5px">Can I have multiple user-defined leveling for frequency bands?</p>
+            <div>
+              <p style="margin-bottom:5px">Can I have multiple user-defined leveling for frequency bands?</p>
               <p>Yes, there is an "Add" button next to the profile selection. Use that button to duplicate the current profile in a new name. Note that the name of each profile needs to be unique. Now adjust the levels manually or from the default presets. You can also adjust the volume level for each profile as well. There is no save button. The extension stores your settings when there is a change in the configuration. When a profile is changed, if the extension is enabled, the changes will be applied to the active players.</p>
             </div>
           </li>
           <li hbox="">
-            <div class="target" id="faq5"><p style="margin-bottom:5px">What is the difference between keeping the extension enabled when the "Default" profile (falt one) selected and disabling the extension from the popup?</p>
+            <div>
+              <p style="margin-bottom:5px">What is the difference between keeping the extension enabled when the "Default" profile (falt one) selected and disabling the extension from the popup?</p>
               <p>When the extension is disabled from the toolbar popup, the extension will not monitor web navigation anymore. It means that the controlling script is not being injected to the browser tabs or in other words there is no control over the audio playing. However, when the extension is enabled and the default profile is selected, the script is being injected to all tabs while it practically does nothing. This is useful to control the volume level (pre-amplification level) only. Note that if for instance the extension is in the disabled mode, and you want to change the volume, you will have to first enable the extension from the popup and then refresh the tab to allow the controlling script to be injected first.</p>
             </div>
           </li>
           <li hbox="">
-            <div class="target" id="faq6"><p style="margin-bottom:5px">Should I keep the extension disabled from the popup when I am not using it or keep it enabled and use the default flat profile?</p>
+            <div>
+              <p style="margin-bottom:5px">Should I keep the extension disabled from the popup when I am not using it or keep it enabled and use the default flat profile?</p>
               <p>It really depends on your usage. If you don't mind refreshing the active tab for the changes to be applied, it is recommended to disable the extension from the toolbar area. This way the extension is not monitoring your web navigation at all and hence does not use any resource since it uses a non-persistent background script. However, if you prefer to be able to control the volume while the player is playing without the need to refresh the tab, you need to keep the extension enabled and to prevent audio equalization, use the flat profile (the default profile).</p>
             </div>
           </li>
           <li hbox="">
-            <div class="target" id="faq7"><p style="margin-bottom:5px">Can I use this extension when I already have another extension that globally controls audio equalization or audio volume?</p>
+            <div>
+              <p style="margin-bottom:5px">Can I use this extension when I already have another extension that globally controls audio equalization or audio volume?</p>
               <p>Nope! you can only have a single add-on that controls audio equalization. This is the limitation of the JavaScript API. There is only one allowed media node that can control each media element. So if a website has already had a media node, neither this extension nor other similar extensions cannot control the media playing of this page.</p>
             </div>
           </li>
           <li hbox="">
-            <div class="target" id="faq8"><p style="margin-bottom:5px">Why does this extension not work on some websites?</p>
+            <div>
+              <p style="margin-bottom:5px">Why does this extension not work on some websites?</p>
               <p>There are two cases where the extension cannot function as expected. 1) When you have another extension that generates audio node and this audio node is created before this extension sets its own node. In this case, the former extension is in control. In general, it is not recommended to have multiple extensions that do the same or similar jobs since they can conflict. 2) When a webpage has its own media node and this node is in control. Again since only one node is accepted, there is no way to get the control.</p>
             </div>
           </li>
           <li hbox="">
-            <div class="target" id="faq9"><p style="margin-bottom:5px">What is the meaning of the persist checkbox in the popup window?</p>
+            <div>
+              <p style="margin-bottom:5px">What is the meaning of the persist checkbox in the popup window?</p>
               <p>If you want to keep the extension enabled after a restart, this option must be checked, otherwise, the extension disables itself after a relaunch.</p>
             </div>
           </li></ol>
@@ -2090,13 +2117,13 @@
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-              Option one is this and that&mdash;be sure to include why it's great
+              Option one
             </label>
           </div>
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              Option two can be something else and selecting it will deselect option one
+              Option two
             </label>
           </div>
           <div class="form-check disabled">
@@ -2130,7 +2157,8 @@
           <div class="form-group mx-sm-3">
             <label for="inputPassword2" class="sr-only">Password</label>
             <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-          </div>
+            <small id="passHelp" class="form-text text-muted">Make it a good one!</small>
+          </div><br/><br/>
           <button type="submit" class="see-more">Confirm identity</button>
         </form>
       </div>
@@ -2145,6 +2173,7 @@
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <small id="passHelp" class="form-text text-muted">Make it a good one!</small>
           </div>
           <div class="form-group">
             <label for="exampleFormControlSelect1">Example select</label>
@@ -2175,13 +2204,13 @@
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-              Option one is this and that&mdash;be sure to include why it's great
+              Option one
             </label>
           </div>
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              Option two can be something else and selecting it will deselect option one
+              Option two
             </label>
           </div>
           <div class="form-check disabled">
@@ -2215,10 +2244,30 @@
           <div class="form-group mx-sm-3">
             <label for="inputPassword2" class="sr-only">Password</label>
             <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-          </div>
+          </div><br/><br/>
           <button type="submit" class="see-more">Confirm identity</button>
         </form>
 
+      </div>
+    </div>
+    <hr>
+    <div class="row style-guide">
+      <div id="lists" class="col-xs-12">
+        <h2 id="lists-org">Freezeframe.js</h2>
+        <a class="anchor vspace" id="Lists"></a>
+        <p>
+          This is a library to handle controlling a <code>.gifs</code>
+        </p>
+        <img class="freezeframe-1" src="https://media1.tenor.com/images/371f9f39bf86b53a2de6468e7bf142d4/tenor.gif" />
+        <img class="freezeframe-1" src="https://www.sciencealert.com/images/2019-11/processed/nasa-poles-animation_600.gif" />
+        <img class="freezeframe-1" src="https://giffiles.alphacoders.com/166/16604.gif" />
+        <img class="freezeframe-1" src="https://data.whicdn.com/images/247143683/original.gif" />
+        <script>
+          new Freezeframe({
+            selector: '.freezeframe-1',
+            //trigger: 'click'
+          });
+        </script>
       </div>
     </div>
     <hr>
