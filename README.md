@@ -1,10 +1,10 @@
 ## JD-Design ~ Style Guide
 
-#About
+# about
 
 This style-guide is meant to be a testing platform for elements in the development cycle to be possibly be implemented pending how functionaly relevant and robust they are. This pulls styles from the `/resume` repo as well as styles from the `/redesign` repo.
 
-##todo
+## todo
 
 * 404 page
 * IE browser bar
@@ -12,7 +12,7 @@ This style-guide is meant to be a testing platform for elements in the developme
 * style-guide styles added as seperate sass file
 * rewrite of sass inclusions to remove redundancy
 
-##ref
+## ref
 1. color palette gen: [ColorPedia](http://veli.ee/colorpedia/?c=1ACCAB)
 2. bootstrap docs: [Bootstrap Docs](https://getbootstrap.com/docs/3.3/css/#type)
 3. google span design: [Google Span](https://design.google/library/span/)
@@ -27,5 +27,6 @@ This style-guide is meant to be a testing platform for elements in the developme
 11. [uber brand guide](https://dribbble.com/shots/2094092-Uber-Brand-Guide) also [Uber Brand](https://www.uber.design/)
 12. [404 example](https://www.market-me.fr/product/barni-startup/)
 13. [ui & style guide pins](https://www.pinterest.com/pin/168673948527182954/)
+14. [content faq list example](https://add0n.com/audio-equalizer.html?version=0.1.0&type=install)
 
 ---

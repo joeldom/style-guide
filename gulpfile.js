@@ -29,6 +29,11 @@ gulp.task("bye", function() {
     "//////////////////////////////////////////////////////////   Finished"
   );
 });
+gulp.task("echo", function() {
+  console.log(
+    "//////////////////////////////////////////////////////////   Echo"
+  );
+});
 
 // Development Tasks
 // -----------------
@@ -38,7 +43,7 @@ gulp.task("browserSync", function() {
   browserSync({
     server: {
       //baseDir: "style-guide",
-      baseDir: "./",
+      baseDir: ".",
       directory: true,
       index: "index.html"
     }
@@ -47,15 +52,12 @@ gulp.task("browserSync", function() {
 
 //Run SASS preprocess
 gulp.task("sass", function() {
-  //return gulp.src('style-guide/sass/**/*.scss') // Gets all files ending with .scss in style-guide/scss and children dirs
   return (
-    gulp
-      //.src("style-guide/sass/global.scss") // Gets specific file
-      .src("./sass/global.scss") // Gets specific file
-      // .pipe(sourcemaps.init())
-      // .pipe(sourcemaps.write("."))
-      .pipe(sass().on("error", sass.logError)) // Passes it through a gulp-sass, log errors to console
+    gulp.src("./sass/global.scss") // Gets specific file
+      .pipe(sourcemaps.init())
+      .pipe(sass().on("error", sass.logError).on('end', function() { console.log('//////////////////////////////////////////////////////////   SASS'); })) // Passes it through a gulp-sass, log errors to console
       .pipe(gulp.dest("./css")) // Outputs it in the css folder
+      .pipe(sourcemaps.write("./maps")).on('end', function() { console.log('//////////////////////////////////////////////////////////   Maps'); })
       .pipe(
         browserSync.reload({
           // Reloading with Browser Sync
@@ -76,6 +78,7 @@ gulp.task("prettify", function() {
 gulp.task("watch", function() {
   gulp.watch("./sass/**/*.scss", ["sass"]);
   gulp.watch("./*.html", browserSync.reload);
+  gulp.watch("./*.css", browserSync.reload);
   gulp.watch("./pages/**/*.html", browserSync.reload);
   gulp.watch("./js/**/*.js", browserSync.reload);
 });
