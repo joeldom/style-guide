@@ -1,6 +1,13 @@
-## JD-Design ~ Style Guide
-
-# about
+<table align="center" style="width:100% !important;">
+  <tbody>
+    <tr>
+      <td>
+        <img width="200px" height="200px" src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" alt="joel dombek design logo"/>
+      </td>
+      <td style="width:300px !important;"><h1>Style Guide</h1></td>
+    </tr>
+  </tbody>
+</table>
 
 This style-guide is meant to be a testing platform for elements in the development cycle to be possibly be implemented pending how functionaly relevant and robust they are. This pulls styles from the `/resume` repo as well as styles from the `/redesign` repo.
 
