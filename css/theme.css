@@ -1,0 +1,83 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme */
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#themeSwitch i {
+    font-size: .75em;
+    vertical-align: middle;
+}
+
+body #themeSwitch,
+body.light-mode #themeSwitch {
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(55, 55, 55, .115);
+    padding: 0 12px;
+    color: #8c8c8c;
+    border: 1px solid #bbb;
+    opacity: .5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode #themeSwitch {
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, .25);
+    padding: 0 12px;
+    color: #606060;
+    border: 1px solid #222;
+    transition: background-color 0.3s, color 0.3s;
+    opacity: 1;
+}
+
+body.light-mode #themeSwitch:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, .85);
+    opacity: 1;
+}
+
+body.dark-mode #themeSwitch:hover {
+    color: white;
+    border: 1px solid #f8f8f8;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.dark-mode {
+        background-color: black;
+        color: #b5b5b5;
+    }
+    body.dark-mode #panel {
+        background-color: black;
+        border-right: 1px solid #131313;
+    }
+    body.dark-mode hr {
+        border-top: 1px solid #131313;
+    }
+    body.dark-mode pre {
+        background: #0e110b;
+        border: 1px solid #242424;
+        border-radius: 0px;
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body.light-mode {
+        background-color: #f6f6f6;
+        color: #545454;
+    }
+    body.light-mode #panel {
+        background-color: white;
+        border-right: 1px solid #e6e6e6;
+    }
+    body.light-mode .style-guide pre {
+        /* background: #0e110b; */
+        border: 1px solid red !important;
+        border-radius: 0px;
+        /* color: white; */
+    }
+}
+
+html.no-js body.light-mode.dark-theme .style-guide pre
