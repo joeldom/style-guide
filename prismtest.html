@@ -74,11 +74,12 @@
     <link rel="stylesheet" href="css/void.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/prism.css">
     <link rel="stylesheet" href="css/theme.css">
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/freezeframe@3.0.10/build/css/freezeframe_styles.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+
 </head>
 
 <!-- =========================================================
@@ -132,11 +133,6 @@
         <div id="sg-logo"><a class="navbar-brand" href="#">Style<strong>Guide</strong></a></div>
         <div class="col-xs-12">
             <!-- col-md-12 -->
-            <!-- 
-                [] there is a spacing issue with where the anchors direct and where it shows in the sidebar panel
-                []
-            
-             -->
             <div data-spy="affix" data-offset-top="365" data-offset-bottom="200">
                 <nav class="bs-docs-sidebar">
                     <ul id="sidebar" class="nav nav-stacked fixed">
@@ -169,6 +165,7 @@
                         </li>
                         <li><a href="#Typography">Typography</a>
                             <ul class="nav nav-stacked">
+                                <li><a href="#typed1">Typed.js</a></li>
                                 <li><a href="#typography-roboto">Roboto</a></li>
                                 <li><a href="#typography-roboto-mono">Roboto Mono</a></li>
                                 <li><a href="#typography-NotoSans">Noto Sans</a></li>
@@ -183,7 +180,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <!-- fix where this is aligned -->
                         <li><a href="#Buttons">Buttons</a>
                             <ul class="nav nav-stacked">
                                 <li><a href="#Usage">Usage</a></li>
@@ -191,34 +187,19 @@
                             </ul>
                         </li>
                         <li><a href="#Timeline">Timeline</a></li>
-                        <li><a href="#Elements">Elements</a>
+                        <li><a href="#output">Elements</a>
                             <ul class="nav nav-stacked">
                                 <li><a href="#Multi-Step">Multi-Step</a></li>
                                 <li><a href="#Loader">Loader</a></li>
                                 <li><a href="#Progress-Bar">Progress Bar</a></li>
-                                <li><a href="#Calendar">Calendar</a></li>
-                                <li><a href="#Forms-Inputs">Forms &amp; Inputs</a>
-                                    <ul class="nav nav-stacked">
-                                        <li><a href="#PrettyForm">Pretty Form</a></li>
-                                        <li><a href="#BasicForm">Basic Form</a></li>
-                                    </ul>
-                                </li>
-                                <!-- <li><a href="#FreezeFrame">FreezeFrame.js</a></li> -->
-                                <li><a href="#Lists">Lists</a>
-                                    <ul class="nav nav-stacked">
-                                        <li><a href="#UnorderedLists">Unordered Lists</a></li>
-                                        <li><a href="#OrderedLists">Ordered lists</a></li>
-                                    </ul>
-                                </li>
-
+                                <li><a href="#Calandar">Calandar</a></li>
+                                <li><a href="#Forms-Inputs">Forms Inputs</a></li>
                             </ul>
                         </li>
-                        <!-- <li><a href="#Icons">Icons</a></li> -->
-                        <li><a href="#CodePre">Code</a>
+                        <li><a href="#code">Code</a>
                             <ul class="nav nav-stacked">
-                                <li><a href="#CodePre">Preformatted Code</a></li>
-                                <li><a href="#CodeVariables">Variables</a></li>
-                                <li><a href="#CodeClasses">Classes</a></li>
+                                <li><a href="#code-code-counts">Variables</a></li>
+                                <li><a href="#code-colsplit">Classes</a></li>
                             </ul>
                         </li>
                         <li class="back-to-top"><a id="back-to-top" class="back-to-top" href="#header">Back to top</a></li>
@@ -377,14 +358,10 @@
                 </ol>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 start">
-                <img class="img-responsive" src="img/styleguide-color-pattern.png" style="margin: -1px 0 0 0">
-            </div>
-        </div>
         <div class="row style-guide">
             <div class="col-xs-12">
                 <a class="anchor vspace" id="Color"></a>
+                <hr>
                 <h2>Color</h2>
                 <p>Color is what give a design it's first sense of style. What color is chosen speaks to where it can be used and what it's implied meaning is.</p>
                 <p>With the color choice of such a vibrant blue it is meant to speak to all of the areas I've focused on in my career. With in terms of print, it is a very important color and in this case is closely related to <strong>Reflex Blue</strong>.
@@ -752,11 +729,7 @@
         <!-- ALTERNATE COLORS 2-->
 
         <hr>
-        <div class="row">
-            <div class="col-xs-12 start">
-                <img class="img-responsive" src="img/gradientbit 2.png" style="margin: -1px 0 0 0">
-            </div>
-        </div>
+
         <div class="row style-guide">
             <div class="col-xs-12">
                 <a class="anchor" id="Typography"></a>
@@ -765,6 +738,19 @@
                     copy has <code>1.5em</code></p>
                 <p>This should swap conditionally between classes depending on which is on or not on and check or remove all then just re-add them. This would probably be the easiest way instead of having a dozen or so conditions to check for. The <a href="https://gist.github.com/egeorjon/6755681">Gist with add_remove_class with Javascript</a></p>
                 <p>This shouldn't be as difficult as I am making this out to be. Metalicas Unforgiven is on right now.</p>
+
+                <article style="min-height: 400px;">
+                    <h2><span id="typed1"></span></h2>
+
+                    <p><span id="typed3"></span></p>
+
+                    <p style="min-height:72px;display:block;"><span id="typed2"></span></p>
+                    <br>
+
+                    <div class="push"></div>
+                    <br />
+                    <button id="add" class="see-more">Add Content</button>
+                </article>
             </div>
         </div>
         <br>
@@ -779,7 +765,7 @@
                         <button id="drkgable" class="theme-choice drkgable"><span class="theme-color">A</span></button>
                     </div>
                 </div>
-                <div id="font-container" class="container-fluid refluxblu-white" role="tabpanel" style="padding: 0 0 2em 0;">
+                <div id="font-container" class="container-fluid refluxblu-white" role="tabpanel">
                     <a class="anchor" id="typography-roboto"></a>
                     <h1 style="font-family:'Roboto' !important;text-align:center;">Roboto</h1>
                     <table class="table" style="font-family:'Roboto' !important;color:white;" border="0" cellpadding="0" cellspacing="0">
@@ -893,21 +879,12 @@
                                         </tr>
                                         <tr>
                                             <td style="line-height:2em;padding-bottom:1.5em;">
-                                                <br>Usage <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <br>Rating
                                             </td>
                                         </tr>
                                         <tr>
-                                            <!-- <td style="font-size:18px">
+                                            <td style="font-size:18px">
                                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                            </td> -->
-                                            <td>
-                                                <span class="badge badge-default">Base</span>
-                                                <span class="badge badge-primary">New</span>
-                                                <span class="badge badge-secondary">Archive</span>
-                                                <span class="badge badge-success">Success</span>
-                                                <span class="badge badge-info">Info</span>
-                                                <span class="badge badge-warning">Warning</span>
-                                                <span class="badge badge-danger">Danger</span>
                                             </td>
                                         </tr>
                                     </table>
@@ -1165,12 +1142,9 @@
                     <h6>Published: 24 October 2020</h6>
                     <a href="#">Link Citation: Effects of science on the religious mind.</a>
                     <br/>
-                    <span class="badge badge-default">Base</span>
                     <span class="badge badge-primary">New</span>
-                    <span class="badge badge-secondary">Archive</span>
-                    <span class="badge badge-success">Success</span>
-                    <span class="badge badge-info">Info</span>
-                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-secondary">2nd</span>
+                    <span class="badge badge-sucess">Success</span>
                     <span class="badge badge-danger">Danger</span>
                 </div>
                 <div class="col-xs-12">
@@ -1293,11 +1267,6 @@
             <br>
             <hr><br />
             <div class="row twoUp">
-                <div class="col-md-8">
-                    <img src="http://placehold.it/600x500" />
-                    <img src="http://placehold.it/600x500" />
-                    <img src="http://placehold.it/600x500" />
-                </div>
                 <div class="col-md-3">
                     <h3>Give readers a peek behind the curtain</h3>
                     <p>Experience design is based on using the concept behind the brand as a way to <a class="wired" href="#">identify and define value for</a> customers. And this becomes the purpose and intent of the business—to deliver products, services,
@@ -1308,12 +1277,15 @@
                     <span class="see-more">View more</span>
                     <br><br><br>
                 </div>
+                <div class="col-md-8">
+                    <img src="http://placehold.it/600x500" />
+                </div>
             </div>
         </div>
         <!-- BUTTONS -->
-        <a class="anchor" id="Buttons"></a>
         <div class="row style-guide">
             <div class="col-xs-12">
+                <a class="anchor" id="Buttons"></a>
                 <h2 class="section__header">Buttons</h2>
                 <p>Buttons or "CTAs" let the user know where they can interact. Properly aligning the buttons in the design visually &amp; stylistically makes the piece feel balanced and stable. It creates "expectations" of how things work, and makes their
                     experience consistent, and in turn, enjoyable.</p>
@@ -1323,8 +1295,8 @@
         </div>
         <div class="row style-guide">
             <div class="col-xs-12">
-                <a class="anchor" id="Usage"></a>
                 <h2 class="section__header">Usage</h2>
+                <a class="anchor" id="Usage"></a>
                 <p>Buttons can be used in a variety of ways and have unique verbaige depending on where they link to. Here are some examples of proper and improper use.</p>
             </div>
         </div>
@@ -1352,11 +1324,12 @@
                 <br><br>
             </div>
         </div>
-        <hr>
+        <br>
+        <hr><br>
         <div class="row style-guide">
             <div class="col-xs-12">
-                <a class="anchor" id="Pagination"></a>
                 <h3>Pagination</h3>
+                <a class="anchor" id="Pagination"></a>
             </div>
         </div>
         <div class="row style-guide">
@@ -1396,8 +1369,8 @@
         <!-- Timeline -->
         <div class="row style-guide">
             <div class="col-xs-12">
-                <a class="anchor" id="Timeline"></a>
                 <h2 class="section__header">Timeline</h2>
+                <a class="anchor" id="Timeline"></a>
                 <p>With any project even this Style Guide, there is a timeline for the project. Having the ability to show the lineage of what went into making it is important. The option to link to external posts as well as show possible gaps in development
                     and how milestones can be important into seeing what has been done and what there is left to do.</p>
                 <br>
@@ -1606,11 +1579,10 @@
         <!--/ Timeline -->
 
         <hr>
-        <a class="anchor" id="Elements"></a>
         <div class="row style-guide">
             <div class="col-xs-12">
-                <a class="anchor" id="Multi-Step"></a>
                 <h3>Multi-Step</h3>
+                <a class="anchor" id="Multi-Step"></a>
                 <section class="multi-step">
                     <nav>
                         <ol class="cd-multi-steps text-top">
@@ -1621,6 +1593,48 @@
                         </ol>
                     </nav>
                 </section>
+                <!-- <section>
+                    <h4>Guidance &amp; Progression</h4>
+                    <ol class="content faq">
+                        <li hbox=""><strong>Visualization of Steps:</strong> It clearly shows users the different steps they need to complete, often numbered or named (e.g., Step 1: Personal Information, Step 2: Address Details, Step 3: Payment).</li>
+                        <li hbox=""><strong>Current Step Indicator:</strong> Highlights the current step the user is on, usually through a distinct color or marker.</li>
+                        <li hbox=""><strong>Completion Tracking:</strong> Displays completed steps, often with checkmarks or a change in color, helping users understand how much they have accomplished and what remains.</li>
+                        <li hbox=""><strong>Instructions and Prompts:</strong> Provides instructions or prompts for each step, helping users understand what information or actions are required.</li>
+                        <li hbox=""><strong>Contextual Help:</strong> May include tooltips, hints, or examples to assist users in filling out forms or completing tasks accurately.</li>
+                        <li hbox=""><strong>Next and Previous Controls:</strong> Includes buttons or links to navigate to the next or previous steps, giving users control over their progression.</li>
+                        <li hbox=""><strong>Summary or Overview:</strong> Sometimes, a summary page is included to review all inputs before final submission, ensuring users can verify and correct any information if necessary.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h4>UX &amp; Logical Grouping</h4>
+                    <ol class="content faq">
+                        <li hbox=""><strong>Validation Messages:</strong> Offers real-time validation messages to inform users of errors or missing information before allowing them to proceed to the next step.</li>
+                        <li hbox=""><strong>Progress Bars:</strong> Some multi-step UIs include a progress bar that visually represents the overall progress through the steps, providing additional feedback on how far along the user is.</li>
+                        <li hbox=""><strong>Segmentation of Complex Processes:</strong> Breaks down complex processes into logical sections, making them less overwhelming and easier to understand.</li>
+                        <li hbox=""><strong>Thematic Grouping:</strong> Steps are grouped thematically, ensuring that related information is collected together, which enhances user comprehension and task flow.</li>
+                    </ol>
+                </section>
+
+                <section class="example">
+                    <h4>Examples</h4>
+                    <ul>
+                        <li><strong>Checkout Process:</strong> In e-commerce, a multi-step UI guides users through the checkout process, from cart review, shipping information, payment details, to order confirmation.</li>
+                        <li><strong>Registration Forms:</strong> For services or applications, users may be guided through multiple steps to create an account, such as entering personal details, setting up security questions, and confirming their email.</li>
+                        <li><strong>Survey Completion:</strong> Multi-step UIs are used in surveys to break questions into sections, making it easier for respondents to provide thoughtful answers without being overwhelmed by a single long form.</li>
+                    </ul>
+                </section>
+
+                <section class="benefits">
+                    <h4>Benefits</h4>
+                    <ul>
+                        <li><strong>Improved Usability:</strong> By breaking tasks into smaller steps, users are less likely to feel overwhelmed, reducing drop-off rates.</li>
+                        <li><strong>Error Reduction:</strong> With step-by-step guidance and real-time validation, users are less likely to make mistakes, improving data accuracy.</li>
+                        <li><strong>Enhanced User Experience:</strong> Providing clear progress indicators and navigation controls makes the process feel more organized and user-friendly.</li>
+                    </ul>
+                </section>
+
+                <hr> -->
                 <section>
                     <h4>Guidance &amp; Progression</h4>
                     <ul>
@@ -1642,59 +1656,30 @@
                         <li>Groups related information for clarity.</li>
                     </ul>
                 </section>
+
                 <section>
-                    <h4>Usage</h4>
-                    <pre><code>
-&lt;section class=&quot;multi-step&quot;&gt;
-    &lt;nav&gt;
-        &lt;ol class=&quot;cd-multi-steps text-top&quot;&gt;
-            &lt;li class=&quot;visited&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Cart&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;visited&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Billing&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;current&quot;&gt;&lt;em&gt;Delivery&lt;/em&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;em&gt;Review&lt;/em&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/nav&gt;
-&lt;/section&gt;
-                    </code></pre>
-                </section>
-                <!-- <section>
                     <h4>Examples</h4>
                     <ul>
                         <li>Checkout process in e-commerce.</li>
                         <li>Registration forms for creating accounts.</li>
                         <li>Surveys segmented into sections for easier completion.</li>
                     </ul>
-                </section> -->
+                </section>
 
-                <!-- <section>
+                <section>
                     <h4>Benefits</h4>
                     <ul>
                         <li>Improves usability and reduces user drop-off.</li>
                         <li>Reduces errors with guided steps and validations.</li>
                         <li>Enhances user experience with clear navigation and feedback.</li>
                     </ul>
-                </section> -->
+                </section>
                 <!-- <input id="slider-input-box" type="number" class="bx--text-input bx--slider-text-input" placeholder="0">
         <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
-
-
-
-                <!-- <a href="https://www.w3schools.com/howto/howto_js_snackbar.asp">Snack bar notification onClick</a><br>
-        <a href="https://www.w3schools.com/howto/howto_js_toggle_like.asp">Toggle like/Dislike</a><br>
-        <a href="https://www.w3schools.com/howto/howto_js_add_class.asp">Add Class on click</a><br>
-        <a href="https://www.w3schools.com/howto/howto_syntax_highlight.asp">Syntax Highliting</a> -->
-
-            </div>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <div class="row style-guide">
-            <div class="col-xs-12">
-                <a class="anchor" id="Loader"></a>
-                <h3>Loader</h3>
-            </div>
-            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Loader</h3>
+                    <a class="anchor" id="Loader"></a>
+                </div>
                 <div class="col-sm-5 col-xs-6">
                     <div class="loader"></div>
                 </div>
@@ -1710,25 +1695,25 @@
                 <div class="col-sm-5 col-xs-6 palette-brandblue palette-inverse warm">
                     <div class="loader"></div>
                 </div>
+
+
+                <!-- <a href="https://www.w3schools.com/howto/howto_js_snackbar.asp">Snack bar notification onClick</a><br>
+        <a href="https://www.w3schools.com/howto/howto_js_toggle_like.asp">Toggle like/Dislike</a><br>
+        <a href="https://www.w3schools.com/howto/howto_js_add_class.asp">Add Class on click</a><br>
+        <a href="https://www.w3schools.com/howto/howto_syntax_highlight.asp">Syntax Highliting</a> -->
+
             </div>
-            <section class="mt-4">
-                <p>A page loader is a visual element used on websites to indicate that content is being fetched or processed. It typically appears as an animation, such as a spinning icon or progress bar, signaling to users that the webpage is actively working
-                    on loading requested information like images or data. This helps manage user expectations and provides feedback during loading periods, ensuring a smoother browsing experience.
-                </p>
-            </section>
         </div>
         <br>
-        <hr>
-        <br>
+        <hr><br>
         <div class="row style-guide">
             <div class="col-xs-12">
                 <!--
         <h3>Popover</h3><a class="anchor" id="popover"></a>
         <button type="button" class="see-more" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
         <br><hr><br> -->
-                <a class="anchor" id="Progress-Bar"></a>
                 <h3>Progress Bar</h3>
-
+                <a class="anchor" id="Progress-Bar"></a>
                 <p>Something is missing with styles for this? Not sure what though.</p>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><span style="color: #1a3acc; padding:0 1.5em;">0%</span></div>
@@ -1748,20 +1733,18 @@
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
                 </div>
-            </div>
-        </div>
-        <!--/BUTTONS -->
-        <br>
-        <hr>
-        <div class="row style-guide">
-            <a class="anchor" id="Calendar"></a>
-            <h3>Contribution Calendar</h3>
-            <p>
-                Here is where a Calendar of changes can be updated to reflect a running list of updates.
-            </p>
-            <hr>
-            <div class="git-calendar-graph" data-graph-url="/users/joeldom/contributions" data-url="/joeldom" data-from="2020-09-01" data-to="2020-09-19">
-                <svg width="676" height="104" class="js-calendar-graph-svg">
+
+                <br>
+                <hr><br>
+
+                <h3>Contribution Calandar</h3>
+                <a class="anchor" id="Calandar"></a>
+                <p>
+                    Here is where a calandar of changes can be updated to reflect a running list of updates.
+                </p>
+                <hr>
+                <div class="git-calendar-graph" data-graph-url="/users/joeldom/contributions" data-url="/joeldom" data-from="2020-09-01" data-to="2020-09-19">
+                    <svg width="676" height="104" class="js-calendar-graph-svg">
             <g transform="translate(16, 20)">
                 <g transform="translate(0, 0)">
                     <rect class="day" width="10" height="10" x="13" y="0" fill="#e4dfd9" data-count="0" data-date="2016-09-18"></rect>
@@ -2258,20 +2241,21 @@
                 <text text-anchor="start" class="day" dx="-14" dy="81" style="display:none;" fill="#1a3acc">Sat</text>
             </g>
           </svg>
+                </div>
             </div>
         </div>
-        <hr>
+        <!--/BUTTONS -->
         <br>
+        <hr><br>
         <div class="row style-guide">
             <div id="Forms-Inputs" class="col-xs-12">
-                <a class="anchor" id="Forms-Inputs"></a>
                 <h2 class="section__header">Forms &amp; Inputs</h2>
+                <a class="anchor" id="input-intro"></a>
                 <p>Inputs for forms and other fileds used for user interaction</p>
             </div>
         </div>
         <div class="row">
             <div class="container-fluid palette-brandblue palette-inverse">
-                <a class="anchor" id="PrettyForm"></a>
                 <div id="form-page" class="page">
                     <div class="page__demo">
                         <div class="main-container page__container">
@@ -2317,7 +2301,6 @@
         </div>
         <div class="row">
             <div id="input" class="col-xs-6">
-                <a class="anchor" id="BasicForm"></a>
                 <h4 id="input-form-1">Form Elements</h4>
                 <form class="needs-validation" novalidate>
                     <div class="form-group">
@@ -2494,67 +2477,32 @@
         </div>
         <hr>
         <div class="row style-guide">
-            <div id="Freezeframe" class="col-xs-12">
-                <a class="anchor vspace" id="Freezeframe"></a>
-                <h2 id="lists-org">FreezeFrame.js</h2>
+            <div id="lists" class="col-xs-12">
+                <h2 id="lists-org">Freezeframe.js</h2>
+                <a class="anchor vspace" id="Lists"></a>
                 <p>
-                    This is a library to handle controlling a <code>.gifs</code>. <br/> I need to fix how this works as seen on:
-                    <a href="https://joeldom.github.io/redesign/">my redesign</a>.</p>
+                    This is a library to handle controlling a <code>.gifs</code>
+                </p>
                 <img class="freezeframe-1" src="https://media1.tenor.com/images/371f9f39bf86b53a2de6468e7bf142d4/tenor.gif" />
                 <img class="freezeframe-1" src="https://www.sciencealert.com/images/2019-11/processed/nasa-poles-animation_600.gif" />
                 <img class="freezeframe-1" src="https://giffiles.alphacoders.com/166/16604.gif" />
-                <img class="freezeframe-1" src="https://giffiles.alphacoders.com/165/16571.gif" />
+                <img class="freezeframe-1" src="https://data.whicdn.com/images/247143683/original.gif" />
+                <script>
+                    new Freezeframe({
+                        selector: '.freezeframe-1',
+                        //trigger: 'click'
+                    });
+                </script>
             </div>
         </div>
         <hr>
         <div class="row style-guide">
-            <div class="col-xs-12">
-                <a class="anchor vspace" id="TypedJS"></a>
-                <h2 id="lists-org">Typed.js</h2>
-                <p>
-                    Typed.js <a href="https://github.com/mattboldt/typed.js/">Repo</a> is a library that types. Enter in any string, and watch it type at the speed you 've set, backspace what it's typed, and begin a new sentence for however many strings
-                    you 've set.
-                </p>
-                <h4>CDN</h4>
-                <pre><code class="language-html">&lt;script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"&gt;&lt;/script&gt;</code></pre>
-                <p>For use directly in the browser via <code>&lt;script&gt;</code> tag:</p>
-                <pre><code class="language-html">
-  &lt;!-- Element to contain animated typing --&gt;
-  &lt;span id="element"&gt;&lt;/span&gt;
-
-  &lt;!-- Load library from the CDN --&gt;
-  &lt;script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"&gt;&lt;/script&gt;
-
-  &lt;!-- Setup and start animation! --&gt;
-  &lt;script&gt;
-    var typed = new Typed('#element', {
-      strings: ['&lt;i&gt;First&lt;/i&gt; sentence.', '&amp; a second sentence.'],
-      typeSpeed: 50,
-    });
-  &lt;/script&gt;
-&lt;/body&gt;
-                </code></pre>
-
-                <article>
-                    <h3><span id="typed1"></span></h3>
-                    <p><span id="typed3"></span></p>
-                    <p style="min-height:32px;display:block;"><span id="typed2"></span></p>
-                    <br>
-                    <div class="push"></div>
-                    <br />
-                    <button id="add" class="see-more">Add Content</button>
-                </article>
-            </div>
-        </div>
-        <hr>
-        <div class="row style-guide">
-            <div class="col-xs-12">
-                <a class="anchor vspace" id="Lists"></a>
+            <div id="lists" class="col-xs-12">
                 <h2 id="lists-org">Lists</h2>
+                <a class="anchor vspace" id="Lists"></a>
                 <p>
                     Lists help organize things, using different types of lists for different heirarchy helps grant importance of content not deemed important enough for headlines, buttons or navigation but more important than a paragraph of text explaining in common speach.
                 </p>
-                <a class="anchor vspace" id="UnorderedLists"></a>
                 <h4 class="section__header">Un-ordered</h4>
                 <p>
                     Lists help organize things, using different types of lists for different heirarchy helps grant importance of content not deemed important enough for headlines, buttons or navigation but more important than a paragraph of text explaining in common speach.
@@ -2569,7 +2517,6 @@
                     <li><a href="#example-mutation" id="markdown-toc-example-mutation">Example mutation</a></li>
                     <li><a href="#further-reading" id="markdown-toc-further-reading">Further reading</a></li>
                 </ul>
-                <a class="anchor vspace" id="OrderedLists"></a>
                 <h4 class="section__header">Ordered</h4>
                 <ol>
                     <li>
@@ -2623,12 +2570,12 @@
                     </li>
                 </ol>
                 <hr />
-                <a class="anchor vspace" id="CodePre"></a>
-                <h4 class="section__header">Code</h4>
+                <h4 class="section__header">Code &amp; Pre</h4>
                 <p>
                     Code and pre elements alow you to distinguish between content that is meant to be read in a specific code language or syntax not typically used in font facing content.
                 </p>
-                <pre><code class="language-html">&lt;!DOCTYPE html&gt;<br>
+                <pre id="myDiv">
+&lt;!DOCTYPE html&gt;<br>
 &lt;html&gt;<br>
 &lt;body&gt;<br>
 <br>
@@ -2638,7 +2585,7 @@
 <br>
 &lt;/body&gt;<br>
 &lt;/html&gt;
-</code></pre>
+</pre>
                 <code>subject</code> (<code>Reactable!</code>)<br />
                 <code>THUMBS_UP</code> (<img class="emoji" title=":thumbsup:" alt=":thumbsup:" style="width:20px;height:20px;" src="https://a248.e.akamai.net/assets.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20" align="absmiddle">)
 
@@ -2663,10 +2610,7 @@
     <!-- bootstrap 3.3.7 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script>
-        hljs.highlightAll();
-    </script>
+
     <!-- bootstrap 4.4.0 -->
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -2698,7 +2642,7 @@
         // TODO: updated 4.4.0 docs
         $('body').scrollspy({
             target: '#sidebar',
-            offset: 200
+            offset: 220
         });
     </script>
     <script>

@@ -57,7 +57,7 @@ body.dark-mode #themeSwitch:hover {
     }
     body.dark-mode pre {
         background: #0e110b;
-        border: 1px solid #242424;
+        border: 1px solid #202020;
         border-radius: 0px;
         color: white;
     }
@@ -80,4 +80,7 @@ body.dark-mode #themeSwitch:hover {
     }
 }
 
-html.no-js body.light-mode.dark-theme .style-guide pre
+body.night-mode .bs-docs-sidebar li.active li a {
+    border-bottom: none;
+    color: white !important;
+}
