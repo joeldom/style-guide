@@ -99,7 +99,7 @@
 
 ===========================================================-->
 
-<body class="light-mode" data-spy="scroll" data-target="#side-nav" data-offset="50" bgcolor="#ffffff" style="-webkit-text-size-adjust:none;" bottommargin="0" leftmargin="0" topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+<body class="dark-mode" data-spy="scroll" data-target="#side-nav" data-offset="50" bgcolor="#ffffff" style="-webkit-text-size-adjust:none;" bottommargin="0" leftmargin="0" topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
     <style type="text/css">
         div.preheader {
             display: none!important;
@@ -129,7 +129,12 @@
 
     <!-- /navbar -->
     <div id="panel">
-        <div id="sg-logo"><a class="navbar-brand" href="#">Style<strong>Guide</strong></a></div>
+        <div id="sg-logo">
+            <a class="navbar-brand" href="https://joeldom.github.io/redesign/">
+                <span class="navbar-brand-default">Style<strong>Guide</strong></span>
+                <span class="navbar-brand-hidden">Go <strong>Home</strong></span>
+            </a>
+        </div>
         <div class="col-xs-12">
             <!-- col-md-12 -->
             <!-- 
@@ -226,7 +231,8 @@
                         <li>
                             <a href="https://joeldom.github.io/redesign/" style="margin: 0 0 1em 0;"><img style="max-width: 40px; display: block; margin: 40px auto;" src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" /></a>
                         </li>
-                        <button style="display: block; margin: 0 auto;" id="themeSwitch"><i class="fas fa-moon"></i></button>
+                        <button title="Light / Dark" style="display: block; margin: 0 auto;" id="themeSwitch"><i class="fas fa-moon"></i></button>
+                        <button title="See lights" style="display: block; margin: 0 auto;" id="lightSwitch"><i class="fas fa-bolt"></i></button>
                     </ul>
                     <div class="viewport">Viewport: <span id="monitor"></span>px</div>
             </div>
@@ -754,7 +760,7 @@
         <hr>
         <div class="row">
             <div class="col-xs-12 start">
-                <img class="img-responsive" src="img/gradientbit 2.png" style="margin: -1px 0 0 0">
+                <img class="img-responsive" src="img/uberpixel.png" style="margin: -1px 0 0 0">
             </div>
         </div>
         <div class="row style-guide">
@@ -1154,7 +1160,8 @@
         </div>
         <!-- row -->
         <div class="row">
-            <div class="article container-fluid palette-brandblue palette-inverse">
+            <!-- <div class="article container-fluid palette-brandblue palette-inverse"> -->
+            <div class="article container-fluid palette-basebright">
                 <br>
                 <div class="col-xs-6">
                     <h1>Article Title</h1>
@@ -1181,8 +1188,7 @@
                         order. Many authors prefer to construct a draft by rapidly putting down ideas with little regard to sentence structure, and to make corrections later. Others prefer to make revisions as they proceed. Write the report with a target
                         audience of other students with experience in biology equivalent to that of the class for which the report is written.
                     </p>
-                    <button type="button" class="see-more" data-toggle="tooltip" data-html="true" title="<em>Button</em> <u>with</u> <b>Tooltip</b>
-            <p>Here is a very long tooltip, this can show content ahead of a user clickign through to a page.</p>">Button w/ Tooltip</button>
+                    <button type="button" class="see-more" data-toggle="tooltip" data-html="true" title="Here is a very long tooltip, this can show content ahead of a user clicking through to a page.">Button w/ Tooltip</button>
                     <p>
                         Proper use of English is considered paramount in grading. Your major responsibility is to make the reader understand exactly what you mean by using words with precision, clarity, and economy. Every sentence should be exact and say something of importance
                         (no "padding"). Economy and accuracy require using straightforward English sentences (subject, verb, and object). Follow a consistent pattern of tenses. Although it is acceptable to write in either the active or passive voice,
@@ -1294,9 +1300,9 @@
             <hr><br />
             <div class="row twoUp">
                 <div class="col-md-8">
-                    <img src="http://placehold.it/600x500" />
-                    <img src="http://placehold.it/600x500" />
-                    <img src="http://placehold.it/600x500" />
+                    <img src="img/file-delete.png" />
+                    <img src="img/file-delete.png" />
+                    <img src="img/file-delete.png" />
                 </div>
                 <div class="col-md-3">
                     <h3>Give readers a peek behind the curtain</h3>
@@ -1310,8 +1316,13 @@
                 </div>
             </div>
         </div>
-        <!-- BUTTONS -->
         <a class="anchor" id="Buttons"></a>
+        <div class="row">
+            <div class="col-xs-12 start">
+                <img class="img-responsive" src="img/controls-v2.png" style="margin: -1px 0 0 0">
+            </div>
+        </div>
+        <!-- BUTTONS -->
         <div class="row style-guide">
             <div class="col-xs-12">
                 <h2 class="section__header">Buttons</h2>
@@ -1335,9 +1346,12 @@
                 <a href="#" class="see-more">See more</a>
                 <a href="#" class="see-more">View more</a>
                 <a href="#" class="see-more">Read more</a>
+                <a href="#" class="see-more">Load more</a>
                 <a href="#" class="see-more">Continue</a>
+                <a href="#" class="see-more">Cancel</a>
                 <a href="#" class="see-more">Next</a>
-                <a href="#" class="see-more">Next</a>
+                <a href="#" class="see-more">Ok</a>
+                <a href="#" class="see-more">Save</a>
                 <br>
             </div>
             <div class="col-xs-6 palette-brandblue palette-inverse">
@@ -1346,9 +1360,12 @@
                 <a href="#" class="see-more">See more</a>
                 <a href="#" class="see-more">View more</a>
                 <a href="#" class="see-more">Read more</a>
+                <a href="#" class="see-more">Load more</a>
                 <a href="#" class="see-more">Continue</a>
+                <a href="#" class="see-more">Cancel</a>
                 <a href="#" class="see-more">Next</a>
-                <a href="#" class="see-more">Next</a>
+                <a href="#" class="see-more">Ok</a>
+                <a href="#" class="see-more">Save</a>
                 <br><br>
             </div>
         </div>
@@ -2675,7 +2692,6 @@
     <!-- <script src="/js/syntax.js"></script> -->
     <script src="js/typed-content.js"></script>
     <script src="js/style-guide.js"></script>
-    <script src="js/prism.js"></script>
     <script src="js/theme.js"></script>
     <script>
         window.onscroll = function() {

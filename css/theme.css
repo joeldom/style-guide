@@ -1,16 +1,95 @@
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme */
 
+:root {
+    /* colors */
+    --brand-blue: #1a3acc;
+    --dark-blue: #001c9b;
+    --very-dark-blue: #000e4e;
+    --cool-blue: #e0e9fe;
+    --magenta: #ab1acc;
+    --fuchsia: #84017e;
+    --blood-red: #600000;
+    --dim-red: #ee0202;
+    --legacy: #008080;
+    --java: #1ACCAB;
+    --pale-blue: #a6aaf4;
+    --golden: #ccab1a;
+    --burlywood: #DEB887;
+    --safety-green: #BBFF32;
+    --bright-green: #14E158;
+    --mint-green: #2e8c5f;
+    --pale-olive: #648476;
+    --bright-orange: rgba(255, 111, 63, 0.5);
+    --orange: #ff6f3f;
+    --dark-olive: #1a1e1c;
+    --black: #0a0c0e;
+    --white: #ffffff;
+    --base-bright: #f0f4f7;
+    --bright-grey: #f2f2f2;
+    --light-grey: #cfcfcf;
+    --warm-grey: #818181;
+    --metal: #5a6771;
+    --ever-green: #142a2d;
+    --deep-green: #0A202E;
+    --warm-black: #2D2828;
+    --deep-root: #004161;
+    --euphoria: #00050f;
+    /* properties */
+    --font-base-size: 14px;
+    --font-small-size: 12px;
+    --font-tiny-size: 10px;
+    --font-micro-size: 8px;
+}
+
 body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-#themeSwitch i {
+#themeSwitch i,
+#lightSwitch i {
     font-size: .75em;
     vertical-align: middle;
 }
 
+#themeSwitch,
+#lightSwitch {
+    position: relative;
+    display: inline-block;
+}
+
+#themeSwitch[title]:hover::after,
+#lightSwitch[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    min-width: 100px;
+    left: -55%;
+    background-color: rgba(255, 255, 255, .75);
+    color: var(--metal);
+    border: 1px solid var(--white);
+}
+
+body.dark-mode #themeSwitch[title]:hover::after,
+body.dark-mode #lightSwitch[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    min-width: 100px;
+    left: -52%;
+    background-color: rgba(0, 0, 0, .75);
+    border: 1px solid black;
+}
+
+#themeSwitch[title]:hover::after {
+    top: -110%;
+}
+
+#lightSwitch[title]:hover::after {
+    bottom: -110%;
+}
+
 body #themeSwitch,
-body.light-mode #themeSwitch {
+body.light-mode #themeSwitch,
+body #lightSwitch,
+body.light-mode #lightSwitch {
     display: block;
     margin: 0 auto;
     background-color: rgba(55, 55, 55, .115);
@@ -18,10 +97,12 @@ body.light-mode #themeSwitch {
     color: #8c8c8c;
     border: 1px solid #bbb;
     opacity: .5;
+    width: 48px;
     transition: background-color 0.3s, color 0.3s;
 }
 
-body.dark-mode #themeSwitch {
+body.dark-mode #themeSwitch,
+body.dark-mode #lightSwitch {
     display: block;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, .25);
@@ -30,15 +111,18 @@ body.dark-mode #themeSwitch {
     border: 1px solid #222;
     transition: background-color 0.3s, color 0.3s;
     opacity: 1;
+    min-width: 48px;
 }
 
-body.light-mode #themeSwitch:hover {
+body.light-mode #themeSwitch:hover,
+body.light-mode #lightSwitch:hover {
     color: white;
     background-color: rgba(0, 0, 0, .85);
     opacity: 1;
 }
 
-body.dark-mode #themeSwitch:hover {
+body.dark-mode #themeSwitch:hover,
+body.dark-mode #lightSwitch:hover {
     color: white;
     border: 1px solid #f8f8f8;
 }
@@ -80,7 +164,59 @@ body.dark-mode #themeSwitch:hover {
     }
 }
 
-body.night-mode .bs-docs-sidebar li.active li a {
+body.dark-mode .bs-docs-sidebar li.active li a {
     border-bottom: none;
     color: white !important;
+}
+
+body.dark-mode #quotes .stats-hero.brandblue {
+    background-color: var(--black) !important;
+    color: var(--metal) !important;
+}
+
+body.dark-mode .navbar-brand {
+    color: var(--metal) !important;
+}
+
+body.dark-mode .navbar-brand:hover {
+    color: var(--white) !important;
+}
+
+.navbar-brand .navbar-brand-hidden {
+    display: none;
+}
+
+.navbar-brand:hover .navbar-brand-default {
+    display: none;
+}
+
+.navbar-brand:hover .navbar-brand-hidden {
+    display: block;
+}
+
+.gradient-background {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(270deg, rgba(20, 42, 45, 1) 0%, rgba(26, 58, 204, 1) 55%, rgba(0, 0, 0, 1) 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 65s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body.dark-mode-lights {
+    background-color: black !important;
+    background: linear-gradient(270deg, rgba(20, 42, 45, 1) 0%, rgba(26, 58, 204, 1) 55%, rgba(0, 0, 0, 1) 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 65s ease infinite;
 }

@@ -473,6 +473,12 @@ code {
     color: white;
 }
 
+body.dark-mode #font-container.refluxblu-white,
+body.dark-mode #font-container.refluxblu-white * {
+    background-color: var(--black);
+    color: var(--metal);
+}
+
 .cuulblu-refluxblu,
 .cuulblu-refluxblu * {
     background-color: #e0e9fe;
@@ -494,6 +500,30 @@ code {
 .bludred-cuulblu * {
     background-color: #600000;
     color: #e0e9fe;
+}
+
+body.dark-mode .frame.refluxblu-white #font-container,
+body.dark-mode .frame.refluxblu-white #font-container * {
+    background-color: var(--brand-blue);
+    color: white;
+}
+
+body.dark-mode .frame.cuulblu-refluxblu #font-container,
+body.dark-mode .frame.cuulblu-refluxblu #font-container * {
+    background-color: #e0e9fe;
+    color: var(--brand-blue);
+}
+
+body.dark-mode .frame.wurmgrey-refluxblu #font-container,
+body.dark-mode .frame.wurmgrey-refluxblu #font-container * {
+    background-color: #e4dfd9;
+    color: var(--brand-blue);
+}
+
+body.dark-mode .frame.drkgable-white #font-container,
+body.dark-mode .frame.drkgable-white #font-container * {
+    background-color: #142a2d;
+    color: white;
 }
 
 

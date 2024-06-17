@@ -64,15 +64,15 @@ $(window).resize(function() {
     $('#monitor').html(viewportWidth);
 });
 
-
-$(function() {
-    $('[data-toggle="tooltip"]').tooltip({
-        delay: 5,
-        container: "a",
-        placement: 'auto',
-        html: true
-    });
-})
+// CAUSING ISSUES
+// $(function() {
+//     $('[data-toggle="tooltip"]').tooltip({
+//         delay: 5,
+//         container: "a",
+//         placement: 'auto',
+//         html: true
+//     });
+// })
 
 
 // Function to scroll to the top of the page
