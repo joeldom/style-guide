@@ -413,7 +413,7 @@ strong {
 }
 
 .git-calendar-graph {
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 code {

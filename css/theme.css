@@ -79,7 +79,7 @@ body.dark-mode #lightSwitch[title]:hover::after {
 }
 
 #themeSwitch[title]:hover::after {
-    top: -110%;
+    top: -115%;
 }
 
 #lightSwitch[title]:hover::after {
@@ -220,3 +220,5 @@ body.dark-mode-lights {
     background-size: 400% 400%;
     animation: gradientAnimation 65s ease infinite;
 }
+
+body.dark-mode .git-calendar-graph {}

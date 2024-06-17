@@ -11,6 +11,7 @@
     --legacy: #008080;
     --java: #1ACCAB;
     --pale-blue: #a6aaf4;
+    --robin: #A5C4DB;
     --golden: #ccab1a;
     --burlywood: #DEB887;
     --safety-green: #BBFF32;
@@ -108,6 +109,19 @@
 
 .table th {
     border-top: none;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border-top: none;
+}
+
+.table>thead>tr>th {
+    border-bottom: none;
 }
 
 h1,
