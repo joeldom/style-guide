@@ -316,6 +316,13 @@ body.dark-mode .timeline__divider--launched--journalism {
     box-shadow: -1px 4px 42px rgba(55, 55, 55, .25);
 }
 
+body.dark-mode .timeline__divider--launched--journalism:hover {
+    background-color: #03041e;
+    color: var(--white);
+    box-shadow: -1px 4px 42px rgba(55, 55, 55, .5);
+    transition: all ease 0.5s, box-shadow ease 0.5s;
+}
+
 body.dark-mode .timeline__divider--launched--journalism .timeline__divider_content,
 body.dark-mode .timeline__divider--launched--journalism .timeline__divider_content h2 {
     color: var(--cool-blue) !important;
