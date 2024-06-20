@@ -37,6 +37,13 @@ h6,
     background: #fff;
 }
 
+#panel .brand,
+#panel .brand:hover {
+    border-bottom: none;
+    border-left: none;
+    margin: 0 0 1em 0;
+}
+
 @media (max-width: 768px) {
     #panel {
         display: none !important;
@@ -387,8 +394,8 @@ p a:hover {
 .bs-docs-sidebar {
     position: fixed;
     padding-left: 15px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-family: Arial, sans-serif;
 }
 

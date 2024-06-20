@@ -79,11 +79,11 @@ body.dark-mode #lightSwitch[title]:hover::after {
 }
 
 #themeSwitch[title]:hover::after {
-    top: -115%;
+    top: -125%;
 }
 
 #lightSwitch[title]:hover::after {
-    bottom: -110%;
+    bottom: -125%;
 }
 
 body #themeSwitch,
