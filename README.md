@@ -1,3 +1,7 @@
+<img class="img-responsive" src="https://raw.githubusercontent.com/joeldom/asset/main/images/styleguide-banner.png" style="margin: -1px 0 0 0">
+
+This style-guide is meant to be a testing platform for elements in the development cycle to be possibly be implemented pending how functionaly relevant and robust they are. This pulls styles from the `/resume` repo as well as styles from the `/redesign` repo.
+
 <table align="center" style="width:100% !important;">
   <tbody>
     <tr>
@@ -8,8 +12,6 @@
     </tr>
   </tbody>
 </table>
-
-This style-guide is meant to be a testing platform for elements in the development cycle to be possibly be implemented pending how functionaly relevant and robust they are. This pulls styles from the `/resume` repo as well as styles from the `/redesign` repo.
 
 ## todo
 

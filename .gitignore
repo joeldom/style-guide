@@ -49,3 +49,5 @@ _assets/
 .sass-cache/
 npm-debug.log
 yarn-error.log
+
+README.pdf
