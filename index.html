@@ -2801,6 +2801,28 @@ $euphoria: #00050f;</code></pre>
             </div>
         </div>
         <!--/CONTAINER -->
+        <hr>
+        <!-- TWITCH -->
+        <iframe src="https://player.twitch.tv/?joeldombek&parent=joeldom.github.io/style-guide/" height="600" width="848" allowfullscreen>
+	</iframe>
+
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-embed"></div>
+
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+                width: 854,
+                height: 480,
+                channel: "joeldombek",
+                // Only needed if this page is going to be embedded on other websites
+                parent: ["joeldom.github.io/style-guide/"]
+            });
+        </script>
+        <!-- TWITCH -->
         <!-- SCRIPTS -->
         <!-- bootstrap 3.3.7 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
