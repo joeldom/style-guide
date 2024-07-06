@@ -662,3 +662,9 @@ input[type="checkbox"]:checked+label::before {
         width: 100%;
     }
 }
+
+iframe,
+iframe>html,
+.stream-player {
+    overflow: hidden;
+}
