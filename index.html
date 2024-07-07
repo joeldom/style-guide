@@ -173,14 +173,16 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#CodePre">Code</a>
+                        <!-- [BUG] Srollspy is getting hung up here when nav past #a -->
+                        <li><a href="#Code">Code</a>
                             <ul class="nav nav-stacked">
-                                <li><a href="#CodePre">Preformatted Code</a></li>
-                                <li><a href="#CodeVariables">Variables</a></li>
-                                <li><a href="#CodeClasses">Classes</a></li>
+                                <li><a href="#SyntaxHighlight">Syntax Highlight</a></li>
+                                <li><a href="#MetaTags">Meta Tags</a></li>
+                                <!-- <li><a href="#CodeVariables">Variables</a></li> -->
+                                <!-- <li><a href="#CodeClasses">Classes</a></li> -->
                             </ul>
                         </li>
-                        <li><a href="#Icons">Icons</a></li>
+                        <!-- <li><a href="#Icons">Icons</a></li> -->
                         <li><a href="#Images">Images</a>
                             <ul class="nav nav-stacked">
                                 <li><a href="#Aesthetic">Aesthetic</a></li>
@@ -188,6 +190,12 @@
                                 <li><a href="#Mood">Mood</a></li>
                                 <li><a href="#Patterns">Patterns</a></li>
                                 <li><a href="#Samples">Coming Soon...</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#Videos">Videos</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#Embed">Embed</a></li>
+                                <li><a href="#Player">Player</a></li>
                             </ul>
                         </li>
                         <li class="back-to-top"><a id="back-to-top" class="back-to-top" href="#header">Back to top</a></li>
@@ -2609,9 +2617,10 @@ $euphoria: #00050f;</code></pre>
                     </li>
                 </ol>
                 <hr />
-                <a class="anchor vspace" id="CodePre"></a>
+                <a class="anchor vspace" id="Code"></a>
                 <h4 class="section__header">Code</h4>
-                <h3>Syntax highlight</h3>
+                <a class="anchor vspace" id="SyntaxHighlight"></a>
+                <h3>Syntax Highlight</h3>
                 <p>
                     Code and pre elements alow you to distinguish between content that is meant to be read in a specific code language or syntax not typically used in font facing content.
                 </p>
@@ -2628,6 +2637,7 @@ $euphoria: #00050f;</code></pre>
                 <code>subject</code> (<code>Reactable!</code>)<br />
                 <code>THUMBS_UP</code> (<img class="emoji" title=":thumbsup:" alt=":thumbsup:" style="width:20px;height:20px;" src="https://a248.e.akamai.net/assets.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20" align="absmiddle">)
                 <hr>
+                <a class="anchor vspace" id="MetaTags"></a>
                 <h3>Meta Tags</h3>
                 <pre><code style="overflow-x:scroll;text-wrap:nowrap;" class="language-html">&LT;meta charset="utf-8"&GT;
 &LT;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0"&GT;
@@ -2888,6 +2898,13 @@ $euphoria: #00050f;</code></pre>
         </div>
         <!--/CONTAINER -->
         <hr>
+        <div class="row style-guide">
+            <div class="col-xs-12">
+                <a class="anchor" id="Videos"></a>
+                <h3>Videos</h3>
+            </div>
+
+        </div>
         <iframe width="100%" height="auto" src="https://www.youtube.com/embed/kEp-PV-2V2w?si=6ZMqspiOotFVagRl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <hr>
