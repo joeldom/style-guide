@@ -559,7 +559,7 @@ a.anchor {
 }
 
 iframe {
-    border: 1px solid #eee !important;
+    border: none !important;
     padding: 0px;
 }
 
