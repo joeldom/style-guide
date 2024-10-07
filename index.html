@@ -71,6 +71,14 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="icon shortcut" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/64x64.png" sizes="64x64" />
+    <link rel="icon shortcut" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/128x128.png" sizes="128x128" />
+    <link rel="icon shortcut" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/76x76.png" sizes="76x76" />
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/120x120.png" sizes="120x120" />
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/152x152.png" sizes="152x152" />
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/180x180.png" sizes="180x180" />
+    <link rel="manifest" href="https://www.redditstatic.com/shreddit/assets/favicon/manifest.json" />
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
 </head>
@@ -105,9 +113,13 @@
     </style>
     <div id="panel">
         <div id="sg-logo">
-            <a class="navbar-brand" href="https://joeldom.github.io/redesign/">
+            <!-- <a class="navbar-brand" href="https://joeldom.github.io/redesign/">
                 <span class="navbar-brand-default">Style<strong>Guide</strong></span>
                 <span class="navbar-brand-hidden">Go <strong>Home</strong></span>
+            </a> -->
+            <a class="navbar-brand" href="https://joeldom.github.io/resume/">
+                <span class="navbar-brand-default">Style<strong>Guide</strong></span>
+                <span class="navbar-brand-hidden">View <strong>Resume</strong></span>
             </a>
         </div>
         <div class="col-xs-12">
@@ -1396,6 +1408,83 @@ $euphoria: #00050f;</code></pre>
                 </nav>
             </div>
         </div>
+        <div class="row style-guide">
+            <div class="col-xs-12">
+                <a class="anchor" id="MetaData"></a>
+                <h2 class="section__header">Social</h2>
+                <!-- <p class="mb-5">With any project even this Style Guide, there is a timeline for the project. Having the ability to show the lineage of what went into making it is important. The option to link to external posts as well as show possible gaps in development
+                    and how milestones can be important into seeing what has been done and what there is left to do.</p> -->
+                <br>
+            </div>
+        </div>
+        <div class="row style-guide">
+            <div class="col-xs-12">
+                <div class="social">
+                    <span class="post-views">
+						<button><i class="fa fa-eye"></i> 100<span class="hint">Views</span></button>
+                    </span>
+                    <span class="post-time-ago">
+						<button><i class="fa fa-clock"></i> 1d <span class="hint">Posted</span></button>
+                    </span>
+                    <span class="comment-tools">
+						<button><i class="fa-solid fa-comment"></i> 5<span class="hint">Replies</span></button>
+                    </span>
+                    <span class="love-tools">
+						<button><i class="fa-solid fa-heart"></i> Likes<span class="hint">Likes</span></button>
+                    </span>
+                    <span class="share-tools">
+						<button><i class="fa fa-share"></i> Share<span class="hint">Share</span></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row style-guide">
+            <div class="col-xs-12 palette-brandblue palette-inverse">
+                <div class="social">
+                    <span class="post-views">
+						<button><i class="fa fa-eye"></i> 100<span class="hint">Views</span></button>
+                    </span>
+                    <span class="post-time-ago">
+						<button><i class="fa fa-clock"></i> 1d <span class="hint">Posted</span></button>
+                    </span>
+                    <span class="comment-tools">
+						<button><i class="fa-solid fa-comment"></i> 5<span class="hint">Replies</span></button>
+                    </span>
+                    <span class="love-tools">
+						<button><i class="fa-solid fa-heart"></i> Likes<span class="hint">Likes</span></button>
+                    </span>
+                    <span class="share-tools">
+						<button><i class="fa fa-share"></i> Share<span class="hint">Share</span></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row style-guide">
+            <div class="col-xs-12">
+                <section>
+                    <h4>Usage</h4>
+                    <pre style="max-height: 400px;"><code>
+&LT;div class="social"&GT;
+  &LT;span class="post-views"&GT;
+    &LT;button&GT;&LT;i class="fa fa-eye"&GT;&LT;/i&GT; 100&LT;span class="hint"&GT;Views&LT;/span&GT;&LT;/button&GT;
+  &LT;/span&GT;
+  &LT;span class="post-time-ago"&GT;
+    &LT;button&GT;&LT;i class="fa fa-clock"&GT;&LT;/i&GT;1d; &LT;span class="hint"&GT;Posted&LT;/span&GT;&LT;/button&GT;
+  &LT;/span&GT;
+  &LT;span class="comment-tools"&GT;
+    &LT;button&GT;&LT;i class="fa fa-comment-o"&GT;&LT;/i&GT; 5&LT;span class="hint"&GT;Comments&LT;/span&GT;&LT;/button&GT;
+  &LT;/span&GT;
+  &LT;span class="love-tools"&GT;
+    &LT;button&GT;&LT;i class="fa fa-heart-o"&GT;&LT;/i&GT; &LT;span class="hint"&GT;Love&LT;/span&GT;&LT;/button&GT;
+  &LT;/span&GT;
+  &LT;span class="share-tools"&GT;
+    &LT;button&GT;&LT;i class="fa fa-share"&GT;&LT;/i&GT; &LT;span class="hint"&GT;Share&LT;/span&GT;&LT;/button&GT;
+  &LT;/span&GT;
+&LT;/div&GT;</code></pre>
+                </section>
+            </div>
+        </div>
         <br>
         <hr><br>
         <div class="row style-guide">
@@ -2014,38 +2103,7 @@ $euphoria: #00050f;</code></pre>
                             </p>
                             <h2 class="grid-post__title">OOPS</h2>
                             <div class="grid-post__metadata">
-                                <!-- <div class="social">
-                  <span class="post-views">
-        						<button>
-        							<i class="fa fa-eye"></i> 100
-        							<span class="hint">Views</span>
-        						</button>
-        					</span>
-        					<span class="post-time-ago">
-        						<button>
-        							1d
-        							<span class="hint">Posted</span>
-        						</button>
-        					</span>
-        					<span class="comment-tools">
-        						<button>
-        							<i class="fa fa-comment-o"></i> 5
-        							<span class="hint">Comments</span>
-        					  </button>
-        					</span>
-        					<span class="love-tools">
-        						<button>
-        							<i class="fa fa-heart-o"></i>
-        							<span class="hint">Love</span>
-        					  </button>
-        					</span>
-        					<span class="share-tools">
-        						<button>
-        							<i class="fa fa-share"></i>
-        							<span class="hint">Share</span>
-        					  </button>
-        					</span>
-        				</div> -->
+
                             </div>
                         </a>
                     </div>
@@ -2061,38 +2119,7 @@ $euphoria: #00050f;</code></pre>
                                 <span class="see-more">Read more</span>
                             </div>
                             <div class="grid-post__metadata">
-                                <!-- <div class="social">
-                  <span class="post-views">
-                    <button>
-                      <i class="fa fa-eye"></i> 100
-                      <span class="hint">Views</span>
-                    </a>
-                  </span>
-                  <span class="post-time-ago">
-                    <button>
-                      1d
-                      <span class="hint">Posted</span>
-                    </button>
-                  </span>
-                  <span class="comment-tools">
-                    <button>
-                      <i class="fa fa-comment-o"></i> 5
-                      <span class="hint">Comments</span>
-                    </button>
-                  </span>
-                  <span class="love-tools">
-                    <button>
-                      <i class="fa fa-heart-o"></i>
-                      <span class="hint">Love</span>
-                    </button>
-                  </span>
-                  <span class="share-tools">
-                    <button>
-                      <i class="fa fa-share"></i>
-                      <span class="hint">Share</span>
-                    </button>
-                  </span>
-                </div> -->
+                                <code>grid-post__metadata</code>
                             </div>
                         </a>
                     </div>
@@ -2125,6 +2152,7 @@ $euphoria: #00050f;</code></pre>
             <!--/container-fluid -->
         </div>
         <!--/ Timeline -->
+
         <a class="anchor" id="Elements"></a>
         <div class="row style-guide pt-5">
             <div class="col-xs-12">
