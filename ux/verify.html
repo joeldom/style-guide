@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Credentials</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://joeldom.github.io/redesign/greybox/css/coma.css" rel="stylesheet">
+    <!-- <link href="../../redesign/greybox/css/coma.css" rel="stylesheet"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1e1c;
+        }
+        
+        .password-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 0px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        input {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+        }
+        
+        button {
+            padding: 10px;
+            width: 100%;
+            background-color: #1a3acc;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #000E4E;
+        }
+        
+        .toast {
+            font-size: .85em;
+        }
+        
+        .toast-header {
+            background-color: none;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 100;
+            color: #000E4E;
+        }
+        
+        .toast-header .btn-close {
+            width: .85em;
+            height: .85em;
+        }
+        
+        .toast-body {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 100;
+            color: #000E4E;
+        }
+        
+        .toast-body small {
+            background-color: #600000;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 100;
+            color: red;
+            display: block;
+            padding-left: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="password-form">
+        <form id="loginForm">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button type="submit" id="submitBtn">Confirm</button>
+        </form>
+
+        <!-- Snackbar (Bootstrap Toast) -->
+        <div id="snackbar" class="toast position-fixed bottom-0 end-0 p-3" role="alert" aria-live="assertive" aria-atomic="true" style="display: none;">
+            <div class="toast-header">
+                <strong class="me-auto">Alert</strong>
+                <small></small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="snackbarMessage"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Initial password set to COMPANY_NAME
+        let storedPassword = "COMPANY_NAME";
+        let snackbar = new bootstrap.Toast(document.getElementById('snackbar'));
+
+        // Function to show snackbar messages
+        function showSnackbar(message, errorLog = '') {
+            let messageContent = message;
+            if (errorLog) {
+                messageContent += `<small>${errorLog}</small>`; // Add the error log in small font
+            }
+            document.getElementById('snackbarMessage').innerHTML = messageContent;
+            document.getElementById('snackbar').style.display = 'block';
+            snackbar.show();
+        }
+
+        // Password validation and button action
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let inputPassword = document.getElementById('password').value;
+
+            // Check if the input matches the stored password
+            if (inputPassword === storedPassword) {
+                showSnackbar("Access granted!");
+
+                // Replace "Submit" with "Proceed" and add a click action to redirect
+                let submitBtn = document.getElementById('submitBtn');
+                submitBtn.textContent = "Proceed";
+                submitBtn.setAttribute("onclick", "window.location.href='https://www.example.com';");
+
+                // Now, fetch the dynamic password AFTER success
+                fetchDynamicPassword();
+
+            } else {
+                showSnackbar("Access denied!", "Invalid password attempt at " + new Date().toLocaleString());
+            }
+        });
+
+        // Function to fetch the dynamic password from the JSON file after the initial password is validated
+        function fetchDynamicPassword() {
+            fetch('https://raw.githubusercontent.com/joeldom/asset/85650484065f940add5dd313e71f76b84ab45822/array/strings.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Update storedPassword with the first element from the array
+                    storedPassword = data[0];
+                    showSnackbar("Password updated from external source.");
+                })
+                .catch(error => {
+                    showSnackbar("Error fetching password", error.message);
+                });
+        }
+    </script>
+
+</body>
+
+</html>
