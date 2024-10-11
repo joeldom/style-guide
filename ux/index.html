@@ -153,10 +153,10 @@
                 .then(data => {
                     // Update storedPassword with the first element from the array
                     storedPassword = data[0];
-                    showSnackbar("Password updated from external source.");
+                    showSnackbar("Password accepted, you may proceed :)");
                 })
                 .catch(error => {
-                    showSnackbar("Error fetching password", error.message);
+                    showSnackbar("Error confirming password", error.message);
                 });
         }
     </script>
