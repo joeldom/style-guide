@@ -25,6 +25,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             background-color: #1a1e1c;
         }
@@ -59,15 +60,17 @@
         }
         
         .toast {
+            background: #88888875;
             font-size: .85em;
         }
         
         .toast-header {
-            background-color: none;
+            background-color: #0000;
             font-size: 12px;
             font-style: normal;
             font-weight: 100;
-            color: #000E4E;
+            color: #9D9D9D;
+            border-bottom: none
         }
         
         .toast-header .btn-close {
@@ -79,25 +82,31 @@
             font-size: 12px;
             font-style: normal;
             font-weight: 100;
-            color: #000E4E;
+            color: #7D7D7D;
         }
         
         .toast-body small {
-            background-color: #600000;
+            background-color: #0010154a;
             font-size: 10px;
             font-style: normal;
             font-weight: 100;
-            color: red;
+            color: #aeaeae;
             display: block;
             padding-left: 1em;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 
 <body>
-
+    <!-- <div><img src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" /></div> -->
     <div class="password-form">
         <form id="loginForm">
+            <img src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" width="100px" />
             <input type="password" id="password" placeholder="Enter your password">
             <button type="submit" id="submitBtn">Confirm</button>
         </form>
@@ -151,7 +160,7 @@
                 fetchDynamicPassword();
 
             } else {
-                showSnackbar("Access denied!", "Invalid password attempt at " + new Date().toLocaleString() + "Try again in 5 seconds with COMPANY_NAME");;
+                showSnackbar("Access denied!", "Invalid password attempt at " + new Date().toLocaleString() + "<br>Try again in 5 seconds with COMPANY_NAME");;
             }
         });
 
