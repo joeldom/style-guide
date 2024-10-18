@@ -1,0 +1,142 @@
+### Beyond Portfolio
+Rundown of changes and additions to my portfolio site.
+- [ ]  Access FTP files
+- [ ]  Make .com & .io landing pages align
+- [ ]  Have a top Case Study tile link to Verify
+- [ ]  Replace filler text with real + generated content
+- [ ]  Create one work item that is complete from intro to samples
+- [ ]  Create a section to track what needs context and what needs images
+- [ ]  Create an ASCII site map
+- [ ]  
+
+
+### Site Map
+- [ ]  Home .com "simplified list" Landing Page
+  - [ ]  JOELDOMBEK / >
+  - [ ]  SITE / v2.1.23 >
+  - [ ]  RESUME / v2.1.23 >
+  - [ ]  STYLE GUIDE / v2.1.23 >
+  - [ ]  SANDBOX / v2.1.23 >
+- [ ]  Home ghpages .io "robust list" Landing Page
+  - [ ]  JOELDOMBEK / >
+  - [ ]  SITE / v2.1.23 >
+  - [ ]  RESUME / v2.1.23 >
+  - [ ]  STYLE GUIDE / v2.1.23 >
+  - [ ]  SANDBOX / v2.1.23 >
+- [ ] - [ ]  Home /redesign .io "robust list" Landing Page
+  - [ ]  JOELDOMBEK / >
+  - [ ]  SITE / v2.1.23 >
+  - [ ]  RESUME / v2.1.23 >
+  - [ ]  STYLE GUIDE / v2.1.23 >
+  - [ ]  SANDBOX / v2.1.23 > 
+- [ ]  Resume
+  - [ ]  Let's Chat
+  - [ ]  Preview Site
+  - [ ]  Print Page
+  - [ ]  Back to Top
+- [ ]  Style Guide
+  - [ ]  Color
+    - [ ]  Primary
+    - [ ]  Secondary
+  - [ ]  Typography
+    - [ ]  Fonts
+      - [ ]  Roboto
+      - [ ]  Noto
+      - [ ]  Inter
+      - [ ]  Helvetica
+    - [ ]  Samples
+      - [ ]  Quotes
+      - [ ]  Article
+      - [ ]  Content Grid
+    - [ ]  Buttons
+      - [ ]  Ghost - See more, View More, Read More, Load More, Continue, Cancel, Next, Back, Ok, Close, Save
+      - [ ]  Inverse - See more, View More, Read More, Load More, Continue, Cancel, Next, Back, Ok, Close, Save
+      - [ ]  Pagination - < Previous, 1, 2, 3, 4, 5, Next >
+      - [ ]  Social
+        - [ ]  Post Views
+        - [ ]  Post Time
+        - [ ]  Post Comments
+        - [ ]  Post Reactions
+        - [ ]  Post Share
+     - [ ]  Components
+       - [ ]  Contribution Calendar
+       - [ ]  Timeline
+         - [ ]  Launch
+         - [ ]  Call-out L / R
+       - [ ]  Multi-step
+       - [ ]  Loader
+       - [ ]  Progress Bar 0% / 10% / 25% / 50% / 75% / 100% / Complete
+    - [ ]  Forms & Inputs
+      - [ ]  Fancy Form (transitions)
+      - [ ]  Text initial / hover / focus / success / error
+      - [ ]  Email initial / hover / focus / success / error
+      - [ ]  Password initial / hover / focus / success / error
+      - [ ]  Select / single / multiple
+      - [ ]  File / attach / upload
+      - [ ]  Checkbox / selected/ disabled
+      - [ ]  Radio / selected / disabled
+    - [ ]  Libraries & Frameworks
+      - [ ]  Bootstrap
+      - [ ]  Typed.js
+      - [ ]  FreezeFrame.js
+      - [ ]  Font Awesome
+    - [ ]  Lists
+      - [ ]  Unordered
+      - [ ]  Ordered
+      - [ ]  Custom
+    - [ ] Code
+      - [ ] Syntax Highlighting
+      - [ ] Meta Tags
+      - [ ] Embeds
+    - [ ] Images
+      - [ ] File Types
+      - [ ] Social Preview
+      - [ ] Assets
+    - [ ] Icons
+    - [ ] Video
+      - [ ] Embeds
+  - [ ]  Verify
+    - [ ]  Case Studies
+      - [ ]  BNY Mellon
+        - [ ]  Money Movement ???
+        - [ ]  Dreyfus User Acquisition
+      - [ ]  ConnectiveRX
+        - [ ]  Data Dashboard
+- [ ]  Sandbox
+  - [ ]  Packet
+  - [ ]  Products
+- [ ]  Case Studies
+  - [ ]  Top Level Grid
+  - [ ]  
+---
+  ### Influences
+  - [ ] Games
+    - [ ] Shin Megami Tensei
+    - [ ] Metal Gear Solid
+    - [ ] Final Fantasy
+      - [ ] Final Fantasy VII
+      - [ ] Final Fantasy VIII
+      - [ ] Final Fantasy VI
+      - [ ] 
+    - [ ] SNK
+      - [ ] Neo Geo
+      - [ ] KOF
+      - [ ] Fatal Fury
+    - [ ] Atlus
+      - [ ] Persona
+      - [ ] Shin Megami Tensei
+  - [ ] Music
+    - [ ] Aphex Twin
+    - [ ] Nine Inch Nails
+    - [ ] Health
+    - [ ] A Place to Bury Strangers
+    - [ ] Death Grips
+    - [ ] Buckethead
+    - [ ] Mars Volta
+    - [ ] Deftones
+  - [ ] Movies
+  - [ ] Companies
+    - [ ] IBM
+    - [ ] Steam / Valve
+    - [ ] Dropbox
+    - [ ] Coinbase

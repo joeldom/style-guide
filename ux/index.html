@@ -145,13 +145,13 @@
                 // Replace "Submit" with "Proceed" and add a click action to redirect
                 let submitBtn = document.getElementById('submitBtn');
                 submitBtn.textContent = "Proceed";
-                submitBtn.setAttribute("onclick", "window.location.href='https://joeldom.github.io/style-guide/ux/BNY';");
+                submitBtn.setAttribute("onclick", "window.location.href='https://joeldom.github.io/style-guide/ux/Case-Study/';");
 
                 // Now, fetch the dynamic password AFTER success
                 fetchDynamicPassword();
 
             } else {
-                showSnackbar("Access denied!", "Invalid password attempt at " + new Date().toLocaleString());
+                showSnackbar("Access denied!", "Invalid password attempt at " + new Date().toLocaleString() + "Try again in 5 seconds with COMPANY_NAME");;
             }
         });
 

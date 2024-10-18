@@ -45,6 +45,7 @@ This feature is an example of a philosophy of design that I've come to appreciat
 
 
 ---
+
 ###### References
 - [Personalization in UX Design: A Comprehensive Guide](https://www.uxpin.com/studio/blog/personalization-ux-design-comprehensive-guide/)
 - ["Weighted Random" algorithm](https://dev.to/jacktt/understanding-the-weighted-random-algorithm-581p)
@@ -52,4 +53,35 @@ This feature is an example of a philosophy of design that I've come to appreciat
 - [Zendesk - Personalization](https://www.zendesk.com/blog/complete-guide-personalization/)
 
 ###### Tags
-#ux #design #research #design-system #design-thinking #design-research #prototyping #user-research #user-experience #user-interface #user-centered-design #heuristics #usability #product-design #product-development #product-management #product-strategy #automation #personalization #user-experience-design #user-experience-research #iteration #user-persona #case-study #financial-services #banking-and-finance 
+#ux #design #research #design-system #design-thinking #design-research #prototyping #user-research #user-experience #user-interface #user-centered-design #heuristics #usability #product-design #product-development #product-management #product-strategy #automation #personalization #user-experience-design #user-experience-research #iteration #user-persona #case-study #financial-services #banking-and-finance
+
+---
+
+### Privacy Agreement
+
+BNY Mellon and its affiliates are committed to protecting the privacy and security of user data. All research, testing, and data collection conducted as part of the personalization feature project adhered to BNY Mellon's strict privacy standards and policies.
+
+During user testing, all participants' data was anonymized, and no personally identifiable information (PII) was collected without explicit consent. The feedback and behavioral data gathered for this project were used solely for the purpose of improving the user experience on BNY Mellon’s platforms.
+
+Data collected from Maze and other research tools was stored securely and was only accessible to authorized personnel directly involved in the project. Any information shared was strictly governed by BNY Mellon's internal data security policies to ensure the highest levels of confidentiality.
+
+By participating in any user research, users consented to the use of anonymized data for product and service improvement purposes. BNY Mellon does not share user data with third parties for commercial purposes and complies with all applicable data protection regulations, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA).
+
+For more information about BNY Mellon's privacy policies, please visit [BNY Mellon's Privacy Policy Page](https://www.bnymellon.com/us/en/privacy-policy.html).
+
+### Privacy & Intellectual Property
+In addition to BNY Mellon’s privacy and data protection practices, I would like to clarify that this case study is presented purely to discuss design theory, process, and outcomes. The specific details shared here focus on user experience research, design philosophy, and general approaches to solving usability challenges.
+I am not sharing any proprietary or confidential information related to BNY Mellon's internal operations, systems, or intellectual property. This document avoids disclosing any sensitive data, trade secrets, or code used in the project. The case study is meant to highlight general UX methodologies and my involvement in the design process rather than any protected or technical aspects of the solution.
+All insights and observations discussed herein are drawn from high-level design concepts that are widely applicable to user-centered design practices and are not intended to disclose any specific strategies or technical implementations unique to BNY Mellon.
+
+---
+
+Joel Dombek © X.X.MMXXIV 
+
+---
+
+10-16-2024 Hannah meeting
+
+Still resolving some build issues I was having with my site
+I have 2 other case studies in the works was focusing on site link issues
+

@@ -10262,6 +10262,8 @@ h1.blog-heading:before {
 }
 
 .social {
+    display: flex;
+    flex-direction: row;
     /*&:after{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -10272,9 +10274,12 @@ h1.blog-heading:before {
     margin: 18px 0px;
     width: 25%;
   }*/
+    padding: 8px 0;
+    /* border-top: 1px solid #d2d0cd; */
 }
 
-.social:before {
+
+/* .social:before {
     background: #d2d0cd;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -10282,23 +10287,31 @@ h1.blog-heading:before {
     display: block;
     content: ' ';
     height: 1px;
-    margin: 36px 0px;
+    margin: 18px 0px;
     overflow: hidden;
-    width: 25%;
-}
+    width: 100%;
+    position: absolute;
+    top: 0
+} */
 
 .social span {
-    margin-right: 20px;
-    position: relative;
+    /* margin-right: 20px;
+    position: relative; */
+    flex: 1 1 auto;
 }
 
-.social span a {
+.social span a,
+.social span button {
     text-decoration: none;
     border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
 }
 
-.social span a:hover {
-    color: black;
+.social span a:hover,
+.social span button:hover {
+    background-color: black;
+    color: white;
 }
 
 a span.hint,
