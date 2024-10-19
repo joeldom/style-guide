@@ -59,6 +59,23 @@
             background-color: #000E4E;
         }
         
+        .login {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        
+        .verify {
+            padding: 1em 2em;
+            margin: 0 auto;
+            display: flex;
+            background: #000;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            -ms-flex-align: end;
+        }
+        
         .toast {
             background: #88888875;
             font-size: .85em;
@@ -94,33 +111,39 @@
             display: block;
             padding-left: 1em;
         }
-        
-        img {
+        /* img {
             max-width: 100%;
-            height: auto;
-        }
+            max-height: 100%;
+        } */
     </style>
 </head>
 
 <body>
-    <!-- <div><img src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" /></div> -->
-    <div class="password-form">
-        <form id="loginForm">
-            <img src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" width="100px" />
-            <input type="password" id="password" placeholder="Enter your password">
-            <button type="submit" id="submitBtn">Confirm</button>
-        </form>
+    <div class="login">
+        <div class="verify">
+            <img class="" src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" width="52px" height="52px" />
+            <p class="mt-4">Login</p>
+        </div>
+        <div class="password-form">
+            <form id="loginForm">
+                <!-- <img src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" width="52px" /> -->
+                <input type="password" id="password" placeholder="Enter your password">
+                <button type="submit" id="submitBtn">Confirm</button>
+            </form>
 
-        <!-- Snackbar (Bootstrap Toast) -->
-        <div id="snackbar" class="toast position-fixed bottom-0 end-0 p-3" role="alert" aria-live="assertive" aria-atomic="true" style="display: none;">
-            <div class="toast-header">
-                <strong class="me-auto">Alert</strong>
-                <small></small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+
+            <!-- Snackbar (Bootstrap Toast) -->
+            <div id="snackbar" class="toast position-fixed bottom-0 end-0 p-3" role="alert" aria-live="assertive" aria-atomic="true" style="display: none;">
+                <div class="toast-header">
+                    <strong class="me-auto">Alert</strong>
+                    <small></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body" id="snackbarMessage"></div>
             </div>
-            <div class="toast-body" id="snackbarMessage"></div>
         </div>
     </div>
+    <!-- <img class="verify mt-5" src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" width="52px" /> -->
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
