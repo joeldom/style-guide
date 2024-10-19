@@ -92,7 +92,7 @@
         
         .enlarge-btn {
             position: absolute;
-            bottom: 10px;
+            top: 10px;
             right: 10px;
             width: 24px;
             height: 24px;
@@ -102,11 +102,6 @@
             cursor: pointer;
             padding: 0;
             z-index: 10;
-            opacity: 0.35;
-        }
-        
-        .enlarge-btn:hover {
-            opacity: 1;
         }
         /* Container to wrap image and button */
         
@@ -126,7 +121,7 @@
             height: auto;
             z-index: 999;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-            border: 5px solid black;
+            border: 5px solid white;
         }
         /* Dark background groverlay */
         
@@ -138,7 +133,6 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
             z-index: 998;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -518,6 +512,9 @@
                 </div>
             </div>
         </div>
+
+        <hr>
+
         <div class="row">
             <div class="container-fluid palette-brandblue palette-inverse">
                 <br>
@@ -623,25 +620,19 @@
                 <p>tpd</p>
             </div>
         </div> -->
-        <br>
-        <br>
+
         <a class="anchor" id="Sandbox"></a>
+        <div class="row">
+            <div class="col-xs-12 start">
+                <img class="img-responsive" src="https://raw.githubusercontent.com/joeldom/asset/refs/heads/main/images/sandbox-stretch-scale.gif" alt="Sandbox">
+            </div>
+        </div>
         <div class="row style-guide">
-            <div class="col-xs-12 mb-5">
+            <div class="col-xs-12">
                 <h2>Sandbox</h2>
                 <p>Development playground with support for embedding within a minimal presentation navigation. The ability to show a RTL data feed that visualizes requests as well as error handling.</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 start">
-                <!-- <img class="img-responsive" src="https://raw.githubusercontent.com/joeldom/asset/refs/heads/main/images/sandbox-stretch-scale.gif" alt="Sandbox"> -->
-                <div class="image-container">
-                    <img class="grow" src="https://raw.githubusercontent.com/joeldom/asset/refs/heads/main/images/sandbox-stretch-scale.gif" alt="Sandbox">
-                    <button class="enlarge-btn" title="Enlarge" aria-label="Enlarge"></button>
-                </div>
-            </div>
-        </div>
-        <iframe width="100%" height="500" src="https://joeldom.github.io/style-guide/ux/" title="VERIFY CREDENTIALS 🗹 LOGIN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+        </div><iframe width="100%" height="500" src="https://joeldom.github.io/style-guide/ux/" title="VERIFY CREDENTIALS 🗹 LOGIN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen></iframe>
         <iframe width="100%" height="500" src="https://joeldom.github.io/redesign/sandbox/packets/" title="SANDBOX : Packets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen></iframe>
@@ -735,9 +726,6 @@
                 // Create an groverlay
                 const groverlay = document.createElement('div');
                 groverlay.classList.add('groverlay');
-                groverlay.setAttribute('aria-hidden', 'true'); // Add aria-hidden attribute
-                groverlay.setAttribute('aria-label', 'Close'); // Add aria-hidden attribute
-                groverlay.setAttribute('title', 'Close'); // Add aria-hidden attribute
                 document.body.appendChild(groverlay);
 
                 // Enlarge the image
