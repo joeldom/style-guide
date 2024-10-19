@@ -9,6 +9,13 @@ Rundown of changes and additions to my portfolio site.
 - [ ]  Create an ASCII site map
 - [ ]  
 
+### Concepts
+- [ ]  Themes with Dark & Light Modes
+- [ ]  Responsive and embeddable
+- [ ]  Asset sourcing
+- [ ]  Data payloads
+- [ ]  Social Preview
+
 
 ### Site Map
 - [ ]  Home .com "simplified list" Landing Page
