@@ -74,6 +74,20 @@
             justify-content: center;
             align-items: center;
             -ms-flex-align: end;
+            transition: background 0.93s ease, box-shadow 0.93s ease, border 0.93s ease;
+        }
+        
+        .verify:hover {
+            background: #000e4e;
+            transition: background 0.93s ease, box-shadow 0.93s ease, border 0.93s ease;
+        }
+        
+        .login input:focus-visible {
+            border: 1px solid #6b7e80;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 2px rgba(97, 97, 97, 0.487);
+            outline: 0 none;
+            transition: background 0.93s ease, box-shadow 0.93s ease, border 0.93s ease;
+            background: #eeeeee;
         }
         
         .toast {
