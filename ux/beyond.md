@@ -11,10 +11,12 @@ Rundown of changes and additions to my portfolio site.
 
 ### Concepts
 - [ ]  Themes with Dark & Light Modes
-- [ ]  Responsive and embeddable
+- [ ]  Responsive and embeddable that allows for recursive proportional scaling
 - [ ]  Asset sourcing
 - [ ]  Data payloads
 - [ ]  Social Preview
+- [ ]  Deep data, Seed Data, Top Data, Context Data, Meta Data
+- [ ]  Building a modular design system able to scale to various projects
 
 
 ### Site Map
@@ -117,21 +119,25 @@ Rundown of changes and additions to my portfolio site.
   - [ ]  
 ---
   ### Influences
+  Based on a distribution of my interests that range from common to niche it shows a wide range of disparate interests that converge around a few common themes that ultimately define my work and ideas I am trying to explore visually and conceptually.
   - [ ] Games
-    - [ ] Shin Megami Tensei
-    - [ ] Metal Gear Solid
+    - [ ] Sega
+      - [ ] Ecco the Dolphin
+      - [ ] Eternal Champions
+      - [ ] Virtual On
     - [ ] Final Fantasy
       - [ ] Final Fantasy VII
       - [ ] Final Fantasy VIII
       - [ ] Final Fantasy VI
-      - [ ] 
     - [ ] SNK
       - [ ] Neo Geo
       - [ ] KOF
       - [ ] Fatal Fury
     - [ ] Atlus
       - [ ] Persona
-      - [ ] Shin Megami Tensei
+      - [ ] Shin Megami Tensei V vengance
+    - [ ] Konami
+      - [ ] Silentt Hill 2 / 3
   - [ ] Music
     - [ ] Aphex Twin
     - [ ] Nine Inch Nails
@@ -141,9 +147,30 @@ Rundown of changes and additions to my portfolio site.
     - [ ] Buckethead
     - [ ] Mars Volta
     - [ ] Deftones
+    - [ ] Radiohead
   - [ ] Movies
+    - [ ] Blade Runner
+    - [ ] The Matrix
+    - [ ] Akira
+    - [ ] Ghost in the Shell
+  - [ ] Shows
+    - [ ] Twin Peaks
+    - [ ] Power Rangers
+    - [ ] X-men
   - [ ] Companies
     - [ ] IBM
     - [ ] Steam / Valve
     - [ ] Dropbox
     - [ ] Coinbase
+    - [ ] Sega
+    - [ ] Apple
+    - [ ] Sony
+    - [ ] SNK
+  - [ ] Art Movements
+    - [ ] Cyberpunk
+    - [ ] Vaporwave
+    - [ ] Surrealism
+    - [ ] Future Perfect
+  - [ ] Literature
+    - [ ] Sphere - Michael Crichton
+
