@@ -7,7 +7,20 @@ Rundown of changes and additions to my portfolio site.
 - [ ]  Create one work item that is complete from intro to samples
 - [ ]  Create a section to track what needs context and what needs images
 - [ ]  Create an ASCII site map
-- [ ]  
+- [ ]  Footer "back-to-top" button position
+- [ ]  Silent hill static screen with red square click hole
+```css
+#back-top {
+	display: block;
+	position: absolute;
+}
+```
+```html
+<span id="back-top" style="display: block; position: absolute;">
+```
+
+### Brand Todo
+- [ ]  Twitch social tiles
 
 ### Concepts
 - [ ]  Themes with Dark & Light Modes
@@ -18,6 +31,11 @@ Rundown of changes and additions to my portfolio site.
 - [ ]  Deep data, Seed Data, Top Data, Context Data, Meta Data
 - [ ]  Building a modular design system able to scale to various projects
 
+### Tone & Philosophy
+- [ ]  Minimalist
+- [ ]  Cold & succinct 
+
+T%he most trusted and hardest sell is ones own ego
 
 ### Site Map
 - [ ]  Home .com "simplified list" Landing Page
@@ -55,26 +73,26 @@ Rundown of changes and additions to my portfolio site.
       - [ ]  Helvetica
     - [ ]  Samples
       - [ ]  Quotes
-      - [ ]  Article
+      - [ ]  Article(s)
       - [ ]  Content Grid
-    - [ ]  Buttons
-      - [ ]  Ghost - See more, View More, Read More, Load More, Continue, Cancel, Next, Back, Ok, Close, Save
-      - [ ]  Inverse - See more, View More, Read More, Load More, Continue, Cancel, Next, Back, Ok, Close, Save
-      - [ ]  Pagination - < Previous, 1, 2, 3, 4, 5, Next >
-      - [ ]  Social
-        - [ ]  Post Views
-        - [ ]  Post Time
-        - [ ]  Post Comments
-        - [ ]  Post Reactions
-        - [ ]  Post Share
-     - [ ]  Components
-       - [ ]  Contribution Calendar
-       - [ ]  Timeline
-         - [ ]  Launch
-         - [ ]  Call-out L / R
-       - [ ]  Multi-step
-       - [ ]  Loader
-       - [ ]  Progress Bar 0% / 10% / 25% / 50% / 75% / 100% / Complete
+  - [ ]  Buttons
+    - [ ]  Ghost - See more, View More, Read More, Load More, Continue, Cancel, Next, Back, Ok, Close, Save
+    - [ ]  Inverse - See more, View More, Read More, Load More, Continue, Cancel, Next, Back, Ok, Close, Save
+    - [ ]  Pagination - < Previous, 1, 2, 3, 4, 5, Next >
+    - [ ]  Social
+      - [ ]  Post Views
+      - [ ]  Post Time
+      - [ ]  Post Comments
+      - [ ]  Post Reactions
+      - [ ]  Post Share
+   - [ ]  Components
+     - [ ]  Contribution Calendar
+     - [ ]  Timeline
+       - [ ]  Launch
+       - [ ]  Call-out L / R
+     - [ ]  Multi-step
+     - [ ]  Loader
+     - [ ]  Progress Bar 0% / 10% / 25% / 50% / 75% / 100% / Complete
     - [ ]  Forms & Inputs
       - [ ]  Fancy Form (transitions)
       - [ ]  Text initial / hover / focus / success / error
@@ -125,6 +143,7 @@ Rundown of changes and additions to my portfolio site.
       - [ ] Ecco the Dolphin
       - [ ] Eternal Champions
       - [ ] Virtual On
+      - [ ] Shinobi
     - [ ] Final Fantasy
       - [ ] Final Fantasy VII
       - [ ] Final Fantasy VIII
@@ -137,26 +156,50 @@ Rundown of changes and additions to my portfolio site.
       - [ ] Persona
       - [ ] Shin Megami Tensei V vengance
     - [ ] Konami
-      - [ ] Silentt Hill 2 / 3
+      - [ ] Silent Hill 2 / 3
+   - [ ] 25 best horror games of all time
+     - [ ] returnal
+     - [ ] nightmare creatures
+     - [ ] alien isolation
+     - [ ] resident evil 2
+     - [ ] resident evil 3
+     - [ ] 2- silent hill 2
+     - [ ] 1- silent hill 3
   - [ ] Music
     - [ ] Aphex Twin
     - [ ] Nine Inch Nails
+      - [ ] The Fragile
+      - [ ] Year Zero
     - [ ] Health
     - [ ] A Place to Bury Strangers
     - [ ] Death Grips
+      - [ ] Year of the Snitch
+      - [ ] Jenny Death
+      - [ ] Bottomless Pit
     - [ ] Buckethead
     - [ ] Mars Volta
     - [ ] Deftones
+      - [ ] Adrenaline
+      - [ ] Self Titled
+      - [ ] Koi No Yokan
+      - [ ] Ohms
     - [ ] Radiohead
+      - [ ] Kid A
+      - [ ] Amnesiac
+      - [ ] Ok Computer
+      - [ ] A Moon Shaped Pool
   - [ ] Movies
     - [ ] Blade Runner
     - [ ] The Matrix
     - [ ] Akira
     - [ ] Ghost in the Shell
+    - [ ] Alien
   - [ ] Shows
     - [ ] Twin Peaks
     - [ ] Power Rangers
     - [ ] X-men
+    - [ ] X-Files
+    - [ ] Lost
   - [ ] Companies
     - [ ] IBM
     - [ ] Steam / Valve
@@ -173,4 +216,7 @@ Rundown of changes and additions to my portfolio site.
     - [ ] Future Perfect
   - [ ] Literature
     - [ ] Sphere - Michael Crichton
+    - [ ] 3 Body Problem - Liu Cixin
+    - [ ] Survivor - Chuck Palahniuk
+    - [ ] The Vampire Chronicles - Anne Rice
 
