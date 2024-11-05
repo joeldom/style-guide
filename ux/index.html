@@ -117,6 +117,10 @@
             height: .85em;
         }
         
+        .toast-header .btn-close:hover {
+            background-color: #FFF;
+        }
+        
         .toast-body {
             font-size: 12px;
             font-style: normal;
@@ -181,6 +185,15 @@
             align-items: center;
             flex-direction: row;
             z-index: 9998;
+            /* adding SVG tiling */
+            /* https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png */
+            background-image: url("https://raw.githubusercontent.com/joeldom/asset/main/icons/ic_warning_48px.svg"), linear-gradient( 180deg, #000000, #2b0000, #600000, #2b0000, #000000);
+            background-size: 300px 300px, 300% 300%;
+            /* Tile SVG, large gradient */
+            /* animation: gradientAnimation 5s infinite alternate; */
+            /* Animate gradient */
+            background-blend-mode: overlay;
+            /* Blend SVG and gradient */
         }
         /* Keyframes for smooth gradient animation */
         
@@ -277,12 +290,14 @@
         
         .warning-form label:hover {
             margin: 0;
+            color: #000000;
         }
         
         .warning-form input[type="radio"],
         .warning-form input[type="checkbox"] {
             margin: 0;
             line-height: normal;
+            /* width: 1.25em; */
         }
         
         .warning-form input[type="radio"]:hover,
@@ -335,6 +350,54 @@
             transition: all 0.1s ease 0.4s;
         }
     </style>
+    <!-- <style>
+            /* Hide default radio appearance */
+        /* Hide the original radio input */
+        
+        input[type="radio"] {
+            display: none;
+        }
+        /* Style the label to act as the custom radio */
+        
+        .custom-radio {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+        }
+        /* Style the custom radio mark */
+        
+        .radio-mark {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #1a1e1c;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            position: relative;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        /* Checked state */
+        
+        input[type="radio"]:checked+.radio-mark {
+            background-color: #1a1e1c;
+            border-color: #1a1e1c;
+        }
+        /* Inner dot for checked state */
+        
+        input[type="radio"]:checked+.radio-mark::before {
+            content: "";
+            width: 10px;
+            /* Set size of the inner dot */
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%
+    </style> -->
 </head>
 
 <body>
