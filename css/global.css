@@ -68,6 +68,11 @@ strong {
     display: contents;
 }
 
+iframe {
+    border: none;
+    display: block;
+}
+
 .style-guide {
     font-size: 0.9em;
     font-weight: 400;
@@ -102,6 +107,20 @@ strong {
     left: -40px;
     width: 130%;
     right: 0;
+}
+
+.style-guide .note {
+    background: rgba(75, 75, 75, 0.25);
+    padding: 1em;
+}
+
+.note button {
+    background: rgba(75, 75, 75, 0.25);
+}
+
+.note button:hover {
+    color: white;
+    background: rgba(75, 75, 75, 1);
 }
 
 .brand-colors {

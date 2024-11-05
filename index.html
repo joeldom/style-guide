@@ -70,6 +70,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/enlarge.css">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="icon shortcut" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/64x64.png" sizes="64x64" />
     <link rel="icon shortcut" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/128x128.png" sizes="128x128" />
@@ -188,7 +189,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <!-- [BUG] Srollspy is getting hung up here when nav past #a -->
                         <li><a href="#Code">Code</a>
                             <ul class="nav nav-stacked">
                                 <li><a href="#SyntaxHighlight">Syntax Highlight</a></li>
@@ -201,16 +201,26 @@
                                 </li>
                                 <!-- <li><a href="#CodeVariables">Variables</a></li> -->
                                 <!-- <li><a href="#CodeClasses">Classes</a></li> -->
+                                <li><a href="#Code-Sandbox">Sandbox</a>
+                                    <ul class="nav nav-stacked">
+                                        <li><a href="#Sandbox-Login">Login</a></li>
+                                        <li><a href="#Sandbox-Packets">Packets</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <!-- <li><a href="#Icons">Icons</a></li> -->
+                        <!-- [BUG] Srollspy is getting hung up here when nav past #a -->
                         <li><a href="#Images">Images</a>
                             <ul class="nav nav-stacked">
-                                <li><a href="#Aesthetic">Aesthetic</a></li>
-                                <li><a href="#Inspiration">Inspiration</a></li>
-                                <li><a href="#Mood">Mood</a></li>
-                                <li><a href="#Patterns">Patterns</a></li>
-                                <li><a href="#Samples">Coming Soon...</a></li>
+                                <li><a href="#Image-File-Types">File Types</a></li>
+                                <li><a href="#Enlarge-Image">Enlarge-Image</a></li>
+                                <li><a href="#Social-Preview">Social Preview</a></li>
+                                <!-- <li><a href="#Aesthetic">Aesthetic</a></li> -->
+                                <!-- <li><a href="#Inspiration">Inspiration</a></li> -->
+                                <!-- <li><a href="#Mood">Mood</a></li> -->
+                                <!-- <li><a href="#Patterns">Patterns</a></li> -->
+                                <!-- <li><a href="#Samples">Coming Soon...</a></li> -->
                             </ul>
                         </li>
                         <li><a href="#Videos">Videos</a>
@@ -268,6 +278,7 @@
                 <p>When starting a project, it’s best not to reinvent the wheel. It’s most efficient to establish a templated approach that works best for you, meaning you should adapt formats and builds that have worked before and apply new solutions and
                     custom options as necessary.</p>
                 <p>It is important to remember that <em>"DSG is a branded house, and not a house of brands"</em>. Our look and feel as well as our voice should feel like our own and not one that is merely and echo or repitition of our vendors.</p>
+                <hr>
                 <!-- TODO: add the correct figma project with clean preview -->
                 <!-- <iframe style="border: none;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/V7PdbXTTVTx72gMZgbNV6BTq/p-Phoenix-Greybox-DSG" allowfullscreen></iframe> -->
                 <a class="anchor" id="Goals"></a>
@@ -354,6 +365,18 @@
                         </div>
                     </li>
                 </ol>
+                <br/>
+                <aside class="note">
+                    <strong>Note:</strong><br/> The reason for the narrow width of the body's main content section is so that during testing the <strong>Dev Tools</strong> can be open along side and not be obstructed by the content. You can click the
+                    button <button onclick="triggerDevTools()">Trigger the Debugger</button>.
+
+                    <script>
+                        function triggerDevTools() {
+                            debugger; // Pauses execution and opens dev tools if not open
+                            console.log("Debugger triggered");
+                        }
+                    </script>
+                </aside>
                 <h4 class="section__header" style="padding: 3rem 0 8px 0;">Disclaimer</h4>
                 <p><strong>This is a WORK IN PROGRESS!</strong> Everything belonging to in here is in a state of flux. This is a living <code>.doc</code>. I am either aware of the issue or perhaps <a target="_blank" title="x.com/joeldombek" href="https://twitter.com/joeldombek">hit me up here</a>                    to discuss.
                 </p>
@@ -2748,15 +2771,19 @@ $euphoria: #00050f;</code></pre>
 }</code></pre>
             </div>
         </div>
-
-        <div class="row style-guide">
-            <div class="col-xs-12">
-                <h3>Embeds</h3>
-
+        <hr>
+        <div class="row">
+            <div class="col-xs-12 start">
+                <div class="image-container">
+                    <img id="Code-Sandbox" class="grow" src="https://raw.githubusercontent.com/joeldom/asset/refs/heads/main/images/sandbox-stretch-scale.gif" alt="Sandbox">
+                    <button class="enlarge-btn" title="Enlarge" aria-label="Enlarge"></button>
+                </div>
             </div>
         </div>
-        <iframe width="100%" height="500" src="https://joeldom.github.io/redesign/sandbox/packets/" title="SANDBOX : Packets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
+        <iframe id="Sandbox-Login" width="100%" height="500" src="https://joeldom.github.io/style-guide/ux/" title="VERIFY CREDENTIALS 🗹 LOGIN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe id="Sandbox-Packets" width="100%" height="500" src="https://joeldom.github.io/redesign/sandbox/packets/" title="SANDBOX : Packets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <!-- <div class="row">
             <div class="col-xs-12 start">
                 <a class="anchor" id="Icons"></a>
@@ -2858,10 +2885,12 @@ $euphoria: #00050f;</code></pre>
             </div>
         </div> -->
         <hr>
+        <!-- [BUG] Srollspy is getting hung up here when nav past #a -->
         <div class="row">
+            <a class="anchor" id="Images"></a>
             <div class="col-xs-12 start">
-                <a class="anchor" id="Images"></a>
-                <img class="img-responsive" src="https://raw.github.com/joeldom/asset/main/images/PS%20CS6%20Splash.png" style="margin: -1px 0 0 0">
+                <img class="img-responsive grow" src="https://raw.github.com/joeldom/asset/main/images/PS%20CS6%20Splash.png" style="margin: -1px 0 0 0">
+                <button class="enlarge-btn" title="Enlarge" aria-label="Enlarge"></button>
             </div>
         </div>
         <div class="row style-guide">
@@ -2874,7 +2903,7 @@ $euphoria: #00050f;</code></pre>
 
             </div>
             <div class="col-xs-12">
-                <h4 id="output-file-types">File Types</h4>
+                <h4 id="Image-File-Types">File Types</h4>
                 <ul>
                     <li><strong>.gif</strong> (Graphic Interchange Format) = animations / flat color (lossless)</li>
                     <li><strong>.png</strong> (Portable Network Graphic) = flat color and transparency (lossless)</li>
@@ -2883,6 +2912,13 @@ $euphoria: #00050f;</code></pre>
                 </ul>
                 <hr>
             </div>
+            <div class="col-xs-12">
+                <h4 id="Enlarge-Image">Enlarge Image</h4>
+                <p>When implementing images I found it necessary to be able to enlarge certain ones. The need arose when some images source was larger than the responsive context they appeared. You can enlarge certain ones that have a <img style="width: 18px;"
+                        src="https://raw.githubusercontent.com/joeldom/asset/bce3a8aa17fd9b54d13fbaa5db35188a1b493c1e/ui-svg/grow.svg" /> Icon next to or around them and close it by clicking anywhere on the overlay that isn't the image itself.</p>
+                <hr>
+            </div>
+
             <div class="row">
                 <div class="col-md-6 col-sm-5 col-xs-6">
                     <img src="https://raw.githubusercontent.com/joeldom/asset/main/images/chip-23.png" alt="">
@@ -2925,7 +2961,7 @@ $euphoria: #00050f;</code></pre>
         <hr>
         <div class="row style-guide">
             <div class="col-xs-12">
-                <h4>Social Preview</h4>
+                <h4 id="Social-Preview">Social Preview</h4>
                 <p>gen1</p>
             </div>
             <div class="row">
@@ -3020,6 +3056,7 @@ $euphoria: #00050f;</code></pre>
         <script src="js/typed-content.js"></script>
         <script src="js/style-guide.js"></script>
         <script src="js/theme.js"></script>
+        <script src="js/enlarge.js"></script>
         <script>
             window.onscroll = function() {
                 myFunction()
