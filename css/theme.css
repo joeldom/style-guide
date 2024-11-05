@@ -175,6 +175,27 @@ body.dark-mode .bs-docs-sidebar li.active li a {
     color: white !important;
 }
 
+body.dark-mode .bs-docs-sidebar .nav>.active>a,
+body.dark-mode .bs-docs-sidebar .nav>li>a:focus {
+    color: #c0ffea;
+    text-decoration: none;
+    background-color: transparent;
+    border-left-color: #c0ffea;
+}
+
+body.dark-mode .bs-docs-sidebar .nav>li>a:hover {
+    color: #93dac2;
+    text-decoration: none;
+    background-color: transparent;
+    border-left-color: #93dac2;
+    cursor: default;
+}
+
+body.dark-mode .bs-docs-sidebar li.active li.active a {
+    border-bottom: none;
+    color: #c0ffea !important;
+}
+
 body.dark-mode #quotes .stats-hero.brandblue {
     background-color: var(--black) !important;
     color: var(--metal) !important;

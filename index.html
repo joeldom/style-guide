@@ -166,13 +166,14 @@
                                 <li><a href="#Social">Social</a></li>
                             </ul>
                         </li>
-                        <li><a href="#Timeline">Timeline</a></li>
+
                         <li><a href="#Elements">Elements</a>
                             <ul class="nav nav-stacked">
                                 <li><a href="#Multi-Step">Multi-Step</a></li>
                                 <li><a href="#Loader">Loader</a></li>
                                 <li><a href="#Progress-Bar">Progress Bar</a></li>
                                 <li><a href="#Calendar">Calendar</a></li>
+                                <li><a href="#Timeline">Timeline</a></li>
                                 <li><a href="#Forms-Inputs">Forms &amp; Inputs</a>
                                     <ul class="nav nav-stacked">
                                         <li><a href="#PrettyForm">Pretty Form</a></li>
@@ -192,6 +193,12 @@
                             <ul class="nav nav-stacked">
                                 <li><a href="#SyntaxHighlight">Syntax Highlight</a></li>
                                 <li><a href="#MetaTags">Meta Tags</a></li>
+                                <li><a href="#CSSFeatures">CSS Features</a>
+                                    <ul class="nav nav-stacked">
+                                        <li><a href="#CSS-Clamp">Clamp</a></li>
+                                        <li><a href="#CSS-AspectRatio">Aspect Ratio</a></li>
+                                    </ul>
+                                </li>
                                 <!-- <li><a href="#CodeVariables">Variables</a></li> -->
                                 <!-- <li><a href="#CodeClasses">Classes</a></li> -->
                             </ul>
@@ -295,8 +302,9 @@
                     <li hbox="">
                         <a class="anchor" id="Goals3"></a>
                         <div>
-                            <p style="margin-bottom:5px">What's new in this version?</p>
-                            <p>Please check the <a href="#log-container" data-scroll="">Logs</a> section.</p>
+                            <p style="margin-bottom:5px">Components</p>
+                            <p>Component Libraries and <a href="https://youtu.be/ouncVBiye_M" data-scroll="">How to write CSS</a> video covers different way to implement styling as well as popular libraries and languages. Another video <a href="https://youtu.be/Qhaz36TZG5Y"
+                                    target="_blank">10 CSS Pro Tips - Code this, NOT that!</a> that covers best-practices and emerging trends.</p>
                         </div>
                     </li>
                     <li hbox="">
@@ -2721,6 +2729,23 @@ $euphoria: #00050f;</code></pre>
 &LT;title&GT;Brand Data : Joel Dombek.com&LT;/title&GT;
 &LT;meta name="next-head-count" content="41"&GT;
 				</code></pre>
+                <hr>
+                <h3 id="CSSFeatures">New CSS Features</h3>
+                <p>New features in CSS to begin using to help with common issues in CSS or writing it.</p>
+                <hr>
+                <h4 id="CSS-Clamp">Clamp</h4>
+                <p>Used for making otherwise cuimbersome <code>@media only screen and (max-width: 600px)</code> much easier and turns 13 lines of code into one.</p>
+                <pre><code class="language-css">article {
+    width: clamp(200px, 50%, 600px);
+}</code></pre>
+                <hr>
+                <h4 id="CSS-Aspect-Ratio">Image & Video aspect ratio</h4>
+                <p>If you have ever needed responsive images or video you might have noticed there are some odd hacks out there in order to achieve this. While this feature (<a href="https://youtu.be/Qhaz36TZG5Y" target="_blank">10 CSS Pro Tips</a>) only
+                    limited support currently it aims to see wider adoption.</p>
+                <pre><code class="language-css">video {
+    width: 100%;
+    aspect-ratio: 16/9;
+}</code></pre>
             </div>
         </div>
 
