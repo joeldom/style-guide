@@ -140,6 +140,9 @@ body.dark-mode #lightSwitch:hover {
     body.dark-mode hr {
         border-top: 1px solid #131313;
     }
+    body.dark-mode-lights hr {
+        border-top: 1px solid #8a8a8a80
+    }
     body.dark-mode pre {
         background: #0e110b;
         border: 1px solid #202020;
@@ -242,10 +245,17 @@ body.dark-mode .navbar-brand:hover {
 }
 
 body.dark-mode-lights {
+    color: #ffffff75;
     background-color: black !important;
     background: linear-gradient(270deg, rgba(20, 42, 45, 1) 0%, rgba(26, 58, 204, 1) 55%, rgba(0, 0, 0, 1) 100%);
     background-size: 400% 400%;
     animation: gradientAnimation 65s ease infinite;
+}
+
+body.dark-mode-lights :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
+    color: var(--base-bright);
+    mix-blend-mode: difference;
+    opacity: .75;
 }
 
 body.dark-mode .git-calendar-graph {}

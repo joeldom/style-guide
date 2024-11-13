@@ -1,0 +1,200 @@
+/* Overlay styles with gradient animation */
+
+
+/* Overlay styles with smooth, slow gradient animation */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 180deg, #000000, #2b0000, #600000, #2b0000, #000000);
+    background-size: 100% 400%;
+    animation: smoothGradient 12s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 9998;
+    /* adding SVG tiling */
+    /* https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png */
+    background-image: url("https://raw.githubusercontent.com/joeldom/asset/main/icons/ic_warning_48px.svg"), linear-gradient( 180deg, #000000, #2b0000, #600000, #2b0000, #000000);
+    background-size: 300px 300px, 300% 300%;
+    /* Tile SVG, large gradient */
+    /* animation: gradientAnimation 5s infinite alternate; */
+    /* Animate gradient */
+    background-blend-mode: overlay;
+    /* Blend SVG and gradient */
+}
+
+
+/* Keyframes for smooth gradient animation */
+
+@keyframes smoothGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+/* Centered warning form */
+
+.warning-form {
+    border-radius: 0px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+}
+
+.warning-form:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.warning-form span {
+    font-weight: normal;
+    line-height: 1.25em;
+    font-size: 12px;
+}
+
+.warning-form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    min-width: 303.68px;
+}
+
+.warning-form h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.warning-form:hover p {
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.warning-form button {
+    padding: 10px 20px;
+    background-color: #1a3acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.warning-form button:hover {
+    background-color: #000E4E;
+}
+
+.warning-form button:disabled {
+    /* background-color: #4e0009; */
+    background-color: #454545;
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+
+/* Wiggle animation */
+
+@keyframes wiggle {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* Apply wiggle effect on hover */
+
+.warning-form button:disabled:hover {
+    animation: wiggle 0.5s ease-in-out infinite 0.5s;
+    /* Animation on hover */
+}
+
+.warning-form label {
+    margin: 0;
+}
+
+.warning-form label:hover {
+    margin: 0;
+    color: #000000;
+}
+
+.warning-form input[type="radio"],
+.warning-form input[type="checkbox"] {
+    margin: 0;
+    line-height: normal;
+    /* width: 1.25em; */
+}
+
+.warning-form input[type="radio"]:hover,
+.warning-form input[type="checkbox"]:hover,
+.warning-form input[type="checkbox"]+label,
+.warning-form input[type="radio"]+label,
+.warning-form input[type="checkbox"]+label:hover,
+.warning-form input[type="radio"]+label:hover {
+    cursor: pointer;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    width: 100%;
+    padding: 0 1em;
+}
+
+.radio-group-sub {
+    display: flex;
+    gap: 10px;
+}
+
+.warning-form input {
+    width: auto;
+}
+
+.warning-form button:disabled[data-title]::after {
+    content: attr(data-title);
+    background-color: #8a0000;
+    color: white;
+    font-size: 1em;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    white-space: nowrap;
+    opacity: 0;
+    z-index: 9999999;
+    visibility: hidden;
+    right: -1em;
+    top: -.6em;
+}
+
+.warning-form button:disabled[data-title]:hover::after {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.1s ease 0.4s;
+}

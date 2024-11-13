@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1a1e1c;
+}
+
+.password-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: #1a3acc;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000E4E;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.verify,
+.warning {
+    padding: 1em 2em;
+    margin: 0 auto;
+    display: flex;
+    background: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -ms-flex-align: end;
+    transition: background 0.93s ease, box-shadow 0.93s ease, border 0.93s ease;
+    max-width: 108px;
+}
+
+.verify:hover {
+    background: #000e4e;
+    transition: background 0.93s ease, box-shadow 0.93s ease, border 0.93s ease;
+}
+
+.warning:hover {
+    background: #4e0009;
+    transition: background 0.93s ease, box-shadow 0.93s ease, border 0.93s ease;
+}
+
+.login input:focus-visible {
+    border: 1px solid #6b7e80;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 2px rgba(97, 97, 97, 0.487);
+    outline: 0 none;
+    transition: background 0.93s ease, box-shadow 0.93s ease, border 0.93s ease;
+    background: #eeeeee;
+}
+
+.toast {
+    background: #88888875;
+    font-size: .85em;
+    z-index: 10000;
+}
+
+.toast-header {
+    background-color: #0000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    color: #9D9D9D;
+    border-bottom: none
+}
+
+.toast-header .btn-close {
+    width: .85em;
+    height: .85em;
+}
+
+.toast-header .btn-close:hover {
+    background-color: #FFF;
+}
+
+.toast-body {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    color: #7D7D7D;
+}
+
+.toast-body small {
+    background-color: #0010154a;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 100;
+    color: #aeaeae;
+    display: block;
+    padding-left: 1em;
+}
+
+
+/* img {
+	max-width: 100%;
+	max-height: 100%;
+} */
+
+.omega {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    opacity: 0.5;
+    text-align: center;
+    background: #021317b2;
+    background: #203135b2;
+    border-top: 1px solid #000000;
+    transition: background 1.3s ease;
+    z-index: 9999;
+}
+
+.omega:hover {
+    background: #000000;
+    transition: background 0.93s ease;
+}
+
+.omega a {
+    text-decoration: none;
+    color: #ccc;
+}
