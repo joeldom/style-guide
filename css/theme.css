@@ -173,6 +173,10 @@ body.dark-mode a:hover {
     border-bottom: 1px dotted;
 }
 
+body.dark-mode .grid-post:hover {
+    border: none;
+}
+
 body.dark-mode .bs-docs-sidebar li.active li a {
     border-bottom: none;
     color: white !important;
