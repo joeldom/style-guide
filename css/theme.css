@@ -258,4 +258,9 @@ body.dark-mode-lights :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) 
     opacity: .75;
 }
 
+#font-container :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
 body.dark-mode .git-calendar-graph {}
