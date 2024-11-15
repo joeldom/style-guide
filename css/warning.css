@@ -178,6 +178,10 @@
     width: auto;
 }
 
+.warning-form button {
+    width: 100%;
+}
+
 .warning-form button:disabled[data-title]::after {
     content: attr(data-title);
     background-color: #8a0000;
