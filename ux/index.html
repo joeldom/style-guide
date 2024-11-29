@@ -62,7 +62,6 @@
 
     <script>
         // PASSWORD [X]
-        // Initial password set to COMPANY_NAME
         let storedPassword = "COMPANY_NAME";
         let snackbar = new bootstrap.Toast(document.getElementById('snackbar'));
 
@@ -70,7 +69,7 @@
         function showSnackbar(message, errorLog = '') {
             let messageContent = message;
             if (errorLog) {
-                messageContent += `<small>${errorLog}</small>`; // Add the error log in small font
+                messageContent += `<small>${errorLog}</small>`;
             }
             document.getElementById('snackbarMessage').innerHTML = messageContent;
             document.getElementById('snackbar').style.display = 'block';
@@ -95,7 +94,7 @@
                 fetchDynamicPassword();
 
             } else {
-                showSnackbar("Access denied!", "Invalid password attempt at " + new Date().toLocaleString() + "<br>Try again in 5 seconds with COMPANY_NAME");;
+                showSnackbar("Access denied!", "Invalid password attempt at " + new Date().toLocaleString() + "<br>Try again in 5 seconds with COMPANY_NAME");
             }
         });
 
@@ -112,8 +111,7 @@
                     showSnackbar("Error confirming password", error.message);
                 });
         }
-    </script>
-    <script>
+
         // WARNING !!!
         let clickCount = 0;
         let confirmAttempts = 0;
@@ -132,20 +130,20 @@
             const warningDiv = document.createElement('div');
             warningDiv.className = 'warning-form';
             warningDiv.innerHTML = `
-			<div class="warning"><h1>⚠️</h1><br/> Warning! <span>Suspicious Activity</span></div>
-            <div class="warning-form-content">
-            <div class="radio-group">
-				<p>Are you human?</p>
-                <div class="radio-group-sub">
-					<input type="radio" id="yesCheck" name="humanCheck" value="yes" />
-					<label for="yesCheck">Yes</label>
-					<input type="radio" id="noCheck" name="humanCheck" value="no" />
-					<label for="noCheck">No</label>
+				<div class="warning"><h1>⚠️</h1><br/> Warning! <span>Suspicious Activity</span></div>
+				<div class="warning-form-content">
+					<div class="radio-group">
+						<p>Are you human?</p>
+						<div class="radio-group-sub">
+							<input type="radio" id="yesCheck" name="humanCheck" value="yes" />
+							<label for="yesCheck">Yes</label>
+							<input type="radio" id="noCheck" name="humanCheck" value="no" />
+							<label for="noCheck">No</label>
+						</div>
+					</div>
+					<button id="confirmBtn" disabled data-title="Please answer...">Confirm</button>
 				</div>
-            </div>
-            <button id="confirmBtn" disabled data-title="Please answer...">Confirm</button>
-			</div>
-        `;
+			`;
 
             overlay.appendChild(warningDiv);
             document.body.appendChild(overlay);
@@ -157,22 +155,37 @@
             // Enable the confirm button only if a radio button is selected
             yesCheck.addEventListener('change', () => {
                 confirmBtn.disabled = false;
-            });
-            noCheck.addEventListener('change', () => {
-                confirmBtn.disabled = false;
+                confirmBtn.textContent = "Confirm";
+                confirmBtn.onclick = () => {
+                    document.body.removeChild(overlay); // Removes the overlay from the DOM
+                };
             });
 
-            // Confirm button action based on selection
-            confirmBtn.addEventListener('click', () => {
-                if (yesCheck.checked) {
-                    document.body.removeChild(overlay); // Removes the overlay from the DOM
-                } else if (noCheck.checked) {
-                    warningDiv.style.display = 'none'; // Hides the warning, keeps overlay
-                }
+            noCheck.addEventListener('change', () => {
+                confirmBtn.disabled = false;
+                confirmBtn.textContent = "Confirm";
+                confirmBtn.onclick = () => modifyForm(warningDiv);
             });
         }
 
-        // Function to track clicks within a 2-second window
+        // Function to modify the warning form after "No" is selected
+        function modifyForm(warningDiv) {
+            const formContent = warningDiv.querySelector('.warning-form-content');
+
+            // Remove the radio buttons and update the content
+            formContent.innerHTML = `
+				<p>Please review the information below and acknowledge to proceed:</p>
+				<iframe src="terms.html" style="width: 100%; min-width:64vh; height: 30vh; border: none;"></iframe>
+				<button id="acknowledgeBtn">Acknowledge</button>
+			`;
+
+            const acknowledgeBtn = document.getElementById('acknowledgeBtn');
+            acknowledgeBtn.onclick = () => {
+                document.body.removeChild(warningDiv.closest('.overlay')); // Remove the overlay
+            };
+        }
+
+        // Function to track rapid clicks
         function trackClicks() {
             clickCount++;
             clearTimeout(clickTimer); // Reset timer on each click
@@ -204,6 +217,7 @@
             }
         });
     </script>
+
 
 </body>
 
