@@ -175,11 +175,12 @@
             // Remove the radio buttons and update the content
             formContent.innerHTML = `
 				<p>Please review the information below and acknowledge to proceed:</p>
-				<iframe src="terms.html" style="width: 100%; min-width:64vh; height: 30vh; border: none;"></iframe>
+				<iframe src="terms.html" style="width: 100%; min-width:64vh; height: 40vh; border: none;"></iframe>
 				<button id="acknowledgeBtn">Acknowledge</button>
 			`;
 
             const acknowledgeBtn = document.getElementById('acknowledgeBtn');
+            const iframe = document.getElementById('tosIframe');
             acknowledgeBtn.onclick = () => {
                 //document.body.removeChild(warningDiv.closest('.overlay')); // Remove the overlay
                 window.location.href = 'https://joeldom.github.io/redesign/sandbox/prompt/';
