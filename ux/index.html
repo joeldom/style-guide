@@ -11,14 +11,14 @@
 
     <title>VERIFY CREDENTIALS 🗹</title>
 
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon.ico" rel="icon" type="image/x-icon">
-    <link rel="icon shortcut" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/64x64.png" sizes="64x64" />
-    <link rel="icon shortcut" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/128x128.png" sizes="128x128" />
-    <link rel="icon shortcut" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/76x76.png" sizes="76x76" />
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/120x120.png" sizes="120x120" />
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/152x152.png" sizes="152x152" />
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/joeldom/asset/main/favicon/180x180.png" sizes="180x180" />
+    <link rel="shortcut icon" href="https://joeldom.github.io/asset/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="icon shortcut" href="https://joeldom.github.io/asset/favicon/64x64.png" sizes="64x64" />
+    <link rel="icon shortcut" href="https://joeldom.github.io/asset/favicon/128x128.png" sizes="128x128" />
+    <link rel="icon shortcut" href="https://joeldom.github.io/asset/favicon/192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://joeldom.github.io/asset/favicon/76x76.png" sizes="76x76" />
+    <link rel="apple-touch-icon" href="https://joeldom.github.io/asset/favicon/120x120.png" sizes="120x120" />
+    <link rel="apple-touch-icon" href="https://joeldom.github.io/asset/favicon/152x152.png" sizes="152x152" />
+    <link rel="apple-touch-icon" href="https://joeldom.github.io/asset/favicon/180x180.png" sizes="180x180" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,12 +33,12 @@
 <body id="login">
     <div class="login">
         <div class="verify">
-            <img class="" src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" width="52px" height="52px" />
+            <img class="" src="https://joeldom.github.io/asset/chip-logo.png" width="52px" height="52px" />
             <p class="mt-4">Login</p>
         </div>
         <div class="password-form">
             <form id="loginForm">
-                <!-- <img src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" width="52px" /> -->
+                <!-- <img src="https://joeldom.github.io/asset/chip-logo.png" width="52px" /> -->
                 <input type="password" id="password" placeholder="Enter your password">
                 <button type="submit" id="submitBtn">Confirm</button>
             </form>
@@ -55,7 +55,7 @@
         </div>
     </div>
     <p class="omega"><a href="https://joeldom.github.io/redesign/">Joel Dombek</a> © X.X.MMXXIV <a href="https://joeldom.github.io/redesign/sandbox/#login">v1</a></p>
-    <!-- <img class="verify mt-5" src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" width="52px" /> -->
+    <!-- <img class="verify mt-5" src="https://joeldom.github.io/asset/chip-logo.png" width="52px" /> -->
 
     <!-- Bootstrap JS and dependencies [] TODO add locally-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -96,7 +96,7 @@
 
         // Function to fetch the dynamic password from the JSON file after the initial password is validated
         function fetchDynamicPassword() {
-            fetch('https://raw.githubusercontent.com/joeldom/asset/85650484065f940add5dd313e71f76b84ab45822/array/strings.json')
+            fetch('https://joeldom.github.io/asset/85650484065f940add5dd313e71f76b84ab45822/array/strings.json')
                 .then(response => response.json())
                 .then(data => {
                     // Update storedPassword with the first element from the array
@@ -172,10 +172,14 @@
             formContent.innerHTML = `
 				<p>Please review the information below and acknowledge to proceed:</p>
 				<iframe src="terms.html" id="tosIframe"></iframe>
-				<button id="acknowledgeBtn">Acknowledge</button>
+				<div class="button-group">
+					<button id="denyBtn">Deny</button>
+					<button id="acknowledgeBtn">Acknowledge</button>
+				</div>
 			`;
 
             const acknowledgeBtn = document.getElementById('acknowledgeBtn');
+            const denyBtn = document.getElementById('denyBtn');
             const iframe = document.getElementById('tosIframe');
 
             iframe.addEventListener('load', () => {
@@ -199,6 +203,10 @@
             });
 
             // Redirect to the desired URL when Acknowledge is clicked
+            denyBtn.onclick = () => {
+                document.body.removeChild(warningDiv.closest('.overlay')); // Remove the overlay
+                // window.location.href = 'https://joeldom.github.io/redesign/sandbox/prompt/';
+            };
             acknowledgeBtn.onclick = () => {
                 //document.body.removeChild(warningDiv.closest('.overlay')); // Remove the overlay
                 window.location.href = 'https://joeldom.github.io/redesign/sandbox/prompt/';

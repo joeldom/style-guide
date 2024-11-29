@@ -18,8 +18,8 @@
     flex-direction: row;
     z-index: 9998;
     /* adding SVG tiling */
-    /* https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png */
-    background-image: url("https://raw.githubusercontent.com/joeldom/asset/main/icons/ic_warning_48px.svg"), linear-gradient( 180deg, #000000, #2b0000, #600000, #2b0000, #000000);
+    /* https://joeldom.github.io/asset/chip-logo.png */
+    background-image: url("https://joeldom.github.io/asset/icons/ic_warning_48px.svg"), linear-gradient( 180deg, #000000, #2b0000, #600000, #2b0000, #000000);
     background-size: 300px 300px, 300% 300%;
     /* Tile SVG, large gradient */
     /* animation: gradientAnimation 5s infinite alternate; */

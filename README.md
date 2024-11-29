@@ -1,4 +1,4 @@
-<img class="img-responsive" src="https://raw.githubusercontent.com/joeldom/asset/main/images/styleguide-banner.png" style="margin: -1px 0 0 0">
+<img class="img-responsive" src="https://joeldom.github.io/asset/images/styleguide-banner.png" style="margin: -1px 0 0 0">
 
 This style-guide is meant to be a testing platform for elements in the development cycle to be possibly be implemented pending how functionality relevant and robust they are. This pulls styles from the `/resume` repo as well as styles from the `/redesign` repo.
 
@@ -37,7 +37,7 @@ The style guide establishes the design principles and standards for the brand's 
   <tbody>
     <tr>
       <td>
-        <img width="200px" height="200px" src="https://raw.githubusercontent.com/joeldom/asset/main/chip-logo.png" alt="joel dombek design logo"/>
+        <img width="200px" height="200px" src="https://joeldom.github.io/asset/chip-logo.png" alt="joel dombek design logo"/>
       </td>
       <td style="width:300px !important;"><h1>Style Guide</h1></td>
     </tr>

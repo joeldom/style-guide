@@ -47,3 +47,40 @@ iframe {
         min-width: 100%;
     }
 }
+
+
+/* Base styles for the container */
+
+.button-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* Distribute space between buttons */
+    gap: 10px;
+    /* Space between buttons */
+}
+
+
+/* Flex for the buttons, making them take equal space */
+
+.button-group button {
+    flex: 1;
+    /* Buttons take equal space */
+    cursor: pointer;
+}
+
+
+/* Optional: Conditional style based on screen size (e.g., mobile vs desktop) */
+
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+        /* Stack buttons vertically on small screens */
+    }
+    .button-group button {
+        flex: none;
+        /* Buttons no longer take equal space */
+        width: 100%;
+        /* Full width for each button in the column layout */
+    }
+}
