@@ -35,7 +35,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
 // Function to fetch the dynamic password from the JSON file after the initial password is validated
 function fetchDynamicPassword() {
-    fetch('https://joeldom.github.io/asset/85650484065f940add5dd313e71f76b84ab45822/array/strings.json')
+    fetch('https://joeldom.github.io/asset/array/strings.json')
         .then(response => response.json())
         .then(data => {
             // Update storedPassword with the first element from the array
