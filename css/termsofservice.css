@@ -1,0 +1,49 @@
+/* General iframe styles */
+
+iframe {
+    border: none;
+    width: 100%;
+    /* Default to fill container width */
+    height: 100%;
+    /* Default to fill container height */
+    min-width: 64vh;
+    height: 30vh;
+}
+
+
+/* Portrait orientation */
+
+@media screen and (max-width: 640px) and (orientation: portrait) {
+    .warning-form {
+        max-height: 820px;
+    }
+    .warning {
+        display: none
+    }
+    iframe {
+        width: 100%;
+        /* Adjust to the width of the viewport */
+        height: 90vh;
+        /* Use most of the viewport height */
+        min-width: 100%;
+    }
+}
+
+
+/* Landscape orientation */
+
+@media screen and (max-width: 932px) and (orientation: landscape) {
+    .warning-form {
+        max-height: 620px;
+    }
+    .warning {
+        display: none
+    }
+    iframe {
+        width: 100%;
+        /* Adjust to the width of the viewport */
+        height: 70vh;
+        /* Use less height to maintain aspect ratio */
+        min-width: 100%;
+    }
+}
