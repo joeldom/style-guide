@@ -75,24 +75,19 @@
             document.getElementById('snackbar').style.display = 'block';
             snackbar.show();
         }
-
         // Password validation and button action
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault();
             let inputPassword = document.getElementById('password').value;
-
             // Check if the input matches the stored password
             if (inputPassword === storedPassword) {
                 showSnackbar("Access granted!");
-
                 // Replace "Submit" with "Proceed" and add a click action to redirect
                 let submitBtn = document.getElementById('submitBtn');
                 submitBtn.textContent = "Proceed";
                 submitBtn.setAttribute("onclick", "window.location.href='https://joeldom.github.io/style-guide/ux/Case-Study/';");
-
                 // Now, fetch the dynamic password AFTER success
                 fetchDynamicPassword();
-
             } else {
                 showSnackbar("Access denied!", "Invalid password attempt at " + new Date().toLocaleString() + "<br>Try again in 5 seconds with COMPANY_NAME");
             }
@@ -175,12 +170,34 @@
             // Remove the radio buttons and update the content
             formContent.innerHTML = `
 				<p>Please review the information below and acknowledge to proceed:</p>
-				<iframe src="terms.html" style="width: 100%; min-width:64vh; height: 40vh; border: none;"></iframe>
+				<iframe src="terms.html" style="width: 100%; min-width:64vh; height: 30vh; border: none;" id="tosIframe"></iframe>
 				<button id="acknowledgeBtn">Acknowledge</button>
 			`;
 
             const acknowledgeBtn = document.getElementById('acknowledgeBtn');
             const iframe = document.getElementById('tosIframe');
+
+            iframe.addEventListener('load', () => {
+                // Add scroll listener when iframe content is loaded
+                const iframeWindow = iframe.contentWindow;
+                iframeWindow.addEventListener('scroll', () => {
+                    const scrollTop = iframeWindow.scrollY;
+                    const scrollHeight = iframeWindow.document.documentElement.scrollHeight;
+                    const clientHeight = iframeWindow.document.documentElement.clientHeight;
+
+                    // Enable button if scrolled to the bottom
+                    console.log({
+                        scrollTop,
+                        clientHeight,
+                        scrollHeight
+                    }); // Debugging
+                    if (scrollTop + clientHeight >= scrollHeight) {
+                        acknowledgeBtn.disabled = false;
+                    }
+                });
+            });
+
+            // Redirect to the desired URL when Acknowledge is clicked
             acknowledgeBtn.onclick = () => {
                 //document.body.removeChild(warningDiv.closest('.overlay')); // Remove the overlay
                 window.location.href = 'https://joeldom.github.io/redesign/sandbox/prompt/';
