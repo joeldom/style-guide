@@ -56,6 +56,28 @@ body {
 #lightSwitch {
     position: relative;
     display: inline-block;
+    padding: 0 12px;
+}
+
+.footer #themeSwitch,
+.footer #lightSwitch {
+    position: absolute;
+    display: block;
+    right: 6px;
+    bottom: 36px;
+    z-index: 9;
+    padding: 4px 12px;
+}
+
+@media (max-width: 768px) {
+    .footer #themeSwitch {
+        position: absolute;
+        display: block;
+        right: 36px;
+        top: 12px;
+        z-index: 9;
+        height: 40px;
+    }
 }
 
 #themeSwitch[title]:hover::after,
@@ -79,8 +101,18 @@ body.dark-mode #lightSwitch[title]:hover::after {
     border: 1px solid black;
 }
 
+body.dark-mode .footer #themeSwitch[title]:hover::after {
+    border: 1px solid #222;
+    color: var(--cool-blue);
+    left: -60%;
+}
+
 #themeSwitch[title]:hover::after {
     top: -125%;
+}
+
+.footer #themeSwitch[title]:hover::after {
+    top: -32px;
 }
 
 #lightSwitch[title]:hover::after {
@@ -94,7 +126,6 @@ body.light-mode #lightSwitch {
     display: block;
     margin: 0 auto;
     background-color: rgba(55, 55, 55, .115);
-    padding: 0 12px;
     color: #8c8c8c;
     border: 1px solid #bbb;
     opacity: .5;
@@ -107,7 +138,6 @@ body.dark-mode #lightSwitch {
     display: block;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, .25);
-    padding: 0 12px;
     color: #606060;
     border: 1px solid #222;
     transition: background-color 0.3s, color 0.3s;
@@ -268,3 +298,27 @@ body.dark-mode-lights :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) 
 }
 
 body.dark-mode .git-calendar-graph {}
+
+body.dark-mode .parallax-footer,
+body.dark-mode .footer-para,
+body.dark-mode .home-lead {
+    background-color: var(--black);
+}
+
+body.dark-mode .palette-brandblue.palette-inverse.warm,
+body.dark-mode .palette-brandblue.palette-inverse.cool {
+    background-color: #171717;
+}
+
+body.dark-mode .home-lead__content,
+body.dark-mode .palette-brandblue.palette-inverse,
+body.dark-mode .grid .grid-inner.full-3 article {
+    background-color: #000;
+}
+
+body.dark-mode .footer-para #back-top a i {
+    border: 1px solid #222;
+    color: #606060;
+    background-color: rgba(0, 0, 0, .25);
+    z-index: 9;
+}
