@@ -322,3 +322,10 @@ body.dark-mode .footer-para #back-top a i {
     background-color: rgba(0, 0, 0, .25);
     z-index: 9;
 }
+
+body.dark-mode .footer-para #back-top a:hover i {
+    border: 1px solid #c0ffea;
+    color: #c0ffea;
+    background-color: rgba(0, 0, 0, .25);
+    z-index: 9;
+}
