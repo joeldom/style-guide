@@ -157,9 +157,10 @@ body.light-mode #lightSwitch:hover {
 }
 
 body.dark-mode #themeSwitch:hover,
-body.dark-mode #lightSwitch:hover {
-    color: white;
-    border: 1px solid #f8f8f8;
+body.dark-mode #lightSwitch:hover,
+body.dark-mode #back-top i {
+    border: 1px solid var(--mint);
+    color: var(--mint);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -207,8 +208,8 @@ body.dark-mode #lightSwitch:hover {
 }
 
 body.dark-mode a:hover {
-    color: white;
-    filter: contrast(200%);
+    /* color: white; */
+    /* filter: contrast(200%); */
     /* border-bottom: 1px dotted; */
 }
 
