@@ -13,12 +13,16 @@ iframe {
 
 /* Portrait orientation */
 
-@media screen and (max-width: 640px) and (orientation: portrait) {
+@media screen and (max-width: 746px) and (orientation: portrait) {
     .warning-form {
         max-height: 820px;
     }
     .warning {
-        display: none
+        display: none;
+        flex-direction: column;
+    }
+    .warning-form-content {
+        flex-direction: column;
     }
     iframe {
         width: 100%;
@@ -35,9 +39,6 @@ iframe {
 @media screen and (max-width: 932px) and (orientation: landscape) {
     .warning-form {
         max-height: 620px;
-    }
-    .warning {
-        display: none
     }
     iframe {
         width: 100%;
