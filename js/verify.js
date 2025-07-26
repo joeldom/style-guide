@@ -25,7 +25,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Replace "Submit" with "Proceed" and add a click action to redirect
         let submitBtn = document.getElementById('submitBtn');
         submitBtn.textContent = "Proceed";
-        submitBtn.setAttribute("onclick", "window.location.href='https://joeldom.github.io/style-guide/ux/Case-Study/';");
+        submitBtn.setAttribute("onclick", "window.location.href='https://joeldom.github.io/style-guide/ux/Case-Studies/';");
         // Now, fetch the dynamic password AFTER success
         fetchDynamicPassword();
     } else {
