@@ -99,6 +99,6 @@ Future campaigns could explore seasonal variations, regional customization, and 
 
 ---
 
-Joel Dombek © X.X.MMXXIV 
+Joel Dombek © X.X.MMXXV 
 
 ---

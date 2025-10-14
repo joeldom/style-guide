@@ -91,6 +91,6 @@ Future development could focus on AI-powered analytics and predictive reporting 
 
 ---
 
-Joel Dombek © X.X.MMXXIV 
+Joel Dombek © X.X.MMXXV 
 
 ---

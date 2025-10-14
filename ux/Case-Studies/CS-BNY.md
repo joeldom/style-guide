@@ -76,7 +76,7 @@ All insights and observations discussed herein are drawn from high-level design 
 
 ---
 
-Joel Dombek © X.X.MMXXIV 
+Joel Dombek © X.X.MMXXV 
 
 ---
 
