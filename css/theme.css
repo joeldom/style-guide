@@ -377,7 +377,7 @@ body.light-mode .grid .grid-inner.full-3 article {
 body.dark-mode .grid .grid-inner.full-3 article {
     /* background-image: url('../sandbox/products/chainweb.png'); */
     /* background-color: var(--brand-blue); */
-    background-color: var(--dark-olive);
+    background-color: #000;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
