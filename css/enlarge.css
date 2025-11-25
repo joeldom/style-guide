@@ -1,4 +1,5 @@
-.enlarge-btn {
+.enlarge-btn,
+.gallery-enlarge {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -13,21 +14,16 @@
     opacity: 0.35;
 }
 
-.enlarge-btn:hover {
+.enlarge-btn,
+.gallery-enlarge:hover {
     opacity: 1;
 }
-
-
-/* Container to wrap image and button */
 
 .image-container {
     position: relative;
     display: inline-block;
     margin: 0px;
 }
-
-
-/* Grow image when clicked */
 
 .grow-enlarged {
     position: fixed;
@@ -37,8 +33,8 @@
     width: auto;
     height: auto;
     z-index: 999;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    border: 5px solid black;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); */
+    /* border: 5px solid black; */
     max-height: 100vh;
 }
 
@@ -46,9 +42,6 @@
     width: auto;
     height: auto;
 }
-
-
-/* Dark background groverlay */
 
 .groverlay {
     position: fixed;
