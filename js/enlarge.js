@@ -5,15 +5,29 @@ function enlargeImage(img) {
     groverlay.setAttribute('aria-hidden', 'true');
     groverlay.setAttribute('aria-label', 'Close');
     groverlay.setAttribute('title', 'Close');
+
+    // --- START: Add Close Button/Text to groverlay ---
+    const closeButton = document.createElement('div');
+    closeButton.classList.add('groverlay-close'); // Add a class for styling
+    closeButton.textContent = 'Close';
+    groverlay.appendChild(closeButton);
+    // --- END: Add Close Button/Text to groverlay ---
+
     document.body.appendChild(groverlay);
 
     // Enlarge the image
     img.classList.add('grow-enlarged');
 
-    // Remove enlarged state on overlay click
-    groverlay.addEventListener('click', function() {
+    // Remove enlarged state on overlay click (or closeButton click)
+    function closeEnlarged() {
         img.classList.remove('grow-enlarged');
         document.body.removeChild(groverlay);
+    }
+
+    groverlay.addEventListener('click', closeEnlarged);
+    closeButton.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent the click from immediately propagating to the groverlay
+        closeEnlarged();
     });
 }
 
@@ -57,6 +71,13 @@ document.querySelectorAll('article[style*="background-image"]').forEach(function
         groverlay.setAttribute('aria-label', 'Close');
         groverlay.setAttribute('title', 'Close');
 
+        // --- START: Add Close Button/Text to groverlay for background enlargement ---
+        const closeButton = document.createElement('div');
+        closeButton.classList.add('groverlay-close'); // Add a class for styling
+        closeButton.textContent = 'Close';
+        groverlay.appendChild(closeButton);
+        // --- END: Add Close Button/Text to groverlay for background enlargement ---
+
         // Create enlarged background container
         const enlargedBg = document.createElement('div');
         enlargedBg.classList.add('grow-enlarged');
@@ -70,10 +91,16 @@ document.querySelectorAll('article[style*="background-image"]').forEach(function
         document.body.appendChild(groverlay);
         document.body.appendChild(enlargedBg);
 
-        // Click overlay to close
-        groverlay.addEventListener('click', function() {
+        // Click overlay or close button to close
+        function closeBgEnlarged() {
             document.body.removeChild(groverlay);
             document.body.removeChild(enlargedBg);
+        }
+
+        groverlay.addEventListener('click', closeBgEnlarged);
+        closeButton.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent the click from immediately propagating to the groverlay
+            closeBgEnlarged();
         });
     });
 });
