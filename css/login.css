@@ -79,6 +79,9 @@ body#login {
     background: #88888875;
     font-size: .85em;
     z-index: 10000;
+    position: absolute;
+    bottom: 4vh;
+    right: 0;
 }
 
 .toast-header {
@@ -114,6 +117,39 @@ body#login {
     color: #aeaeae;
     display: block;
     padding-left: 1em;
+}
+
+
+/* Mobile devices (up to 768px) */
+
+@media (max-width: 768px) {
+    .toast {
+        width: 100%;
+    }
+    .toast-body small {
+        font-size: 14px;
+        padding-left: 0.75em;
+    }
+}
+
+
+/* Tablets (769px to 1024px) */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .toast-body small {
+        font-size: 18px;
+        padding-left: 0.875em;
+    }
+}
+
+
+/* Desktop (1025px and above) */
+
+@media (min-width: 1025px) {
+    .toast-body small {
+        font-size: 11px;
+        padding-left: 1em;
+    }
 }
 
 

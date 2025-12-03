@@ -29,7 +29,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Now, fetch the dynamic password AFTER success
         fetchDynamicPassword();
     } else {
-        showSnackbar("Access denied!", "Invalid password attempt at " + new Date().toLocaleString() + "<br>Try again in 5 seconds with COMPANY_NAME");
+        showSnackbar("Access denied!", "Invalid password attempt at " + new Date().toLocaleString() + "<br>Try again in 5secs with COMPANY_NAME");
     }
 });
 
