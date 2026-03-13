@@ -12,6 +12,11 @@ The style guide establishes the design principles and standards for the brand's 
 * bootstrap element styling
 * style-guide styles added as separate sass file
 * rewrite of sass inclusions to remove redundancy
+* logo brand template 
+* invoice template 
+* resume / cover letter template 
+* email signature 
+* social preview 
 
 ## References
 1. color palette gen: [ColorPedia](http://veli.ee/colorpedia/?c=1ACCAB)
