@@ -5,7 +5,7 @@ This style-guide is meant to be a testing platform for elements in the developme
 The style guide establishes the design principles and standards for the brand's neo-industrial corporate persona, inspired by Sega Genesis and Conrail trains. It combines structured grid-based designs with abstract art principles like asymmetry and large areas of color and texture. This guide ensures a consistent, unique visual and user experience across all platforms and materials.
 
 
-## Todo
+## Todo (rethink)
 
 * 404 page
 * IE browser bar
