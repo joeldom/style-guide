@@ -134,6 +134,55 @@ These are useful concepts to explore, but they should not be presented as finish
 
 A refined future example could use one concrete workflow—such as documenting a viewer interaction pattern, preparing a project update for multiple channels, or turning a sandbox prototype into a reusable component. The example should show inputs, constraints, decision points, expected output, validation, and where human approval remains necessary.
 
+## The missing AI section: design system, steering, skills, and Tonal Modality
+
+The HTML's AI section should explain the system's actual intended audience and origin. This is primarily an **internal working system for its designer and the AI agents collaborating on the site**, not a generic design-system product aimed at broad adoption. Its documentation needs to carry context between human intent and agent execution: visual rules, interaction behavior, rationale, constraints, experiments, and the lineage of decisions.
+
+### Why the work became more than a style guide
+
+The viewer and hero-player experiments are useful origin stories because they show how an implementation challenge can create a reason to formalize the system.
+
+- **The multi-media viewer:** The initial question was how to make a Twitter-like viewer handle multiple images, varied media types, and different aspect ratios or dimensions without making every asset feel like a one-off. The investigation widened into presentation, controls, navigation, and reusable interaction behavior.
+- **The hero media player:** A recurring frustration with streaming-service video players—most specifically Amazon Prime Video's layered content and information around a video that continues playing behind it—became an inspiration. The portfolio version explored how that layered idea could become a striking media feature inside the main hero, including autoplay-on-idle behavior.
+- **The portfolio problem:** The page risked reading as too static to recruiters and other visitors. A distinctive media experience could demonstrate interaction design and front-end engineering while giving a concrete, difficult problem to solve. The point was not motion for its own sake: it was to create a feature with enough depth to improve the portfolio and justify more deliberate interaction patterns.
+- **The system and agent loop:** The feature work exposed decisions about controls, states, timing, visibility, media handling, and embedding. Those decisions created a reason to document patterns and gave AI agents a substantive place to help: exploring alternatives, checking implementation, preserving rationale, and turning lessons from prototypes into reusable guidance.
+
+The record should preserve the journey—reference or frustration, design question, hypothesis, experiment, implementation, observations, trade-offs, and next steps—not merely describe the final artifact as if it appeared fully formed.
+
+### Steering
+
+Steering is the contextual judgment layer for an agent when a task does not specify every detail. It helps the agent prioritize intent, existing constraints, trusted sources, preservation, trade-offs, and verification. It should encourage agents to investigate before rewriting, distinguish production behavior from experiments, keep changes reversible when uncertainty is high, and disclose what has and has not been tested. It is not permission to invent requirements or make every decision autonomously; consequential or subjective direction still belongs in human review.
+
+### Skills
+
+Skills are repeatable, bounded workflows that combine domain knowledge, inputs, steps, validation, and expected outputs. Examples include documenting an interaction pattern, auditing navigation and accessibility, promoting a sandbox experiment into a component proposal, or preparing one project update for multiple publishing channels. A useful skill explains when it applies, what context to inspect, which files and conventions are authoritative, how to recognize a good result, and when to stop for review. Steering supplies direction; a skill supplies a method.
+
+### Tonal Modality — provisional
+
+Tonal Modality is an early name for shifting the mode of expression to fit the work while preserving the underlying voice, intent, and important details. It is not a finished taxonomy or a set of separate personas. Possible switches for this system:
+
+- **Grounded / matter-of-fact:** restrained, concrete, sometimes deliberately cold; appropriate for technical documentation, status, and bug reports.
+- **Technical:** precise about implementation, states, dependencies, and observable behavior.
+- **Analytical:** compares alternatives, assumptions, evidence, and trade-offs.
+- **Enthusiastic / philosophical:** explains why a feature is interesting, what it makes possible, and the creative or ethical reasoning behind decisions.
+- **Visual / experiential:** describes composition, motion, hierarchy, atmosphere, and the user's experience.
+- **Shorthand / exploratory:** preserves compressed or unfinished thinking during ideation so it can be clarified later without losing its origin.
+
+These modes can be combined. For example, an account of the hero player might begin with the enthusiasm behind the idea, explain the reasoning analytically, and end with a technical description of states and controls. Tone should change emphasis and level of detail—not erase uncertainty, authorial character, or decision history.
+
+### How the concepts fit together
+
+- **Design system:** the record of visual and interaction conventions, reusable patterns, and why they exist.
+- **Steering:** how agents select among goals, constraints, references, and trade-offs.
+- **Skills:** how recurring tasks are performed in a repeatable and reviewable way.
+- **Tonal Modality:** how the same intent is expressed for exploration, explanation, critique, or implementation.
+- **Sandbox and history:** where prototypes, alternatives, versions, and findings remain visible without being mistaken for production standards.
+- **Human review:** where subjective direction, unresolved questions, and high-impact decisions are settled.
+
+**Working principle:** preserve the reason behind a decision, make the implementation inspectable, and let experiments become standards only after their value and limitations are understood.
+
+This framing is intentionally provisional. Keep the language open to revision as the viewer, UXBG, AGENTS.md, HUMANS.md, skills, and agent workflows become more concrete.
+
 ## A proposed section-writing framework
 
 Use this as a checklist, not a rigid template. Each section should include only what suits its subject.
