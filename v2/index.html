@@ -211,7 +211,7 @@
                             </ul>
                         </li>
                         <!-- <li><a href="#Icons">Icons</a></li> -->
-                        <!-- [BUG] Srollspy is getting hung up here when nav past #a -->
+                        <!-- JOEL-NOTE: Original note — scrollspy appears to get stuck when navigating past #a. Verify whether this is still reproducible before changing navigation behavior. -->
                         <li><a href="#Images">Images</a>
                             <ul class="nav nav-stacked">
                                 <li><a href="#Image-File-Types">File Types</a></li>
@@ -271,7 +271,7 @@
             <div class="col-xs-12">
                 <h2>The Beginning</h2>
                 <a class="anchor" id="the-beginning"></a>
-            <!-- AGENT-_agents_name TODO: expand this opening into purpose, principles, scope, and how the guide evolves after editorial review. -->
+            <!-- AGENT-GPT-TODO: expand this opening into purpose, principles, scope, and how the guide evolves after editorial review. -->
                 <p>The aim of this is to be a living document similar to a <a href="https://html.spec.whatwg.org/" title="Living Standard">Living Standard</a>. Many of the sections are incomplete or half-baked but the goal is to take many of the ideas inflight
                     and flesh them out further. These are just first-use implementations in an evolving process.</p>
                 <p>This style guide is aimed to assist in mocking up and testing new layout and styles as well as keep a unified branding presence that is easily accessible wherever needed. It will show combinations of styles and content with use cases as
@@ -283,7 +283,7 @@
                     custom options as necessary.</p>
                 <p>It is important to remember that <em>"DSG is a branded house, and not a house of brands"</em>. Our look and feel as well as our voice should feel like our own and not one that is merely an echo or repetition of our vendors.</p>
                 <hr>
-                <!-- TODO: add the correct figma project with clean preview -->
+                <!-- JOEL-TODO: Add the correct Figma project with a clean preview. -->
                 <!-- <iframe style="border: none;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/V7PdbXTTVTx72gMZgbNV6BTq/p-Phoenix-Greybox-DSG" allowfullscreen></iframe> -->
                 <a class="anchor" id="Goals"></a>
                 <h3>Goals</h3>
@@ -2932,7 +2932,7 @@ $euphoria: #00050f;</code></pre>
         </div>
         <div class="row style-guide">
             <div class="col-xs-12">
-                <!-- AGENT-_agents_name REVISIT: separate image-selection/aesthetic guidance from delivery details (formats, optimization, alt text, and responsive sources). -->
+                <!-- AGENT-GPT-REVISIT: separate image-selection/aesthetic guidance from delivery details (formats, optimization, alt text, and responsive sources). -->
                 <h3>Images</h3>
                 <p>Shapes and colors play a crucial role in the effectiveness of images in design. Shapes can guide the viewer's eye, create structure, and convey meaning. For instance, geometric shapes like squares and circles can suggest stability and
                     unity, while organic shapes can evoke naturalness and creativity. Color, on the other hand, significantly impacts mood and perception. Warm colors like reds and yellows can evoke energy and excitement, while cool colors like blues
@@ -3083,7 +3083,7 @@ $euphoria: #00050f;</code></pre>
         <div class="row style-guide">
             <div class="col-xs-12">
                 <a class="anchor" id="Streaming"></a>
-                <!-- AGENT-_agents_name WARNING: third-party embed availability, privacy, and responsive sizing are not validated by this static review. -->
+                <!-- AGENT-GPT-WARNING: third-party embed availability, privacy, and responsive sizing are not validated by this static review. -->
                 <h3>Streaming</h3>
             </div>
         </div>
@@ -3093,7 +3093,7 @@ $euphoria: #00050f;</code></pre>
         <div class="row style-guide">
             <div class="col-xs-12">
                 <a class="anchor" id="AI"></a>
-                <!-- AGENT-_agents_name TODO: distinguish AI as a design tool, AI as an interface, and AI as an operational agent; preserve Exo notes as a concept rather than finished product specification. -->
+                <!-- AGENT-GPT-TODO: distinguish AI as a design tool, AI as an interface, and AI as an operational agent; preserve Exo notes as a concept rather than finished product specification. -->
                 <h2>AI</h2>
                 <p>AI has been instrumental in standardizing the design language, particularly in organizing and harmonizing color schemes to ensure visual consistency across platforms. With AI-driven analysis, color palettes can be developed and refined
                     to maintain brand alignment while incorporating modern, relevant shades. By taking a data-driven approach, AI eliminates much of the guesswork in color selection, enabling palettes that are both aesthetically pleasing and strategically
@@ -3149,7 +3149,7 @@ $euphoria: #00050f;</code></pre>
                     </div>
                 </div> -->
                 <hr>
-                <!-- AGENT-_agents_name TODO: this section records an internal working model, not a public AI product specification. Revise the modality names and agent workflow as they become more concrete. -->
+                <!-- AGENT-GPT-TODO: this section records an internal working model, not a public AI product specification. Revise the modality names and agent workflow as they become more concrete. -->
                 <a class="anchor" id="AI-Design-System"></a>
                 <h3>AI as an Internal Design-System Collaborator</h3>
                 <p>This system is being shaped primarily for its designer and the agents that help build, inspect, document, and extend the work. It is not currently intended as a generic design-system package for broad adoption. Its value is in carrying context forward: the visual rules, the reasons behind them, the experiments that produced them, and the boundaries that should not be crossed casually.</p>
@@ -3220,9 +3220,9 @@ $euphoria: #00050f;</code></pre>
         <script src="style-guide-v2.js" defer></script>
         <script src="../js/theme.js"></script>
         <script src="../js/enlarge.js"></script>
-        <!-- AGENT-_agents_name REVISIT: legacy sticky-header inline script removed; reintroduce only if a real #myHeader element and use case are confirmed. -->
-        <!-- AGENT-_agents_name REVISIT: Bootstrap 3 scroll-spy behavior needs browser verification; v2 initializes it once in style-guide-v2.js. -->
-        <!-- AGENT-_agents_name TODO: viewport-width monitor markup is a development aid; confirm whether it should remain visible in the published guide. -->
+        <!-- AGENT-GPT-REVISIT: legacy sticky-header inline script removed; reintroduce only if a real #myHeader element and use case are confirmed. -->
+        <!-- AGENT-GPT-REVISIT: Bootstrap 3 scroll-spy behavior needs browser verification; v2 initializes it once in style-guide-v2.js. -->
+        <!-- AGENT-GPT-TODO: viewport-width monitor markup is a development aid; confirm whether it should remain visible in the published guide. -->
         <!-- <script>
         $(function() {
             $('[data-toggle="tooltip"]').tooltip({
@@ -3233,8 +3233,8 @@ $euphoria: #00050f;</code></pre>
             });
         })
     </script> -->
-        <!-- AGENT-_agents_name REVISIT: back-to-top behavior is guarded and centralized in style-guide-v2.js. -->
-<!-- AGENT-_agents_name WARNING: unresolved fragment targets remain in legacy/example content and require contextual review: Social, CodeVariables, CodeClasses, Inspiration, Mood, Patterns, Figma-Libraries, Player, 0, authenticating-with-graphql, the-graphql-endpoint, communicating-with-graphql, about-query-and-mutation-operations, working-with-variables, example-query, example-mutation, further-reading. Do not auto-create empty anchors without confirming intended destinations. -->
+        <!-- AGENT-GPT-REVISIT: back-to-top behavior is guarded and centralized in style-guide-v2.js. -->
+<!-- AGENT-GPT-WARNING: unresolved fragment targets remain in legacy/example content and require contextual review: Social, CodeVariables, CodeClasses, Inspiration, Mood, Patterns, Figma-Libraries, Player, 0, authenticating-with-graphql, the-graphql-endpoint, communicating-with-graphql, about-query-and-mutation-operations, working-with-variables, example-query, example-mutation, further-reading. Do not auto-create empty anchors without confirming intended destinations. -->
 </body>
 
 </html>
