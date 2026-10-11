@@ -3148,6 +3148,57 @@ $euphoria: #00050f;</code></pre>
                         <img src="https://joeldom.github.io/asset/images/social-preview-3.png" alt="">
                     </div>
                 </div> -->
+                <hr>
+                <!-- AGENT-_agents_name TODO: this section records an internal working model, not a public AI product specification. Revise the modality names and agent workflow as they become more concrete. -->
+                <a class="anchor" id="AI-Design-System"></a>
+                <h3>AI as an Internal Design-System Collaborator</h3>
+                <p>This system is being shaped primarily for its designer and the agents that help build, inspect, document, and extend the work. It is not currently intended as a generic design-system package for broad adoption. Its value is in carrying context forward: the visual rules, the reasons behind them, the experiments that produced them, and the boundaries that should not be crossed casually.</p>
+                <p>That makes the documentation more than a style catalogue. It is also a working interface between human intent and agent execution. A useful instruction should help an agent understand not only <em>what</em> to change, but <em>why</em> a decision exists, which sources are authoritative, what can be explored, what must be preserved, and how to show its work for review.</p>
+
+                <h4>Steering: choosing well when instructions are incomplete</h4>
+                <p><strong>Steering</strong> describes the principles and context that guide an agent when a task leaves room for judgment. It is not a substitute for explicit requirements. It helps resolve the gaps between a request, the existing system, the intended experience, and practical constraints.</p>
+                <ul>
+                    <li><strong>Intent:</strong> identify the problem and the desired outcome before changing implementation.</li>
+                    <li><strong>Authority:</strong> distinguish established requirements and current source files from examples, prototypes, historical notes, and speculation.</li>
+                    <li><strong>Preservation:</strong> retain working behavior, meaningful wording, visual authorship, version history, and decision lineage unless there is a clear reason to change them.</li>
+                    <li><strong>Trade-offs:</strong> explain choices involving accessibility, responsiveness, maintainability, fidelity, complexity, and time.</li>
+                    <li><strong>Proof:</strong> validate the change at an appropriate level, state what was and was not tested, and leave unresolved questions visible.</li>
+                </ul>
+                <p>The aim is not to make agents autonomous at all costs. It is to make their work legible, bounded, and useful: investigate before rewriting, prefer reversible steps when uncertainty is high, and ask for human judgment where a decision changes the direction or meaning of the work.</p>
+
+                <h4>Skills: repeatable ways of doing the work</h4>
+                <p><strong>Skills</strong> can package a repeatable workflow with the domain knowledge, inputs, checks, and expected outputs needed to perform it reliably. A skill might describe how to document a component, audit a page for navigation and accessibility issues, turn a sandbox experiment into a pattern proposal, or prepare one project update for several publishing channels.</p>
+                <p>A skill should not merely be a long prompt. It should say when it applies, what context to inspect first, which files or conventions matter, what steps to follow, what a good result looks like, what to test, and when to stop and request review. Steering gives the agent its direction; skills give it a dependable method for a particular class of task.</p>
+
+                <h4>Tonal Modality: one voice, deliberately shifted for the task</h4>
+                <p><strong>Tonal Modality</strong> is an early, loose name for the idea that a consistent underlying voice can change its mode of expression without losing its identity or the substance of its meaning. It is not a set of finished brand-voice rules. The current thought is to treat tone as a choice of working mode, selected according to purpose, audience, and channel.</p>
+                <ul>
+                    <li><strong>Grounded / matter-of-fact:</strong> direct, concrete, restrained, and sometimes deliberately cold; useful for technical notes, status reports, specifications, and bug descriptions.</li>
+                    <li><strong>Technical:</strong> precise about implementation, states, dependencies, constraints, and observable behavior.</li>
+                    <li><strong>Analytical:</strong> compares alternatives, names assumptions, weighs evidence, and makes trade-offs explicit.</li>
+                    <li><strong>Enthusiastic / philosophical:</strong> communicates why an idea is interesting, what value it might create, and how a design decision connects to a larger creative or ethical intention.</li>
+                    <li><strong>Visual / experiential:</strong> describes composition, motion, hierarchy, atmosphere, and what a person sees or feels while using the interface.</li>
+                    <li><strong>Shorthand / exploratory:</strong> preserves rough, compressed thinking while an idea is forming; it can be clarified later without erasing the original intent or lineage.</li>
+                </ul>
+                <p>These are tentative switches, not mutually exclusive personas. A good explanation might begin with an enthusiastic account of why a feature matters, follow with an analytical account of the decisions that shaped it, and finish with a technical specification. The mode should change the framing and level of detail—not invent certainty, flatten the author's personality, or discard important context.</p>
+
+                <h4>Why the viewer and hero media player became defining experiments</h4>
+                <p>The interactive viewer began with a practical interface question: how could a Twitter-like viewer present multiple images, accommodate different media types and dimensions, and still feel coherent rather than treating every asset as a separate special case? That question opened into a broader investigation of media presentation, navigation, controls, and reusable behavior.</p>
+                <p>The media-player work grew from a related frustration with video experiences encountered on streaming services. Amazon Prime Video was a particularly useful reference: layers of content and information could sit around or over a video that continued playing behind them. The challenge was to reinterpret that layered experience as an eye-catching feature inside the portfolio's main hero area, including the idea that video could begin playing while the page was idle rather than waiting for a conventional play-button interaction.</p>
+                <p>This was not only an attempt to make the page more animated. The portfolio risked appearing too static to recruiters and other visitors. A distinctive, responsive media experience offered a way to demonstrate interaction design, front-end implementation, state management, and attention to detail in one visible project. It also created a meaningful technical challenge—one that could expand as the design matured, rather than being a decorative effect with no deeper purpose.</p>
+                <p>That feature work became a reason to define more of the system: how controls behave, how idle and active states differ, how media is selected and contained, how interactions recover, and how a component remains understandable when embedded in a larger layout. It also created a natural outlet for working with AI agents. The experiments give agents real constraints and code to reason about; the agents can help explore alternatives, document decisions, check consistency, and turn lessons from a prototype into reusable guidance.</p>
+                <p>The useful record is therefore not just the final player. It is the path from inspiration and frustration, through a concrete design question, into prototypes, implementation decisions, observed behavior, and the next questions worth testing. The design system should preserve that path when it explains why a feature exists.</p>
+
+                <h4>How the parts work together</h4>
+                <ul>
+                    <li><strong>Design system:</strong> records visual and interaction conventions, reusable patterns, and the reasoning behind them.</li>
+                    <li><strong>Steering:</strong> helps agents make choices that remain aligned with the project when a task is underspecified.</li>
+                    <li><strong>Skills:</strong> turn recurring work into inspectable, repeatable procedures.</li>
+                    <li><strong>Tonal Modality:</strong> helps communicate the same underlying intent in the right mode for exploration, explanation, review, or implementation.</li>
+                    <li><strong>Sandbox and history:</strong> preserve experiments, alternatives, versions, and findings without treating every prototype as production-ready.</li>
+                    <li><strong>Human review:</strong> remains the checkpoint for subjective direction, unresolved trade-offs, and changes with broad consequences.</li>
+                </ul>
+                <p><strong>Working principle:</strong> preserve the reason behind a decision, make the implementation inspectable, and let experiments become standards only after their value and limitations are understood.</p>
             </div>
         </div>
         <hr>
