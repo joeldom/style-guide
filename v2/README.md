@@ -198,17 +198,44 @@ Use this as a checklist, not a rigid template. Each section should include only 
 
 The philosophy sections can remain essay-like; component references should be concise and practical; experiments should capture hypotheses, observations, and outcomes.
 
-## Review conventions and agent comments
+## Review conventions and comment attribution
 
-This copy uses comments such as:
+Comments should identify **who raised the point** and **what kind of point it is**. This preserves decision history when the work moves between Joel and different AI models. Use the model identifier for agent-authored callouts; `GPT` identifies the model, not a specific model version.
 
-- `<!-- AGENT-_agents_name TODO: ... -->`
-- `<!-- AGENT-_agents_name WARNING: ... -->`
-- `<!-- AGENT-_agents_name QUESTION: ... -->`
-- `<!-- AGENT-_agents_name REVISIT: ... -->`
-- `<!-- AGENT-_agents_name BUG: ... -->`
+### Agent-authored callouts
 
-They are intentional editorial markers, not errors to strip automatically. The short comment immediately after the marker should explain the specific follow-up. Before a production merge, resolve, reclassify, or explicitly retain each marker.
+Use this format:
+
+`<!-- AGENT-GPT-TYPE: explanation and actionable context. -->`
+
+Supported types:
+
+- `AGENT-GPT-BUG` — a defect that has been identified; state the observed behavior and impact.
+- `AGENT-GPT-WARNING` — a risk, conflict, or potentially unintended behavior.
+- `AGENT-GPT-QUESTION` — a decision or missing detail that needs clarification.
+- `AGENT-GPT-TODO` — an actionable task that has not been completed.
+- `AGENT-GPT-REVISIT` — a decision or section worth reconsidering, with the reason.
+- `AGENT-GPT-FEEDBACK` — a recommendation or observation that is not necessarily a defect.
+
+Other models should use their own identifier in the same position, for example `AGENT-CLAUDE-QUESTION` or `AGENT-GROK-FEEDBACK`.
+
+### Joel-authored notes
+
+Use a separate prefix so personal shorthand, exploratory thinking, and original tasks are not mistaken for agent findings:
+
+- `JOEL-NOTE` — informal or exploratory note; preserve its intent rather than silently rewriting it as a requirement.
+- `JOEL-QUESTION` — a question or decision Joel wants to resolve.
+- `JOEL-TODO` — a task Joel identified.
+- `JOEL-REVISIT` — something Joel wants to return to later.
+
+### Attribution and verification rules
+
+- Attribute findings, not ownership: if Joel reports a problem and an agent helps diagnose it, don't claim the agent discovered it.
+- Do not label uncertain behavior as a confirmed bug. Use `WARNING` or `QUESTION` until reproduced or otherwise verified.
+- Keep comments actionable and specific. Explain what needs attention and why.
+- Preserve original notes as notes; do not silently turn exploratory ideas into settled requirements.
+- Existing shorthand comments are being classified where their origin is reasonably clear. If authorship is uncertain, flag that uncertainty rather than inventing provenance.
+- Before a production merge, resolve, reclassify, or explicitly retain each open marker.
 
 ## Suggested review sequence
 
